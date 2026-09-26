@@ -20,12 +20,15 @@ KiCad checks do not prove every component choice or analog behavior. Host tests 
 From the repository root:
 
 ```sh
+python -m unittest discover -s firmware/tests -p "test_build*.py"
 python firmware/tools/build.py --build
 python firmware/tools/build.py --test-host --sanitize
 python firmware/tools/check_board_contract.py
 ```
 
 The build requires an Arm GNU toolchain; host tests need a supported native compiler. See [firmware setup](../firmware/README.md) for tool selection and sanitizer support. The board-contract checker uses Python's standard library and reads the actual root PCB and exported XML. Its report includes input hashes and negative controls that intentionally introduce mapping mistakes.
+
+Artifact checks reject checkout, user-home and private toolchain paths. Public system paths from precompiled runtime libraries (such as `/usr` on Linux) are allowed; compiler prefix maps cannot rewrite those libraries' existing debug records.
 
 For hardware changes, refill zones, save the PCB and rerun ERC/DRC using KiCad. Regenerate the XML netlist before rerunning the board-contract checker. Export fabrication files only after those checks. Review and resolve findings; do not suppress a physical defect merely to obtain an empty report.
 

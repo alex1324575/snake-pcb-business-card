@@ -57,9 +57,10 @@
     "src/startup.S": "0e6fe2910a72eb24d6bf48833327e7687b69b51fe27421ac18720d87f9ebeb23",
     "stm32g030k8.ld": "a89d1f52a7d76b9a75bb8d2652f529f7ad441aedca322198e94776c1c215b1c6",
     "tests/test_app.c": "27d931da105662bb2fe306aca4dad14a94a39c45cc4a5fc2f97502b2ca41b157",
+    "tests/test_build_paths.py": "5e32c6e1b0b69c252bf8999e5c0511dc9812911bdc7011cd6b2e8cca28309a72",
     "tests/test_is31fl3737.c": "225a077767257bf52b77ddbd3e2e0e57e0785128788588fe081b96bf76727da0",
     "tests/test_snake.c": "4993d61030c158abdbede62ea171192d169daf5641a5e2ed0ba1eb157b084512",
-    "tools/build.py": "fb0cdca09c95792365013e2be1890e9edb32e21ff27555f55605dfb184be1051",
+    "tools/build.py": "cb583de18db338428f8615ca593096d7bbafafc20f58d6c3adb062b56544188e",
     "tools/check_board_contract.py": "98a44107d80fcbbdc4e3b435743a069a46d648fd5b1c854c46f304ecc0a6750a"
   },
   "artifacts": {

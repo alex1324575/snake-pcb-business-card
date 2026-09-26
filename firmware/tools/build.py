@@ -30,6 +30,23 @@ def public_text(value, bindir=None):
     return result
 
 
+def verify_public_paths(data, artifact_name, *, checkout, user_home, toolchain):
+    """Reject private paths without rejecting public distro runtime provenance."""
+    normalized = data.lower().replace(b"\\", b"/")
+    for label, directory in (("checkout", checkout), ("user home", user_home),
+                             ("toolchain", toolchain)):
+        prefix = directory.as_posix().lower().rstrip("/")
+        if not prefix or prefix.endswith(":"):
+            continue  # A filesystem root does not identify a private location.
+        if label == "toolchain" and prefix in ("/usr", "/usr/local"):
+            # Precompiled libgcc/newlib can retain public system paths; prefix
+            # maps only rewrite debug information in newly compiled objects.
+            continue
+        pattern = re.escape(prefix.encode()) + rb"(?=/|[\x00\s\"']|$)"
+        assert re.search(pattern, normalized) is None, \
+            "Private " + label + " path remained in distributable artifact: " + artifact_name
+
+
 def run(args, *, env=None, cwd=ROOT):
     result = subprocess.run([str(a) for a in args], cwd=cwd, env=env,
                             stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
@@ -173,10 +190,9 @@ def build(explicit):
     map_path = ROOT / mapfile
     map_path.write_text(public_text(map_path.read_text(), bindir), encoding="utf-8")
     for artifact in (elf, binary, hexfile, mapfile):
-        normalized = (ROOT / artifact).read_bytes().lower().replace(b"\\", b"/")
-        for directory in (ROOT, bindir.parent):
-            assert directory.as_posix().lower().encode() not in normalized, \
-                "Local build path remained in distributable artifact: " + artifact.name
+        verify_public_paths((ROOT / artifact).read_bytes(), artifact.name,
+                            checkout=ROOT.parent, user_home=Path.home(),
+                            toolchain=bindir.parent)
     stack_usage = "".join(public_text(p.read_text(), bindir) for p in sorted((ROOT / out).glob("*.su")))
     (ROOT / out / "stack_usage.txt").write_text(stack_usage, encoding="utf-8")
     manifest = {"version": "1.0.0", "board": "SnakeBusinessCard Rev B / STM32G030K8T6",

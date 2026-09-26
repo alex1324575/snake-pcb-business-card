@@ -19,6 +19,9 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Check artifact path privacy
+        run: python3 -m unittest discover -s firmware/tests -p "test_build*.py"
+
       - name: Install compilers
         run: |
           sudo apt-get update
