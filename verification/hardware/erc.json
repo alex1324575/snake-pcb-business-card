@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-17T23:07:05",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/000dafc4-b68b-5d77-8c9d-3128494f861b",
+            "violations": []
+        },
+        {
+            "path": "/01 Power USB/",
+            "uuid_path": "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a",
+            "violations": []
+        },
+        {
+            "path": "/02 MCU Inputs Debug/",
+            "uuid_path": "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a",
+            "violations": []
+        },
+        {
+            "path": "/03 LED Driver/",
+            "uuid_path": "/000dafc4-b68b-5d77-8c9d-3128494f861b/33a880f4-cab4-5121-a288-54145ddbb78f",
+            "violations": []
+        },
+        {
+            "path": "/04 LED Matrix/",
+            "uuid_path": "/000dafc4-b68b-5d77-8c9d-3128494f861b/f169102d-c421-5532-b094-ad61dd45b6ba",
+            "violations": []
+        },
+        {
+            "path": "/05 NFC/",
+            "uuid_path": "/000dafc4-b68b-5d77-8c9d-3128494f861b/7b4a5613-b43e-5267-b2b4-43e409275f10",
+            "violations": []
+        }
+    ],
+    "source": "SnakeBusinessCard.kicad_sch"
+}

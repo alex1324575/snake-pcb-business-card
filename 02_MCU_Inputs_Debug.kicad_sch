@@ -1,0 +1,2982 @@
+(kicad_sch
+  (version 20250114)
+  (generator "snake_card_generator")
+  (generator_version "1.0")
+  (uuid "508dc282-9329-5d29-9d06-1030fcc947c7")
+  (paper "A3")
+  (title_block
+    (title "STM32G030, five controls and SWD")
+    (date "2026-09-15")
+    (rev "B-PUBLIC")
+    (company "Snake Interactive PCB Business Card")
+    (comment 1 "USB-C 5V | 10x9 red LED | passive NFC")
+    (comment 2 "Public reference design - hardware validation pending"))
+  (lib_symbols
+    (symbol "SnakeCard:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:STM32G030K8Tx"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (symbol "STM32G030K8Tx_0_1"
+        (rectangle
+          (start -15.24 -25.4)
+          (end 15.24 25.4)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "STM32G030K8Tx_1_1"
+        (pin bidirectional line
+          (at -17.78 -17.78 0)
+          (length 2.54)
+          (name "PB9"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "I2C1_SDA" bidirectional line)
+          (alternate "IR_OUT" bidirectional line)
+          (alternate "SPI2_NSS" bidirectional line)
+          (alternate "TIM17_CH1" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 12.7 0)
+          (length 2.54)
+          (name "PC14"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "RCC_OSC32_IN" bidirectional line)
+          (alternate "RCC_OSC_IN" bidirectional line)
+          (alternate "TIM1_BK2" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 10.16 0)
+          (length 2.54)
+          (name "PC15"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "RCC_OSC32_EN" bidirectional line)
+          (alternate "RCC_OSC32_OUT" bidirectional line)
+          (alternate "RCC_OSC_EN" bidirectional line))
+        (pin power_in line
+          (at 0 27.94 270)
+          (length 2.54)
+          (name "VDD/VDDA"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -27.94 90)
+          (length 2.54)
+          (name "VSS/VSSA"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -17.78 20.32 0)
+          (length 2.54)
+          (name "NRST"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 17.78 20.32 180)
+          (length 2.54)
+          (name "PA0"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN0" bidirectional line)
+          (alternate "RTC_TAMP_IN2" bidirectional line)
+          (alternate "SPI2_SCK" bidirectional line)
+          (alternate "SYS_WKUP1" bidirectional line)
+          (alternate "USART2_CTS" bidirectional line)
+          (alternate "USART2_NSS" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 17.78 180)
+          (length 2.54)
+          (name "PA1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN1" bidirectional line)
+          (alternate "I2C1_SMBA" bidirectional line)
+          (alternate "I2S1_CK" bidirectional line)
+          (alternate "SPI1_SCK" bidirectional line)
+          (alternate "USART2_CK" bidirectional line)
+          (alternate "USART2_DE" bidirectional line)
+          (alternate "USART2_RTS" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 15.24 180)
+          (length 2.54)
+          (name "PA2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN2" bidirectional line)
+          (alternate "I2S1_SD" bidirectional line)
+          (alternate "RCC_LSCO" bidirectional line)
+          (alternate "SPI1_MOSI" bidirectional line)
+          (alternate "SYS_WKUP4" bidirectional line)
+          (alternate "USART2_TX" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 12.7 180)
+          (length 2.54)
+          (name "PA3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN3" bidirectional line)
+          (alternate "SPI2_MISO" bidirectional line)
+          (alternate "USART2_RX" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 10.16 180)
+          (length 2.54)
+          (name "PA4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN4" bidirectional line)
+          (alternate "I2S1_WS" bidirectional line)
+          (alternate "RTC_OUT_ALARM" bidirectional line)
+          (alternate "RTC_OUT_CALIB" bidirectional line)
+          (alternate "RTC_TAMP_IN1" bidirectional line)
+          (alternate "RTC_TS" bidirectional line)
+          (alternate "SPI1_NSS" bidirectional line)
+          (alternate "SPI2_MOSI" bidirectional line)
+          (alternate "SYS_WKUP2" bidirectional line)
+          (alternate "TIM14_CH1" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 7.62 180)
+          (length 2.54)
+          (name "PA5"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN5" bidirectional line)
+          (alternate "I2S1_CK" bidirectional line)
+          (alternate "SPI1_SCK" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 5.08 180)
+          (length 2.54)
+          (name "PA6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN6" bidirectional line)
+          (alternate "I2S1_MCK" bidirectional line)
+          (alternate "SPI1_MISO" bidirectional line)
+          (alternate "TIM16_CH1" bidirectional line)
+          (alternate "TIM1_BK" bidirectional line)
+          (alternate "TIM3_CH1" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 2.54 180)
+          (length 2.54)
+          (name "PA7"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "14"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN7" bidirectional line)
+          (alternate "I2S1_SD" bidirectional line)
+          (alternate "SPI1_MOSI" bidirectional line)
+          (alternate "TIM14_CH1" bidirectional line)
+          (alternate "TIM17_CH1" bidirectional line)
+          (alternate "TIM1_CH1N" bidirectional line)
+          (alternate "TIM3_CH2" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 5.08 0)
+          (length 2.54)
+          (name "PB0"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "15"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN8" bidirectional line)
+          (alternate "I2S1_WS" bidirectional line)
+          (alternate "SPI1_NSS" bidirectional line)
+          (alternate "TIM1_CH2N" bidirectional line)
+          (alternate "TIM3_CH3" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 2.54 0)
+          (length 2.54)
+          (name "PB1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "16"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN9" bidirectional line)
+          (alternate "TIM14_CH1" bidirectional line)
+          (alternate "TIM1_CH3N" bidirectional line)
+          (alternate "TIM3_CH4" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 0 0)
+          (length 2.54)
+          (name "PB2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "17"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN10" bidirectional line)
+          (alternate "SPI2_MISO" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 0 180)
+          (length 2.54)
+          (name "PA8"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "18"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "RCC_MCO" bidirectional line)
+          (alternate "SPI2_NSS" bidirectional line)
+          (alternate "TIM1_CH1" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 -22.86 0)
+          (length 2.54)
+          (name "PA9"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "19"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "I2C1_SCL (PA9)" bidirectional line)
+          (alternate "NC" bidirectional line)
+          (alternate "PA9" bidirectional line)
+          (alternate "RCC_MCO (PA9)" bidirectional line)
+          (alternate "SPI2_MISO (PA9)" bidirectional line)
+          (alternate "TIM1_CH2 (PA9)" bidirectional line)
+          (alternate "USART1_TX (PA9)" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 15.24 0)
+          (length 2.54)
+          (name "PC6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "20"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "TIM3_CH1" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 -20.32 0)
+          (length 2.54)
+          (name "PA10"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "21"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "I2C1_SDA (PA10)" bidirectional line)
+          (alternate "NC" bidirectional line)
+          (alternate "PA10" bidirectional line)
+          (alternate "SPI2_MOSI (PA10)" bidirectional line)
+          (alternate "TIM17_BK (PA10)" bidirectional line)
+          (alternate "TIM1_CH3 (PA10)" bidirectional line)
+          (alternate "USART1_RX (PA10)" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 -2.54 180)
+          (length 2.54)
+          (name "PA11"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "22"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_EXTI11 (PA11)" bidirectional line)
+          (alternate "ADC1_IN15 (PA11)" bidirectional line)
+          (alternate "I2C1_SCL (PA9)" bidirectional line)
+          (alternate "I2C2_SCL (PA11)" bidirectional line)
+          (alternate "I2S1_MCK (PA11)" bidirectional line)
+          (alternate "PA11" bidirectional line)
+          (alternate "PA9" bidirectional line)
+          (alternate "RCC_MCO (PA9)" bidirectional line)
+          (alternate "SPI1_MISO (PA11)" bidirectional line)
+          (alternate "SPI2_MISO (PA9)" bidirectional line)
+          (alternate "TIM1_BK2 (PA11)" bidirectional line)
+          (alternate "TIM1_CH2 (PA9)" bidirectional line)
+          (alternate "TIM1_CH4 (PA11)" bidirectional line)
+          (alternate "USART1_CTS (PA11)" bidirectional line)
+          (alternate "USART1_NSS (PA11)" bidirectional line)
+          (alternate "USART1_TX (PA9)" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 -5.08 180)
+          (length 2.54)
+          (name "PA12"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "23"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN16 (PA12)" bidirectional line)
+          (alternate "I2C1_SDA (PA10)" bidirectional line)
+          (alternate "I2C2_SDA (PA12)" bidirectional line)
+          (alternate "I2S1_SD (PA12)" bidirectional line)
+          (alternate "I2S_CKIN (PA12)" bidirectional line)
+          (alternate "PA10" bidirectional line)
+          (alternate "PA12" bidirectional line)
+          (alternate "SPI1_MOSI (PA12)" bidirectional line)
+          (alternate "SPI2_MOSI (PA10)" bidirectional line)
+          (alternate "TIM17_BK (PA10)" bidirectional line)
+          (alternate "TIM1_CH3 (PA10)" bidirectional line)
+          (alternate "TIM1_ETR (PA12)" bidirectional line)
+          (alternate "USART1_CK (PA12)" bidirectional line)
+          (alternate "USART1_DE (PA12)" bidirectional line)
+          (alternate "USART1_RTS (PA12)" bidirectional line)
+          (alternate "USART1_RX (PA10)" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 -7.62 180)
+          (length 2.54)
+          (name "PA13"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "24"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN17" bidirectional line)
+          (alternate "IR_OUT" bidirectional line)
+          (alternate "SYS_SWDIO" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 -10.16 180)
+          (length 2.54)
+          (name "PA14"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "25"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN18" bidirectional line)
+          (alternate "SYS_SWCLK" bidirectional line)
+          (alternate "USART2_TX" bidirectional line))
+        (pin bidirectional line
+          (at 17.78 -12.7 180)
+          (length 2.54)
+          (name "PA15"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "26"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "I2S1_WS" bidirectional line)
+          (alternate "SPI1_NSS" bidirectional line)
+          (alternate "USART2_RX" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 -2.54 0)
+          (length 2.54)
+          (name "PB3"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "27"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "I2S1_CK" bidirectional line)
+          (alternate "SPI1_SCK" bidirectional line)
+          (alternate "TIM1_CH2" bidirectional line)
+          (alternate "USART1_CK" bidirectional line)
+          (alternate "USART1_DE" bidirectional line)
+          (alternate "USART1_RTS" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 -5.08 0)
+          (length 2.54)
+          (name "PB4"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "28"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "I2S1_MCK" bidirectional line)
+          (alternate "SPI1_MISO" bidirectional line)
+          (alternate "TIM17_BK" bidirectional line)
+          (alternate "TIM3_CH1" bidirectional line)
+          (alternate "USART1_CTS" bidirectional line)
+          (alternate "USART1_NSS" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 -7.62 0)
+          (length 2.54)
+          (name "PB5"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "29"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "I2C1_SMBA" bidirectional line)
+          (alternate "I2S1_SD" bidirectional line)
+          (alternate "SPI1_MOSI" bidirectional line)
+          (alternate "SYS_WKUP6" bidirectional line)
+          (alternate "TIM16_BK" bidirectional line)
+          (alternate "TIM3_CH2" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 -10.16 0)
+          (length 2.54)
+          (name "PB6"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "30"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "I2C1_SCL" bidirectional line)
+          (alternate "SPI2_MISO" bidirectional line)
+          (alternate "TIM16_CH1N" bidirectional line)
+          (alternate "TIM1_CH3" bidirectional line)
+          (alternate "USART1_TX" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 -12.7 0)
+          (length 2.54)
+          (name "PB7"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "31"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "ADC1_IN11" bidirectional line)
+          (alternate "I2C1_SDA" bidirectional line)
+          (alternate "SPI2_MOSI" bidirectional line)
+          (alternate "SYS_PVD_IN" bidirectional line)
+          (alternate "TIM17_CH1N" bidirectional line)
+          (alternate "USART1_RX" bidirectional line))
+        (pin bidirectional line
+          (at -17.78 -15.24 0)
+          (length 2.54)
+          (name "PB8"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "32"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (alternate "I2C1_SCL" bidirectional line)
+          (alternate "SPI2_SCK" bidirectional line)
+          (alternate "TIM16_CH1" bidirectional line)))
+      (embedded_fonts no)
+      (property "Reference" "U"
+        (at -15.24 26.67 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "STM32G030K8T6"
+        (at 2.54 26.67 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" "Package_QFP:LQFP-32_7x7mm_P0.8mm"
+        (at -15.24 -22.86 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify right)))
+      (property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g030k8.pdf"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "STMicroelectronics Arm Cortex-M0+ MCU, 64KB flash, 8KB RAM, 64 MHz, 2.0-3.6V, 29 GPIO, LQFP32"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "Arm Cortex-M0+ STM32G0 STM32G0x0 Value line"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "LQFP*7x7mm*P0.8mm*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (symbol "SnakeCard:SW_Push"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "SW"
+        (at 1.27 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "SW_Push"
+        (at 0 -1.524 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Push button switch, generic, two pins"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "switch normally-open pushbutton push-button"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "SW_Push_0_1"
+        (circle
+          (center -2.032 0)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.048))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 2.032 0)
+          (radius 0.508)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.54 1.27)
+            (xy -2.54 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (pin passive line
+          (at -5.08 0 0)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 5.08 0 180)
+          (length 2.54)
+          (name "2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:TestPoint"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.762)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "TP"
+        (at 0 6.858 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TestPoint"
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "test point"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "test point tp"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Pin* Test*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TestPoint_0_1"
+        (circle
+          (center 0 3.302)
+          (radius 0.762)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TestPoint_1_1"
+        (pin passive line
+          (at 0 0 90)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "MCU / HSI16 INTERNAL CLOCK"
+    (at 20.32 25.4 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "48af0571-5fbc-5b4c-9a63-4086a06e4f76"))
+  (polyline
+    (pts
+      (xy 20.32 28.4)
+      (xy 190.32 28.4))
+    (stroke
+      (width 0.254)
+      (type default))
+    (uuid "4dac9c48-2bab-511e-81ca-c388a433d433"))
+  (symbol
+    (lib_id "SnakeCard:STM32G030K8Tx")
+    (at 101.6 106.68 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b203efef-92d2-5a51-8e0d-cd879a371c9d")
+    (property "Reference" "U1"
+      (at 101.6 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "STM32G030K8T6"
+      (at 101.6 58.42 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Package_QFP:LQFP-32_7x7mm_P0.8mm"
+      (at 101.6 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32g030k8.pdf"
+      (at 101.6 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "STM32G030K8T6"
+      (at 101.6 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "3edf3b56-f88d-5969-8c38-f917075779bc"))
+    (pin "2"
+      (uuid "4fa8599d-d265-5df8-b1a2-1579e9e3954a"))
+    (pin "3"
+      (uuid "0cf52f74-c7a9-574a-a206-bcbc9dd30386"))
+    (pin "4"
+      (uuid "d7dfab0b-3797-5037-9277-d4e79ee7e7a6"))
+    (pin "5"
+      (uuid "5ade171a-3ed0-5471-8570-91ad50fe079d"))
+    (pin "6"
+      (uuid "b5918da4-5b5a-5821-8943-4d4ea6197af1"))
+    (pin "7"
+      (uuid "7eaf807d-c582-589b-b648-56cc119533ee"))
+    (pin "8"
+      (uuid "a4bcbab5-ca0f-5570-b9d3-81a78e0a80c8"))
+    (pin "9"
+      (uuid "40e586eb-a340-593a-b062-afb6c261f309"))
+    (pin "10"
+      (uuid "aac89b20-a58d-52e8-9420-2e2ff3187ed0"))
+    (pin "11"
+      (uuid "28e41cef-cc07-5f29-9520-948a1d410ca6"))
+    (pin "12"
+      (uuid "88eedf2a-2be9-51e0-9aea-f9c95b18df38"))
+    (pin "13"
+      (uuid "0a7d691d-22f2-530d-9b26-7b9fdaef848d"))
+    (pin "14"
+      (uuid "bda07283-ea9c-547e-9cdd-b97ef103001f"))
+    (pin "15"
+      (uuid "8b62e1b1-58df-5cc0-855d-b65e33b0637e"))
+    (pin "16"
+      (uuid "226fb40d-2086-5a81-b33a-7f66c14416ec"))
+    (pin "17"
+      (uuid "3aa49bfa-7f57-5ec0-b7cd-0c4a0f7da338"))
+    (pin "18"
+      (uuid "5c9899f5-0c07-5bc7-992e-16e6030cd90d"))
+    (pin "19"
+      (uuid "c678017e-5aeb-594c-9ce8-ac64ba393962"))
+    (pin "20"
+      (uuid "a7095261-c5c6-5d37-9ef7-4ba671d006a5"))
+    (pin "21"
+      (uuid "f39a43ef-7974-59dc-a1ef-98f05e32a048"))
+    (pin "22"
+      (uuid "f50aa212-38fc-51b8-ac94-c7f33b71757f"))
+    (pin "23"
+      (uuid "4c917506-0ed1-50c5-8680-114838d171c9"))
+    (pin "24"
+      (uuid "6f926b63-62f1-58ae-b8e9-4338562ef25c"))
+    (pin "25"
+      (uuid "d6319a75-d79f-54b1-9c42-c0612984ee43"))
+    (pin "26"
+      (uuid "8e8d2c27-0984-5a5f-8d00-d79a385dc750"))
+    (pin "27"
+      (uuid "550e2b80-e9f5-5156-8490-6d9bef4a6841"))
+    (pin "28"
+      (uuid "c4d64ca2-6907-5279-9e90-0adfc97370d5"))
+    (pin "29"
+      (uuid "fc3ffa11-2226-5c3c-8502-889668c7f132"))
+    (pin "30"
+      (uuid "b1366f48-f0f3-5bd1-bc8f-40ea6b3f5916"))
+    (pin "31"
+      (uuid "0ac3e461-082c-59b6-a4ea-f9d0e1427918"))
+    (pin "32"
+      (uuid "4e01503c-b33a-5dcd-a66b-78bdf1d68a16"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "U1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 101.6 78.74)
+      (xy 101.6 73.66))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "171cd066-ec01-5f03-9c37-32c1a205a6da"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 101.6 73.66 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "663c8f43-7108-5830-8718-986518aa03da")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 101.6 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 101.6 134.62)
+      (xy 101.6 139.7))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cb37fcdd-bea3-5113-9354-aa3196a87cff"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 101.6 139.7 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "818dddd1-5287-571e-857c-ff8ef7a92026")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 101.6 139.7 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 83.82 86.36)
+      (xy 78.74 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "38f9f122-795f-5890-a879-a7c4c6ac45e6"))
+  (global_label "NRST"
+    (shape bidirectional)
+    (at 78.74 86.36 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "f78a2a77-9373-5928-a908-80ec9abc429d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 78.74 86.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 119.38 86.36)
+      (xy 124.46 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9ce2bcb0-7135-52ee-8ff1-3c22f33943ba"))
+  (global_label "BTN_UP"
+    (shape bidirectional)
+    (at 124.46 86.36 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "95705848-9336-5b45-91ac-f36c4f481c71")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 124.46 86.36 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 119.38 88.9)
+      (xy 124.46 88.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b521971e-d285-5de5-a7a2-aeb4b3609c30"))
+  (global_label "BTN_DOWN"
+    (shape bidirectional)
+    (at 124.46 88.9 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "da32254e-236d-5a8c-98ae-9b88d1aee1ac")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 124.46 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 119.38 91.44)
+      (xy 124.46 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ec8284d6-48a8-5f2c-9feb-9652833f90ba"))
+  (global_label "BTN_LEFT"
+    (shape bidirectional)
+    (at 124.46 91.44 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "7439f42f-c1f7-599e-9e10-ca4d8cad226a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 124.46 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 119.38 93.98)
+      (xy 124.46 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "889eb8ce-a51c-54ea-bac2-0d922718365a"))
+  (global_label "BTN_RIGHT"
+    (shape bidirectional)
+    (at 124.46 93.98 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "7a6dfa76-3870-539e-b948-23d5a679f603")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 124.46 93.98 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 119.38 96.52)
+      (xy 124.46 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "057a9aaf-e72a-5d12-adc2-1d372c754d52"))
+  (global_label "BTN_START"
+    (shape bidirectional)
+    (at 124.46 96.52 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "bbf654f8-7de3-51f0-b07c-4de40ab65af0")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 124.46 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 119.38 99.06)
+      (xy 124.46 99.06))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7cf542f5-bb6a-578d-b001-b4a5a2270bf8"))
+  (global_label "LED_EN"
+    (shape bidirectional)
+    (at 124.46 99.06 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "a3aaf3d9-643a-5ecb-b70e-f126b26d6aac")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 124.46 99.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 119.38 114.3)
+      (xy 124.46 114.3))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "324127be-0fbe-59e6-94fc-eb9af0615bd6"))
+  (global_label "SWDIO"
+    (shape bidirectional)
+    (at 124.46 114.3 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "0a2c4f18-d2ca-52cb-84b0-ec0a243a4e9d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 124.46 114.3 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 119.38 116.84)
+      (xy 124.46 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3b9b7bd3-9cbf-5224-8f48-1203b2701b8b"))
+  (global_label "SWCLK"
+    (shape bidirectional)
+    (at 124.46 116.84 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "4d7598b2-78bc-525d-8174-0941bcee2606")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 124.46 116.84 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 83.82 116.84)
+      (xy 78.74 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6989b86f-08a5-5cea-9bdf-b2f65610fe61"))
+  (global_label "I2C_SCL"
+    (shape bidirectional)
+    (at 78.74 116.84 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "a70ed05e-fbc1-5e9e-bd25-cb0473ee2459")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 78.74 116.84 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 83.82 119.38)
+      (xy 78.74 119.38))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bae6779d-2f69-5703-aca0-ac81348f40e9"))
+  (global_label "I2C_SDA"
+    (shape bidirectional)
+    (at 78.74 119.38 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "30684f15-e73e-5f00-9e08-242336955140")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 78.74 119.38 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (no_connect
+    (at 83.82 124.46)
+    (uuid "2ee2ecaf-ba1a-585a-a053-c6908236f003"))
+  (no_connect
+    (at 83.82 93.98)
+    (uuid "1fac0f2d-0e5e-568f-b4f6-97c3fd77a61c"))
+  (no_connect
+    (at 83.82 96.52)
+    (uuid "e65c3947-f0fb-5ed9-bc98-00772b1305ad"))
+  (no_connect
+    (at 119.38 101.6)
+    (uuid "e070ec05-652d-5415-a6a1-0ee56d586e0e"))
+  (no_connect
+    (at 119.38 104.14)
+    (uuid "284707bd-afe4-5d47-9426-8e74a32b33f1"))
+  (no_connect
+    (at 83.82 101.6)
+    (uuid "a3e5606b-8c8c-5fc1-9a3a-36758fa5909a"))
+  (no_connect
+    (at 83.82 104.14)
+    (uuid "dd8d5dba-f589-5e07-89cb-3394d818288c"))
+  (no_connect
+    (at 83.82 106.68)
+    (uuid "d24efed6-5213-5e1c-8fa6-8e5aca4043a8"))
+  (no_connect
+    (at 119.38 106.68)
+    (uuid "4d6d6032-12dd-5906-8ee7-622e0de46def"))
+  (no_connect
+    (at 83.82 129.54)
+    (uuid "23561a00-4c3e-52f5-a03e-03dc2e752860"))
+  (no_connect
+    (at 83.82 91.44)
+    (uuid "4c165634-606c-5c92-852a-65f4f30258c4"))
+  (no_connect
+    (at 83.82 127)
+    (uuid "5f758e80-10b7-5e05-a249-a0e10f7bbb82"))
+  (no_connect
+    (at 119.38 109.22)
+    (uuid "cea196ae-2e13-5baf-8afc-d6f99226b9e6"))
+  (no_connect
+    (at 119.38 111.76)
+    (uuid "939b602d-ad08-5190-b99d-1228fac36cfd"))
+  (no_connect
+    (at 119.38 119.38)
+    (uuid "173f0ee4-8613-5af9-aefa-df320fff15fc"))
+  (no_connect
+    (at 83.82 109.22)
+    (uuid "45b37c7f-5ed6-56d1-8184-de37f844dd81"))
+  (no_connect
+    (at 83.82 111.76)
+    (uuid "de0ce89f-4581-5431-9919-da9597552ad1"))
+  (no_connect
+    (at 83.82 114.3)
+    (uuid "5ddaab14-9591-59a6-952b-72b8c580238b"))
+  (no_connect
+    (at 83.82 121.92)
+    (uuid "ab7ffced-5f62-5f5d-835b-6c51d52b2d3c"))
+  (symbol
+    (lib_id "SnakeCard:C")
+    (at 43.18 175.26 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "7e087d9e-9c46-5f4a-8d89-c53bea145b5e")
+    (property "Reference" "C10"
+      (at 52.18 173.99 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100n / 10V X7R"
+      (at 52.18 176.53 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 43.18 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 43.18 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 43.18 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "88c37472-e06e-5eab-a44b-c1d2fc8f01b7"))
+    (pin "2"
+      (uuid "c6f5b3bf-a2e0-5f09-8629-7886639fbd42"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "C10")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 43.18 171.45)
+      (xy 43.18 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1d6b1a5e-923a-5d4a-98f8-db6ead4e67c5"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 43.18 166.37 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "5a93231b-3307-5f7b-8fbe-490c858ddeb7")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 43.18 166.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 43.18 179.07)
+      (xy 43.18 184.15))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2075929a-9ac4-5e05-b7a3-a1d6d16a6019"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 43.18 184.15 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "237da888-8c96-535d-82bb-630e1f349c33")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 43.18 184.15 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:C")
+    (at 86.36 175.26 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e90ca000-76aa-5622-a38f-7f5927664802")
+    (property "Reference" "C11"
+      (at 95.36 173.99 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "4.7u / 10V X7R"
+      (at 95.36 176.53 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 86.36 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 86.36 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 86.36 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "c0924c08-48ee-56d4-b6e9-7163b4ca2069"))
+    (pin "2"
+      (uuid "9ea453f9-aaba-525c-99fc-e0e53255ebfb"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "C11")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 86.36 171.45)
+      (xy 86.36 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fcdc2bba-5005-5703-94d5-06c99fb1bc4e"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 86.36 166.37 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "2bb4b750-99b9-5d18-817d-aa899ff7709c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 86.36 166.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 86.36 179.07)
+      (xy 86.36 184.15))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "15674bbc-90bc-5b85-a7a6-3a5b7fe8a45c"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 86.36 184.15 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "fe07dc6c-730a-5f5c-838d-b23efb41ef9a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 86.36 184.15 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:R")
+    (at 132.08 175.26 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1248c3c9-224b-541c-a74b-60aea34e6ad5")
+    (property "Reference" "R10"
+      (at 141.08 173.99 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k"
+      (at 141.08 176.53 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 132.08 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 132.08 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 132.08 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "48fb0ba2-a839-5494-8f06-fd3ccd0bf066"))
+    (pin "2"
+      (uuid "0c0daa1a-1c43-5f49-83f4-baeb6a811ed4"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "R10")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 132.08 171.45)
+      (xy 132.08 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ce8cc111-dae0-5122-9662-4f1630c197d2"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 132.08 166.37 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "07418451-f015-5f98-9dc0-b6a70a4d88dd")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 132.08 166.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 132.08 179.07)
+      (xy 132.08 184.15))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a5a3eab0-ba45-50ef-ac08-ed5934296fce"))
+  (global_label "NRST"
+    (shape bidirectional)
+    (at 132.08 184.15 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "4d92ac2d-d102-5fe8-9db0-e2814ea09df6")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 132.08 184.15 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:C")
+    (at 177.8 175.26 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cb500a51-b0a8-586f-bf8b-dbcc34b8e7c4")
+    (property "Reference" "C12"
+      (at 186.8 173.99 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "100n / 10V X7R"
+      (at 186.8 176.53 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 177.8 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 177.8 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 177.8 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a1f30665-73c6-5cbd-87f4-a03cb99f3c80"))
+    (pin "2"
+      (uuid "149a93a6-e58b-545b-a553-fd9b56c52d08"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "C12")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 177.8 171.45)
+      (xy 177.8 166.37))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6f59ae32-4c58-5223-bc8c-2c533a21af3d"))
+  (global_label "NRST"
+    (shape bidirectional)
+    (at 177.8 166.37 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "c857b8ac-db91-501d-99f2-9029770a7009")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 177.8 166.37 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 177.8 179.07)
+      (xy 177.8 184.15))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "40f02f90-b9e7-5da0-8dbb-b97b38cd18ed"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 177.8 184.15 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "ffd231be-ed46-5397-8222-5ad92774c8ce")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 177.8 184.15 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (text "U1 LQFP32: pin 4 includes VDDA; pin 5 includes VSSA.\nNo external VBAT, VREF+ or exposed pad on this package.\nPA13 / PA14 are reserved for SWD. Boot from internal Flash.\nOptional UART omitted; PA9/10/11/12 have no-connect marks."
+    (at 22.86 213.36 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "eecc574a-8afb-58f7-b655-52713691b283"))
+  (text "FOUR DIRECTIONS + START"
+    (at 215.9 25.4 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "b176fdaa-122b-56b5-b277-c0d4e2c3b4b6"))
+  (polyline
+    (pts
+      (xy 215.9 28.4)
+      (xy 385.9 28.4))
+    (stroke
+      (width 0.254)
+      (type default))
+    (uuid "602331dc-a646-5786-9580-efd29a20dd5c"))
+  (symbol
+    (lib_id "SnakeCard:R")
+    (at 241.3 53.34 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "818919a9-10a3-52d3-a7b0-a308804ffcb3")
+    (property "Reference" "R11"
+      (at 250.3 52.07 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k"
+      (at 250.3 54.61 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 241.3 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 241.3 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 241.3 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "e265b1af-8b6a-5d19-87e3-5c934b031f2c"))
+    (pin "2"
+      (uuid "d4648ce5-c097-568e-9b43-b46b907fe934"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "R11")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 241.3 49.53)
+      (xy 241.3 44.45))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7156acb2-c693-5f7d-a686-1c17822cc2ee"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 241.3 44.45 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "ecfbd088-32e2-55f8-8e39-1c96cf250e89")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 241.3 44.45 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 241.3 57.15)
+      (xy 241.3 62.23))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "91c7a7cb-4983-5e53-aae3-bb949af3be17"))
+  (global_label "BTN_UP"
+    (shape bidirectional)
+    (at 241.3 62.23 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "129d6041-f30d-5efe-a5b0-1d4d4f18e59a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 241.3 62.23 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:SW_Push")
+    (at 327.66 60.96 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "85b516df-73cc-589d-8798-767b4541225a")
+    (property "Reference" "SW1"
+      (at 327.66 55.88 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "UP"
+      (at 327.66 64.77 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_SKQG_WithStem"
+      (at 327.66 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 327.66 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "SKQGABE010"
+      (at 327.66 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "b7c70b12-e342-553b-9057-7dad890e2f54"))
+    (pin "2"
+      (uuid "12e3aa40-c468-5e8c-8b96-3a4cdcb4653f"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "SW1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 322.58 60.96)
+      (xy 312.42 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c1b9eb91-ee02-5e99-a11c-87804611f511"))
+  (global_label "BTN_UP"
+    (shape bidirectional)
+    (at 312.42 60.96 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "fb1492fc-55b6-5e98-9c17-bc3564476696")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 312.42 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 332.74 60.96)
+      (xy 337.82 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6af867f4-6580-5fa2-a13a-648e100201f4"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 337.82 60.96 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "45ee9f80-8bdd-5f67-9ded-64fd62365e21")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 337.82 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:R")
+    (at 241.3 88.9 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "da4f2489-e794-585e-ac75-5fc0d3d31606")
+    (property "Reference" "R12"
+      (at 250.3 87.63 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k"
+      (at 250.3 90.17 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 241.3 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 241.3 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 241.3 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "73cde538-b966-5971-9d7a-d765fbc2ee70"))
+    (pin "2"
+      (uuid "67eff0dd-31d7-5dfb-9f6b-2b2358003491"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "R12")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 241.3 85.09)
+      (xy 241.3 80.01))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "48a8e48c-3fc1-5bce-ab7e-df50cd20ab6c"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 241.3 80.01 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "e1f079b1-83d4-53c2-be12-5788fe569eaf")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 241.3 80.01 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 241.3 92.71)
+      (xy 241.3 97.79))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "850e5a79-7b64-51da-a573-e1da9efdf82b"))
+  (global_label "BTN_DOWN"
+    (shape bidirectional)
+    (at 241.3 97.79 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "85fdcbb3-e306-5381-b573-f0d945662e32")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 241.3 97.79 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:SW_Push")
+    (at 327.66 96.52 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0183b3e5-c8ce-53ac-9bee-fbdaff5e40cc")
+    (property "Reference" "SW2"
+      (at 327.66 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "DOWN"
+      (at 327.66 100.33 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_SKQG_WithStem"
+      (at 327.66 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 327.66 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "SKQGABE010"
+      (at 327.66 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "39cf4503-2eca-5d78-b865-2dffa9d2e62c"))
+    (pin "2"
+      (uuid "d0461763-ffb1-505c-9e82-afff8f71d132"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "SW2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 322.58 96.52)
+      (xy 312.42 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "86d38ab8-7ec1-52ac-a20b-74e6d94c2f30"))
+  (global_label "BTN_DOWN"
+    (shape bidirectional)
+    (at 312.42 96.52 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "8182f1e6-ed58-5309-8d98-6629d264510c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 312.42 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 332.74 96.52)
+      (xy 337.82 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2f5b7081-7c13-5447-8f93-8df24cca7b6c"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 337.82 96.52 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "d8827904-63f7-56f0-89e7-8aa7f929eb7d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 337.82 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:R")
+    (at 241.3 124.46 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ba4a5ae7-31c7-5f0e-96c1-4b5110a127d6")
+    (property "Reference" "R13"
+      (at 250.3 123.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k"
+      (at 250.3 125.73 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 241.3 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 241.3 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 241.3 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "4bd95c63-2627-5185-a5bd-a3a4adf0abee"))
+    (pin "2"
+      (uuid "4b960c98-c0ef-5e5d-9692-f12a5b10e2d8"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "R13")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 241.3 120.65)
+      (xy 241.3 115.57))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "21226edc-022d-5426-b1af-c1633e8c82e5"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 241.3 115.57 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "f175717e-468e-5fc5-aad6-432cf6dd4136")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 241.3 115.57 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 241.3 128.27)
+      (xy 241.3 133.35))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bc12624c-71a9-5c11-84c6-3c9c3c924806"))
+  (global_label "BTN_LEFT"
+    (shape bidirectional)
+    (at 241.3 133.35 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "2cd0cf36-d26d-5cc4-81d6-9b42046ba4fa")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 241.3 133.35 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:SW_Push")
+    (at 327.66 132.08 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "32363fdb-4feb-5917-b2a2-af9d70336db9")
+    (property "Reference" "SW3"
+      (at 327.66 127 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "LEFT"
+      (at 327.66 135.89 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_SKQG_WithStem"
+      (at 327.66 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 327.66 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "SKQGABE010"
+      (at 327.66 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "79f7b090-0f84-5389-a77e-bcd0e5339dad"))
+    (pin "2"
+      (uuid "e5a6ca5d-6c83-5cec-9ac7-df09eb87c998"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "SW3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 322.58 132.08)
+      (xy 312.42 132.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "451f28eb-11c5-5fb2-99f3-c6983fa0d2a5"))
+  (global_label "BTN_LEFT"
+    (shape bidirectional)
+    (at 312.42 132.08 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "0e23f90e-a3ca-56b3-9c57-b9207ac1e511")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 312.42 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 332.74 132.08)
+      (xy 337.82 132.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9fc09a15-d192-5056-9d09-c883b25c00c1"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 337.82 132.08 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "96c46db0-2814-5459-a42a-f920f45088f5")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 337.82 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:R")
+    (at 241.3 160.02 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a24380df-678d-57fc-b835-2721c1aa94c7")
+    (property "Reference" "R14"
+      (at 250.3 158.75 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k"
+      (at 250.3 161.29 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 241.3 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 241.3 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 241.3 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "30d6665b-5caf-577c-b1fe-b97de67b0d16"))
+    (pin "2"
+      (uuid "9786da1f-3436-5618-9455-606787c77fb6"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "R14")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 241.3 156.21)
+      (xy 241.3 151.13))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e7d1b0cd-3ce4-5ecb-8bf2-481fbf6ea622"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 241.3 151.13 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "75fa22f6-d248-514d-8f0d-e2725cc910c0")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 241.3 151.13 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 241.3 163.83)
+      (xy 241.3 168.91))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5dbe2a1a-3001-51b7-bd60-e4b3bb6ee0e4"))
+  (global_label "BTN_RIGHT"
+    (shape bidirectional)
+    (at 241.3 168.91 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "ef5c321d-ee03-5bfd-ba54-c9c76d0ca908")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 241.3 168.91 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:SW_Push")
+    (at 327.66 167.64 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "21248865-cc14-521f-ab6a-8413110be7e4")
+    (property "Reference" "SW4"
+      (at 327.66 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "RIGHT"
+      (at 327.66 171.45 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_SKQG_WithStem"
+      (at 327.66 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 327.66 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "SKQGABE010"
+      (at 327.66 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "fd049879-6a55-563b-8689-e904367fb75b"))
+    (pin "2"
+      (uuid "f96fefce-217e-5e16-9228-251814153ee5"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "SW4")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 322.58 167.64)
+      (xy 312.42 167.64))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "13315e71-cd66-52b0-b84e-29e86d52319f"))
+  (global_label "BTN_RIGHT"
+    (shape bidirectional)
+    (at 312.42 167.64 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "b1d84b24-473c-5cef-b0a6-fd30fea5fa83")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 312.42 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 332.74 167.64)
+      (xy 337.82 167.64))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c36aa297-901a-5fea-bb58-e17f002738b4"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 337.82 167.64 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "d1715bf0-2e3d-5f83-8725-934e34e68224")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 337.82 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:R")
+    (at 241.3 195.58 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b8b0dc12-8ac8-5688-be27-b80febc705f4")
+    (property "Reference" "R15"
+      (at 250.3 194.31 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "10k"
+      (at 250.3 196.85 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 241.3 195.58 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 241.3 195.58 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 241.3 195.58 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "9f3fb3a7-86d3-53b2-8be9-c6d8770311fd"))
+    (pin "2"
+      (uuid "5ba5cc97-53d6-53a2-8528-f0728da55086"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "R15")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 241.3 191.77)
+      (xy 241.3 186.69))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a8ec4bf8-6525-5e5f-ba06-fc5dc2b4a38f"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 241.3 186.69 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "5c61e69d-d1f7-52f3-bee4-f73f2126f29f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 241.3 186.69 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 241.3 199.39)
+      (xy 241.3 204.47))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b937d59e-0b97-53ca-8d3a-45d49d6d484a"))
+  (global_label "BTN_START"
+    (shape bidirectional)
+    (at 241.3 204.47 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "65cf84ab-324f-5da4-b608-b9b9cdf1c61d")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 241.3 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:SW_Push")
+    (at 327.66 203.2 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9010f8be-c057-5634-b373-da500598ec90")
+    (property "Reference" "SW5"
+      (at 327.66 198.12 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "START"
+      (at 327.66 207.01 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Button_Switch_SMD:SW_SPST_SKQG_WithStem"
+      (at 327.66 203.2 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 327.66 203.2 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "SKQGABE010"
+      (at 327.66 203.2 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "30dc8b91-a66c-592c-994c-524703543fc7"))
+    (pin "2"
+      (uuid "a5062005-99cd-53f0-aec5-54de23c84a95"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "SW5")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 322.58 203.2)
+      (xy 312.42 203.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "16d6a07f-4b80-5442-b2a7-abbbe0a16e9b"))
+  (global_label "BTN_START"
+    (shape bidirectional)
+    (at 312.42 203.2 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "3c17da51-0e95-501a-8370-a1b3654ff081")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 312.42 203.2 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 332.74 203.2)
+      (xy 337.82 203.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "eb816f3c-1666-5d1d-b2a4-15a415b7aa26"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 337.82 203.2 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "fc9e755e-931b-5bb4-9197-a00ad3f31c5a")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 337.82 203.2 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (text "Active low; sample 5 ms / debounce 20 ms in firmware.\nSTART is a game key, not the hardware reset."
+    (at 220.98 236.22 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "8fbf5ef2-97d4-52f4-aadf-3c83fe80ed1e"))
+  (text "SWD CONTACT PADS"
+    (at 20.32 246.38 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "e00fd561-56c6-5401-9717-ce6ec279a148"))
+  (polyline
+    (pts
+      (xy 20.32 249.38)
+      (xy 190.32 249.38))
+    (stroke
+      (width 0.254)
+      (type default))
+    (uuid "b128286b-d2a0-53b8-9122-3d629d844c77"))
+  (symbol
+    (lib_id "SnakeCard:TestPoint")
+    (at 30.48 269.24 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "cc30d949-cc7d-5b77-b29d-afccda690030")
+    (property "Reference" "TP4"
+      (at 34.29 267.97 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "+3V3"
+      (at 34.29 270.51 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 30.48 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 30.48 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 30.48 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "b6217492-8005-584d-a18d-b7b2ec75de25"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "TP4")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 30.48 269.24)
+      (xy 30.48 273.05))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8c2a72cf-d935-5631-9b1c-946822e37759"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 30.48 273.05 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "7dcc883f-baa8-50c4-9cee-48728c230e70")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 30.48 273.05 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:TestPoint")
+    (at 66.04 269.24 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "2d547a08-7453-550e-a6c1-4140bf14b3bb")
+    (property "Reference" "TP5"
+      (at 69.85 267.97 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "GND"
+      (at 69.85 270.51 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 66.04 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 66.04 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 66.04 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "4858c52d-3b73-5eb6-b6dc-bd801fffb504"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "TP5")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 66.04 269.24)
+      (xy 66.04 273.05))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f297b240-de16-5613-8fe3-9418a2907425"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 66.04 273.05 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "97738bc3-beb6-551e-8f9a-9e34a3db7a14")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 66.04 273.05 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:TestPoint")
+    (at 101.6 269.24 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "281c7b6d-b798-53cd-9ffc-739a1f2f3b98")
+    (property "Reference" "TP6"
+      (at 105.41 267.97 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "SWDIO"
+      (at 105.41 270.51 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 101.6 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 101.6 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 101.6 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "4e696227-8c48-568e-ba96-f196efc5add8"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "TP6")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 101.6 269.24)
+      (xy 101.6 273.05))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3561ff5f-3660-55e7-a10f-31b6b9637881"))
+  (global_label "SWDIO"
+    (shape bidirectional)
+    (at 101.6 273.05 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "569717ac-a421-566b-a9ed-b3c605b4b921")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 101.6 273.05 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:TestPoint")
+    (at 137.16 269.24 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "832eb3fc-52e5-5e08-b5b9-2cbfaa0e95b3")
+    (property "Reference" "TP7"
+      (at 140.97 267.97 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "SWCLK"
+      (at 140.97 270.51 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 137.16 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 137.16 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 137.16 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "c524f374-994a-5b45-8e57-ade228e0fd4a"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "TP7")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 137.16 269.24)
+      (xy 137.16 273.05))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2d3d64b9-4e92-5ec7-83d2-512b5116f96d"))
+  (global_label "SWCLK"
+    (shape bidirectional)
+    (at 137.16 273.05 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "93c0ef22-ccaf-5670-826f-2f1b5693f8ea")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 137.16 273.05 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:TestPoint")
+    (at 172.72 269.24 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "b112cb78-bcf1-5cf8-9850-15e82565eb6e")
+    (property "Reference" "TP8"
+      (at 176.53 267.97 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "NRST"
+      (at 176.53 270.51 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 172.72 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 172.72 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 172.72 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "9d6007cf-2b21-509e-a713-1913c0adf010"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a"
+          (reference "TP8")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 172.72 269.24)
+      (xy 172.72 273.05))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5d9884fa-9db5-5422-803d-6c95aca881ab"))
+  (global_label "NRST"
+    (shape bidirectional)
+    (at 172.72 273.05 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "299d12f5-5929-535a-b046-ac9fd603cb5f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 172.72 273.05 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (embedded_fonts no))

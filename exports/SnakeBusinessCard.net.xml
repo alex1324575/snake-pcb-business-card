@@ -1,0 +1,4504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>SnakeBusinessCard.kicad_sch</source>
+    <date>2026-09-17T23:06:59</date>
+    <tool>Eeschema 10.0.6</tool>
+    <textvar name="AUTHOR">Alex Parker</textvar>
+    <textvar name="DESIGN_STAGE">PLACEMENT REVIEW</textvar>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>System overview and implementation notes</title>
+        <company>Snake Interactive PCB Business Card</company>
+        <rev>B-PUBLIC</rev>
+        <date>2026-09-15</date>
+        <source>SnakeBusinessCard.kicad_sch</source>
+        <comment number="1" value="USB-C 5V | 10x9 red LED | passive NFC"/>
+        <comment number="2" value="Public reference design - hardware validation pending"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/">
+      <title_block>
+        <title>USB-C input, ESD and 3.3 V regulation</title>
+        <company>Snake Interactive PCB Business Card</company>
+        <rev>B-PUBLIC</rev>
+        <date>2026-09-15</date>
+        <source>01_Power_USB.kicad_sch</source>
+        <comment number="1" value="USB-C 5V | 10x9 red LED | passive NFC"/>
+        <comment number="2" value="Public reference design - hardware validation pending"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/">
+      <title_block>
+        <title>STM32G030, five controls and SWD</title>
+        <company>Snake Interactive PCB Business Card</company>
+        <rev>B-PUBLIC</rev>
+        <date>2026-09-15</date>
+        <source>02_MCU_Inputs_Debug.kicad_sch</source>
+        <comment number="1" value="USB-C 5V | 10x9 red LED | passive NFC"/>
+        <comment number="2" value="Public reference design - hardware validation pending"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/">
+      <title_block>
+        <title>IS31FL3737 constant-current matrix driver</title>
+        <company>Snake Interactive PCB Business Card</company>
+        <rev>B-PUBLIC</rev>
+        <date>2026-09-15</date>
+        <source>03_LED_Driver.kicad_sch</source>
+        <comment number="1" value="USB-C 5V | 10x9 red LED | passive NFC"/>
+        <comment number="2" value="Public reference design - hardware validation pending"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/">
+      <title_block>
+        <title>10 columns x 9 rows - 90 red LEDs</title>
+        <company>Snake Interactive PCB Business Card</company>
+        <rev>B-PUBLIC</rev>
+        <date>2026-09-15</date>
+        <source>04_LED_Matrix.kicad_sch</source>
+        <comment number="1" value="USB-C 5V | 10x9 red LED | passive NFC"/>
+        <comment number="2" value="Public reference design - hardware validation pending"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/05 NFC/" tstamps="/7b4a5613-b43e-5267-b2b4-43e409275f10/">
+      <title_block>
+        <title>Independent passive NFC tag and PCB antenna</title>
+        <company>Snake Interactive PCB Business Card</company>
+        <rev>B-PUBLIC</rev>
+        <date>2026-09-15</date>
+        <source>05_NFC.kicad_sch</source>
+        <comment number="1" value="USB-C 5V | 10x9 red LED | passive NFC"/>
+        <comment number="2" value="Public reference design - hardware validation pending"/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>1u / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>6a53403a-1c8c-5bf5-a7a4-0070b5c470f4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C2">
+      <value>1u / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>d106d74c-f4c1-5936-8ce5-0e7e43985a73</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D91">
+      <value>TPD1E10B06</value>
+      <footprint>Diode_SMD:D_SOD-523</footprint>
+      <fields>
+        <field name="MPN">TPD1E10B06DYAR</field>
+        <field name="Footprint">Diode_SMD:D_SOD-523</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
+      <property name="MPN" value="TPD1E10B06DYAR"/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="diode TVS thyrector"/>
+      <property name="ki_fp_filters" value="TO-???* *_Diode_* *SingleDiode* D_*"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>64b3a4b8-a593-5969-ad9a-33a5a5ac85b4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="J1">
+      <value>UJC-HP-3-SMT-TR</value>
+      <footprint>SnakeCard:CUI_UJC-HP-3-SMT-TR</footprint>
+      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <fields>
+        <field name="MPN">UJC-HP-3-SMT-TR</field>
+        <field name="Footprint">SnakeCard:CUI_UJC-HP-3-SMT-TR</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="USB_C_Receptacle_PowerOnly_6P" description="USB Power-Only 6P Type-C Receptacle connector"/>
+      <property name="MPN" value="UJC-HP-3-SMT-TR"/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C power-only charging-only 6P 6C"/>
+      <property name="ki_fp_filters" value="CUI_UJC-HP-3-SMT-TR"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>208b171d-7eba-53c0-b102-5861f0e09df1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="S1"/>
+            <pin num="S2"/>
+            <pin num="S3"/>
+            <pin num="S4"/>
+            <pin num="A12"/>
+            <pin num="B12"/>
+            <pin num="A9"/>
+            <pin num="B9"/>
+            <pin num="A5"/>
+            <pin num="B5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1">
+      <value>5.1k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>9e66ce6f-01da-560b-81d2-97f0cf8d4380</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R2">
+      <value>5.1k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>a8fa241e-5487-55a9-acd3-aafcd74719f6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP1">
+      <value>VBUS_5V</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>437d10fc-19fa-5827-a3d4-a53fc664171c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP2">
+      <value>+3V3</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>0c0eea4a-9ea8-5f7b-bad9-0fb043754969</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP3">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>9696472b-ff20-5530-88e9-95ad2e0903f8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U3">
+      <value>TLV75533PDBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tlv755p.pdf</datasheet>
+      <fields>
+        <field name="MPN">TLV75533PDBVR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="TLV75533PDBV" description="500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"/>
+      <property name="MPN" value="TLV75533PDBVR"/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="LDO Regulator Fixed Positive"/>
+      <property name="ki_fp_filters" value="SOT?23*"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>14294ffb-cfd6-537d-af53-9460094ccd90</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U5">
+      <value>TPD2E2U06DCK</value>
+      <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf</datasheet>
+      <fields>
+        <field name="MPN">TPD2E2U06DCKR</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="TPD2E2U06DCK" description="Dual-Channel High-Speed ESD Protection, SC-70"/>
+      <property name="MPN" value="TPD2E2U06DCKR"/>
+      <property name="Sheetname" value="01 Power USB"/>
+      <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
+      <property name="ki_keywords" value="TVS"/>
+      <property name="ki_fp_filters" value="*SC?70*"/>
+      <sheetpath names="/01 Power USB/" tstamps="/80920f47-b2de-5776-bee1-43eddc9d436a/"/>
+      <tstamps>0888484a-47d2-55fc-9168-868db947dba8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C10">
+      <value>100n / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>7e087d9e-9c46-5f4a-8d89-c53bea145b5e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C11">
+      <value>4.7u / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>e90ca000-76aa-5622-a38f-7f5927664802</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100n / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>cb500a51-b0a8-586f-bf8b-dbcc34b8e7c4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>1248c3c9-224b-541c-a74b-60aea34e6ad5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>818919a9-10a3-52d3-a7b0-a308804ffcb3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>da4f2489-e794-585e-ac75-5fc0d3d31606</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>ba4a5ae7-31c7-5f0e-96c1-4b5110a127d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R14">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>a24380df-678d-57fc-b835-2721c1aa94c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>b8b0dc12-8ac8-5688-be27-b80febc705f4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW1">
+      <value>UP</value>
+      <footprint>Button_Switch_SMD:SW_SPST_SKQG_WithStem</footprint>
+      <fields>
+        <field name="MPN">SKQGABE010</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_SKQG_WithStem</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="SKQGABE010"/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>85b516df-73cc-589d-8798-767b4541225a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW2">
+      <value>DOWN</value>
+      <footprint>Button_Switch_SMD:SW_SPST_SKQG_WithStem</footprint>
+      <fields>
+        <field name="MPN">SKQGABE010</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_SKQG_WithStem</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="SKQGABE010"/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>0183b3e5-c8ce-53ac-9bee-fbdaff5e40cc</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW3">
+      <value>LEFT</value>
+      <footprint>Button_Switch_SMD:SW_SPST_SKQG_WithStem</footprint>
+      <fields>
+        <field name="MPN">SKQGABE010</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_SKQG_WithStem</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="SKQGABE010"/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>32363fdb-4feb-5917-b2a2-af9d70336db9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW4">
+      <value>RIGHT</value>
+      <footprint>Button_Switch_SMD:SW_SPST_SKQG_WithStem</footprint>
+      <fields>
+        <field name="MPN">SKQGABE010</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_SKQG_WithStem</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="SKQGABE010"/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>21248865-cc14-521f-ab6a-8413110be7e4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="SW5">
+      <value>START</value>
+      <footprint>Button_Switch_SMD:SW_SPST_SKQG_WithStem</footprint>
+      <fields>
+        <field name="MPN">SKQGABE010</field>
+        <field name="Footprint">Button_Switch_SMD:SW_SPST_SKQG_WithStem</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="MPN" value="SKQGABE010"/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>9010f8be-c057-5634-b373-da500598ec90</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP4">
+      <value>+3V3</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>cc30d949-cc7d-5b77-b29d-afccda690030</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP5">
+      <value>GND</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>2d547a08-7453-550e-a6c1-4140bf14b3bb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP6">
+      <value>SWDIO</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>281c7b6d-b798-53cd-9ffc-739a1f2f3b98</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP7">
+      <value>SWCLK</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>832eb3fc-52e5-5e08-b5b9-2cbfaa0e95b3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="TP8">
+      <value>NRST</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <property name="ki_fp_filters" value="Pin* Test*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>b112cb78-bcf1-5cf8-9850-15e82565eb6e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1">
+      <value>STM32G030K8T6</value>
+      <footprint>Package_QFP:LQFP-32_7x7mm_P0.8mm</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/stm32g030k8.pdf</datasheet>
+      <fields>
+        <field name="MPN">STM32G030K8T6</field>
+        <field name="Footprint">Package_QFP:LQFP-32_7x7mm_P0.8mm</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/stm32g030k8.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="STM32G030K8Tx" description="STMicroelectronics Arm Cortex-M0+ MCU, 64KB flash, 8KB RAM, 64 MHz, 2.0-3.6V, 29 GPIO, LQFP32"/>
+      <property name="MPN" value="STM32G030K8T6"/>
+      <property name="Sheetname" value="02 MCU Inputs Debug"/>
+      <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
+      <property name="ki_keywords" value="Arm Cortex-M0+ STM32G0 STM32G0x0 Value line"/>
+      <property name="ki_fp_filters" value="LQFP*7x7mm*P0.8mm*"/>
+      <sheetpath names="/02 MCU Inputs Debug/" tstamps="/b059586d-9932-57f5-b0a4-10cf75fbf52a/"/>
+      <tstamps>b203efef-92d2-5a51-8e0d-cd879a371c9d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="6"/>
+            <pin num="20"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="1"/>
+            <pin num="21"/>
+            <pin num="19"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="18"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="26"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>100n / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>976f1840-460d-5bce-b898-d6ad7f3a8ee5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C21">
+      <value>100n / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>cc9e7b3a-b163-5ebb-90a3-791b33ff17f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C22">
+      <value>100n / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>4f7eecd1-0834-5c3d-b29f-e272d6294487</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C23">
+      <value>1u / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>4116d7c9-e0c5-5fe1-a9a8-417a24668326</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C24">
+      <value>1u / 10V X7R</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>8e62e401-3db6-5ebe-b52a-b8a939a0a9bb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R20">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>79e28502-b6c9-5cad-a6c9-035728ea4da9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R21">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>b3e70d27-932e-5ebb-a0d1-539a23888137</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R22">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>8e3dbb4f-690c-5d27-955d-475b0b57a968</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R23">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>abbd7bce-6785-50e7-a2a9-cbfb973fda5f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R24">
+      <value>20k 1%</value>
+      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="R" description="Resistor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>3eb3a9ff-024e-565b-8740-4159edc25877</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U2">
+      <value>IS31FL3737-QFLS4-TR</value>
+      <footprint>SnakeCard:IS31FL3737_QFN40_5x5mm_P0.4mm_EP3.4mm</footprint>
+      <datasheet>http://www.issi.com/WW/pdf/31FL3737.pdf</datasheet>
+      <fields>
+        <field name="MPN">IS31FL3737-QFLS4-TR</field>
+        <field name="Footprint">SnakeCard:IS31FL3737_QFN40_5x5mm_P0.4mm_EP3.4mm</field>
+        <field name="Datasheet">http://www.issi.com/WW/pdf/31FL3737.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="IS31FL3737" description="12x12 LED matrix driver with 8-bit PWM and breathing, QFN-40"/>
+      <property name="MPN" value="IS31FL3737-QFLS4-TR"/>
+      <property name="Sheetname" value="03 LED Driver"/>
+      <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
+      <property name="ki_keywords" value="led matrix pwm"/>
+      <property name="ki_fp_filters" value="IS31FL3737_QFN40*"/>
+      <sheetpath names="/03 LED Driver/" tstamps="/33a880f4-cab4-5121-a288-54145ddbb78f/"/>
+      <tstamps>8bc91606-2664-521f-9e05-244e20a5b1bf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="32"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="33"/>
+            <pin num="30"/>
+            <pin num="36"/>
+            <pin num="29"/>
+            <pin num="31"/>
+            <pin num="41"/>
+            <pin num="40"/>
+            <pin num="19"/>
+            <pin num="4"/>
+            <pin num="11"/>
+            <pin num="26"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="24"/>
+            <pin num="25"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D1">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>0022b16d-ba8e-5d03-8fbc-8f42a3968e91</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D2">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>6c26d311-592c-5de8-ad1e-68ea08a4895e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D3">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>1eb295e3-accb-55eb-937b-63c1e6264203</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D4">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>a0197085-1033-5401-8337-72455c88986e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D5">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>92510359-a907-54ec-823b-e3e5ec64c3b4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D6">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>f2e5de51-d82b-5ff8-9ff5-19483489abc1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D7">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>2b15b808-a678-5480-8ae8-214508e3816e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D8">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>6df4c669-9f64-5a20-bbb9-dfebcc48e935</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D9">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>f0877f68-8f2f-5723-b8a0-d7a8272d87e2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D10">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>85a6dcd7-0499-53a6-8656-caffb6fbe3b2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D11">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>0e953afa-b019-55d3-8289-ee3cef26208a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D12">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>de3fc023-468b-58fd-b6db-7998c511576e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D13">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>1d0fdd95-0299-567e-8619-7caabf185717</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D14">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>5e435f91-c90c-593a-830d-8ecba6c88729</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D15">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>25533126-7e8b-5c0a-8ecb-a547448b368c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D16">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>8caf44c3-f5d9-5e21-aa3c-65b97b57831a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D17">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>054fe0d3-d1ae-5d88-ac9d-a1900194dc23</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D18">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>fb5236ff-2919-57e3-b868-77a10f594654</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D19">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>50b063e4-1971-5536-bb87-0f9c15fc244a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D20">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>44718479-589d-5d5c-92cf-f92a02a64af5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D21">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>3e6cd74d-be3e-5549-a6c4-b0ec539538f6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D22">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>418e97cb-b76e-5f7e-ba30-fca98f5b950e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D23">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>54a584a0-2af9-524c-926a-14295c830b89</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D24">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>a0c132bb-8c79-5a1f-a9a2-e636b90f864c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D25">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>697aeffd-b4c7-50f9-93b4-45ebb23c9234</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D26">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>40b0f759-eb95-54b4-a807-4981f3e14252</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D27">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>b286a861-0fde-5362-8f1e-2313d366aea6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D28">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>32bb9e7b-6ba7-5e52-a96e-a52d2cb42883</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D29">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>8bb99c73-a984-5e8d-a2fe-9552679b7a76</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D30">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>95ccd200-5119-5902-9a2a-378221742609</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D31">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>e27ffa30-e986-58c3-9e9a-221d51ef054e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D32">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>936bcf65-1421-58d5-8d78-eda230fa7644</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D33">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>4ff9ed51-f196-500c-a155-216c2ff2426f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D34">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>75fe8a89-7f1f-5bcd-bd61-1abc96c99bf3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D35">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>03e02269-b0b1-58b2-a64e-e18d879d89c9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D36">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>582e3a4c-9a96-5481-9e3d-357464d5e561</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D37">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>c013b3d4-a3bc-5f79-9656-ec8e266daa2b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D38">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>dd7243a8-114e-50e1-9c0e-b59b7d08bf37</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D39">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>99104a3f-45bc-568f-8067-56097d64c733</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D40">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>a8feb49b-25bf-53a6-9743-14d3e6477ab7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D41">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>4600c51e-8ef3-558f-a2e6-6fe661715cae</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D42">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>9dc00ba1-c107-545d-830e-08102a605c69</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D43">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>5c4751d6-7d03-5850-9802-4c5e79122302</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D44">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>0e6db89e-f655-5d40-9a90-5a96eac8f44f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D45">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>b9543aa3-85f2-5a8f-ad8c-e6b22e593686</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D46">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>97d6e895-ebaa-5c49-9532-ef7fa5454c22</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D47">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>8c541929-b198-5f38-af1a-24a5f2006d5d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D48">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>06d3ea4f-0716-5635-b561-ad687d0ff807</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D49">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>192faf85-f995-539f-9871-28a88ae18342</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D50">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>b10d9287-5f7a-5a77-b1c6-03a42eca3c77</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D51">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>ac5cce73-9eee-56e3-896d-3e408a54bbf3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D52">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>cea38350-5191-54c3-896e-9e917293587e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D53">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>158d69a8-ae78-51cc-92bc-21fc76d7b979</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D54">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>e04b149b-755b-5b9f-b689-6fb389898b31</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D55">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>a9f507a9-0d2c-5d96-9820-a720e1b799b1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D56">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>94c6cd2d-45d7-54f5-b7f3-401506b83476</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D57">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>5680f2ca-75cd-513c-93a3-f5122577f9d4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D58">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>11110561-2e69-558e-8016-a925f0a4bc69</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D59">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>a95a4d93-9981-5e63-acc9-ac523a4b8c8d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D60">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>4d33495a-d006-5ebb-b0cb-526775d39336</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D61">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>dd2b2ebc-2fe7-5458-a568-b5459cd8599d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D62">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>baf7f5fc-7898-587c-9b3c-256594903a92</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D63">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>7d75a484-6bb3-5eb4-b134-6ed6aa891863</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D64">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>da41b393-19d9-518a-b2e4-aa0eaa6620f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D65">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>67ec1c70-a29b-5129-a59d-5a1bccfdf6f9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D66">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>f51b065b-7543-55a3-b71c-9af653305e27</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D67">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>2dea7b65-49fa-5276-a24d-65473681b9c2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D68">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>9daa5931-39c7-5385-a229-a5869929bb82</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D69">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>0e11fe1c-0402-5398-ac3c-79eb4a39bd2e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D70">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>02a0f7df-d7e0-5e56-add9-0363a3ea40a0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D71">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>71de654c-f2a2-539d-aa45-670db361bbdf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D72">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>16b9166d-7bb5-59ce-b7d6-bd6d42230c78</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D73">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>e85df26f-32fa-5048-9669-088f0ee22315</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D74">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>b7fbf8c2-0cae-5f7e-adaa-e6a8a609151a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D75">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>8589807a-48a1-5f46-81a8-304e06a0831b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D76">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>ddc3d3cb-f8b7-5955-bde8-e8786e68eaf5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D77">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>ab0a1da4-f108-571d-8a04-e38b5c041b59</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D78">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>e73a6861-b0d4-5bad-9777-df1dfb98dccb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D79">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>b972a723-ab0d-5637-95cc-4d951fc09be2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D80">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>1470d699-1724-5e9e-911b-098909a00e4f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D81">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>1015f9b9-aa4c-5c8b-8518-793f4fb3874b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D82">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>81429380-c737-59ac-a222-083060cf9938</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D83">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>0e8e2834-0405-5241-95f1-d28683585264</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D84">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>873663a0-1642-5aae-bb8b-55f9ef1db6e0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D85">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>3c17a4a7-1655-5517-8e38-ce2003ae353b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D86">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>e3ffca91-230d-5a82-9c24-197fc0ad0da9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D87">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>4af44dbc-156d-57ef-a0c7-2c4b359c1afe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D88">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>4baec120-ce66-535a-960c-7781183bae42</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D89">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>d8618713-4201-5ad0-b1ff-40b831a97dcd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="D90">
+      <value>RED</value>
+      <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <fields>
+        <field name="MPN">APT1608SURCK</field>
+        <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
+      <property name="MPN" value="APT1608SURCK"/>
+      <property name="Sheetname" value="04 LED Matrix"/>
+      <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="Kingbright_APT1608SURCK"/>
+      <sheetpath names="/04 LED Matrix/" tstamps="/f169102d-c421-5532-b094-ad61dd45b6ba/"/>
+      <tstamps>3d38210a-dd4d-53da-9569-58017771a3eb</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C30">
+      <value>DNP / C0G TUNE</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="05 NFC"/>
+      <property name="Sheetfile" value="05_NFC.kicad_sch"/>
+      <property name="dnp"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/05 NFC/" tstamps="/7b4a5613-b43e-5267-b2b4-43e409275f10/"/>
+      <tstamps>6448fd9d-884d-5eb8-bef7-c1207bbc09db</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="L1">
+      <value>PCB LOOP / TUNE</value>
+      <fields>
+        <field name="MPN"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="L" description="Inductor"/>
+      <property name="MPN" value=""/>
+      <property name="Sheetname" value="05 NFC"/>
+      <property name="Sheetfile" value="05_NFC.kicad_sch"/>
+      <property name="exclude_from_bom"/>
+      <property name="exclude_from_board"/>
+      <property name="ki_keywords" value="inductor choke coil reactor magnetic"/>
+      <sheetpath names="/05 NFC/" tstamps="/7b4a5613-b43e-5267-b2b4-43e409275f10/"/>
+      <tstamps>2adadbbc-7d58-589c-a10d-bfed1d1db6e4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U4">
+      <value>ST25TN01K-AFH5</value>
+      <footprint>SnakeCard:ST25TN01K_UFDFPN5_1.7x1.4mm</footprint>
+      <datasheet>https://www.st.com/resource/en/datasheet/st25tn01k.pdf</datasheet>
+      <fields>
+        <field name="MPN">ST25TN01K-AFH5</field>
+        <field name="Footprint">SnakeCard:ST25TN01K_UFDFPN5_1.7x1.4mm</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/st25tn01k.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="SnakeCard" part="ST25TN01K_AFH5" description=""/>
+      <property name="MPN" value="ST25TN01K-AFH5"/>
+      <property name="Sheetname" value="05 NFC"/>
+      <property name="Sheetfile" value="05_NFC.kicad_sch"/>
+      <sheetpath names="/05 NFC/" tstamps="/7b4a5613-b43e-5267-b2b4-43e409275f10/"/>
+      <tstamps>315b9f16-2fab-5ee9-9b3f-37aa61a6b82b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="SnakeCard" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="D_TVS">
+      <description>Bidirectional transient-voltage-suppression diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_TVS</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Bidirectional transient-voltage-suppression diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="passive"/>
+        <pin num="2" name="A2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="IS31FL3737">
+      <description>12x12 LED matrix driver with 8-bit PWM and breathing, QFN-40</description>
+      <docs>http://www.issi.com/WW/pdf/31FL3737.pdf</docs>
+      <footprints>
+        <fp>IS31FL3737_QFN40*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IS31FL3737-QFLS4-TR</field>
+        <field name="Footprint">SnakeCard:IS31FL3737_QFN40_5x5mm_P0.4mm_EP3.4mm</field>
+        <field name="Datasheet">http://www.issi.com/WW/pdf/31FL3737.pdf</field>
+        <field name="Description">12x12 LED matrix driver with 8-bit PWM and breathing, QFN-40</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SW1" type="output"/>
+        <pin num="2" name="SW2" type="output"/>
+        <pin num="3" name="SW3" type="output"/>
+        <pin num="4" name="PGND" type="power_in"/>
+        <pin num="5" name="SW4" type="output"/>
+        <pin num="6" name="SW5" type="output"/>
+        <pin num="7" name="SW6" type="output"/>
+        <pin num="8" name="SW7" type="output"/>
+        <pin num="9" name="SW8" type="output"/>
+        <pin num="10" name="SW9" type="output"/>
+        <pin num="11" name="PGND" type="passive"/>
+        <pin num="12" name="SW10" type="output"/>
+        <pin num="13" name="SW11" type="output"/>
+        <pin num="14" name="SW12" type="output"/>
+        <pin num="15" name="CS1" type="output"/>
+        <pin num="16" name="CS2" type="output"/>
+        <pin num="17" name="CS3" type="output"/>
+        <pin num="18" name="CS4" type="output"/>
+        <pin num="19" name="PVCC" type="power_in"/>
+        <pin num="20" name="CS5" type="output"/>
+        <pin num="21" name="CS6" type="output"/>
+        <pin num="22" name="CS7" type="output"/>
+        <pin num="23" name="CS8" type="output"/>
+        <pin num="24" name="CS9" type="output"/>
+        <pin num="25" name="CS10" type="output"/>
+        <pin num="26" name="PVCC" type="power_in"/>
+        <pin num="27" name="CS11" type="output"/>
+        <pin num="28" name="CS12" type="output"/>
+        <pin num="29" name="AGND" type="power_in"/>
+        <pin num="30" name="R_EXT" type="passive"/>
+        <pin num="31" name="VCC" type="power_in"/>
+        <pin num="32" name="VIO" type="power_in"/>
+        <pin num="33" name="SYNC" type="bidirectional"/>
+        <pin num="34" name="SDA" type="bidirectional"/>
+        <pin num="35" name="SCL" type="input"/>
+        <pin num="36" name="ADDR" type="input"/>
+        <pin num="37" name="~{INTB}" type="open_collector"/>
+        <pin num="38" name="~{SDB}" type="input"/>
+        <pin num="39" name="IICRST" type="input"/>
+        <pin num="40" name="GND" type="power_in"/>
+        <pin num="41" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="L">
+      <description>Inductor</description>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Inductor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="LED">
+      <description>Light emitting diode</description>
+      <footprints>
+        <fp>Kingbright_APT1608SURCK</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+        <field name="Sim.Pins">1=K 2=A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="ST25TN01K_AFH5">
+      <docs>https://www.st.com/resource/en/datasheet/st25tn01k.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ST25TN01K-AFH5</field>
+        <field name="Footprint">SnakeCard:ST25TN01K_UFDFPN5_1.7x1.4mm</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/st25tn01k.pdf</field>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="NC" type="no_connect"/>
+        <pin num="3" name="AC0" type="passive"/>
+        <pin num="4" name="AC1" type="passive"/>
+        <pin num="5" name="NC" type="no_connect"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="STM32G030K8Tx">
+      <description>STMicroelectronics Arm Cortex-M0+ MCU, 64KB flash, 8KB RAM, 64 MHz, 2.0-3.6V, 29 GPIO, LQFP32</description>
+      <docs>https://www.st.com/resource/en/datasheet/stm32g030k8.pdf</docs>
+      <footprints>
+        <fp>LQFP*7x7mm*P0.8mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STM32G030K8T6</field>
+        <field name="Footprint">Package_QFP:LQFP-32_7x7mm_P0.8mm</field>
+        <field name="Datasheet">https://www.st.com/resource/en/datasheet/stm32g030k8.pdf</field>
+        <field name="Description">STMicroelectronics Arm Cortex-M0+ MCU, 64KB flash, 8KB RAM, 64 MHz, 2.0-3.6V, 29 GPIO, LQFP32</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PB9" type="bidirectional"/>
+        <pin num="2" name="PC14" type="bidirectional"/>
+        <pin num="3" name="PC15" type="bidirectional"/>
+        <pin num="4" name="VDD/VDDA" type="power_in"/>
+        <pin num="5" name="VSS/VSSA" type="power_in"/>
+        <pin num="6" name="NRST" type="input"/>
+        <pin num="7" name="PA0" type="bidirectional"/>
+        <pin num="8" name="PA1" type="bidirectional"/>
+        <pin num="9" name="PA2" type="bidirectional"/>
+        <pin num="10" name="PA3" type="bidirectional"/>
+        <pin num="11" name="PA4" type="bidirectional"/>
+        <pin num="12" name="PA5" type="bidirectional"/>
+        <pin num="13" name="PA6" type="bidirectional"/>
+        <pin num="14" name="PA7" type="bidirectional"/>
+        <pin num="15" name="PB0" type="bidirectional"/>
+        <pin num="16" name="PB1" type="bidirectional"/>
+        <pin num="17" name="PB2" type="bidirectional"/>
+        <pin num="18" name="PA8" type="bidirectional"/>
+        <pin num="19" name="PA9" type="bidirectional"/>
+        <pin num="20" name="PC6" type="bidirectional"/>
+        <pin num="21" name="PA10" type="bidirectional"/>
+        <pin num="22" name="PA11" type="bidirectional"/>
+        <pin num="23" name="PA12" type="bidirectional"/>
+        <pin num="24" name="PA13" type="bidirectional"/>
+        <pin num="25" name="PA14" type="bidirectional"/>
+        <pin num="26" name="PA15" type="bidirectional"/>
+        <pin num="27" name="PB3" type="bidirectional"/>
+        <pin num="28" name="PB4" type="bidirectional"/>
+        <pin num="29" name="PB5" type="bidirectional"/>
+        <pin num="30" name="PB6" type="bidirectional"/>
+        <pin num="31" name="PB7" type="bidirectional"/>
+        <pin num="32" name="PB8" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="TLV75533PDBV">
+      <description>500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tlv755p.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV75533PDBV</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Description">500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="TPD2E2U06DCK">
+      <description>Dual-Channel High-Speed ESD Protection, SC-70</description>
+      <docs>http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf</docs>
+      <footprints>
+        <fp>*SC?70*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TPD2E2U06DCK</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf</field>
+        <field name="Description">Dual-Channel High-Speed ESD Protection, SC-70</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="TestPoint">
+      <description>test point</description>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description">test point</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SnakeCard" part="USB_C_Receptacle_PowerOnly_6P">
+      <description>USB Power-Only 6P Type-C Receptacle connector</description>
+      <docs>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</docs>
+      <footprints>
+        <fp>CUI_UJC-HP-3-SMT-TR</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">UJC-HP-3-SMT-TR</field>
+        <field name="Footprint">SnakeCard:CUI_UJC-HP-3-SMT-TR</field>
+        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Description">USB Power-Only 6P Type-C Receptacle connector</field>
+      </fields>
+      <pins>
+        <pin num="A5" name="CC1" type="bidirectional"/>
+        <pin num="A9" name="VBUS" type="passive"/>
+        <pin num="A12" name="GND" type="passive"/>
+        <pin num="B5" name="CC2" type="bidirectional"/>
+        <pin num="B9" name="VBUS" type="passive"/>
+        <pin num="B12" name="GND" type="passive"/>
+        <pin num="S1" name="SHIELD" type="passive"/>
+        <pin num="S2" name="SHIELD" type="passive"/>
+        <pin num="S3" name="SHIELD" type="passive"/>
+        <pin num="S4" name="SHIELD" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="SnakeCard">
+      <uri>${KIPRJMOD}/library/SnakeCard.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3" class="Default">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="R10" pin="1" pintype="passive"/>
+      <node ref="R11" pin="1" pintype="passive"/>
+      <node ref="R12" pin="1" pintype="passive"/>
+      <node ref="R13" pin="1" pintype="passive"/>
+      <node ref="R14" pin="1" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R21" pin="1" pintype="passive"/>
+      <node ref="TP2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="VDD/VDDA_4" pintype="power_in"/>
+      <node ref="U2" pin="19" pinfunction="PVCC_19" pintype="power_in"/>
+      <node ref="U2" pin="26" pinfunction="PVCC_26" pintype="power_in"/>
+      <node ref="U2" pin="31" pinfunction="VCC_31" pintype="power_in"/>
+      <node ref="U2" pin="32" pinfunction="VIO_32" pintype="power_in"/>
+      <node ref="U3" pin="5" pinfunction="OUT_5" pintype="power_out"/>
+    </net>
+    <net code="2" name="BTN_DOWN" class="Default">
+      <node ref="R12" pin="2" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="PA1_8" pintype="bidirectional"/>
+    </net>
+    <net code="3" name="BTN_LEFT" class="Default">
+      <node ref="R13" pin="2" pintype="passive"/>
+      <node ref="SW3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="9" pinfunction="PA2_9" pintype="bidirectional"/>
+    </net>
+    <net code="4" name="BTN_RIGHT" class="Default">
+      <node ref="R14" pin="2" pintype="passive"/>
+      <node ref="SW4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="10" pinfunction="PA3_10" pintype="bidirectional"/>
+    </net>
+    <net code="5" name="BTN_START" class="Default">
+      <node ref="R15" pin="2" pintype="passive"/>
+      <node ref="SW5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="11" pinfunction="PA4_11" pintype="bidirectional"/>
+    </net>
+    <net code="6" name="BTN_UP" class="Default">
+      <node ref="R11" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="PA0_7" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="GND" class="Default">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="D91" pin="2" pinfunction="A2_2" pintype="passive"/>
+      <node ref="J1" pin="A12" pinfunction="GND_A12" pintype="passive"/>
+      <node ref="J1" pin="B12" pinfunction="GND_B12" pintype="passive"/>
+      <node ref="J1" pin="S1" pinfunction="SHIELD_S1" pintype="passive"/>
+      <node ref="J1" pin="S2" pinfunction="SHIELD_S2" pintype="passive"/>
+      <node ref="J1" pin="S3" pinfunction="SHIELD_S3" pintype="passive"/>
+      <node ref="J1" pin="S4" pinfunction="SHIELD_S4" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="R22" pin="2" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="SW5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="TP3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="TP5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="VSS/VSSA_5" pintype="power_in"/>
+      <node ref="U2" pin="11" pinfunction="PGND_11" pintype="passive"/>
+      <node ref="U2" pin="29" pinfunction="AGND_29" pintype="power_in"/>
+      <node ref="U2" pin="36" pinfunction="ADDR_36" pintype="input"/>
+      <node ref="U2" pin="4" pinfunction="PGND_4" pintype="power_in"/>
+      <node ref="U2" pin="40" pinfunction="GND_40" pintype="power_in"/>
+      <node ref="U2" pin="41" pinfunction="GND_41" pintype="passive"/>
+      <node ref="U3" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U5" pin="3" pintype="passive"/>
+    </net>
+    <net code="8" name="I2C_SCL" class="Default">
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U1" pin="30" pinfunction="PB6_30" pintype="bidirectional"/>
+      <node ref="U2" pin="35" pinfunction="SCL_35" pintype="input"/>
+    </net>
+    <net code="9" name="I2C_SDA" class="Default">
+      <node ref="R21" pin="2" pintype="passive"/>
+      <node ref="U1" pin="31" pinfunction="PB7_31" pintype="bidirectional"/>
+      <node ref="U2" pin="34" pinfunction="SDA_34" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="LED_COL1" class="Default">
+      <node ref="D1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D11" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D21" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D31" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D41" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D51" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D61" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D71" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D81" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="15" pinfunction="CS1_15" pintype="output"/>
+    </net>
+    <net code="11" name="LED_COL2" class="Default">
+      <node ref="D12" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D22" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D32" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D42" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D52" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D62" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D72" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D82" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="16" pinfunction="CS2_16" pintype="output"/>
+    </net>
+    <net code="12" name="LED_COL3" class="Default">
+      <node ref="D13" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D23" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D3" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D33" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D43" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D53" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D63" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D73" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D83" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="17" pinfunction="CS3_17" pintype="output"/>
+    </net>
+    <net code="13" name="LED_COL4" class="Default">
+      <node ref="D14" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D24" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D34" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D4" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D44" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D54" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D64" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D74" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D84" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="18" pinfunction="CS4_18" pintype="output"/>
+    </net>
+    <net code="14" name="LED_COL5" class="Default">
+      <node ref="D15" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D25" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D35" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D45" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D5" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D55" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D65" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D75" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D85" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="20" pinfunction="CS5_20" pintype="output"/>
+    </net>
+    <net code="15" name="LED_COL6" class="Default">
+      <node ref="D16" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D26" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D36" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D46" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D56" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D6" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D66" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D76" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D86" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="21" pinfunction="CS6_21" pintype="output"/>
+    </net>
+    <net code="16" name="LED_COL7" class="Default">
+      <node ref="D17" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D27" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D37" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D47" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D57" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D67" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D7" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D77" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D87" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="22" pinfunction="CS7_22" pintype="output"/>
+    </net>
+    <net code="17" name="LED_COL8" class="Default">
+      <node ref="D18" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D28" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D38" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D48" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D58" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D68" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D78" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D8" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D88" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="23" pinfunction="CS8_23" pintype="output"/>
+    </net>
+    <net code="18" name="LED_COL9" class="Default">
+      <node ref="D19" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D29" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D39" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D49" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D59" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D69" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D79" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D89" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D9" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="24" pinfunction="CS9_24" pintype="output"/>
+    </net>
+    <net code="19" name="LED_COL10" class="Default">
+      <node ref="D10" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D20" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D30" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D40" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D50" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D60" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D70" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D80" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="D90" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="U2" pin="25" pinfunction="CS10_25" pintype="output"/>
+    </net>
+    <net code="20" name="LED_EN" class="Default">
+      <node ref="R22" pin="1" pintype="passive"/>
+      <node ref="U1" pin="12" pinfunction="PA5_12" pintype="bidirectional"/>
+      <node ref="U2" pin="38" pinfunction="~{SDB}_38" pintype="input"/>
+    </net>
+    <net code="21" name="LED_IICRST" class="Default">
+      <node ref="R23" pin="1" pintype="passive"/>
+      <node ref="U2" pin="39" pinfunction="IICRST_39" pintype="input"/>
+    </net>
+    <net code="22" name="LED_ROW1" class="Default">
+      <node ref="D1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D10" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D3" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D4" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D5" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D6" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D7" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D8" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D9" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="SW1_1" pintype="output"/>
+    </net>
+    <net code="23" name="LED_ROW2" class="Default">
+      <node ref="D11" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D12" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D13" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D14" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D15" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D16" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D17" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D18" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D19" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D20" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="SW2_2" pintype="output"/>
+    </net>
+    <net code="24" name="LED_ROW3" class="Default">
+      <node ref="D21" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D22" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D23" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D24" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D25" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D26" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D27" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D28" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D29" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D30" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="SW3_3" pintype="output"/>
+    </net>
+    <net code="25" name="LED_ROW4" class="Default">
+      <node ref="D31" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D32" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D33" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D34" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D35" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D36" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D37" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D38" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D39" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D40" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U2" pin="5" pinfunction="SW4_5" pintype="output"/>
+    </net>
+    <net code="26" name="LED_ROW5" class="Default">
+      <node ref="D41" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D42" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D43" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D44" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D45" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D46" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D47" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D48" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D49" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D50" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="SW5_6" pintype="output"/>
+    </net>
+    <net code="27" name="LED_ROW6" class="Default">
+      <node ref="D51" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D52" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D53" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D54" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D55" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D56" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D57" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D58" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D59" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D60" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="SW6_7" pintype="output"/>
+    </net>
+    <net code="28" name="LED_ROW7" class="Default">
+      <node ref="D61" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D62" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D63" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D64" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D65" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D66" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D67" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D68" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D69" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D70" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="SW7_8" pintype="output"/>
+    </net>
+    <net code="29" name="LED_ROW8" class="Default">
+      <node ref="D71" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D72" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D73" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D74" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D75" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D76" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D77" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D78" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D79" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D80" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U2" pin="9" pinfunction="SW8_9" pintype="output"/>
+    </net>
+    <net code="30" name="LED_ROW9" class="Default">
+      <node ref="D81" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D82" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D83" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D84" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D85" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D86" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D87" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D88" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D89" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="D90" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="U2" pin="10" pinfunction="SW9_10" pintype="output"/>
+    </net>
+    <net code="31" name="LED_R_EXT" class="Default">
+      <node ref="R24" pin="1" pintype="passive"/>
+      <node ref="U2" pin="30" pinfunction="R_EXT_30" pintype="passive"/>
+    </net>
+    <net code="32" name="NFC_AC0" class="Default">
+      <node ref="C30" pin="1" pintype="passive"/>
+      <node ref="L1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U4" pin="3" pinfunction="AC0_3" pintype="passive"/>
+    </net>
+    <net code="33" name="NFC_AC1" class="Default">
+      <node ref="C30" pin="2" pintype="passive"/>
+      <node ref="L1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U4" pin="4" pinfunction="AC1_4" pintype="passive"/>
+    </net>
+    <net code="34" name="NRST" class="Default">
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="R10" pin="2" pintype="passive"/>
+      <node ref="TP8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="NRST_6" pintype="input"/>
+    </net>
+    <net code="35" name="SWCLK" class="Default">
+      <node ref="TP7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="25" pinfunction="PA14_25" pintype="bidirectional"/>
+    </net>
+    <net code="36" name="SWDIO" class="Default">
+      <node ref="TP6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1" pin="24" pinfunction="PA13_24" pintype="bidirectional"/>
+    </net>
+    <net code="37" name="USB_CC1" class="Default">
+      <node ref="J1" pin="A5" pinfunction="CC1_A5" pintype="bidirectional"/>
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U5" pin="1" pintype="passive"/>
+    </net>
+    <net code="38" name="USB_CC2" class="Default">
+      <node ref="J1" pin="B5" pinfunction="CC2_B5" pintype="bidirectional"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+      <node ref="U5" pin="2" pintype="passive"/>
+    </net>
+    <net code="39" name="VBUS_5V" class="Default">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="D91" pin="1" pinfunction="A1_1" pintype="passive"/>
+      <node ref="J1" pin="A9" pinfunction="VBUS_A9" pintype="passive"/>
+      <node ref="J1" pin="B9" pinfunction="VBUS_B9" pintype="passive"/>
+      <node ref="TP1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U3" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U3" pin="3" pinfunction="EN_3" pintype="input"/>
+    </net>
+    <net code="40" name="unconnected-(U1-PA6-Pad13)" class="Default">
+      <node ref="U1" pin="13" pinfunction="PA6_13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="41" name="unconnected-(U1-PA7-Pad14)" class="Default">
+      <node ref="U1" pin="14" pinfunction="PA7_14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="42" name="unconnected-(U1-PA8-Pad18)" class="Default">
+      <node ref="U1" pin="18" pinfunction="PA8_18" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="43" name="unconnected-(U1-PA9-Pad19)" class="Default">
+      <node ref="U1" pin="19" pinfunction="PA9_19" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="44" name="unconnected-(U1-PA10-Pad21)" class="Default">
+      <node ref="U1" pin="21" pinfunction="PA10_21" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="45" name="unconnected-(U1-PA11-Pad22)" class="Default">
+      <node ref="U1" pin="22" pinfunction="PA11_22" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="46" name="unconnected-(U1-PA12-Pad23)" class="Default">
+      <node ref="U1" pin="23" pinfunction="PA12_23" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="47" name="unconnected-(U1-PA15-Pad26)" class="Default">
+      <node ref="U1" pin="26" pinfunction="PA15_26" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="48" name="unconnected-(U1-PB0-Pad15)" class="Default">
+      <node ref="U1" pin="15" pinfunction="PB0_15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="49" name="unconnected-(U1-PB1-Pad16)" class="Default">
+      <node ref="U1" pin="16" pinfunction="PB1_16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="50" name="unconnected-(U1-PB2-Pad17)" class="Default">
+      <node ref="U1" pin="17" pinfunction="PB2_17" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="51" name="unconnected-(U1-PB3-Pad27)" class="Default">
+      <node ref="U1" pin="27" pinfunction="PB3_27" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="52" name="unconnected-(U1-PB4-Pad28)" class="Default">
+      <node ref="U1" pin="28" pinfunction="PB4_28" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="53" name="unconnected-(U1-PB5-Pad29)" class="Default">
+      <node ref="U1" pin="29" pinfunction="PB5_29" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="54" name="unconnected-(U1-PB8-Pad32)" class="Default">
+      <node ref="U1" pin="32" pinfunction="PB8_32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="55" name="unconnected-(U1-PB9-Pad1)" class="Default">
+      <node ref="U1" pin="1" pinfunction="PB9_1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="56" name="unconnected-(U1-PC6-Pad20)" class="Default">
+      <node ref="U1" pin="20" pinfunction="PC6_20" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="57" name="unconnected-(U1-PC14-Pad2)" class="Default">
+      <node ref="U1" pin="2" pinfunction="PC14_2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="58" name="unconnected-(U1-PC15-Pad3)" class="Default">
+      <node ref="U1" pin="3" pinfunction="PC15_3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="59" name="unconnected-(U2-CS11-Pad27)" class="Default">
+      <node ref="U2" pin="27" pinfunction="CS11_27" pintype="output+no_connect"/>
+    </net>
+    <net code="60" name="unconnected-(U2-CS12-Pad28)" class="Default">
+      <node ref="U2" pin="28" pinfunction="CS12_28" pintype="output+no_connect"/>
+    </net>
+    <net code="61" name="unconnected-(U2-SW10-Pad12)" class="Default">
+      <node ref="U2" pin="12" pinfunction="SW10_12" pintype="output+no_connect"/>
+    </net>
+    <net code="62" name="unconnected-(U2-SW11-Pad13)" class="Default">
+      <node ref="U2" pin="13" pinfunction="SW11_13" pintype="output+no_connect"/>
+    </net>
+    <net code="63" name="unconnected-(U2-SW12-Pad14)" class="Default">
+      <node ref="U2" pin="14" pinfunction="SW12_14" pintype="output+no_connect"/>
+    </net>
+    <net code="64" name="unconnected-(U2-SYNC-Pad33)" class="Default">
+      <node ref="U2" pin="33" pinfunction="SYNC_33" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="65" name="unconnected-(U2-~{INTB}-Pad37)" class="Default">
+      <node ref="U2" pin="37" pinfunction="~{INTB}_37" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="66" name="unconnected-(U3-NC-Pad4)" class="Default">
+      <node ref="U3" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="67" name="unconnected-(U4-NC-Pad1)" class="Default">
+      <node ref="U4" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="68" name="unconnected-(U4-NC-Pad2)" class="Default">
+      <node ref="U4" pin="2" pinfunction="NC_2" pintype="no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(U4-NC-Pad5)" class="Default">
+      <node ref="U4" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,0 +1,6 @@
+# ST25TN01K user pages only, first page 0x04. No UID/CC/lock/config bytes.
+04: 03 11 D1 01
+05: 0D 55 04 65
+06: 78 61 6D 70
+07: 6C 65 2E 63
+08: 6F 6D 2F FE

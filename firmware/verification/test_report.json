@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "address_sanitizer": true,
+  "undefined_behavior_sanitizer": false,
+  "compiler": "MSVC",
+  "tests": [
+    "snake",
+    "is31fl3737",
+    "app"
+  ],
+  "source_sha256": {
+    "include/app.h": "4ce6605c0a3910eae9e0f2b928ae0b68ea94d45a6012c1592d048bd3993ee262",
+    "include/board.h": "7755e1a53269ab23d9f77538545fa4ac97983b9d440098ed02ccd763008d26f3",
+    "include/buttons.h": "0e182ca8eb5b3384d9a153734e24341c3997be564666b86e13d4c2b42daf46c2",
+    "include/is31fl3737.h": "e02bf3f2de072857ea072a174e0f3122fc40f9746cb02bc7aa6d30dc550e5c04",
+    "include/snake.h": "d585858d82c923e193bb6db81b9a64e234a83ffcd28d68fddceca383eb933038",
+    "include/stm32g030_min.h": "0c76ac808e46fa81c21ce64cb20360ac2de4813dc0f971b5e1da4a7029fad640",
+    "src/app.c": "430a12d60730040d27dedb829f4d8038ee0b6b565d575dddf1e2246982e62660",
+    "src/board.c": "f5f0e214cf2b58bebd1f43a7f7b62b704cc9e557d101683833b25f3e63ce020d",
+    "src/buttons.c": "f8af8d14976e90a050d92bba406d1431cf743e7994cbd1bec4307d79e8317727",
+    "src/is31fl3737.c": "8f69ebde5771538b01f694b14a1cd1d28c2f5811b2e93fc5ea8c3f49f94b1fac",
+    "src/main.c": "92415764fff599b8dd8221dfca4fcb300ba4c93cddfc6723ec028a3a29572109",
+    "src/snake.c": "5980cad0675181b22fd951fa84a871f92a7bdaa59420db221ab79872fc9605e9",
+    "src/startup.S": "0e6fe2910a72eb24d6bf48833327e7687b69b51fe27421ac18720d87f9ebeb23",
+    "stm32g030k8.ld": "a89d1f52a7d76b9a75bb8d2652f529f7ad441aedca322198e94776c1c215b1c6",
+    "tests/test_app.c": "27d931da105662bb2fe306aca4dad14a94a39c45cc4a5fc2f97502b2ca41b157",
+    "tests/test_is31fl3737.c": "225a077767257bf52b77ddbd3e2e0e57e0785128788588fe081b96bf76727da0",
+    "tests/test_snake.c": "4993d61030c158abdbede62ea171192d169daf5641a5e2ed0ba1eb157b084512",
+    "tools/build.py": "fb0cdca09c95792365013e2be1890e9edb32e21ff27555f55605dfb184be1051",
+    "tools/check_board_contract.py": "98a44107d80fcbbdc4e3b435743a069a46d648fd5b1c854c46f304ecc0a6750a"
+  }
+}

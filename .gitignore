@@ -1,0 +1,29 @@
+# Local editor and KiCad state
+*.kicad_prl
+*.kicad_pcb.lck
+*.kicad_sch.lck
+~*.lck
+*-backups/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build caches and installed toolchains
+**/__pycache__/
+*.pyc
+firmware/build/
+firmware/toolchain/
+.venv/
+venv/
+build/
+dist/
+
+# Local settings, credentials, and temporary exports
+.env
+.env.*
+*.log
+*.tmp
+*.bak
+*.zip
+*-rescue.lib

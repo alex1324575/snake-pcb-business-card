@@ -1,0 +1,272 @@
+(footprint "NFC_PRINTED_COIL_8T_UNTUNED"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "NT1"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "78440c2c-faf0-4f6b-9b1b-46f6c05bb328")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "NFC_PRINTED_COIL_8T_UNTUNED"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fbb62be3-df58-449f-b7d8-a87b900955bc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "890a23c1-28a5-4772-b7f8-81aac99b1822")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4ccf71cf-1801-494c-840b-a7fb5ed62b6b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(net_tie_pad_groups "1,2")
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start 27.4 9.95)
+		(end 27.4 18.3)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(layer "B.Cu")
+		(uuid "80af293f-c2a9-4cc2-b5aa-bf51c2de6e56")
+	)
+	(fp_line
+		(start 27.4 18.3)
+		(end 36.1 18.3)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(layer "B.Cu")
+		(uuid "1d44ad64-c893-4742-8d8a-923118b9726e")
+	)
+	(pad "1" thru_hole circle
+		(at 27.4 9.95)
+		(size 0.6 0.6)
+		(drill 0.3)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(uuid "9cdc0956-2774-442d-a740-9a1545579c87")
+	)
+	(pad "1" smd custom
+		(at 33.5 17.4)
+		(size 0.6 0.6)
+		(layers "F.Cu")
+		(options
+			(clearance outline)
+			(anchor circle)
+		)
+		(primitives
+			(gr_line
+				(start 0 0)
+				(end 0 -11.999999)
+				(width 0.3)
+			)
+			(gr_line
+				(start 0 -11.999999)
+				(end -0.899999 -11.999999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -0.899999 -11.999999)
+				(end -0.899999 11.2)
+				(width 0.3)
+			)
+			(gr_line
+				(start -0.899999 11.2)
+				(end -28.1 11.2)
+				(width 0.3)
+			)
+			(gr_line
+				(start -28.1 11.2)
+				(end -28.1 -11.999999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -28.1 -11.999999)
+				(end -1.55 -11.999999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -1.55 -11.999999)
+				(end -1.55 10.55)
+				(width 0.3)
+			)
+			(gr_line
+				(start -1.55 10.55)
+				(end -27.45 10.55)
+				(width 0.3)
+			)
+			(gr_line
+				(start -27.45 10.55)
+				(end -27.45 -11.349999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -27.45 -11.349999)
+				(end -2.199999 -11.349999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -2.199999 -11.349999)
+				(end -2.199999 9.9)
+				(width 0.3)
+			)
+			(gr_line
+				(start -2.199999 9.9)
+				(end -26.8 9.9)
+				(width 0.3)
+			)
+			(gr_line
+				(start -26.8 9.9)
+				(end -26.8 -10.7)
+				(width 0.3)
+			)
+			(gr_line
+				(start -26.8 -10.7)
+				(end -2.85 -10.7)
+				(width 0.3)
+			)
+			(gr_line
+				(start -2.85 -10.7)
+				(end -2.85 9.25)
+				(width 0.3)
+			)
+			(gr_line
+				(start -2.85 9.25)
+				(end -26.15 9.25)
+				(width 0.3)
+			)
+			(gr_line
+				(start -26.15 9.25)
+				(end -26.15 -10.049999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -26.15 -10.049999)
+				(end -3.5 -10.049999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -3.5 -10.049999)
+				(end -3.5 8.6)
+				(width 0.3)
+			)
+			(gr_line
+				(start -3.5 8.6)
+				(end -25.5 8.6)
+				(width 0.3)
+			)
+			(gr_line
+				(start -25.5 8.6)
+				(end -25.5 -9.399999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -25.5 -9.399999)
+				(end -4.149999 -9.399999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -4.149999 -9.399999)
+				(end -4.149999 7.95)
+				(width 0.3)
+			)
+			(gr_line
+				(start -4.149999 7.95)
+				(end -24.85 7.95)
+				(width 0.3)
+			)
+			(gr_line
+				(start -24.85 7.95)
+				(end -24.85 -8.749999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -24.85 -8.749999)
+				(end -4.8 -8.749999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -4.8 -8.749999)
+				(end -4.8 7.3)
+				(width 0.3)
+			)
+			(gr_line
+				(start -4.8 7.3)
+				(end -24.2 7.3)
+				(width 0.3)
+			)
+			(gr_line
+				(start -24.2 7.3)
+				(end -24.2 -8.099999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -24.2 -8.099999)
+				(end -5.449999 -8.099999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -5.449999 -8.099999)
+				(end -5.449999 6.65)
+				(width 0.3)
+			)
+			(gr_line
+				(start -5.449999 6.65)
+				(end -23.55 6.65)
+				(width 0.3)
+			)
+			(gr_line
+				(start -23.55 6.65)
+				(end -23.55 -7.449999)
+				(width 0.3)
+			)
+			(gr_line
+				(start -23.55 -7.449999)
+				(end -6.1 -7.449999)
+				(width 0.3)
+			)
+		)
+		(uuid "63eadb0e-024e-4eff-8442-f554f8ee0460")
+	)
+	(pad "2" thru_hole circle
+		(at 36.1 18.3)
+		(size 0.6 0.6)
+		(drill 0.3)
+		(layers "*.Cu")
+		(remove_unused_layers no)
+		(uuid "f75fbdc4-21b6-4697-a2e2-548fe9fca907")
+	)
+	(embedded_fonts no)
+)

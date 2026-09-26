@@ -1,0 +1,7 @@
+#VRML V2.0 utf8
+# Approximate UFDFPN5 body envelope only, not supplier CAD.
+Transform { translation 0.000000 0.000000 0.118110 children [ Shape { appearance Appearance { material Material { diffuseColor 0.07 0.075 0.08 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.669291 0.551181 0.196850 } } ] }
+Transform { translation -0.196850 0.157480 0.017717 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.236220 0.078740 0.035433 } } ] }
+Transform { translation 0.196850 0.157480 0.017717 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.236220 0.078740 0.035433 } } ] }
+Transform { translation -0.196850 -0.157480 0.017717 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.236220 0.078740 0.035433 } } ] }
+Transform { translation 0.196850 -0.157480 0.017717 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.236220 0.078740 0.035433 } } ] }

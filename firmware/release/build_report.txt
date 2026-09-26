@@ -1,0 +1,64 @@
+arm-none-eabi-gcc.exe (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]
+Memory region         Used Size  Region Size  %age Used
+           FLASH:        4988 B        64 KB      7.61%
+             RAM:          36 B         8 KB      0.44%
+   text	   data	    bss	    dec	    hex	filename
+   4988	      0	     36	   5024	   13a0	release/SnakeBusinessCard_RevB_v1.0.0.elf
+
+{
+  "flash_image_bytes": 4988,
+  "flash_capacity_bytes": 65536,
+  "static_ram_bytes": 40,
+  "ram_capacity_bytes": 8192,
+  "reserved_stack_bytes": 2048,
+  "initial_sp": "0x20002000",
+  "reset_vector": "0x0800115D",
+  "systick_vector": "0x080005ED",
+  "hex_bin_match": true
+}
+
+Compiler stack usage (bytes per function):
+app.c:115:13:game_frame	16	static
+app.c:103:13:glyph.constprop	32	static
+app.c:110:13:score_frame	24	static
+app.c:19:6:app_init	24	static
+app.c:29:6:app_display_recovered	16	static
+app.c:49:6:app_update	32	static
+app.c:124:6:app_render	24	static
+board.c:32:13:fatal_reset	0	static
+board.c:44:13:configure_i2c	8	static
+board.c:190:13:bus_abort	0	static
+board.c:199:13:wait_bus_flag	20	static
+board.c:255:13:bus_half_period	0	static
+board.c:263:13:wait_scl_released	16	static
+board.c:61:6:board_init	16	static
+board.c:141:6:SysTick_Handler	0	static
+board.c:146:10:board_millis	0	static
+board.c:151:9:board_buttons	0	static
+board.c:156:10:board_seed	8	static
+board.c:167:6:board_sdb	0	static
+board.c:173:6:board_delay_ms	16	static
+board.c:222:6:board_i2c_write	32	static
+board.c:277:6:board_i2c_recover	32	static
+board.c:320:6:board_watchdog_feed	0	static
+board.c:325:6:board_idle	0	static
+buttons.c:3:6:buttons_init	0	static
+buttons.c:11:6:buttons_update	20	static
+is31fl3737.c:41:13:write_block	48	static
+is31fl3737.c:23:13:write_register	24	static
+is31fl3737.c:33:13:select_page	16	static
+is31fl3737.c:57:13:clear_valid_pixel_registers	24	static
+is31fl3737.c:76:6:is31fl3737_init	48	static
+is31fl3737.c:133:6:is31fl3737_write_frame	16	static
+is31fl3737.c:163:6:is31fl3737_set_global_current	16	static
+is31fl3737.c:185:6:is31fl3737_shutdown	8	static
+main.c:13:5:main	408	static
+main.c:74:6:Default_Handler	8	static
+snake.c:41:13:place_food	16	static
+snake.c:61:6:snake_init	16	static
+snake.c:75:6:snake_queue_turn	16	static
+snake.c:90:16:snake_step	32	static
+snake.c:145:6:snake_occupies	0	static
+snake.c:153:9:snake_head	0	static
+snake.c:158:9:snake_food	0	static
+snake.c:163:10:snake_step_interval_ms	0	static

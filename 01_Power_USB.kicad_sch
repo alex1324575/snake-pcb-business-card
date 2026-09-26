@@ -1,0 +1,2512 @@
+(kicad_sch
+  (version 20250114)
+  (generator "snake_card_generator")
+  (generator_version "1.0")
+  (uuid "0d2bb0b6-e758-56f6-878c-f27b96da3e53")
+  (paper "A3")
+  (title_block
+    (title "USB-C input, ESD and 3.3 V regulation")
+    (date "2026-09-15")
+    (rev "B-PUBLIC")
+    (company "Snake Interactive PCB Business Card")
+    (comment 1 "USB-C 5V | 10x9 red LED | passive NFC")
+    (comment 2 "Public reference design - hardware validation pending"))
+  (lib_symbols
+    (symbol "SnakeCard:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:D_TVS"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "D"
+        (at 0 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "D_TVS"
+        (at 0 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Bidirectional transient-voltage-suppression diode"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "diode TVS thyrector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "D_TVS_0_1"
+        (polyline
+          (pts
+            (xy -2.54 1.27)
+            (xy -2.54 -1.27)
+            (xy 2.54 1.27)
+            (xy 2.54 -1.27)
+            (xy -2.54 1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.508 1.27)
+            (xy 0 1.27)
+            (xy 0 -1.27)
+            (xy -0.508 -1.27))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 1.27 0)
+            (xy -1.27 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "D_TVS_1_1"
+        (pin passive line
+          (at -3.81 0 0)
+          (length 2.54)
+          (name "A1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 3.81 0 180)
+          (length 2.54)
+          (name "A2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:PWR_FLAG"
+      (power global)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "#FLG"
+        (at 0 1.905 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "PWR_FLAG"
+        (at 0 3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Special symbol for telling ERC where power comes from"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "flag power"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line
+          (at 0 0 90)
+          (length 0)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:TLV75533PDBV"
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (symbol "TLV75533PDBV_0_1"
+        (rectangle
+          (start -5.08 4.445)
+          (end 5.08 -5.08)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "TLV75533PDBV_1_1"
+        (pin power_in line
+          (at -7.62 2.54 0)
+          (length 2.54)
+          (name "IN"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -7.62 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at -7.62 0 0)
+          (length 2.54)
+          (name "EN"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 5.08 0 180)
+          (length 2.54)
+          (hide yes)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_out line
+          (at 7.62 2.54 180)
+          (length 2.54)
+          (name "OUT"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)
+      (property "Reference" "U"
+        (at -3.81 5.715 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TLV75533PDBV"
+        (at 0 5.715 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+        (at 0 8.255 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)
+            (italic yes))))
+      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf"
+        (at 0 1.27 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "LDO Regulator Fixed Positive"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "SOT?23*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (symbol "SnakeCard:TPD2E2U06DCK"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "U"
+        (at -3.81 6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TPD2E2U06DCK"
+        (at 0.508 -6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+        (at -20.32 -6.35 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+        (at -5.08 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Dual-Channel High-Speed ESD Protection, SC-70"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "TVS"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "*SC?70*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TPD2E2U06DCK_0_1"
+        (rectangle
+          (start -5.08 5.08)
+          (end 2.54 -5.08)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (rectangle
+          (start -3.556 4.318)
+          (end 0 -4.318)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.556 3.81)
+            (xy -4.064 3.048)
+            (xy -3.048 3.048)
+            (xy -3.556 3.81))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -3.556 2.54)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy -3.556 2.54)
+            (xy -5.08 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.556 2.032)
+            (xy -4.064 1.27)
+            (xy -3.048 1.27)
+            (xy -3.556 2.032))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.048 3.81)
+            (xy -4.064 3.81))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.048 2.032)
+            (xy -4.064 2.032))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -2.032 4.318)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy -2.032 -1.27)
+            (xy -2.54 -2.032)
+            (xy -1.524 -2.032)
+            (xy -2.032 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -2.032 -2.54)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy -2.032 -2.54)
+            (xy -5.08 -2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -3.048)
+            (xy -2.54 -3.81)
+            (xy -1.524 -3.81)
+            (xy -2.032 -3.048))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -2.032 -4.318)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy -2.032 -4.318)
+            (xy -2.032 4.318))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.524 -1.27)
+            (xy -2.54 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -1.524 -3.048)
+            (xy -2.54 -3.048))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 1.016)
+            (xy 1.016 -1.016)
+            (xy -1.016 -1.016)
+            (xy 0 1.016))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 -4.318)
+            (xy 0 -5.08))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 0 -4.318)
+          (radius 0.254)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 1.016 1.016)
+            (xy -1.016 1.016)
+            (xy -1.016 0.508))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TPD2E2U06DCK_1_1"
+        (pin passive line
+          (at -7.62 2.54 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -7.62 -2.54 0)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -7.62 90)
+          (length 2.54)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:TestPoint"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.762)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "TP"
+        (at 0 6.858 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TestPoint"
+        (at 0 5.08 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 5.08 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "test point"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "test point tp"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "Pin* Test*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "TestPoint_0_1"
+        (circle
+          (center 0 3.302)
+          (radius 0.762)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TestPoint_1_1"
+        (pin passive line
+          (at 0 0 90)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:USB_C_Receptacle_PowerOnly_6P"
+      (pin_names
+        (offset 1.016))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "J"
+        (at 0 16.51 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify bottom)))
+      (property "Value" "UJC-HP-3-SMT-TR"
+        (at 0 13.97 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify bottom)))
+      (property "Footprint" "SnakeCard:CUI_UJC-HP-3-SMT-TR"
+        (at 3.81 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "USB Power-Only 6P Type-C Receptacle connector"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "usb universal serial bus type-C power-only charging-only 6P 6C"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "CUI_UJC-HP-3-SMT-TR"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "USB_C_Receptacle_PowerOnly_6P_0_0"
+        (rectangle
+          (start -0.254 -12.7)
+          (end 0.254 -11.684)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start 10.16 7.874)
+          (end 9.144 7.366)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start 10.16 -4.826)
+          (end 9.144 -5.334)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start 10.16 -7.366)
+          (end 9.144 -7.874)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "USB_C_Receptacle_PowerOnly_6P_0_1"
+        (rectangle
+          (start -10.16 12.7)
+          (end 10.16 -12.7)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -8.89 -1.27)
+            (xy -8.89 6.35))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -7.62 -1.27)
+          (end -6.35 6.35)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type outline)))
+        (arc
+          (start -7.62 6.35)
+          (mid -6.985 6.9823)
+          (end -6.35 6.35)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start -7.62 6.35)
+          (mid -6.985 6.9823)
+          (end -6.35 6.35)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type outline)))
+        (arc
+          (start -8.89 6.35)
+          (mid -6.985 8.2467)
+          (end -5.08 6.35)
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start -5.08 -1.27)
+          (mid -6.985 -3.1667)
+          (end -8.89 -1.27)
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start -6.35 -1.27)
+          (mid -6.985 -1.9023)
+          (end -7.62 -1.27)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start -6.35 -1.27)
+          (mid -6.985 -1.9023)
+          (end -7.62 -1.27)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy -5.08 6.35)
+            (xy -5.08 -1.27))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -2.54 3.683)
+          (radius 0.635)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy -1.27 6.858)
+            (xy 0 9.398)
+            (xy 1.27 6.858)
+            (xy -1.27 6.858))
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 0 0.508)
+            (xy 2.54 3.048)
+            (xy 2.54 4.318))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 -0.762)
+            (xy -2.54 1.778)
+            (xy -2.54 3.048))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 -3.302)
+            (xy 0 6.858))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 0 -3.302)
+          (radius 1.27)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (rectangle
+          (start 1.905 4.318)
+          (end 3.175 5.588)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type outline))))
+      (symbol "USB_C_Receptacle_PowerOnly_6P_1_1"
+        (pin bidirectional line
+          (at 15.24 -5.08 180)
+          (length 5.08)
+          (name "CC1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "A5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 15.24 7.62 180)
+          (length 5.08)
+          (name "VBUS"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "A9"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -17.78 90)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "A12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 15.24 -7.62 180)
+          (length 5.08)
+          (name "CC2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "B5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 15.24 7.62 180)
+          (length 5.08)
+          (hide yes)
+          (name "VBUS"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "B9"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -17.78 90)
+          (length 5.08)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "B12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -7.62 -17.78 90)
+          (length 5.08)
+          (name "SHIELD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "S1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -7.62 -17.78 90)
+          (length 5.08)
+          (name "SHIELD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "S2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -7.62 -17.78 90)
+          (length 5.08)
+          (name "SHIELD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "S3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -7.62 -17.78 90)
+          (length 5.08)
+          (name "SHIELD"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "S4"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "USB-C POWER INPUT"
+    (at 20.32 25.4 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "e76b1be4-68a4-57ba-8622-e95aec3bdcc3"))
+  (polyline
+    (pts
+      (xy 20.32 28.4)
+      (xy 180.32 28.4))
+    (stroke
+      (width 0.254)
+      (type default))
+    (uuid "3e2701e9-88fc-5efb-a4f0-1b6c7c5b2678"))
+  (symbol
+    (lib_id "SnakeCard:USB_C_Receptacle_PowerOnly_6P")
+    (at 50.8 71.12 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "208b171d-7eba-53c0-b102-5861f0e09df1")
+    (property "Reference" "J1"
+      (at 50.8 54.61 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "UJC-HP-3-SMT-TR"
+      (at 50.8 57.15 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "SnakeCard:CUI_UJC-HP-3-SMT-TR"
+      (at 50.8 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+      (at 50.8 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "UJC-HP-3-SMT-TR"
+      (at 50.8 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "A5"
+      (uuid "a23daf55-065b-5d76-84ee-2632f0fc7db6"))
+    (pin "A9"
+      (uuid "3a1debfd-259a-5e71-b623-5958adc1a535"))
+    (pin "A12"
+      (uuid "dfffc0c9-77cc-5243-9f68-39b73ce0d126"))
+    (pin "B5"
+      (uuid "9b3f193f-9d9b-572c-8a2f-b1e0bbb158c5"))
+    (pin "B9"
+      (uuid "04a7a02d-dfa8-5a67-93dc-8090f02b5926"))
+    (pin "B12"
+      (uuid "dfe4a9dd-0d1d-562c-9221-8e6ad8620666"))
+    (pin "S1"
+      (uuid "594f3361-0475-5957-b2c1-d0eaf254e4e4"))
+    (pin "S2"
+      (uuid "9f2a1ff9-bc1c-5f1b-a9f0-77ef4c270665"))
+    (pin "S3"
+      (uuid "6c628532-336a-50b7-bfcf-24003ef48d8b"))
+    (pin "S4"
+      (uuid "1f2c573e-ca58-59f1-a158-e25aa39471ed"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "J1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 66.04 63.5)
+      (xy 71.12 63.5))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3572d070-6965-566a-9379-2ae50fc9a5d9"))
+  (global_label "VBUS_5V"
+    (shape bidirectional)
+    (at 71.12 63.5 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "6788cbb0-31f0-55cf-b015-bb44e9ef92ec")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 71.12 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 50.8 88.9)
+      (xy 50.8 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0ca77e9c-31d4-5bc5-b81e-29283deb82ec"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 50.8 93.98 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "b5d6e193-f7f1-56f6-86ca-4b0628a761ef")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 50.8 93.98 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 43.18 88.9)
+      (xy 43.18 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b3170d3f-55a6-5172-ba57-97d327142a49"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 43.18 93.98 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "62e82032-8e71-51ef-a691-99ba2f1f0fc2")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 43.18 93.98 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 66.04 76.2)
+      (xy 71.12 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2ee7d172-fdf7-5699-af04-e76c50914888"))
+  (global_label "USB_CC1"
+    (shape bidirectional)
+    (at 71.12 76.2 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "5c2e3ca1-a843-544e-8128-b1ec08fd6757")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 71.12 76.2 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 66.04 78.74)
+      (xy 71.12 78.74))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "3331cf48-03df-5cf1-9f59-7ee8c70478be"))
+  (global_label "USB_CC2"
+    (shape bidirectional)
+    (at 71.12 78.74 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "67db38df-3291-51a5-988f-835811e49c9e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 71.12 78.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:R")
+    (at 104.14 81.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9e66ce6f-01da-560b-81d2-97f0cf8d4380")
+    (property "Reference" "R1"
+      (at 113.14 80.01 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "5.1k 1%"
+      (at 113.14 82.55 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 104.14 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 104.14 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 104.14 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "894a4185-4315-5480-85c8-ba1935feff09"))
+    (pin "2"
+      (uuid "cde51ecc-bfe0-5d89-b8c2-321ecb1d91c2"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "R1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 104.14 77.47)
+      (xy 104.14 72.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5e524362-faca-53af-9ad4-34d1e15effb2"))
+  (global_label "USB_CC1"
+    (shape bidirectional)
+    (at 104.14 72.39 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "69e2f158-fd4f-5beb-b217-4c1610ca05ac")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 104.14 72.39 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 104.14 85.09)
+      (xy 104.14 90.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ce8b4a19-a8f9-5d84-84a3-e14ece97acf0"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 104.14 90.17 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "a03516fb-5a95-5713-b79a-ebb0d28a7d90")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 104.14 90.17 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:R")
+    (at 139.7 81.28 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a8fa241e-5487-55a9-acd3-aafcd74719f6")
+    (property "Reference" "R2"
+      (at 148.7 80.01 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "5.1k 1%"
+      (at 148.7 82.55 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+      (at 139.7 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 139.7 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 139.7 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "2dd7fdb4-5472-54d8-9cdc-8732a0aa7558"))
+    (pin "2"
+      (uuid "6147ee79-4f67-5c50-993c-f6a368b146db"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "R2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 139.7 77.47)
+      (xy 139.7 72.39))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "eab2bc75-7d70-5db6-9fcb-b7ea4e029ab0"))
+  (global_label "USB_CC2"
+    (shape bidirectional)
+    (at 139.7 72.39 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "e5091666-f71c-5e42-86af-cfb67b0b6cc9")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 139.7 72.39 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 139.7 85.09)
+      (xy 139.7 90.17))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2bd90f75-6d65-548c-b7e5-d5693cc64b4d"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 139.7 90.17 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "e13ed56c-82a4-5e8a-9552-561869d4d1a9")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 139.7 90.17 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (text "Independent Rd on CC1 and CC2.\nPower-only connector: no D+/D- or SBU.\nA9/B9 = VBUS; A12/B12 and all shield anchors = GND."
+    (at 25.4 116.84 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "acd7ae53-bbd0-51da-ba83-cf51b597f1cc"))
+  (text "INTERFACE TRANSIENT PROTECTION"
+    (at 20.32 147.32 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "3d1df0d2-e6ac-5185-a79f-bd6737bec22d"))
+  (polyline
+    (pts
+      (xy 20.32 150.32)
+      (xy 180.32 150.32))
+    (stroke
+      (width 0.254)
+      (type default))
+    (uuid "1b626eee-d01c-59cf-9b75-e41be72c4ec8"))
+  (symbol
+    (lib_id "SnakeCard:TPD2E2U06DCK")
+    (at 83.82 182.88 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0888484a-47d2-55fc-9168-868db947dba8")
+    (property "Reference" "U5"
+      (at 83.82 170.18 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TPD2E2U06DCK"
+      (at 83.82 172.72 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-323_SC-70"
+      (at 83.82 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+      (at 83.82 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "TPD2E2U06DCKR"
+      (at 83.82 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "3436cbc6-949d-5307-9c71-b7639d7eb9cd"))
+    (pin "2"
+      (uuid "7e23ae3c-546b-573b-827d-2d1b7522a7f6"))
+    (pin "3"
+      (uuid "d8eae69b-e8f3-5020-9bb4-7e461ed82443"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "U5")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 76.2 180.34)
+      (xy 71.12 180.34))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "986a89f8-5113-5030-9968-efcfeab695dd"))
+  (global_label "USB_CC1"
+    (shape bidirectional)
+    (at 71.12 180.34 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "31700422-b639-5688-a0bb-7045406d9b4f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 71.12 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 76.2 185.42)
+      (xy 71.12 185.42))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "33f3e6a4-ce8a-5840-b11c-2883553a6714"))
+  (global_label "USB_CC2"
+    (shape bidirectional)
+    (at 71.12 185.42 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "2ded07d2-a4b2-5f92-9d9c-9a22b62d0770")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 71.12 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 83.82 190.5)
+      (xy 83.82 195.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "617f8c53-df4a-56e1-83e5-4485517fd6b0"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 83.82 195.58 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "aa5338b8-e48e-5ef4-b1ce-04f31e2d8799")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 83.82 195.58 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:D_TVS")
+    (at 152.4 182.88 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "64b3a4b8-a593-5969-ad9a-33a5a5ac85b4")
+    (property "Reference" "D91"
+      (at 152.4 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TPD1E10B06"
+      (at 152.4 177.8 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Diode_SMD:D_SOD-523"
+      (at 152.4 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 152.4 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "TPD1E10B06DYAR"
+      (at 152.4 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "a02fbe6f-c48d-5260-b430-d3da4b48f37e"))
+    (pin "2"
+      (uuid "f221cf25-f3b7-5116-a36f-4d7f9c1c3df4"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "D91")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 148.59 182.88)
+      (xy 143.51 182.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4497376f-f3ff-5bd6-ae85-e1d52bceb67a"))
+  (global_label "VBUS_5V"
+    (shape bidirectional)
+    (at 143.51 182.88 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "21c9efc7-a10e-5615-b751-12d2b3b58796")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 143.51 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 156.21 182.88)
+      (xy 161.29 182.88))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0ac676f3-f1fa-5228-9852-f1917b19cc5a"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 161.29 182.88 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "b344cbcd-9a7c-5d3d-a15f-18d8af84885f")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 161.29 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (text "Place protection at connector, with short ground return.\nTVS is transient protection, not DC overvoltage regulation.\nBoard-level ESD and hot-plug performance require testing."
+    (at 25.4 213.36 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "ee126253-54ba-55b5-80cd-f50e8789fd74"))
+  (text "3.3 V SUPPLY"
+    (at 210.82 25.4 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "3028e20d-cb7f-5b22-8501-b6965dec30b0"))
+  (polyline
+    (pts
+      (xy 210.82 28.4)
+      (xy 375.82 28.4))
+    (stroke
+      (width 0.254)
+      (type default))
+    (uuid "29afe5d2-0c10-5ca9-a6e9-d5f751e44e21"))
+  (symbol
+    (lib_id "SnakeCard:TLV75533PDBV")
+    (at 292.1 71.12 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "14294ffb-cfd6-537d-af53-9460094ccd90")
+    (property "Reference" "U3"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "TLV75533PDBVR"
+      (at 292.1 63.5 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+      (at 292.1 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf"
+      (at 292.1 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "TLV75533PDBVR"
+      (at 292.1 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "67cbdfef-2bbe-5ee3-9eba-b8006a4daa78"))
+    (pin "2"
+      (uuid "b01f1f0c-c8f1-592c-bea4-1532d34e6757"))
+    (pin "3"
+      (uuid "88792d30-2e54-558d-99b1-fff3a09489c4"))
+    (pin "4"
+      (uuid "e1348ae1-2001-54d7-9012-890c55baf630"))
+    (pin "5"
+      (uuid "cadce144-3609-5e2a-841e-2d98939e5ee2"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "U3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 284.48 68.58)
+      (xy 279.4 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e5a2ae54-3a18-5be7-a336-572d466f5989"))
+  (global_label "VBUS_5V"
+    (shape bidirectional)
+    (at 279.4 68.58 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "0346ce80-005a-5a30-bb22-990277ff1933")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 279.4 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 284.48 71.12)
+      (xy 279.4 71.12))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b3965f6c-552b-555b-b0b8-426bb9116861"))
+  (global_label "VBUS_5V"
+    (shape bidirectional)
+    (at 279.4 71.12 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "c862f1fd-9608-522c-9772-492211a316ba")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 279.4 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 299.72 68.58)
+      (xy 304.8 68.58))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c9350130-5b5c-58e0-99c0-dd6c8c6c9c1b"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 304.8 68.58 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "65d34f20-5d7d-5c87-9ed7-3161c3517add")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 304.8 68.58 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 292.1 78.74)
+      (xy 292.1 83.82))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "aa7e3a44-8f7d-53c4-a48a-f4a104a6ef87"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 292.1 83.82 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "c306573a-0651-5b37-939f-5fa200738201")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 292.1 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (no_connect
+    (at 297.18 71.12)
+    (uuid "1ad7a26a-1fac-544c-a480-d40802cf5086"))
+  (symbol
+    (lib_id "SnakeCard:C")
+    (at 238.76 104.14 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "6a53403a-1c8c-5bf5-a7a4-0070b5c470f4")
+    (property "Reference" "C1"
+      (at 247.76 102.87 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "1u / 10V X7R"
+      (at 247.76 105.41 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 238.76 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 238.76 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 238.76 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "040e803d-5611-594e-8326-97df5783dc2b"))
+    (pin "2"
+      (uuid "7f49f618-f6ce-5c03-836e-c93eb4cd0bbe"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "C1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 238.76 100.33)
+      (xy 238.76 95.25))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4ee54e57-1169-50e9-8123-b6e83cfbd3a9"))
+  (global_label "VBUS_5V"
+    (shape bidirectional)
+    (at 238.76 95.25 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "c99bfa82-f6b0-5e65-8f50-c1b9c831f14c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 238.76 95.25 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 238.76 107.95)
+      (xy 238.76 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7f75cbc8-ebe5-5a6c-b483-ac3591073ce4"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 238.76 113.03 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "a6409a09-8133-575b-8689-60e67800116e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 238.76 113.03 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:C")
+    (at 325.12 104.14 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "d106d74c-f4c1-5936-8ce5-0e7e43985a73")
+    (property "Reference" "C2"
+      (at 334.12 102.87 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "1u / 10V X7R"
+      (at 334.12 105.41 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 325.12 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 325.12 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 325.12 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "f764572a-cbc4-50db-886f-62ba3d2e2db6"))
+    (pin "2"
+      (uuid "29d712db-0a06-5c3a-924c-056933151d91"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "C2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 325.12 100.33)
+      (xy 325.12 95.25))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f28eb015-0191-5a97-a16d-5738e97191b3"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 325.12 95.25 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "3ce77f0c-ec8f-5c97-b0ed-f835c562404e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 325.12 95.25 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 325.12 107.95)
+      (xy 325.12 113.03))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0210692c-5050-5313-972b-91d0aa8ff53b"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 325.12 113.03 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "d3db337b-6417-5836-9c01-eabf3308d650")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 325.12 113.03 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:PWR_FLAG")
+    (at 233.68 60.96 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "a75e735c-212f-50d6-81f1-9667b1410b25")
+    (property "Reference" "#FLG253"
+      (at 233.68 56.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Value" "PWR_FLAG"
+      (at 233.68 58.96 0)
+      (effects
+        (font
+          (size 1 1)) hide))
+    (property "Footprint" ""
+      (at 233.68 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 233.68 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 233.68 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "c561b13d-5628-5028-8d6f-f35e8c88fae5"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "#FLG253")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 233.68 60.96)
+      (xy 233.68 66.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8a3e2309-8d0c-5f0f-abb2-1887753d1b77"))
+  (global_label "VBUS_5V"
+    (shape bidirectional)
+    (at 233.68 66.04 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "088bda85-8d22-55f2-8cc3-098a9cdafec3")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 233.68 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:PWR_FLAG")
+    (at 365.76 111.76 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "bb217825-4516-59b5-99b6-9e6fe72acc66")
+    (property "Reference" "#FLG255"
+      (at 365.76 107.76 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Value" "PWR_FLAG"
+      (at 365.76 109.76 0)
+      (effects
+        (font
+          (size 1 1)) hide))
+    (property "Footprint" ""
+      (at 365.76 111.76 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 365.76 111.76 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 365.76 111.76 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "7c467009-8fa8-58fc-8dd1-bf6f84115843"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "#FLG255")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 365.76 111.76)
+      (xy 365.76 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7b583937-5eaa-50ee-9d84-c1f1e593c015"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 365.76 116.84 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "67186ca3-df81-5311-8877-f956a4cb6126")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 365.76 116.84 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (text "Use regulated 5 V. No 9/12 V PD request.\nLDO rated input maximum = 5.5 V.\nNormal load target <50 mA; 100 mA budget.\nLDO 500 mA capability is NOT a USB current entitlement.\nAccount for output-capacitor charging at hot plug."
+    (at 213.36 137.16 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "be982588-5f84-579e-96ff-df3f6d44f340"))
+  (text "POWER ACCESS / MEASUREMENT"
+    (at 210.82 180.34 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "b5f178a3-0e8f-56d4-b55f-b32a416fe297"))
+  (polyline
+    (pts
+      (xy 210.82 183.34)
+      (xy 375.82 183.34))
+    (stroke
+      (width 0.254)
+      (type default))
+    (uuid "c934da2c-27d7-5430-accb-249f9a5942ec"))
+  (symbol
+    (lib_id "SnakeCard:TestPoint")
+    (at 231.14 210.82 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "437d10fc-19fa-5827-a3d4-a53fc664171c")
+    (property "Reference" "TP1"
+      (at 234.95 209.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "VBUS_5V"
+      (at 234.95 212.09 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 231.14 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 231.14 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 231.14 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "6d64d6eb-a40b-516c-aaaf-ecb86ce42c12"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "TP1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 231.14 210.82)
+      (xy 231.14 215.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9570c1bc-3860-5c86-8157-4bead68a25f3"))
+  (global_label "VBUS_5V"
+    (shape bidirectional)
+    (at 231.14 215.9 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "bb3fbb1e-99ce-5b2f-8373-0060c18146f5")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 231.14 215.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:TestPoint")
+    (at 292.1 210.82 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0c0eea4a-9ea8-5f7b-bad9-0fb043754969")
+    (property "Reference" "TP2"
+      (at 295.91 209.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "+3V3"
+      (at 295.91 212.09 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 292.1 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 292.1 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 292.1 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "6d6986a8-3c8a-543e-84f5-c42e2be5aa91"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "TP2")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 292.1 210.82)
+      (xy 292.1 215.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2d9b38b9-5c3c-5665-990e-6517efca882f"))
+  (global_label "+3V3"
+    (shape bidirectional)
+    (at 292.1 215.9 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "88d11b7e-6baa-5255-912d-04c25003dcc6")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 292.1 215.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:TestPoint")
+    (at 353.06 210.82 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9696472b-ff20-5530-88e9-95ad2e0903f8")
+    (property "Reference" "TP3"
+      (at 356.87 209.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "GND"
+      (at 356.87 212.09 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+      (at 353.06 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 353.06 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 353.06 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "52aba5e8-ca3b-5d97-8c17-c96125a2c53b"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a"
+          (reference "TP3")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 353.06 210.82)
+      (xy 353.06 215.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "139be1b5-22c4-5c8e-a9f7-e175d7f6dfbb"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 353.06 215.9 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "e740a4c6-d2bc-53ce-abce-06336e37f5b6")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 353.06 215.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (embedded_fonts no))

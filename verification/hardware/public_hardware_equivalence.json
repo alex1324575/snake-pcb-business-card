@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "comparison": "Routed Rev B hardware before and after public identity and QR substitution",
+  "public_board": "SnakeBusinessCard.kicad_pcb",
+  "public_board_sha256": "1d8f6f1a8ddd70a6b2e235cf3d18a1b565d091940c09105f31943f0235e35585",
+  "baseline_board_sha256": "1909364af5bb02423b293027c04df4432a75e585ac453fbdad130e5e575543b5",
+  "allowed_changes": [
+    "public example identity text",
+    "board AUTHOR property",
+    "board-only rear QR silkscreen footprint and label"
+  ],
+  "checks": [
+    {
+      "check": "exact native segment content preserved",
+      "passed": true,
+      "count": 809
+    },
+    {
+      "check": "exact native via content preserved",
+      "passed": true,
+      "count": 175
+    },
+    {
+      "check": "exact native zone content preserved",
+      "passed": true,
+      "count": 3
+    },
+    {
+      "check": "all non-QR footprint native content preserved",
+      "passed": true,
+      "count": 135
+    },
+    {
+      "check": "exact native gr_line content preserved",
+      "passed": true,
+      "count": 8
+    },
+    {
+      "check": "exact native gr_arc content preserved",
+      "passed": true,
+      "count": 4
+    },
+    {
+      "check": "exact native gr_poly content preserved",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "exact native gr_rect content preserved",
+      "passed": true,
+      "count": 0
+    },
+    {
+      "check": "exact native gr_circle content preserved",
+      "passed": true,
+      "count": 0
+    }
+  ]
+}

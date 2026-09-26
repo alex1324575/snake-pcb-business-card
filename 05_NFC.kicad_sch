@@ -1,0 +1,658 @@
+(kicad_sch
+  (version 20250114)
+  (generator "snake_card_generator")
+  (generator_version "1.0")
+  (uuid "04f478c3-fe6c-5fca-b677-9d03df97a6ce")
+  (paper "A3")
+  (title_block
+    (title "Independent passive NFC tag and PCB antenna")
+    (date "2026-09-15")
+    (rev "B-PUBLIC")
+    (company "Snake Interactive PCB Business Card")
+    (comment 1 "USB-C 5V | 10x9 red LED | passive NFC")
+    (comment 2 "Public reference design - hardware validation pending"))
+  (lib_symbols
+    (symbol "SnakeCard:C"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.254))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "C"
+        (at 0.635 2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Value" "C"
+        (at 0.635 -2.54 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" ""
+        (at 0.9652 -3.81 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Unpolarized capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "cap capacitor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" "C_*"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "C_0_1"
+        (polyline
+          (pts
+            (xy -2.032 0.762)
+            (xy 2.032 0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.032 -0.762)
+            (xy 2.032 -0.762))
+          (stroke
+            (width 0.508)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "C_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 2.794)
+          (name ""
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:L"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 1.016)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (in_pos_files yes)
+      (duplicate_pin_numbers_are_jumpers no)
+      (property "Reference" "L"
+        (at -1.27 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "L"
+        (at 1.905 0 90)
+        (show_name no)
+        (do_not_autoplace no)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Description" "Inductor"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_keywords" "inductor choke coil reactor magnetic"
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "ki_fp_filters" ""
+        (at 0 0 0)
+        (show_name no)
+        (do_not_autoplace no)
+        (hide yes)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (symbol "L_0_1"
+        (arc
+          (start 0 2.54)
+          (mid 0.6323 1.905)
+          (end 0 1.27)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start 0 1.27)
+          (mid 0.6323 0.635)
+          (end 0 0)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start 0 0)
+          (mid 0.6323 -0.635)
+          (end 0 -1.27)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (arc
+          (start 0 -1.27)
+          (mid 0.6323 -1.905)
+          (end 0 -2.54)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "L_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name "2"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "SnakeCard:ST25TN01K_AFH5"
+      (pin_names
+        (offset 0.762))
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "ST25TN01K-AFH5"
+        (at 0 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" "SnakeCard:ST25TN01K_UFDFPN5_1.7x1.4mm"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (property "Datasheet" "https://www.st.com/resource/en/datasheet/st25tn01k.pdf"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27)) hide))
+      (symbol "ST25TN01K_AFH5_0_1"
+        (rectangle
+          (start -8.89 7.62)
+          (end 8.89 -7.62)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "ST25TN01K_AFH5_1_1"
+        (pin passive line
+          (at -12.7 2.54 0)
+          (length 3.81)
+          (name "AC0"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 -2.54 0)
+          (length 3.81)
+          (name "AC1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 12.7 5.08 180)
+          (length 3.81)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 12.7 0 180)
+          (length 3.81)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at 12.7 -5.08 180)
+          (length 3.81)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27))))))))
+  (text "PASSIVE NFC / ST25TN01K-AFH5"
+    (at 20.32 25.4 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "0182c5ef-a5ca-5fbf-9a7c-78576f4f2381"))
+  (polyline
+    (pts
+      (xy 20.32 28.4)
+      (xy 380.32 28.4))
+    (stroke
+      (width 0.254)
+      (type default))
+    (uuid "0dda0d02-4ec8-544a-877c-6634f677d3ce"))
+  (symbol
+    (lib_id "SnakeCard:ST25TN01K_AFH5")
+    (at 231.14 91.44 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "315b9f16-2fab-5ee9-9b3f-37aa61a6b82b")
+    (property "Reference" "U4"
+      (at 231.14 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "ST25TN01K-AFH5"
+      (at 231.14 101.6 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "SnakeCard:ST25TN01K_UFDFPN5_1.7x1.4mm"
+      (at 231.14 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" "https://www.st.com/resource/en/datasheet/st25tn01k.pdf"
+      (at 231.14 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" "ST25TN01K-AFH5"
+      (at 231.14 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "3"
+      (uuid "ec39e81c-06c0-57e7-bbf3-c1c843288a18"))
+    (pin "4"
+      (uuid "024f113b-c8eb-5376-b002-a633079adf9b"))
+    (pin "1"
+      (uuid "4978a222-39d7-514b-b216-4a95ce1b6291"))
+    (pin "2"
+      (uuid "0a419a18-a9ec-50d1-9813-9e747b6c37db"))
+    (pin "5"
+      (uuid "4892090e-b26c-508c-84f7-bbf534479472"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/7b4a5613-b43e-5267-b2b4-43e409275f10"
+          (reference "U4")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 218.44 88.9)
+      (xy 210.82 88.9))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "da257288-bc79-507a-98d9-a349e316eb46"))
+  (global_label "NFC_AC0"
+    (shape bidirectional)
+    (at 210.82 88.9 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "dde0277f-6df5-5617-9f64-88030be4f098")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 210.82 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 218.44 93.98)
+      (xy 210.82 93.98))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "388ec715-6135-5744-8870-1bd588c80207"))
+  (global_label "NFC_AC1"
+    (shape bidirectional)
+    (at 210.82 93.98 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "4e221808-d161-5d5e-95ad-7ec0bbcdb2a5")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 210.82 93.98 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (no_connect
+    (at 243.84 86.36)
+    (uuid "b38696bc-707c-5439-8472-07d6a91fde7a"))
+  (no_connect
+    (at 243.84 91.44)
+    (uuid "5f51c7ac-490f-5c5a-bb17-ec71cc31d73e"))
+  (no_connect
+    (at 243.84 96.52)
+    (uuid "89216815-67a2-53a1-918a-4cb3500c9fe3"))
+  (symbol
+    (lib_id "SnakeCard:L")
+    (at 68.58 91.44 0)
+    (unit 1)
+    (in_bom no)
+    (on_board no)
+    (dnp no)
+    (uuid "2adadbbc-7d58-589c-a10d-bfed1d1db6e4")
+    (property "Reference" "L1"
+      (at 77.58 90.17 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "PCB LOOP / TUNE"
+      (at 77.58 92.71 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" ""
+      (at 68.58 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 68.58 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 68.58 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "fe1eeec0-f19f-5075-95d3-6cc90efeecda"))
+    (pin "2"
+      (uuid "2dc2c32e-73c4-542d-af6e-da0ac43e1276"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/7b4a5613-b43e-5267-b2b4-43e409275f10"
+          (reference "L1")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 68.58 87.63)
+      (xy 68.58 82.55))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "53450070-88a1-593a-b4cd-87b132e4c0a0"))
+  (global_label "NFC_AC0"
+    (shape bidirectional)
+    (at 68.58 82.55 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "4bc8caf1-83fa-5436-9b34-9c1ab687054c")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 68.58 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 68.58 95.25)
+      (xy 68.58 100.33))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "cec5cf4a-1a6b-5b55-88eb-721c8089cf36"))
+  (global_label "NFC_AC1"
+    (shape bidirectional)
+    (at 68.58 100.33 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "41416f52-40c8-511f-85dc-bcbfd5cc15f2")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 68.58 100.33 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (symbol
+    (lib_id "SnakeCard:C")
+    (at 144.78 91.44 0)
+    (unit 1)
+    (in_bom yes)
+    (on_board yes)
+    (dnp yes)
+    (uuid "6448fd9d-884d-5eb8-bef7-c1207bbc09db")
+    (property "Reference" "C30"
+      (at 153.78 90.17 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Value" "DNP / C0G TUNE"
+      (at 153.78 92.71 0)
+      (effects
+        (font
+          (size 1 1))))
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+      (at 144.78 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Datasheet" ""
+      (at 144.78 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "MPN" ""
+      (at 144.78 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (pin "1"
+      (uuid "f38a4b51-2311-5a48-be29-2b498fc06da1"))
+    (pin "2"
+      (uuid "1205e3aa-8a3a-5ba5-9255-9af55d361148"))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b/7b4a5613-b43e-5267-b2b4-43e409275f10"
+          (reference "C30")
+          (unit 1)))))
+  (wire
+    (pts
+      (xy 144.78 87.63)
+      (xy 144.78 82.55))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "572b9196-18e4-52d6-bb28-25507c6f0686"))
+  (global_label "NFC_AC0"
+    (shape bidirectional)
+    (at 144.78 82.55 180)
+    (effects
+      (font
+        (size 1 1))
+      (justify left))
+    (uuid "131f2cca-bae5-5c2a-913e-cb41d4f3a9da")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 144.78 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (wire
+    (pts
+      (xy 144.78 95.25)
+      (xy 144.78 100.33))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d5687c7e-554c-5454-85f3-538e92966442"))
+  (global_label "NFC_AC1"
+    (shape bidirectional)
+    (at 144.78 100.33 0)
+    (effects
+      (font
+        (size 1 1))
+      (justify right))
+    (uuid "a37f6c65-831a-531d-8e26-61acff7d0182")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 144.78 100.33 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide)))
+  (text "Printed antenna, not a purchased inductor.\nInitial equivalent-L design target ~2.58 uH.\nFinal geometry and tuning belong to PCB layout."
+    (at 25.4 129.54 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "da5cf4b6-5710-5cbc-9a6f-5c703d3f64a4"))
+  (text "Internal tuning capacitance: 50 pF.\nAC0 = pin 3; AC1 = pin 4.\nPins 1/2/5 are NC. No VCC or GND."
+    (at 210.82 129.54 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "ff572d4d-f225-5952-8a79-ed8186a14fd0"))
+  (text "LAYOUT / VALIDATION"
+    (at 20.32 175.26 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "94ff3366-53a6-50df-adb4-0f77fe5dc0ef"))
+  (polyline
+    (pts
+      (xy 20.32 178.26)
+      (xy 380.32 178.26))
+    (stroke
+      (width 0.254)
+      (type default))
+    (uuid "966bbfb8-7538-5739-8622-0cf03d8b867a"))
+  (text "Reserve a separate left-side antenna zone. Keep unrelated copper, ground planes and signal routes out on all layers.\nPlace the USB connector and switching LED current paths outside this zone. NFC works without USB power.\nTune the assembled tag per ST AN2866, with a coupling loop / VNA and real phones; target resonance 13.6-14.0 MHz.\nC30 is not fitted initially; select C0G value only after measurement. Do not treat the illustrative loop value as validated.\nWrite a short HTTPS NDEF URI after the real portfolio URL is confirmed. QR will point to the same URL."
+    (at 25.4 195.58 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "24b70734-2e49-5a2b-82da-fa28785c3ac5"))
+  (embedded_fonts no))

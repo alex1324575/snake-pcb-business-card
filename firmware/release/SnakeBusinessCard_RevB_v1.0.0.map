@@ -1,0 +1,749 @@
+Archive member included to satisfy reference by file (symbol)
+
+<arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+                              build/target/main.o (memcmp)
+<arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                              build/target/main.o (memcpy)
+<arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                              build/target/app.o (memset)
+<arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                              build/target/app.o (__gnu_thumb1_case_uqi)
+<arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                              build/target/app.o (__aeabi_uidiv)
+<arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+                              build/target/app.o (__aeabi_idivmod)
+<arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                              <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+
+Discarded input sections
+
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .group         0x00000000        0xc build/target/main.o
+ .text          0x00000000        0x0 build/target/main.o
+ .data          0x00000000        0x0 build/target/main.o
+ .bss           0x00000000        0x0 build/target/main.o
+ .comment       0x00000000       0x7a build/target/main.o
+ .group         0x00000000        0xc build/target/board.o
+ .group         0x00000000        0xc build/target/board.o
+ .group         0x00000000        0xc build/target/board.o
+ .group         0x00000000        0xc build/target/board.o
+ .group         0x00000000        0xc build/target/board.o
+ .group         0x00000000        0xc build/target/board.o
+ .group         0x00000000        0xc build/target/board.o
+ .group         0x00000000        0xc build/target/board.o
+ .group         0x00000000        0xc build/target/board.o
+ .group         0x00000000        0xc build/target/board.o
+ .text          0x00000000        0x0 build/target/board.o
+ .data          0x00000000        0x0 build/target/board.o
+ .bss           0x00000000        0x0 build/target/board.o
+ .debug_macro   0x00000000      0xa78 build/target/board.o
+ .debug_macro   0x00000000       0x22 build/target/board.o
+ .debug_macro   0x00000000      0x174 build/target/board.o
+ .debug_macro   0x00000000       0x22 build/target/board.o
+ .debug_macro   0x00000000       0x56 build/target/board.o
+ .debug_macro   0x00000000       0x51 build/target/board.o
+ .debug_macro   0x00000000       0xef build/target/board.o
+ .debug_macro   0x00000000       0x6a build/target/board.o
+ .debug_macro   0x00000000      0x1df build/target/board.o
+ .comment       0x00000000       0x7a build/target/board.o
+ .group         0x00000000        0xc build/target/buttons.o
+ .group         0x00000000        0xc build/target/buttons.o
+ .group         0x00000000        0xc build/target/buttons.o
+ .group         0x00000000        0xc build/target/buttons.o
+ .group         0x00000000        0xc build/target/buttons.o
+ .group         0x00000000        0xc build/target/buttons.o
+ .group         0x00000000        0xc build/target/buttons.o
+ .group         0x00000000        0xc build/target/buttons.o
+ .text          0x00000000        0x0 build/target/buttons.o
+ .data          0x00000000        0x0 build/target/buttons.o
+ .bss           0x00000000        0x0 build/target/buttons.o
+ .debug_macro   0x00000000      0xa78 build/target/buttons.o
+ .debug_macro   0x00000000       0x22 build/target/buttons.o
+ .debug_macro   0x00000000       0x56 build/target/buttons.o
+ .debug_macro   0x00000000       0x51 build/target/buttons.o
+ .debug_macro   0x00000000       0xef build/target/buttons.o
+ .debug_macro   0x00000000       0x6a build/target/buttons.o
+ .debug_macro   0x00000000      0x1df build/target/buttons.o
+ .debug_macro   0x00000000       0x2e build/target/buttons.o
+ .comment       0x00000000       0x7a build/target/buttons.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .group         0x00000000        0xc build/target/app.o
+ .text          0x00000000        0x0 build/target/app.o
+ .data          0x00000000        0x0 build/target/app.o
+ .bss           0x00000000        0x0 build/target/app.o
+ .debug_macro   0x00000000      0xa78 build/target/app.o
+ .debug_macro   0x00000000       0x22 build/target/app.o
+ .debug_macro   0x00000000       0x56 build/target/app.o
+ .debug_macro   0x00000000       0x51 build/target/app.o
+ .debug_macro   0x00000000       0xef build/target/app.o
+ .debug_macro   0x00000000       0x6a build/target/app.o
+ .debug_macro   0x00000000      0x1df build/target/app.o
+ .debug_macro   0x00000000       0x2e build/target/app.o
+ .debug_macro   0x00000000       0x22 build/target/app.o
+ .debug_macro   0x00000000       0x28 build/target/app.o
+ .debug_macro   0x00000000       0x16 build/target/app.o
+ .debug_macro   0x00000000      0x174 build/target/app.o
+ .debug_macro   0x00000000       0x34 build/target/app.o
+ .debug_macro   0x00000000       0x5e build/target/app.o
+ .debug_macro   0x00000000       0x18 build/target/app.o
+ .debug_macro   0x00000000       0x35 build/target/app.o
+ .debug_macro   0x00000000       0x34 build/target/app.o
+ .debug_macro   0x00000000       0x58 build/target/app.o
+ .debug_macro   0x00000000       0x1f build/target/app.o
+ .debug_macro   0x00000000       0x43 build/target/app.o
+ .debug_macro   0x00000000       0x20 build/target/app.o
+ .debug_macro   0x00000000      0x18e build/target/app.o
+ .debug_macro   0x00000000      0x339 build/target/app.o
+ .debug_macro   0x00000000       0x10 build/target/app.o
+ .debug_macro   0x00000000       0x35 build/target/app.o
+ .comment       0x00000000       0x7a build/target/app.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .group         0x00000000        0xc build/target/snake.o
+ .text          0x00000000        0x0 build/target/snake.o
+ .data          0x00000000        0x0 build/target/snake.o
+ .bss           0x00000000        0x0 build/target/snake.o
+ .text.snake_occupies
+                0x00000000       0x32 build/target/snake.o
+ .text.snake_food
+                0x00000000        0x6 build/target/snake.o
+ .debug_macro   0x00000000      0xa78 build/target/snake.o
+ .debug_macro   0x00000000       0x22 build/target/snake.o
+ .debug_macro   0x00000000       0x22 build/target/snake.o
+ .debug_macro   0x00000000       0x56 build/target/snake.o
+ .debug_macro   0x00000000       0x51 build/target/snake.o
+ .debug_macro   0x00000000       0xef build/target/snake.o
+ .debug_macro   0x00000000       0x6a build/target/snake.o
+ .debug_macro   0x00000000      0x1df build/target/snake.o
+ .debug_macro   0x00000000       0x28 build/target/snake.o
+ .debug_macro   0x00000000      0x174 build/target/snake.o
+ .debug_macro   0x00000000       0x5e build/target/snake.o
+ .debug_macro   0x00000000       0x18 build/target/snake.o
+ .debug_macro   0x00000000       0x35 build/target/snake.o
+ .debug_macro   0x00000000       0x34 build/target/snake.o
+ .debug_macro   0x00000000       0x58 build/target/snake.o
+ .debug_macro   0x00000000       0x1f build/target/snake.o
+ .debug_macro   0x00000000       0x43 build/target/snake.o
+ .debug_macro   0x00000000       0x20 build/target/snake.o
+ .debug_macro   0x00000000      0x18e build/target/snake.o
+ .debug_macro   0x00000000      0x339 build/target/snake.o
+ .debug_macro   0x00000000       0x10 build/target/snake.o
+ .debug_macro   0x00000000       0x35 build/target/snake.o
+ .comment       0x00000000       0x7a build/target/snake.o
+ .group         0x00000000        0xc build/target/is31fl3737.o
+ .group         0x00000000        0xc build/target/is31fl3737.o
+ .group         0x00000000        0xc build/target/is31fl3737.o
+ .group         0x00000000        0xc build/target/is31fl3737.o
+ .group         0x00000000        0xc build/target/is31fl3737.o
+ .group         0x00000000        0xc build/target/is31fl3737.o
+ .group         0x00000000        0xc build/target/is31fl3737.o
+ .group         0x00000000        0xc build/target/is31fl3737.o
+ .group         0x00000000        0xc build/target/is31fl3737.o
+ .group         0x00000000        0xc build/target/is31fl3737.o
+ .text          0x00000000        0x0 build/target/is31fl3737.o
+ .data          0x00000000        0x0 build/target/is31fl3737.o
+ .bss           0x00000000        0x0 build/target/is31fl3737.o
+ .text.is31fl3737_set_global_current
+                0x00000000       0x42 build/target/is31fl3737.o
+ .text.is31fl3737_shutdown
+                0x00000000       0x18 build/target/is31fl3737.o
+ .debug_macro   0x00000000      0xa78 build/target/is31fl3737.o
+ .debug_macro   0x00000000       0x22 build/target/is31fl3737.o
+ .debug_macro   0x00000000      0x174 build/target/is31fl3737.o
+ .debug_macro   0x00000000       0x22 build/target/is31fl3737.o
+ .debug_macro   0x00000000       0x56 build/target/is31fl3737.o
+ .debug_macro   0x00000000       0x51 build/target/is31fl3737.o
+ .debug_macro   0x00000000       0xef build/target/is31fl3737.o
+ .debug_macro   0x00000000       0x6a build/target/is31fl3737.o
+ .debug_macro   0x00000000      0x1df build/target/is31fl3737.o
+ .debug_macro   0x00000000       0x34 build/target/is31fl3737.o
+ .comment       0x00000000       0x7a build/target/is31fl3737.o
+ .text          0x00000000        0x0 build/target/startup.o
+ .data          0x00000000        0x0 build/target/startup.o
+ .bss           0x00000000        0x0 build/target/startup.o
+ .note.GNU-stack
+                0x00000000        0x0 build/target/startup.o
+ .text          0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+ .data          0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+ .bss           0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+ .text          0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .data          0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .text          0x00000000      0x1d4 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .debug_frame   0x00000000       0x20 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x00000000       0x1e <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00010000         xr
+RAM              0x20000000         0x00002000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD build/target/main.o
+LOAD build/target/board.o
+LOAD build/target/buttons.o
+LOAD build/target/app.o
+LOAD build/target/snake.o
+LOAD build/target/is31fl3737.o
+LOAD build/target/startup.o
+START GROUP
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+START GROUP
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+END GROUP
+START GROUP
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+START GROUP
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a
+LOAD <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libnosys.a
+END GROUP
+                0x20002000                _estack = (ORIGIN (RAM) + LENGTH (RAM))
+                0x00000800                _Min_Stack_Size = 0x800
+
+.isr_vector     0x08000000       0xb8
+                0x08000000                . = ALIGN (0x100)
+ *(.isr_vector)
+ .isr_vector    0x08000000       0xb8 build/target/startup.o
+                0x08000000                g_pfnVectors
+
+.text           0x080000b8     0x12c4
+                0x080000b8                . = ALIGN (0x4)
+ *(.text*)
+ .text.startup.main
+                0x080000b8      0x13c build/target/main.o
+                0x080000b8                main
+ .text.Default_Handler
+                0x080001f4       0x28 build/target/main.o
+                0x080001f4                Default_Handler
+ .text.fatal_reset
+                0x0800021c       0x28 build/target/board.o
+ .text.configure_i2c
+                0x08000244       0x74 build/target/board.o
+ .text.bus_abort
+                0x080002b8       0x30 build/target/board.o
+ .text.wait_bus_flag
+                0x080002e8       0x50 build/target/board.o
+ .text.bus_half_period
+                0x08000338        0xc build/target/board.o
+ .text.wait_scl_released
+                0x08000344       0x38 build/target/board.o
+ .text.board_init
+                0x0800037c      0x270 build/target/board.o
+                0x0800037c                board_init
+ .text.SysTick_Handler
+                0x080005ec       0x10 build/target/board.o
+                0x080005ec                SysTick_Handler
+ .text.board_millis
+                0x080005fc        0xc build/target/board.o
+                0x080005fc                board_millis
+ .text.board_buttons
+                0x08000608       0x10 build/target/board.o
+                0x08000608                board_buttons
+ .text.board_seed
+                0x08000618       0x5c build/target/board.o
+                0x08000618                board_seed
+ .text.board_sdb
+                0x08000674       0x20 build/target/board.o
+                0x08000674                board_sdb
+ .text.board_delay_ms
+                0x08000694       0x30 build/target/board.o
+                0x08000694                board_delay_ms
+ .text.board_i2c_write
+                0x080006c4       0xc8 build/target/board.o
+                0x080006c4                board_i2c_write
+ .text.board_i2c_recover
+                0x0800078c       0xd8 build/target/board.o
+                0x0800078c                board_i2c_recover
+ .text.board_watchdog_feed
+                0x08000864       0x10 build/target/board.o
+                0x08000864                board_watchdog_feed
+ .text.board_idle
+                0x08000874        0x8 build/target/board.o
+                0x08000874                board_idle
+ .text.buttons_init
+                0x0800087c       0x18 build/target/buttons.o
+                0x0800087c                buttons_init
+ .text.buttons_update
+                0x08000894       0x54 build/target/buttons.o
+                0x08000894                buttons_update
+ .text.game_frame
+                0x080008e8       0x44 build/target/app.o
+ .text.glyph.constprop.0
+                0x0800092c       0x36 build/target/app.o
+ *fill*         0x08000962        0x2 
+ .text.score_frame
+                0x08000964       0x3c build/target/app.o
+ .text.app_init
+                0x080009a0       0x54 build/target/app.o
+                0x080009a0                app_init
+ .text.app_display_recovered
+                0x080009f4       0x38 build/target/app.o
+                0x080009f4                app_display_recovered
+ .text.app_update
+                0x08000a2c      0x19c build/target/app.o
+                0x08000a2c                app_update
+ .text.app_render
+                0x08000bc8      0x10c build/target/app.o
+                0x08000bc8                app_render
+ .text.place_food
+                0x08000cd4       0x6c build/target/snake.o
+ .text.snake_init
+                0x08000d40       0x44 build/target/snake.o
+                0x08000d40                snake_init
+ .text.snake_queue_turn
+                0x08000d84       0x40 build/target/snake.o
+                0x08000d84                snake_queue_turn
+ .text.snake_step
+                0x08000dc4       0xe4 build/target/snake.o
+                0x08000dc4                snake_step
+ .text.snake_head
+                0x08000ea8        0x4 build/target/snake.o
+                0x08000ea8                snake_head
+ .text.snake_step_interval_ms
+                0x08000eac       0x16 build/target/snake.o
+                0x08000eac                snake_step_interval_ms
+ .text.write_block
+                0x08000ec2       0x3e build/target/is31fl3737.o
+ .text.write_register
+                0x08000f00       0x2a build/target/is31fl3737.o
+ .text.select_page
+                0x08000f2a       0x26 build/target/is31fl3737.o
+ .text.clear_valid_pixel_registers
+                0x08000f50       0x46 build/target/is31fl3737.o
+ *fill*         0x08000f96        0x2 
+ .text.is31fl3737_init
+                0x08000f98      0x160 build/target/is31fl3737.o
+                0x08000f98                is31fl3737_init
+ .text.is31fl3737_write_frame
+                0x080010f8       0x62 build/target/is31fl3737.o
+                0x080010f8                is31fl3737_write_frame
+ *fill*         0x0800115a        0x2 
+ .text.Reset_Handler
+                0x0800115c       0x58 build/target/startup.o
+                0x0800115c                Reset_Handler
+ .text.memcmp   0x080011b4       0x1c <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+                0x080011b4                memcmp
+ .text.memcpy   0x080011d0       0x12 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                0x080011d0                memcpy
+ .text.memset   0x080011e2       0x10 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                0x080011e2                memset
+ *fill*         0x080011f2        0x2 
+ .text          0x080011f4       0x14 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                0x080011f4                __gnu_thumb1_case_uqi
+ .text          0x08001208      0x114 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                0x08001208                __aeabi_uidiv
+                0x08001208                __udivsi3
+                0x08001314                __aeabi_uidivmod
+ .text          0x0800131c        0x4 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x0800131c                __aeabi_idiv0
+                0x0800131c                __aeabi_ldiv0
+ *(.rodata*)
+ .rodata        0x08001320       0x10 build/target/main.o
+ .rodata.digits
+                0x08001330       0x32 build/target/app.o
+ .rodata.letter_a.4520
+                0x08001362        0x5 build/target/app.o
+ .rodata.letter_p.4521
+                0x08001367        0x5 build/target/app.o
+ .rodata.ready_path.4522
+                0x0800136c       0x10 build/target/app.o
+ *(.init)
+ *(.fini)
+                0x0800137c                . = ALIGN (0x4)
+
+.glue_7         0x0800137c        0x0
+ .glue_7        0x0800137c        0x0 linker stubs
+
+.glue_7t        0x0800137c        0x0
+ .glue_7t       0x0800137c        0x0 linker stubs
+
+.vfp11_veneer   0x0800137c        0x0
+ .vfp11_veneer  0x0800137c        0x0 linker stubs
+
+.v4_bx          0x0800137c        0x0
+ .v4_bx         0x0800137c        0x0 linker stubs
+
+.iplt           0x0800137c        0x0
+ .iplt          0x0800137c        0x0 build/target/main.o
+
+.rel.dyn        0x0800137c        0x0
+ .rel.iplt      0x0800137c        0x0 build/target/main.o
+
+.ARM.extab
+ *(.ARM.extab*)
+
+.ARM.exidx      0x0800137c        0x0
+                0x0800137c                __exidx_start = .
+ *(.ARM.exidx*)
+                0x0800137c                __exidx_end = .
+                0x0800137c                _sidata = LOADADDR (.data)
+
+.data           0x20000000        0x0 load address 0x0800137c
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata = .
+ *(.data*)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _edata = .
+
+.igot.plt       0x20000000        0x0 load address 0x0800137c
+ .igot.plt      0x20000000        0x0 build/target/main.o
+
+.bss            0x20000000       0x24 load address 0x0800137c
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sbss = .
+ *(.bss*)
+ .bss.firmware_status
+                0x20000000       0x18 build/target/main.o
+                0x20000000                firmware_status
+ .bss.i2c_ready
+                0x20000018        0x1 build/target/board.o
+ *fill*         0x20000019        0x3 
+ .bss.milliseconds
+                0x2000001c        0x4 build/target/board.o
+ .bss.reset_cause
+                0x20000020        0x4 build/target/board.o
+ *(COMMON)
+                0x20000024                . = ALIGN (0x4)
+                0x20000024                _ebss = .
+                0x20000028                . = ALIGN (0x8)
+                0x20000028                _end = .
+                0x00000001                ASSERT (((_end + _Min_Stack_Size) <= _estack), RAM overflow into reserved stack)
+
+/DISCARD/
+ *(.comment)
+ *(.note*)
+OUTPUT(release/SnakeBusinessCard_RevB_v1.0.0.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2a
+ .ARM.attributes
+                0x00000000       0x2c build/target/main.o
+ .ARM.attributes
+                0x0000002c       0x2c build/target/board.o
+ .ARM.attributes
+                0x00000058       0x2c build/target/buttons.o
+ .ARM.attributes
+                0x00000084       0x2c build/target/app.o
+ .ARM.attributes
+                0x000000b0       0x2c build/target/snake.o
+ .ARM.attributes
+                0x000000dc       0x2c build/target/is31fl3737.o
+ .ARM.attributes
+                0x00000108       0x22 build/target/startup.o
+ .ARM.attributes
+                0x0000012a       0x2c <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+ .ARM.attributes
+                0x00000156       0x2c <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x00000182       0x2c <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000001ae       0x1e <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .ARM.attributes
+                0x000001cc       0x1e <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x000001ea       0x1e <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+
+.debug_info     0x00000000     0x496f
+ .debug_info    0x00000000     0x10d0 build/target/main.o
+ .debug_info    0x000010d0      0x9b3 build/target/board.o
+ .debug_info    0x00001a83      0x1d3 build/target/buttons.o
+ .debug_info    0x00001c56     0x14a2 build/target/app.o
+ .debug_info    0x000030f8      0xf1f build/target/snake.o
+ .debug_info    0x00004017      0x932 build/target/is31fl3737.o
+ .debug_info    0x00004949       0x26 build/target/startup.o
+
+.debug_abbrev   0x00000000     0x1108
+ .debug_abbrev  0x00000000      0x2c3 build/target/main.o
+ .debug_abbrev  0x000002c3      0x3cc build/target/board.o
+ .debug_abbrev  0x0000068f      0x112 build/target/buttons.o
+ .debug_abbrev  0x000007a1      0x396 build/target/app.o
+ .debug_abbrev  0x00000b37      0x382 build/target/snake.o
+ .debug_abbrev  0x00000eb9      0x23b build/target/is31fl3737.o
+ .debug_abbrev  0x000010f4       0x14 build/target/startup.o
+
+.debug_loc      0x00000000     0x1de5
+ .debug_loc     0x00000000      0x1df build/target/main.o
+ .debug_loc     0x000001df      0x6b9 build/target/board.o
+ .debug_loc     0x00000898      0x11b build/target/buttons.o
+ .debug_loc     0x000009b3      0x975 build/target/app.o
+ .debug_loc     0x00001328      0x5d6 build/target/snake.o
+ .debug_loc     0x000018fe      0x4e7 build/target/is31fl3737.o
+
+.debug_aranges  0x00000000      0x210
+ .debug_aranges
+                0x00000000       0x28 build/target/main.o
+ .debug_aranges
+                0x00000028       0xa0 build/target/board.o
+ .debug_aranges
+                0x000000c8       0x28 build/target/buttons.o
+ .debug_aranges
+                0x000000f0       0x50 build/target/app.o
+ .debug_aranges
+                0x00000140       0x58 build/target/snake.o
+ .debug_aranges
+                0x00000198       0x58 build/target/is31fl3737.o
+ .debug_aranges
+                0x000001f0       0x20 build/target/startup.o
+
+.debug_ranges   0x00000000      0x440
+ .debug_ranges  0x00000000       0x18 build/target/main.o
+ .debug_ranges  0x00000018      0x268 build/target/board.o
+ .debug_ranges  0x00000280       0x30 build/target/buttons.o
+ .debug_ranges  0x000002b0       0xb8 build/target/app.o
+ .debug_ranges  0x00000368       0x90 build/target/snake.o
+ .debug_ranges  0x000003f8       0x48 build/target/is31fl3737.o
+
+.debug_macro    0x00000000     0x1f2e
+ .debug_macro   0x00000000      0x167 build/target/main.o
+ .debug_macro   0x00000167      0xa78 build/target/main.o
+ .debug_macro   0x00000bdf       0x22 build/target/main.o
+ .debug_macro   0x00000c01       0x56 build/target/main.o
+ .debug_macro   0x00000c57       0x51 build/target/main.o
+ .debug_macro   0x00000ca8       0xef build/target/main.o
+ .debug_macro   0x00000d97       0x6a build/target/main.o
+ .debug_macro   0x00000e01      0x1df build/target/main.o
+ .debug_macro   0x00000fe0       0x2e build/target/main.o
+ .debug_macro   0x0000100e       0x22 build/target/main.o
+ .debug_macro   0x00001030       0x28 build/target/main.o
+ .debug_macro   0x00001058       0x16 build/target/main.o
+ .debug_macro   0x0000106e      0x174 build/target/main.o
+ .debug_macro   0x000011e2       0x34 build/target/main.o
+ .debug_macro   0x00001216       0x5e build/target/main.o
+ .debug_macro   0x00001274       0x18 build/target/main.o
+ .debug_macro   0x0000128c       0x35 build/target/main.o
+ .debug_macro   0x000012c1       0x34 build/target/main.o
+ .debug_macro   0x000012f5       0x58 build/target/main.o
+ .debug_macro   0x0000134d       0x1f build/target/main.o
+ .debug_macro   0x0000136c       0x43 build/target/main.o
+ .debug_macro   0x000013af       0x20 build/target/main.o
+ .debug_macro   0x000013cf      0x18e build/target/main.o
+ .debug_macro   0x0000155d      0x339 build/target/main.o
+ .debug_macro   0x00001896       0x10 build/target/main.o
+ .debug_macro   0x000018a6       0x35 build/target/main.o
+ .debug_macro   0x000018db       0xc4 build/target/board.o
+ .debug_macro   0x0000199f      0x1d2 build/target/board.o
+ .debug_macro   0x00001b71       0x72 build/target/buttons.o
+ .debug_macro   0x00001be3      0x159 build/target/app.o
+ .debug_macro   0x00001d3c      0x12c build/target/snake.o
+ .debug_macro   0x00001e68       0xc6 build/target/is31fl3737.o
+
+.debug_line     0x00000000     0x27d7
+ .debug_line    0x00000000      0x3d9 build/target/main.o
+ .debug_line    0x000003d9      0xbb5 build/target/board.o
+ .debug_line    0x00000f8e      0x29f build/target/buttons.o
+ .debug_line    0x0000122d      0x8e2 build/target/app.o
+ .debug_line    0x00001b0f      0x68c build/target/snake.o
+ .debug_line    0x0000219b      0x5d9 build/target/is31fl3737.o
+ .debug_line    0x00002774       0x63 build/target/startup.o
+
+.debug_str      0x00000000     0x7f89
+ .debug_str     0x00000000     0x6ec8 build/target/main.o
+                               0x7184 (size before relaxing)
+ .debug_str     0x00006ec8      0xd71 build/target/board.o
+                               0x4d12 (size before relaxing)
+ .debug_str     0x00007c39       0x2a build/target/buttons.o
+                               0x3c6f (size before relaxing)
+ .debug_str     0x00007c63       0xf3 build/target/app.o
+                               0x703a (size before relaxing)
+ .debug_str     0x00007d56       0xa0 build/target/snake.o
+                               0x6d2c (size before relaxing)
+ .debug_str     0x00007df6      0x177 build/target/is31fl3737.o
+                               0x426a (size before relaxing)
+ .debug_str     0x00007f6d       0x1c build/target/startup.o
+                                 0x1e (size before relaxing)
+
+.debug_frame    0x00000000      0x55c
+ .debug_frame   0x00000000       0x4c build/target/main.o
+ .debug_frame   0x0000004c      0x18c build/target/board.o
+ .debug_frame   0x000001d8       0x40 build/target/buttons.o
+ .debug_frame   0x00000218       0xf0 build/target/app.o
+ .debug_frame   0x00000308       0xc8 build/target/snake.o
+ .debug_frame   0x000003d0       0xf8 build/target/is31fl3737.o
+ .debug_frame   0x000004c8       0x2c <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+ .debug_frame   0x000004f4       0x28 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000051c       0x20 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000053c       0x20 <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+
+Cross Reference Table
+
+Symbol                                            File
+Default_Handler                                   build/target/main.o
+                                                  build/target/startup.o
+Reset_Handler                                     build/target/startup.o
+SysTick_Handler                                   build/target/board.o
+                                                  build/target/startup.o
+__aeabi_idiv                                      <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+__aeabi_idiv0                                     <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+                                                  <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+                                                  <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+__aeabi_idivmod                                   <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+                                                  build/target/app.o
+__aeabi_ldiv0                                     <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+__aeabi_uidiv                                     <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                                                  build/target/snake.o
+                                                  build/target/app.o
+__aeabi_uidivmod                                  <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+                                                  build/target/snake.o
+                                                  build/target/app.o
+__divsi3                                          <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+__gnu_thumb1_case_uqi                             <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+                                                  build/target/snake.o
+                                                  build/target/app.o
+__udivsi3                                         <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+_ebss                                             build/target/startup.o
+_edata                                            build/target/startup.o
+_estack                                           build/target/startup.o
+_sbss                                             build/target/startup.o
+_sdata                                            build/target/startup.o
+_sidata                                           build/target/startup.o
+app_display_recovered                             build/target/app.o
+                                                  build/target/main.o
+app_init                                          build/target/app.o
+                                                  build/target/main.o
+app_render                                        build/target/app.o
+                                                  build/target/main.o
+app_update                                        build/target/app.o
+                                                  build/target/main.o
+board_buttons                                     build/target/board.o
+                                                  build/target/main.o
+board_delay_ms                                    build/target/board.o
+                                                  build/target/main.o
+board_i2c_recover                                 build/target/board.o
+                                                  build/target/main.o
+board_i2c_write                                   build/target/board.o
+                                                  build/target/main.o
+board_idle                                        build/target/board.o
+                                                  build/target/main.o
+board_init                                        build/target/board.o
+                                                  build/target/main.o
+board_millis                                      build/target/board.o
+                                                  build/target/main.o
+board_sdb                                         build/target/board.o
+                                                  build/target/main.o
+board_seed                                        build/target/board.o
+                                                  build/target/main.o
+board_watchdog_feed                               build/target/board.o
+                                                  build/target/main.o
+buttons_init                                      build/target/buttons.o
+                                                  build/target/app.o
+buttons_update                                    build/target/buttons.o
+                                                  build/target/app.o
+firmware_status                                   build/target/main.o
+g_pfnVectors                                      build/target/startup.o
+is31fl3737_init                                   build/target/is31fl3737.o
+                                                  build/target/main.o
+is31fl3737_set_global_current                     build/target/is31fl3737.o
+is31fl3737_shutdown                               build/target/is31fl3737.o
+is31fl3737_write_frame                            build/target/is31fl3737.o
+                                                  build/target/main.o
+main                                              build/target/main.o
+                                                  build/target/startup.o
+memcmp                                            <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcmp.o)
+                                                  build/target/main.o
+memcpy                                            <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memcpy-stub.o)
+                                                  build/target/main.o
+memset                                            <arm-toolchain>/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc_nano.a(lib_a-memset.o)
+                                                  build/target/is31fl3737.o
+                                                  build/target/snake.o
+                                                  build/target/app.o
+snake_food                                        build/target/snake.o
+snake_head                                        build/target/snake.o
+                                                  build/target/app.o
+snake_init                                        build/target/snake.o
+                                                  build/target/app.o
+snake_occupies                                    build/target/snake.o
+snake_queue_turn                                  build/target/snake.o
+                                                  build/target/app.o
+snake_step                                        build/target/snake.o
+                                                  build/target/app.o
+snake_step_interval_ms                            build/target/snake.o
+                                                  build/target/app.o

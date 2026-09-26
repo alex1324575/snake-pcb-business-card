@@ -1,0 +1,23 @@
+COMMAND: cl.exe /nologo /std:c11 /W4 /WX /Od /Zi /I./include ./src/snake.c ./tests/test_snake.c /Fe:./build/host/test_snake.exe /Fo:./build/host/ /Fd:./build/host/snake.pdb /fsanitize=address /link /INCREMENTAL:NO
+snake.c
+test_snake.c
+Generating Code...
+
+Complete-game simulation: 1896 steps, score 87.
+PASS: 8 Snake test groups (4096 seeded starts and full-board play).
+
+COMMAND: cl.exe /nologo /std:c11 /W4 /WX /Od /Zi /I./include ./src/is31fl3737.c ./tests/test_is31fl3737.c /Fe:./build/host/test_is31fl3737.exe /Fo:./build/host/ /Fd:./build/host/is31fl3737.pdb /fsanitize=address /link /INCREMENTAL:NO
+is31fl3737.c
+test_is31fl3737.c
+Generating Code...
+
+IS31FL3737: mapping, reserved addresses, retained-state init, current ceiling, 68 init, 20 frame and 3 current fault points passed
+
+COMMAND: cl.exe /nologo /std:c11 /W4 /WX /Od /Zi /I./include ./src/snake.c ./src/buttons.c ./src/app.c ./tests/test_app.c /Fe:./build/host/test_app.exe /Fo:./build/host/ /Fd:./build/host/app.pdb /fsanitize=address /link /INCREMENTAL:NO
+snake.c
+buttons.c
+app.c
+test_app.c
+Generating Code...
+
+PASS: 9 app/button test groups (debounce, wrap, control, render, recovery, win).

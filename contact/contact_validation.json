@@ -1,0 +1,18 @@
+{
+  "url": "https://example.com/",
+  "qr_decoder": "OpenCV QRCodeDetector 4.10.0",
+  "qr_decoded_url": "https://example.com/",
+  "qr_decode_pass": true,
+  "qr_image_sha256": "ba02db7b0eb02be95a2f0e9c2f5e5c378043ad4a529603b886cf1c7c97270310",
+  "matrix_sha256": "74b5eef8f596a06968a3aeb2dc124eb5758d372a591256816e4c18b19987d3d9",
+  "ndef_decoded_url": "https://example.com/",
+  "ndef_parse_pass": true,
+  "ndef_record_hex": "D1 01 0D 55 04 65 78 61 6D 70 6C 65 2E 63 6F 6D 2F",
+  "ndef_message_bytes": 17,
+  "t2t_tlv_bytes": 20,
+  "page_padded_bytes": 20,
+  "start_user_page_hex": "04",
+  "tag_write_performed": false,
+  "hardware_scan_performed": false,
+  "silkscreen_scan_on_finished_pcb_performed": false
+}

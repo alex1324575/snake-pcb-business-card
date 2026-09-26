@@ -1,0 +1,4 @@
+(sym_lib_table
+ (version 7)
+ (lib (name "SnakeCard")(type "KiCad")(uri "${KIPRJMOD}/library/SnakeCard.kicad_sym")(options "")(descr "Project-local verified symbols"))
+)

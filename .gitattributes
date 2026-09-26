@@ -1,0 +1,8 @@
+# Preserve exact bytes across Windows/Linux checkouts. Verification manifests
+# hash native KiCad sources, generated exports, and firmware artifacts.
+* -text
+*.png binary
+*.pdf binary
+*.bin binary
+*.elf binary
+*.ndef binary

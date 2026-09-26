@@ -1,0 +1,41 @@
+name: Bug report
+description: Report a reproducible firmware, design, or documentation problem.
+title: "[Bug]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: revision
+    attributes:
+      label: Revision
+      description: Board revision and firmware commit or release.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include button inputs, supply conditions, and build commands where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Logs, measurements, or images. Remove personal information before uploading.
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Where was this observed?
+      options:
+        - Host tests or build
+        - KiCad or manufacturing files
+        - Assembled board
+        - Documentation
+    validations:
+      required: true

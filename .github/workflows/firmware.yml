@@ -1,0 +1,34 @@
+name: Firmware
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Native tests and Arm build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out sources
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Install compilers
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y gcc python3 gcc-arm-none-eabi libnewlib-arm-none-eabi
+
+      - name: Run native tests with sanitizers
+        run: python3 firmware/tools/build.py --test-host --sanitize
+
+      - name: Build and verify Arm images
+        run: python3 firmware/tools/build.py --build
+
+      - name: Check firmware against the board
+        run: python3 firmware/tools/check_board_contract.py

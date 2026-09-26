@@ -1,0 +1,210 @@
+(kicad_sch
+  (version 20250114)
+  (generator "snake_card_generator")
+  (generator_version "1.0")
+  (uuid "000dafc4-b68b-5d77-8c9d-3128494f861b")
+  (paper "A3")
+  (title_block
+    (title "System overview and implementation notes")
+    (date "2026-09-15")
+    (rev "B-PUBLIC")
+    (company "Snake Interactive PCB Business Card")
+    (comment 1 "USB-C 5V | 10x9 red LED | passive NFC")
+    (comment 2 "Public reference design - hardware validation pending"))
+  (lib_symbols)
+  (text "SNAKE / INTERACTIVE PCB CARD"
+    (at 20.32 25.4 0)
+    (effects
+      (font
+        (size 3.2 3.2))
+      (justify left))
+    (uuid "c227d8a0-3f65-5846-8e33-dc22df983c77"))
+  (text "Rev B-PUBLIC  |  85.6 x 54 mm  |  USB-C powered  |  10 x 9 red LEDs"
+    (at 20.32 35.56 0)
+    (effects
+      (font
+        (size 1.5 1.5))
+      (justify left))
+    (uuid "3f0d5957-86fb-53ec-a642-c71d407f0b4d"))
+  (sheet
+    (at 25.4 60.96)
+    (size 101.6 43.18)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "80920f47-b2de-5776-bee1-43eddc9d436a")
+    (property "Sheetname" "01 Power USB"
+      (at 76.2 57.15 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Sheetfile" "01_Power_USB.kicad_sch"
+      (at 76.2 107.96 0)
+      (effects
+        (font
+          (size 1 1))))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b"
+          (page "2")))))
+  (text "5 V input / CC resistors\nESD / LDO / power test pads"
+    (at 33.02 76.2 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "a9eeba3f-749a-51f0-b80b-14f7d4ae870e"))
+  (sheet
+    (at 152.4 60.96)
+    (size 101.6 43.18)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "b059586d-9932-57f5-b0a4-10cf75fbf52a")
+    (property "Sheetname" "02 MCU Inputs Debug"
+      (at 203.2 57.15 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Sheetfile" "02_MCU_Inputs_Debug.kicad_sch"
+      (at 203.2 107.96 0)
+      (effects
+        (font
+          (size 1 1))))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b"
+          (page "3")))))
+  (text "MCU / 4-way + START\nSWD / reset / decoupling"
+    (at 160.02 76.2 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "f3977271-9447-5b5d-9a66-061d401d48c6"))
+  (sheet
+    (at 279.4 60.96)
+    (size 101.6 43.18)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "33a880f4-cab4-5121-a288-54145ddbb78f")
+    (property "Sheetname" "03 LED Driver"
+      (at 330.2 57.15 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Sheetfile" "03_LED_Driver.kicad_sch"
+      (at 330.2 107.96 0)
+      (effects
+        (font
+          (size 1 1))))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b"
+          (page "4")))))
+  (text "I2C address 0x50\n10 CS sources / 9 SW scans"
+    (at 287.02 76.2 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "8db729cf-d4d3-57ec-b33f-34e097a1530c"))
+  (sheet
+    (at 152.4 137.16)
+    (size 101.6 43.18)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "f169102d-c421-5532-b094-ad61dd45b6ba")
+    (property "Sheetname" "04 LED Matrix"
+      (at 203.2 133.35 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Sheetfile" "04_LED_Matrix.kicad_sch"
+      (at 203.2 184.16 0)
+      (effects
+        (font
+          (size 1 1))))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b"
+          (page "5")))))
+  (text "D1-D90, row-major order\nAnode = COL / cathode = ROW"
+    (at 160.02 152.4 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "fc7912d7-50da-5008-871a-7427897f48f3"))
+  (sheet
+    (at 25.4 137.16)
+    (size 101.6 43.18)
+    (stroke
+      (width 0.254)
+      (type default))
+    (fill
+      (color 0 0 0 0))
+    (uuid "7b4a5613-b43e-5267-b2b4-43e409275f10")
+    (property "Sheetname" "05 NFC"
+      (at 76.2 133.35 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Sheetfile" "05_NFC.kicad_sch"
+      (at 76.2 184.16 0)
+      (effects
+        (font
+          (size 1 1))))
+    (instances
+      (project "SnakeBusinessCard"
+        (path "/000dafc4-b68b-5d77-8c9d-3128494f861b"
+          (page "6")))))
+  (text "ST25TN01K-AFH5\nNo USB / MCU power connection"
+    (at 33.02 152.4 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "52b2c015-185d-571b-815a-eeb3d76fea70"))
+  (text "INTERCONNECTS"
+    (at 279.4 140 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "b34e814c-b991-56fb-81a4-0056a4a54869"))
+  (text "+3V3 and GND: power, MCU and driver\nI2C_SCL / I2C_SDA / LED_EN: MCU to driver\nLED_COL1..10 / LED_ROW1..9: driver to array\nNFC_AC0 / NFC_AC1: isolated passive RF circuit"
+    (at 279.4 151 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "aa658b96-4bc4-54f4-a357-ae9070598f64"))
+  (text "BUILD NOTES"
+    (at 20.32 205.74 0)
+    (effects
+      (font
+        (size 1.8 1.8))
+      (justify left))
+    (uuid "42bb4719-c56a-56f7-b826-9d64cddbdbf0"))
+  (text "USB supplies power only. Program through SWD with target powered by USB.\nDriver firmware: R_EXT = 20k, GCC = 0x12; unused channels off.\nNFC L1 is a printed loop to be designed and tuned during PCB layout. C30 is DNP initially.\nNo battery, charger, USB data or USB-PD negotiation. QR and appearance belong to PCB artwork.\nAll circuits are native editable KiCad symbols and wires. Engineering checks accompany exports."
+    (at 20.32 218.44 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "df54d0e6-b84c-5a7b-a70a-b32622c6e0ea"))
+  (sheet_instances
+    (path "/"
+      (page "1")))
+  (embedded_fonts no))

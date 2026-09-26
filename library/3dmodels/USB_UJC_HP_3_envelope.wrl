@@ -1,0 +1,12 @@
+#VRML V2.0 utf8
+# Approximate connector envelope from 8.94 x 6.90 x 3.16 mm drawing. NOT supplier CAD.
+Transform { translation 0.000000 -1.161417 1.204724 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 3.519685 2.716535 0.078740 } } ] }
+Transform { translation 0.000000 -1.161417 0.039370 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 3.519685 2.716535 0.078740 } } ] }
+Transform { translation -1.720472 -1.161417 0.622047 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.078740 2.716535 1.165354 } } ] }
+Transform { translation 1.720472 -1.161417 0.622047 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.078740 2.716535 1.165354 } } ] }
+Transform { translation 0.000000 0.137795 0.622047 children [ Shape { appearance Appearance { material Material { diffuseColor 0.07 0.075 0.08 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 3.362205 0.118110 1.086614 } } ] }
+Transform { translation 0.000000 -1.062992 0.531496 children [ Shape { appearance Appearance { material Material { diffuseColor 0.07 0.075 0.08 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 2.559055 2.322835 0.216535 } } ] }
+Transform { translation -1.700787 0.000000 -0.177165 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.118110 0.393701 0.433071 } } ] }
+Transform { translation -1.700787 -1.496063 -0.177165 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.118110 0.393701 0.433071 } } ] }
+Transform { translation 1.700787 0.000000 -0.177165 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.118110 0.393701 0.433071 } } ] }
+Transform { translation 1.700787 -1.496063 -0.177165 children [ Shape { appearance Appearance { material Material { diffuseColor 0.65 0.66 0.67 specularColor 0.4 0.4 0.4 shininess 0.5 } } geometry Box { size 0.118110 0.393701 0.433071 } } ] }
