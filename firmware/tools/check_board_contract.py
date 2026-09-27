@@ -174,7 +174,7 @@ def audit(netlist, board, macros):
         pin(f'SW{index + 1}', 2, 'GND')
         pin(f'R{index + 11}', 1, '+3V3')
         pin(f'R{index + 11}', 2, net)
-        value(f'R{index + 11}', '10k')
+        value(f'R{index + 11}', '10k 1%')
         macro('BUTTON_' + name, 1 << index)
         controls.append((net, str(7 + index), f'PA{index}', f'SW{index + 1}'))
     macro('BUTTON_MASK', 31)
@@ -185,13 +185,13 @@ def audit(netlist, board, macros):
         pin('U2', driver_number, net, driver_function)
         pin(resistor, 1, '+3V3')
         pin(resistor, 2, net)
-        value(resistor, '2.2k')
+        value(resistor, '2.2k 1%')
         controls.append((net, str(number), gpio, 'U2.' + str(driver_number)))
     pin('U1', 12, 'LED_EN', 'PA5')
     pin('U2', 38, 'LED_EN', '~{SDB}')
     pin('R22', 1, 'LED_EN')
     pin('R22', 2, 'GND')
-    value('R22', '100k')
+    value('R22', '100k 1%')
     controls.append(('LED_EN', '12', 'PA5', 'U2.38'))
     for number, function, net, tp in ((24, 'PA13', 'SWDIO', 'TP6'),
                                        (25, 'PA14', 'SWCLK', 'TP7'),
@@ -219,7 +219,7 @@ def audit(netlist, board, macros):
     pin('U2', 39, reset_net, 'IICRST')
     pin('R23', 1, reset_net)
     pin('R23', 2, 'GND')
-    value('R23', '10k')
+    value('R23', '10k 1%')
     require(set(nets[reset_net]) == {('R23', '1'), ('U2', '39')},
             'IICRST no longer has only its pull-down; revise firmware documentation')
 

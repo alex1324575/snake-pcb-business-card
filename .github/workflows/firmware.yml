@@ -22,6 +22,11 @@ jobs:
       - name: Check artifact path privacy
         run: python3 -m unittest discover -s firmware/tests -p "test_build*.py"
 
+      - name: Check procurement records
+        run: |
+          python3 -m unittest discover -s tools/tests
+          python3 tools/procurement.py --check
+
       - name: Install compilers
         run: |
           sudo apt-get update

@@ -10,8 +10,8 @@ Reproduce from any directory: `python firmware/tools/check_board_contract.py` (a
 
 | Input | SHA-256 |
 |---|---|
-| `exports/SnakeBusinessCard.net.xml` | `b49f364292bd2034c926dcc9b51e9530b3c481464b8ca5a7992970dfa4a6593a` |
-| `SnakeBusinessCard.kicad_pcb` | `1d8f6f1a8ddd70a6b2e235cf3d18a1b565d091940c09105f31943f0235e35585` |
+| `exports/SnakeBusinessCard.net.xml` | `d4b02abae3b1a4f81b6da33f1c92965b38f35f325d7e08531faec41dbbacdf26` |
+| `SnakeBusinessCard.kicad_pcb` | `16a28285f6f04f0e54aa1c4b87c7dc6d09589935be81e559dc1e121aa344a5ce` |
 | `firmware/include/buttons.h` | `0e182ca8eb5b3384d9a153734e24341c3997be564666b86e13d4c2b42daf46c2` |
 | `firmware/include/snake.h` | `d585858d82c923e193bb6db81b9a64e234a83ffcd28d68fddceca383eb933038` |
 | `firmware/include/is31fl3737.h` | `e02bf3f2de072857ea072a174e0f3122fc40f9746cb02bc7aa6d30dc550e5c04` |

@@ -162,7 +162,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -201,6 +201,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f045d6bc-9bf8-4a34-a549-ff52cae0386e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "44a77da3-e583-5be5-b3e3-fa3937842c41")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -370,7 +382,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -401,6 +413,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "eb973226-5bde-4f43-a109-cf3525a1eca9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e51f6583-548d-5c5b-8696-d49bdf4d7662")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -888,7 +912,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -927,6 +951,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e0c85405-48d8-4058-b472-ef9233e3fcab")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8465678f-2326-5e0b-92c8-07e96a520777")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1096,7 +1132,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1135,6 +1171,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e3d01a03-5014-40d7-9c3e-92ffcc380f3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f080ce57-b684-5917-8232-86b5c7608d8d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1304,7 +1352,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1343,6 +1391,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "093959f2-01f9-40a5-afc7-5293e4393bfb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "31c8d40b-4a74-5bb5-95fe-8a720bcf83e6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1512,7 +1572,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1551,6 +1611,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "43ccb099-770c-484d-b7ed-fee4672f2ae1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1890de8e-7759-59a1-97db-29290ea4de4f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1720,7 +1792,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -1759,6 +1831,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "cbd5ce4a-6817-4476-b3eb-5359b15efdb1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 180)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "32340f2c-a0ad-57ed-9fc9-4344167e26fd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2081,7 +2165,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2120,6 +2204,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "da9bfd5c-b792-4373-8611-00c00d597b15")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "081786ee-1816-534d-ac66-eaffaa785b47")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2289,7 +2385,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2328,6 +2424,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3145a806-445b-454e-a2bd-1ba2ceec8d03")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b010dfc0-3e0d-5649-958e-106c3d4dcb65")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2497,7 +2605,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2536,6 +2644,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "94fd68e9-258c-4307-a6a2-ac6a435888d9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e0e13354-56c3-5f4e-b72a-45c7c7ee40a3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2705,7 +2825,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2744,6 +2864,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "6d050f17-11b7-4e43-a1a7-089741dc4d59")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "14f4eec0-5d42-5fc7-9c17-b5decc819e8a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2913,7 +3045,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2952,6 +3084,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ed83102d-841e-4248-aca2-ec4e58a696ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "51d70e9e-add9-5c3c-9193-f0ccde1eeda5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3121,7 +3265,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3160,6 +3304,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ecd3bf5a-459d-40b2-9bd3-1dc39d634caa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bc628d40-cc46-597e-a2dd-cdabe0d087dc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3317,7 +3473,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3329,7 +3485,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3363,11 +3519,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF1002V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4022c0e0-7da7-4d05-aae0-e8732d5e1ac2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1baa20e6-e86c-50ff-a7e6-334e3616e6c8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3490,7 +3658,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf"
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv755p.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3529,6 +3697,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "99383192-bd83-4167-89a4-00cf0d392189")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "12f2549e-d627-5d6d-a1dc-e058952922c0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3887,7 +4067,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3926,6 +4106,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "460d74ef-6cad-492b-b0d9-0a59d9cd01a0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ade14c09-94de-58e6-83ae-f88091f7d2ec")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4095,7 +4287,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4134,6 +4326,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "24d93b63-b54f-42ff-9855-7cf604b8fd90")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9e8ca3bd-6c31-57fc-bb7d-10712f52e06f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4303,7 +4507,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4342,6 +4546,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f653c13b-0f53-4a12-895c-282714ef2c4f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1a18e296-e541-5c84-909f-78d93ee1a680")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4511,7 +4727,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4550,6 +4766,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f3d46f90-aa1c-46cf-b297-05bab4c501a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1bfde8c9-d68c-5934-bd99-cc8350dc4748")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4719,7 +4947,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4758,6 +4986,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f7be8d3b-9c92-41d8-af94-ed2c3df628fe")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a57639e4-03d3-5c2f-9450-f50ab48b0a25")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4927,7 +5167,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4966,6 +5206,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3eef68d3-2c32-48ac-8ccb-0107eeb55598")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2967e202-e69b-51aa-a3a8-503047b72b36")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5135,7 +5387,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://www.sameskydevices.com/product/resource/ujc-hp-3-smt-tr.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5162,6 +5414,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a8048081-7f2d-470a-9561-d94ed6639475")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Same Sky"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8abd1ca0-e79a-53f1-8f44-4423c5e51dee")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5446,7 +5710,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5477,6 +5741,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "de8ba41e-6455-4868-85f1-765b4b35b2d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d9a7868a-7c75-5547-8308-880b698c79dc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5964,7 +6240,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6003,6 +6279,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4c30697c-d999-4788-872c-c8d20916bb1a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c2b51191-d572-54be-94b1-6459b5e5b3e3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6172,7 +6460,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6211,6 +6499,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "60716494-3b97-4a0d-a317-8fefe4cd5689")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c2f68012-ac13-517e-bbd0-4c6d937ccabb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6380,7 +6680,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6419,6 +6719,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "843777cc-2d30-4abc-8d54-6bff4534704d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a130948a-a68e-5fbb-9e76-7b1059ca6d09")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6622,6 +6934,18 @@
 				)
 			)
 		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2c5f91b2-a57d-5be7-accf-e59d13f16381")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/000dafc4-b68b-5d77-8c9d-3128494f861b/7b4a5613-b43e-5267-b2b4-43e409275f10/315b9f16-2fab-5ee9-9b3f-37aa61a6b82b")
 		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -6815,7 +7139,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -6846,6 +7170,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a0658604-cfef-4eb4-a658-9f3c75b0efb6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8ab38289-3228-5379-bde0-0068cfe08ded")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7333,7 +7669,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7372,6 +7708,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "12dcacb7-dc31-4c1e-99fc-577d9e221f87")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7f50b400-d10f-5633-a173-69516746a67a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7815,7 +8163,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7854,6 +8202,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "342b2fce-2ade-418f-8155-fbff3e3e1fda")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6febef55-27fa-57f2-9730-dfe939538485")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8023,7 +8383,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8062,6 +8422,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0e97d4c9-8de7-4e46-a2e3-d697b7bf9412")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "66d1d54b-2487-54fd-bf15-1d638ddc9e48")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8231,7 +8603,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8270,6 +8642,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e5e10083-6b55-429f-affd-7d7054bee66e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "39a5fc08-407e-57da-861a-bacf4f64d6f1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8439,7 +8823,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8473,11 +8857,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF2002V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "cd6ce3a2-9de7-4e5f-abbb-ac2a1904e849")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e67f7eca-3878-5d25-8fc6-c13bdcabc6fb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8600,7 +8996,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8639,6 +9035,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ce7f4d10-3dd3-4c5c-97a7-361e97c5c0ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "918cf9d0-1d13-5661-bf69-83b7e07df92c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8796,7 +9204,7 @@
 				)
 			)
 		)
-		(property "Value" "1u / 10V X7R"
+		(property "Value" "1u / 35V X7R"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -8808,7 +9216,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -8842,11 +9250,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C1608X7R1V105K080AC"
 			(at 0 0 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8adb9e34-808d-492b-96cf-50a903482d19")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 270)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "89c11255-a0fc-5eab-80a4-82d248640f11")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8969,7 +9389,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9008,6 +9428,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a979b2d5-f7ed-4fe5-98e2-f04f9b9cc167")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "62d5c267-e647-55ac-b9ec-8c947834a6a8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9177,7 +9609,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9216,6 +9648,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "eff595f0-effc-49f0-a860-515906034cff")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "86611867-388d-5004-93bc-d196ea309c87")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9385,7 +9829,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9424,6 +9868,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "47de41a5-cfb3-41e2-9bcb-d3aa291bccbc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f5e44101-190f-54be-a1cb-7a93f03587d6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9593,7 +10049,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9632,6 +10088,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "dff8a1c2-269b-4755-815e-375f37e9339e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2e5e7ac8-7b44-5f02-84fd-2fae812efa6f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9801,7 +10269,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9840,6 +10308,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9c14afee-fa53-4723-8e7b-ae7de01d0588")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ef15ebf2-4e53-54ea-b6b4-780dc8c73255")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10009,7 +10489,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10048,6 +10528,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "441f7507-c0a0-4fcf-90ba-616392a641e3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b17bc2d1-1b93-58fa-bdd3-19963c415dd0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10205,7 +10697,7 @@
 				)
 			)
 		)
-		(property "Value" "100n / 10V X7R"
+		(property "Value" "100n / 50V X7R"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -10217,7 +10709,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -10251,11 +10743,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C1608X7R1H104K080AA"
 			(at 0 0 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8bbf841f-1d2e-405e-9d18-52d688cd05d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 270)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "281b335f-2f41-5eb8-8437-c0028160966f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10378,7 +10882,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10417,6 +10921,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "76311e1d-3420-415b-a800-a88186da4da2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7dabb6c3-6036-5b4c-9c10-104834c322b3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10586,7 +11102,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10625,6 +11141,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "dda4abda-dd8f-48bd-98df-d3cbaffdca8d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7e2cdcde-30cb-5261-a0d7-1a9aa47159e3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10794,7 +11322,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10833,6 +11361,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7a133efb-8aa8-4b59-be9d-d7b7f90e85ee")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b3af3e1d-0f4a-581a-ac57-d59e7d0df360")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11002,7 +11542,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11041,6 +11581,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5034cbb3-0bdd-4e3c-be62-77b31e22bb38")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f163b94f-4551-5186-85c4-dfad3c1202e9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11210,7 +11762,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11249,6 +11801,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "81913120-6bf4-410d-8fee-1b1d08874ae9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "37785e2c-be0c-5422-9094-4a3b84da8253")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11418,7 +11982,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11457,6 +12021,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "14c54617-d7d1-4798-876c-cf8a80e6d4d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3aaf23aa-0902-5c61-bb96-067622851e45")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11626,7 +12202,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11665,6 +12241,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "569bf2eb-7557-4f61-9c9a-8b1abf8e48d3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "dd6c2765-702d-57fc-8cf6-666d517dfda3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11880,6 +12468,18 @@
 				)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "41359343-15ff-527d-a082-f16c626a6433")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/000dafc4-b68b-5d77-8c9d-3128494f861b/7b4a5613-b43e-5267-b2b4-43e409275f10/6448fd9d-884d-5eb8-bef7-c1207bbc09db")
 		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -11995,7 +12595,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12026,6 +12626,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d8ae5161-76c2-4646-b70b-4663211a1ff8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e4624d3c-87d9-5700-89cc-705f0e8000dc")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12276,7 +12888,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12315,6 +12927,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e2fbf06f-de02-4cc0-8c94-338721597ea4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "93a21167-d264-541e-b7d8-ee6bd04e872e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12484,7 +13108,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12523,6 +13147,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "2f77fc93-7f53-4ed7-8063-e01b0a993f9a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "43fc32e4-ebf7-5d76-bbeb-dc1dbf8682ac")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12680,7 +13316,7 @@
 				)
 			)
 		)
-		(property "Value" "1u / 10V X7R"
+		(property "Value" "1u / 35V X7R"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12692,7 +13328,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12726,11 +13362,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C1608X7R1V105K080AC"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9a0d1f4f-7781-4b86-a8e0-cf3e2ce6577a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "947c5387-64d5-594c-bfd9-e1f7254fb229")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12853,7 +13501,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12892,6 +13540,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "fd3a6374-a74a-41ee-a39d-81cbee52138f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "34732407-d659-5f58-85a8-cdca17de87ee")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13061,7 +13721,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13100,6 +13760,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e07bb853-2f26-4cec-8301-de04b6728cd1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "56d51eca-be51-5cde-b305-fccca6d89c7f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13269,7 +13941,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13308,6 +13980,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0cb8ec35-8bc1-4b17-8108-9652cdb9795b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3faa34a6-fdcf-54fb-a6ea-f753f8d31e81")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13477,7 +14161,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13516,6 +14200,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "75eef1e4-9a9c-450e-903c-6d320b9f3a63")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "daaae462-7cb2-5bbe-b33f-c00ca937d71d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13673,7 +14369,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "2.2k 1%"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13685,7 +14381,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13719,11 +14415,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF2201V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "70c6e7d3-bc36-47b7-a4d5-8440b6b42dad")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b9261dcc-b146-53ff-822f-2d9f90ea67c4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13846,7 +14554,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -13885,6 +14593,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4a285ef5-35ad-4b3a-992d-bd08d77966bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3b840edb-dbf0-51dd-81f3-359cee799deb")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14042,7 +14762,7 @@
 				)
 			)
 		)
-		(property "Value" "100n / 10V X7R"
+		(property "Value" "100n / 50V X7R"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -14054,7 +14774,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -14088,11 +14808,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C1608X7R1H104K080AA"
 			(at 0 0 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "8e844f28-0adc-4203-97bc-b94700f67765")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 270)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "88d72b35-d3ee-552a-ab2d-d1c4f83c0257")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14215,7 +14947,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14254,6 +14986,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9636f64c-e3dc-4273-b9a8-6c0bc5ea8bb3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "300bfc36-5405-5346-a487-cb53583912f4")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14411,7 +15155,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14423,7 +15167,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14457,11 +15201,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF1002V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "035bec94-2b5f-4c64-8e54-9607098c8463")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d1cf141a-12a5-5907-adf3-fceb5ba587de")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14584,7 +15340,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14623,6 +15379,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "04e3cd1a-8e15-4363-ad06-12299663409a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "114fdef9-2483-56ba-a822-2d4b366ee31b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14792,7 +15560,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -14831,6 +15599,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "2210bf33-8daf-492d-9660-ce195dd3b723")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f2000a6f-0251-537e-9f3e-f03be4c698c9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15000,7 +15780,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -15031,6 +15811,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "aff2318d-454e-48ca-b0d3-4386d48a9716")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "58b61d5e-4cd0-5810-9ce6-54feaebcabf8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15518,7 +16310,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15557,6 +16349,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "696bfc2e-068b-45b6-9da5-25cd05c119c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "fd87ce51-58e7-5758-8277-3937247fd883")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15726,7 +16530,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15765,6 +16569,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "22f3383c-e605-4e94-8622-01123272cd18")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "36b40f28-7909-5713-a4ec-d7f5c2253971")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15934,7 +16750,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.issi.com/WW/pdf/31FL3737.pdf"
+		(property "Datasheet" "https://www.lumissil.com/assets/pdf/core/IS31FL3737_DS.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -15973,6 +16789,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c5a4f0d3-0bcd-43c0-bf5b-970bc21fdc67")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Lumissil Microsystems"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "26961810-8444-5392-a995-02327c0585cf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16693,7 +17521,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16732,6 +17560,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "cba49b39-027a-4111-8456-189ab1987c27")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4b0a8466-3e55-5291-b6a0-f3aef8362fec")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16901,7 +17741,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -16940,6 +17780,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c084a7d7-8977-4842-ad49-d37b493780da")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "98034ea9-b56e-5390-b95c-7229dcd1cec1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17097,7 +17949,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "100k 1%"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17109,7 +17961,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17143,11 +17995,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF1003V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "125cfd6a-f058-4379-9a6d-2c9773cf836c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "190126b1-2b91-5eb7-9462-9076f2a8a1bd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17258,7 +18122,7 @@
 				)
 			)
 		)
-		(property "Value" "1u / 10V X7R"
+		(property "Value" "1u / 35V X7R"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17270,7 +18134,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -17304,11 +18168,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C1608X7R1V105K080AC"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7fa62a5b-ee7a-420b-a166-fc389a60f85b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "da93871f-e826-5a89-b42d-6c2415fd6172")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17431,7 +18307,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17462,6 +18338,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a4cc7475-3021-464d-ab66-d41d695b2605")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Alps Alpine"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a26065ae-2695-5252-901b-a0b686a481ea")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17949,7 +18837,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -17988,6 +18876,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "dc1d0f8b-0f08-487d-9f76-faf72aee29d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "43a7307b-588a-5524-bfae-b0bd464a4692")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18157,7 +19057,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18196,6 +19096,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "72783d01-191f-4358-9ca4-b0d948d3e047")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5e14d580-dfda-5568-872f-d119cca04a9a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18365,7 +19277,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18404,6 +19316,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "edcb80e4-c666-4f36-a74b-5ad601aa97cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "82f1a272-c9df-539b-aabc-741dba2cc746")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18573,7 +19497,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18612,6 +19536,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "c42e2307-3f42-457b-aa3e-e6337d21630e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "504db90d-a86c-5b7f-8e30-42213fa8d863")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18769,7 +19705,7 @@
 				)
 			)
 		)
-		(property "Value" "100n / 10V X7R"
+		(property "Value" "100n / 50V X7R"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18781,7 +19717,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -18815,11 +19751,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C1608X7R1H104K080AA"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ee01002c-cb40-4115-88f4-94d0096e48da")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "3cd0a94b-ce34-52bd-8a55-af6f6d2e1376")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18942,7 +19890,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -18981,6 +19929,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5323a48a-d3f5-4f5d-8c08-f2e17bc1a909")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "21bbc04a-7006-548c-a0a2-61ac54e4a672")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19150,7 +20110,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19189,6 +20149,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1c8cea42-3122-4baf-b4e3-6b41a9128c75")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4e46794e-6b12-5b19-9e91-4fa9154272a7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19358,7 +20330,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19397,6 +20369,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "26131243-d8f1-412b-9db7-22e46cfa789c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8ebdd452-b008-591f-864f-5749e3852f01")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19566,7 +20550,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19605,6 +20589,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "52c5de13-8d96-4ba8-b63e-64fc9ea7ccf8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4c64402f-33b5-555b-b452-855f4d64a65c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19774,7 +20770,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19808,11 +20804,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF5101V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "980ece16-e887-4cc6-9383-8c28909e9789")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "12c62983-07a2-51dc-b26f-1495b6eab420")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19935,7 +20943,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -19974,6 +20982,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "264e8a82-3489-47cd-a2ff-01a10d663517")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9b85f42b-8d96-5cdc-96cd-1089b392dbe7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20143,7 +21163,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20182,6 +21202,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "deeaeed0-3a93-48af-bb2d-3371278ec728")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "85067b5c-bae9-5e9d-abb5-36681f6dbae1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20339,7 +21371,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20351,7 +21383,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20385,11 +21417,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF1002V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "bf8a7f46-97ac-493c-86f3-5b4f0457769c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "363c00fc-0cf6-5962-86d4-5f65ba3c58a0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20512,7 +21556,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20546,11 +21590,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF5101V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1bed22c7-344a-4623-928d-1e237d776fe4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1167725b-4e2f-5aaf-b0f3-d431be0069c0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20673,7 +21729,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20712,6 +21768,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e16bdf68-ccb1-4a7f-8330-65f04ea1e102")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5edbf9c9-9bff-5071-b040-45fb11fc1cee")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20881,7 +21949,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -20920,6 +21988,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e16e1f58-0549-4ea3-b5ca-eb45e14e402d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2a73fd76-9b8b-5618-b62c-a136dce6e553")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21089,7 +22169,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21128,6 +22208,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ed0447d6-a014-4260-be0c-b91cae368eb0")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "afc77cc6-2b6e-5787-aba7-08137b99f627")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21297,7 +22389,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21336,6 +22428,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5c7408be-e6b5-4c8b-8db2-a77200eaa421")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9ac693e1-7903-55a5-97fa-368ec5050b0c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21493,7 +22597,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21505,7 +22609,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21539,11 +22643,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF1002V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7288d879-5f35-4f0f-830a-16449d3cb26f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b3001d27-9322-5308-aae4-e2ffac9fa6c1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21666,7 +22782,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21705,6 +22821,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9f054a68-578d-4a6c-bcbd-93b44be63bc1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "fdaaab9a-47c9-5d15-9192-97bb5a061ea5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21874,7 +23002,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -21913,6 +23041,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3e87cbb6-76ea-47fd-8ad1-5b2430987706")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5fde2dff-00aa-5fa6-bde8-dc762b86d64b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22121,6 +23261,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "74257503-33c6-4365-9c95-8c26c6c7e16b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7f4fd957-1ce3-5505-9909-18fc94e5ac15")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22745,7 +23897,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22784,6 +23936,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e87475c5-c6c1-44d0-b9c4-fb95f568c799")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "637a7b8c-1d1f-5574-9860-73d06d060a92")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22941,7 +24105,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "2.2k 1%"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22953,7 +24117,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -22987,11 +24151,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF2201V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "65ec272a-1ef3-4642-879c-0de85d3be3cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "7a5be007-ed65-5a5b-89ea-756a47e2f563")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23114,7 +24290,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23153,6 +24329,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "dfc1e2bb-052a-4cd1-8e08-e2be42105974")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d133fc11-385b-5445-b7e3-1028a54dc744")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23310,7 +24498,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23322,7 +24510,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23356,11 +24544,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF1002V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "fddcdb78-da96-44be-ae82-e21395ea0b33")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0c19d526-5eb8-5052-bce3-02c8d73036d0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23483,7 +24683,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23522,6 +24722,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0c2c2fe2-489c-48b4-91b2-c01d056ab2f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "116de1e4-8dfc-59b6-accc-34c9ef8d09a9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23691,7 +24903,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23730,6 +24942,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "6b67a4f1-e0ba-4225-81b0-2b25a547b682")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "2ea3f6c7-ab74-5a56-8bec-efee3518abb6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23887,7 +25111,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23899,7 +25123,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -23933,11 +25157,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF1002V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "45685053-f265-44b6-8feb-cb27219a48aa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9bcc68c3-165e-57d3-a0e4-90ecdc78dd73")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24060,7 +25296,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24099,6 +25335,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0c943684-27f1-4b73-b1be-51d81ef031bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "79881b58-6e0d-5f29-afc7-7e1e9d5af758")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24268,7 +25516,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24307,6 +25555,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "458fc208-b0a7-40f6-a563-8cca1ea842a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5d5f790d-56d5-50b6-9025-541d443bbe6c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24464,7 +25724,7 @@
 				)
 			)
 		)
-		(property "Value" "100n / 10V X7R"
+		(property "Value" "100n / 50V X7R"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24476,7 +25736,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24510,11 +25770,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C1608X7R1H104K080AA"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "da221402-5c4f-45af-88a8-f17ec9102202")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f4bc7695-e750-5f0e-9876-1636d2068f7d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24625,7 +25897,7 @@
 				)
 			)
 		)
-		(property "Value" "100n / 10V X7R"
+		(property "Value" "100n / 50V X7R"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24637,7 +25909,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24671,11 +25943,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C1608X7R1H104K080AA"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e757b6aa-bc89-4b64-9b92-e79cb312f10c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b0e0e203-728c-5a82-a233-4e20618da581")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24798,7 +26082,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -24837,6 +26121,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d3a2ad3c-817a-48ba-974b-44d7b2e96892")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "fdebadc8-6901-53ba-9cfa-9e618a1d9daf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24994,7 +26290,7 @@
 				)
 			)
 		)
-		(property "Value" "1u / 10V X7R"
+		(property "Value" "1u / 35V X7R"
 			(at 0 1.43 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -25006,7 +26302,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -25040,11 +26336,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "C1608X7R1V105K080AC"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "04838f89-291b-4120-8b2d-fb3a322b1325")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 90)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "049c913c-7547-5be3-9fd4-9313068d582c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25167,7 +26475,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25206,6 +26514,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "fa223dd1-5c55-4b8c-ad8f-d00ef7988c36")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0a0a9634-7a9c-5a11-b8f9-ac1cbc518d21")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25375,7 +26695,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25414,6 +26734,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4b24a4ef-fbe1-4d7e-a10e-8ffb6d210202")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5f23e3ca-30dc-55c4-bb40-28ca94bd67c7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25571,7 +26903,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10k 1%"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25583,7 +26915,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25617,11 +26949,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "ERJ3EKF1002V"
 			(at 0 0 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e282ce15-fdb5-4bc7-9617-9370f920f170")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic Industry"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8593cc07-8a0b-59a4-98b9-b74c259d277e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25744,7 +27088,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25783,6 +27127,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e11ae18b-2b30-4e21-a1e4-4ad328433fb8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0639873a-29f0-5cda-9b33-1d63ac0259ed")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25952,7 +27308,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -25991,6 +27347,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "052092fa-1fd2-4848-891a-7fda4db6c987")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "338131f3-9c06-5c7e-b3c9-a47cc8f27397")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26160,7 +27528,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26199,6 +27567,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "88bb15a8-99d1-4700-b1cf-12cd29bd8cf8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a815d374-5e82-5cf6-830b-03a28aa22f10")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26368,7 +27748,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26407,6 +27787,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "06d4fc50-f964-4870-83a8-e28ce6f5c5a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "11b52f53-d5fe-5dab-8a19-d00c70a30533")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26576,7 +27968,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26615,6 +28007,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "effc8030-0361-418b-a2a7-00331e345387")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "635c850e-5289-5296-9683-30f3e4999728")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26784,7 +28188,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -26823,6 +28227,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4cbd8a4f-020e-4976-b710-3e1f44e799d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "006190de-32c6-52cb-b634-3ed62a3eab96")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26992,7 +28408,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27031,6 +28447,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e8eed81f-fde9-4ffe-bfa7-571cc1c77982")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4705aaf8-9f2e-5c8d-9871-2f07039e1c73")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27200,7 +28628,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27239,6 +28667,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d5834d60-3b91-4bf8-87ea-a8ab8175f653")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "09c7d584-c65a-552b-b204-a6cf10183dca")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27408,7 +28848,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27447,6 +28887,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "30fb7de3-25b9-44aa-a6aa-f3082759c33b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4b3ff887-2fa2-556f-b528-c59fedf2ec9e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27604,7 +29056,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7u / 10V X7R"
+		(property "Value" "4.7u / 16V"
 			(at 0 1.43 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27616,7 +29068,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
 			(at 0 0 270)
 			(layer "F.Fab")
 			(hide yes)
@@ -27650,11 +29102,23 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "GRM188Z71C475KE21D"
 			(at 0 0 270)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "95ed4704-ca87-470c-89c0-b251a8509706")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata Manufacturing"
+			(at 0 0 270)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "11a9f57c-4c71-54f5-94f4-042abea93fc0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27777,7 +29241,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -27816,6 +29280,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9d53e0f7-1c49-4bc8-9201-c07ca37bcd4a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a09affde-d410-5f7d-81e0-4a97f289844b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27985,7 +29461,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -28024,6 +29500,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "21693d6e-8192-4323-8634-b41a993fac60")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0c6ee159-eea7-559f-93f6-de03ebfbd506")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28193,7 +29681,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -28232,6 +29720,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ef60b916-0ecb-470a-ba16-2aab2a327d43")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "32110fcc-2963-5d6b-9b20-23890eb98f07")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28401,7 +29901,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -28440,6 +29940,18 @@
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e4d4b46e-7caf-496d-8862-e9339fa01513")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer" "Kingbright"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "5f827cc8-aeb4-5654-9bc0-c094b21c0d2f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28652,6 +30164,19 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "5690c582-42e5-5f5d-a2db-cd14c3c6669e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a/0c0eea4a-9ea8-5f7b-bad9-0fb043754969")
 		(attr exclude_from_pos_files)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -28763,6 +30288,19 @@
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "ba1ffdc6-d751-4622-a8a2-05ab7efdbdcb")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "ff0b59d5-0e55-5070-9088-892ab3314098")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28890,6 +30428,19 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "2924836a-150f-52fb-b508-15007235631b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a/2d547a08-7453-550e-a6c1-4140bf14b3bb")
 		(attr exclude_from_pos_files)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -29001,6 +30552,19 @@
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "7afdf541-4e5b-4162-9c37-e0ec691ad11a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "887727d7-e664-51d9-99d3-30229eca667d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29128,6 +30692,19 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "e064c494-8635-51e8-9104-fbdd447b18f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/000dafc4-b68b-5d77-8c9d-3128494f861b/b059586d-9932-57f5-b0a4-10cf75fbf52a/832eb3fc-52e5-5e08-b5b9-2cbfaa0e95b3")
 		(attr exclude_from_pos_files)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -29247,6 +30824,19 @@
 				(justify mirror)
 			)
 		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "efdb13b3-6694-5d03-ad3b-e10da45fdd7e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
 		(path "/000dafc4-b68b-5d77-8c9d-3128494f861b/80920f47-b2de-5776-bee1-43eddc9d436a/9696472b-ff20-5530-88e9-95ad2e0903f8")
 		(attr exclude_from_pos_files)
 		(duplicate_pad_numbers_are_jumpers no)
@@ -29358,6 +30948,19 @@
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "4417f897-2d83-48d2-9572-faf797f8b8bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "aa6b616a-1484-5ea0-add0-65f7d92f0ddf")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31674,6 +33277,19 @@
 			(layer "B.SilkS")
 			(hide yes)
 			(uuid "b3c6563f-cafd-45d0-b6d7-4a9521b8cf20")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+				(justify mirror)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 0 0 0)
+			(layer "B.SilkS")
+			(hide yes)
+			(uuid "0ddc61dc-8d8b-514b-b401-bde305df1e50")
 			(effects
 				(font
 					(size 1.27 1.27)

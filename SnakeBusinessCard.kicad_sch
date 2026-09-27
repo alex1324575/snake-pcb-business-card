@@ -197,7 +197,7 @@
         (size 1.8 1.8))
       (justify left))
     (uuid "42bb4719-c56a-56f7-b826-9d64cddbdbf0"))
-  (text "USB supplies power only. Program through SWD with target powered by USB.\nDriver firmware: R_EXT = 20k, GCC = 0x12; unused channels off.\nNFC L1 is a printed loop to be designed and tuned during PCB layout. C30 is DNP initially.\nNo battery, charger, USB data or USB-PD negotiation. QR and appearance belong to PCB artwork.\nAll circuits are native editable KiCad symbols and wires. Engineering checks accompany exports."
+  (text "USB supplies power only. Program through SWD with target powered by USB.\nDriver firmware: R_EXT = 20k, GCC = 0x20 (32); unused channels off.\nNFC L1 is a printed loop; the routed antenna still requires measured tuning. C30 is DNP initially.\nNo battery, charger, USB data or USB-PD negotiation. QR and appearance belong to PCB artwork.\nAll circuits are native editable KiCad symbols and wires. Engineering checks accompany exports."
     (at 20.32 218.44 0)
     (effects
       (font

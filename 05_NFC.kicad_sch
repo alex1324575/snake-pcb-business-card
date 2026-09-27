@@ -385,6 +385,11 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
+    (property "Manufacturer" "STMicroelectronics"
+      (at 231.14 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
     (pin "3"
       (uuid "ec39e81c-06c0-57e7-bbf3-c1c843288a18"))
     (pin "4"
@@ -484,6 +489,11 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
+    (property "Manufacturer" ""
+      (at 68.58 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
     (pin "1"
       (uuid "fe1eeec0-f19f-5075-95d3-6cc90efeecda"))
     (pin "2"
@@ -564,6 +574,11 @@
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" ""
+      (at 144.78 91.44 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" ""
       (at 144.78 91.44 0)
       (effects
         (font

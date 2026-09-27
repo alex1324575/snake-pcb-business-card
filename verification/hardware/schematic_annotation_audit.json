@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "scope": "Correct stale schematic annotation to match existing firmware GCC=32; no electrical or placement changes",
+  "files": [
+    {
+      "path": "SnakeBusinessCard.kicad_sch",
+      "before_sha256": "01f4b18a76b44f8f772153121572d855226dc4babfcc21e511d786ce288d17ab",
+      "after_sha256": "e6d92e8cff761100eff90f09c30b6756ad8ded8943103cc00d0c825ca43bdd89",
+      "exact_text_replacements": [
+        {
+          "from": "GCC = 0x12",
+          "to": "GCC = 0x20 (32)"
+        },
+        {
+          "from": "NFC L1 is a printed loop to be designed and tuned during PCB layout.",
+          "to": "NFC L1 is a printed loop; the routed antenna still requires measured tuning."
+        }
+      ]
+    },
+    {
+      "path": "03_LED_Driver.kicad_sch",
+      "before_sha256": "20e1cb97c37d165a74ab6555d23c597ea283ddadb00c3839b74054801791e106",
+      "after_sha256": "c5cc504bbc7541c42dc630f8db5229f380704978753efdcc46c99705c8e80a5a",
+      "exact_text_replacements": [
+        {
+          "from": "GCC = 0x12",
+          "to": "GCC = 0x20 (32)"
+        },
+        {
+          "from": "About 2.95 mA pulse / 0.231 mA average per LED.",
+          "to": "About 5.25 mA pulse / 0.410 mA average per LED (nominal)."
+        }
+      ]
+    }
+  ]
+}

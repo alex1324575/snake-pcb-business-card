@@ -40,7 +40,7 @@ def main():
         ["sch", "erc", "--format", "json", "--severity-all", "--exit-code-violations", "-o", "verification/hardware/erc.json", sch],
         ["pcb", "drc", "--format", "json", "--schematic-parity", "--all-track-errors", "--severity-all", "--exit-code-violations", "-o", "verification/hardware/pcb_drc.json", pcb],
         ["sch", "export", "pdf", "--exclude-pdf-metadata", "-o", "exports/SnakeBusinessCard_Schematic.pdf", sch],
-        ["sch", "export", "bom", "--fields", "Reference,Value,Footprint,QUANTITY,DNP", "--labels", "References,Value,Footprint,Quantity,DNP", "--group-by", "Value,Footprint,DNP", "-o", "exports/SnakeBusinessCard_BOM.csv", sch],
+        ["sch", "export", "bom", "--fields", "Reference,Value,Manufacturer,MPN,Footprint,QUANTITY,DNP,Datasheet", "--labels", "References,Value,Manufacturer,MPN,Footprint,Quantity,DNP,Datasheet", "--group-by", "Value,Manufacturer,MPN,Footprint,DNP,Datasheet", "-o", "exports/SnakeBusinessCard_BOM.csv", sch],
         ["pcb", "export", "gerbers", "--layers", "F.Cu,B.Cu,F.Paste,B.Paste,F.SilkS,B.SilkS,F.Mask,B.Mask,Edge.Cuts", "-o", "fabrication/", pcb],
         ["pcb", "export", "drill", "--excellon-separate-th", "--generate-map", "--map-format", "pdf", "--generate-report", "--report-path", "fabrication/drill_report.txt", "-o", "fabrication/", pcb],
     ]
@@ -72,6 +72,17 @@ def main():
     for path in [ROOT / "exports/SnakeBusinessCard.net.xml", * (ROOT / "verification/hardware").glob("*.json"), * (ROOT / "fabrication").glob("*.txt")]:
         content = sanitize(path.read_text(encoding="utf-8-sig"))
         path.write_text(content, encoding="utf-8")
+    # The catalog check uses the freshly normalized XML. Write purchasing tables
+    # before hashing exports so the manifest describes this same revision.
+    procurement = subprocess.run([sys.executable, "tools/procurement.py", "--write-tables"],
+                                 cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+    reports.append({"command": ["python", "tools/procurement.py", "--write-tables"],
+                    "exit_code": procurement.returncode, "stdout": sanitize(procurement.stdout),
+                    "stderr": sanitize(procurement.stderr)})
+    if procurement.returncode:
+        print(sanitize(procurement.stderr), file=sys.stderr)
+        (ROOT / "verification/hardware/export_log.json").write_text(json.dumps(reports, indent=2) + "\n", encoding="utf-8")
+        return procurement.returncode
     (ROOT / "verification/hardware/export_log.json").write_text(json.dumps(reports, indent=2) + "\n", encoding="utf-8")
     files = [ROOT / pcb, ROOT / "SnakeBusinessCard.kicad_pro", *ROOT.glob("*.kicad_sch"), *(ROOT / "exports").glob("*"), *(ROOT / "fabrication").glob("*"), *(ROOT / "docs/images").glob("*.png")]
     manifest = {"source": pcb, "hardware_tested": False, "image_provenance": "Native KiCad 10 ray-traced renders of the public board; no photographic or generated-image substitution.",

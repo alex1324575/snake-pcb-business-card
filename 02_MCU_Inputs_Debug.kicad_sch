@@ -1055,6 +1055,11 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
+    (property "Manufacturer" "STMicroelectronics"
+      (at 101.6 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
     (pin "1"
       (uuid "3edf3b56-f88d-5969-8c38-f917075779bc"))
     (pin "2"
@@ -1467,7 +1472,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "100n / 10V X7R"
+    (property "Value" "100n / 50V X7R"
       (at 52.18 176.53 0)
       (effects
         (font
@@ -1477,12 +1482,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf"
       (at 43.18 175.26 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "C1608X7R1H104K080AA"
+      (at 43.18 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "TDK"
       (at 43.18 175.26 0)
       (effects
         (font
@@ -1551,7 +1561,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "4.7u / 10V X7R"
+    (property "Value" "4.7u / 16V"
       (at 95.36 176.53 0)
       (effects
         (font
@@ -1561,12 +1571,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf"
       (at 86.36 175.26 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "GRM188Z71C475KE21D"
+      (at 86.36 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Murata Manufacturing"
       (at 86.36 175.26 0)
       (effects
         (font
@@ -1635,7 +1650,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "10k"
+    (property "Value" "10k 1%"
       (at 141.08 176.53 0)
       (effects
         (font
@@ -1645,12 +1660,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 132.08 175.26 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF1002V"
+      (at 132.08 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 132.08 175.26 0)
       (effects
         (font
@@ -1719,7 +1739,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "100n / 10V X7R"
+    (property "Value" "100n / 50V X7R"
       (at 186.8 176.53 0)
       (effects
         (font
@@ -1729,12 +1749,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf"
       (at 177.8 175.26 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "C1608X7R1H104K080AA"
+      (at 177.8 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "TDK"
       (at 177.8 175.26 0)
       (effects
         (font
@@ -1825,7 +1850,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "10k"
+    (property "Value" "10k 1%"
       (at 250.3 54.61 0)
       (effects
         (font
@@ -1835,12 +1860,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 241.3 53.34 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF1002V"
+      (at 241.3 53.34 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 241.3 53.34 0)
       (effects
         (font
@@ -1919,12 +1949,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf"
       (at 327.66 60.96 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "SKQGABE010"
+      (at 327.66 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Alps Alpine"
       (at 327.66 60.96 0)
       (effects
         (font
@@ -1993,7 +2028,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "10k"
+    (property "Value" "10k 1%"
       (at 250.3 90.17 0)
       (effects
         (font
@@ -2003,12 +2038,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 241.3 88.9 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF1002V"
+      (at 241.3 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 241.3 88.9 0)
       (effects
         (font
@@ -2087,12 +2127,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf"
       (at 327.66 96.52 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "SKQGABE010"
+      (at 327.66 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Alps Alpine"
       (at 327.66 96.52 0)
       (effects
         (font
@@ -2161,7 +2206,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "10k"
+    (property "Value" "10k 1%"
       (at 250.3 125.73 0)
       (effects
         (font
@@ -2171,12 +2216,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 241.3 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF1002V"
+      (at 241.3 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 241.3 124.46 0)
       (effects
         (font
@@ -2255,12 +2305,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf"
       (at 327.66 132.08 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "SKQGABE010"
+      (at 327.66 132.08 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Alps Alpine"
       (at 327.66 132.08 0)
       (effects
         (font
@@ -2329,7 +2384,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "10k"
+    (property "Value" "10k 1%"
       (at 250.3 161.29 0)
       (effects
         (font
@@ -2339,12 +2394,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 241.3 160.02 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF1002V"
+      (at 241.3 160.02 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 241.3 160.02 0)
       (effects
         (font
@@ -2423,12 +2483,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf"
       (at 327.66 167.64 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "SKQGABE010"
+      (at 327.66 167.64 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Alps Alpine"
       (at 327.66 167.64 0)
       (effects
         (font
@@ -2497,7 +2562,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "10k"
+    (property "Value" "10k 1%"
       (at 250.3 196.85 0)
       (effects
         (font
@@ -2507,12 +2572,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 241.3 195.58 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF1002V"
+      (at 241.3 195.58 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 241.3 195.58 0)
       (effects
         (font
@@ -2591,12 +2661,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf"
       (at 327.66 203.2 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "SKQGABE010"
+      (at 327.66 203.2 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Alps Alpine"
       (at 327.66 203.2 0)
       (effects
         (font
@@ -2707,6 +2782,11 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
+    (property "Manufacturer" ""
+      (at 30.48 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
     (pin "1"
       (uuid "b6217492-8005-584d-a18d-b7b2ec75de25"))
     (instances
@@ -2764,6 +2844,11 @@
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" ""
+      (at 66.04 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" ""
       (at 66.04 269.24 0)
       (effects
         (font
@@ -2829,6 +2914,11 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
+    (property "Manufacturer" ""
+      (at 101.6 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
     (pin "1"
       (uuid "4e696227-8c48-568e-ba96-f196efc5add8"))
     (instances
@@ -2890,6 +2980,11 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
+    (property "Manufacturer" ""
+      (at 137.16 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
     (pin "1"
       (uuid "c524f374-994a-5b45-8e57-ade228e0fd4a"))
     (instances
@@ -2947,6 +3042,11 @@
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" ""
+      (at 172.72 269.24 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" ""
       (at 172.72 269.24 0)
       (effects
         (font

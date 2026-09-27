@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "catalog_sha256": "8cca7357e574412bd3124d54fe98fd150a0b8617a45cb9363c06c1c3823ad804",
+  "schematic_components": 135,
+  "fitted_components": 125,
+  "fitted_orderable_mpns": 17,
+  "dnp_components": [
+    "C30"
+  ],
+  "pcb_features": [
+    "TP1",
+    "TP2",
+    "TP3",
+    "TP4",
+    "TP5",
+    "TP6",
+    "TP7",
+    "TP8",
+    "L1"
+  ],
+  "hardware_tested": false
+}

@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "scope": "Procurement metadata and selected value labels only",
+  "allowed_fields": [
+    "Manufacturer",
+    "MPN",
+    "Datasheet",
+    "Value"
+  ],
+  "files": [
+    {
+      "path": "01_Power_USB.kicad_sch",
+      "matched_components": 11,
+      "before_sha256": "1ccd83e05b480484a8789924ffec5410c184df0225abda7801eb2a37daf3d4d3",
+      "after_sha256": "2ae9e0084bf4ee51be104bbbc441a7f5ebba64558387a3dda262f7249e254ee1",
+      "non_metadata_content_preserved": true
+    },
+    {
+      "path": "02_MCU_Inputs_Debug.kicad_sch",
+      "matched_components": 20,
+      "before_sha256": "d260910e8064d9a99ae051182da66178d9303e16f16ba346b54c4678a7fa0c52",
+      "after_sha256": "c3e93d11e4545a150504c2107201d9d90fa10797dcb4d9b5acd638209858677e",
+      "non_metadata_content_preserved": true
+    },
+    {
+      "path": "03_LED_Driver.kicad_sch",
+      "matched_components": 11,
+      "before_sha256": "901365324000ee8775c4722745a2cdaf8cb2dc2dda102e4bfd3923b7b8970d28",
+      "after_sha256": "20e1cb97c37d165a74ab6555d23c597ea283ddadb00c3839b74054801791e106",
+      "non_metadata_content_preserved": true
+    },
+    {
+      "path": "04_LED_Matrix.kicad_sch",
+      "matched_components": 90,
+      "before_sha256": "8759235488343ed35f2e1b17056e315f3c53b5f30e07e2ade7e9cc6d79f2860c",
+      "after_sha256": "7d02444d064312eff33aa366e5282ac26f7c3cdc055f3e63f7458c616fa81230",
+      "non_metadata_content_preserved": true
+    },
+    {
+      "path": "05_NFC.kicad_sch",
+      "matched_components": 3,
+      "before_sha256": "d85280270d31521f73001573cc4997b83387c105b35b0789ebfe3b4045a40656",
+      "after_sha256": "1e023712d459efe9d9040061abe20b10283e3c2bf92c1bf0af534cd0bd529871",
+      "non_metadata_content_preserved": true
+    },
+    {
+      "path": "SnakeBusinessCard.kicad_sch",
+      "matched_components": 0,
+      "before_sha256": "01f4b18a76b44f8f772153121572d855226dc4babfcc21e511d786ce288d17ab",
+      "after_sha256": "01f4b18a76b44f8f772153121572d855226dc4babfcc21e511d786ce288d17ab",
+      "non_metadata_content_preserved": true
+    },
+    {
+      "path": "SnakeBusinessCard.kicad_pcb",
+      "matched_components": 134,
+      "before_sha256": "1d8f6f1a8ddd70a6b2e235cf3d18a1b565d091940c09105f31943f0235e35585",
+      "after_sha256": "16a28285f6f04f0e54aa1c4b87c7dc6d09589935be81e559dc1e121aa344a5ce",
+      "non_metadata_content_preserved": true
+    }
+  ]
+}

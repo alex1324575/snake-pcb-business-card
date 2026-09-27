@@ -28,6 +28,6 @@
     "tests/test_is31fl3737.c": "225a077767257bf52b77ddbd3e2e0e57e0785128788588fe081b96bf76727da0",
     "tests/test_snake.c": "4993d61030c158abdbede62ea171192d169daf5641a5e2ed0ba1eb157b084512",
     "tools/build.py": "cb583de18db338428f8615ca593096d7bbafafc20f58d6c3adb062b56544188e",
-    "tools/check_board_contract.py": "98a44107d80fcbbdc4e3b435743a069a46d648fd5b1c854c46f304ecc0a6750a"
+    "tools/check_board_contract.py": "626a7a5b0a444dc8d3cb659a67a08a91df6a485c756f099d1f7ff6fa68416c00"
   }
 }

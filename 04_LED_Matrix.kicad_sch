@@ -1151,12 +1151,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 55.88 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 55.88 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 55.88 63.5 0)
       (effects
         (font
@@ -1227,12 +1232,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 88.9 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 88.9 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 88.9 63.5 0)
       (effects
         (font
@@ -1303,12 +1313,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 121.92 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 121.92 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 121.92 63.5 0)
       (effects
         (font
@@ -1379,12 +1394,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 154.94 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 154.94 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 154.94 63.5 0)
       (effects
         (font
@@ -1455,12 +1475,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 187.96 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 187.96 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 187.96 63.5 0)
       (effects
         (font
@@ -1531,12 +1556,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 220.98 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 220.98 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 220.98 63.5 0)
       (effects
         (font
@@ -1607,12 +1637,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 254 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 254 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 254 63.5 0)
       (effects
         (font
@@ -1683,12 +1718,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 287.02 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 287.02 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 287.02 63.5 0)
       (effects
         (font
@@ -1759,12 +1799,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 320.04 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 320.04 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 320.04 63.5 0)
       (effects
         (font
@@ -1835,12 +1880,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 353.06 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 353.06 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 353.06 63.5 0)
       (effects
         (font
@@ -2004,12 +2054,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 55.88 83.82 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 55.88 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 55.88 83.82 0)
       (effects
         (font
@@ -2080,12 +2135,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 88.9 83.82 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 88.9 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 88.9 83.82 0)
       (effects
         (font
@@ -2156,12 +2216,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 121.92 83.82 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 121.92 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 121.92 83.82 0)
       (effects
         (font
@@ -2232,12 +2297,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 154.94 83.82 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 154.94 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 154.94 83.82 0)
       (effects
         (font
@@ -2308,12 +2378,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 187.96 83.82 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 187.96 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 187.96 83.82 0)
       (effects
         (font
@@ -2384,12 +2459,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 220.98 83.82 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 220.98 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 220.98 83.82 0)
       (effects
         (font
@@ -2460,12 +2540,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 254 83.82 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 254 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 254 83.82 0)
       (effects
         (font
@@ -2536,12 +2621,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 287.02 83.82 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 287.02 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 287.02 83.82 0)
       (effects
         (font
@@ -2612,12 +2702,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 320.04 83.82 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 320.04 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 320.04 83.82 0)
       (effects
         (font
@@ -2688,12 +2783,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 353.06 83.82 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 353.06 83.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 353.06 83.82 0)
       (effects
         (font
@@ -2857,12 +2957,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 55.88 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 55.88 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 55.88 104.14 0)
       (effects
         (font
@@ -2933,12 +3038,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 88.9 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 88.9 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 88.9 104.14 0)
       (effects
         (font
@@ -3009,12 +3119,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 121.92 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 121.92 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 121.92 104.14 0)
       (effects
         (font
@@ -3085,12 +3200,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 154.94 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 154.94 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 154.94 104.14 0)
       (effects
         (font
@@ -3161,12 +3281,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 187.96 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 187.96 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 187.96 104.14 0)
       (effects
         (font
@@ -3237,12 +3362,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 220.98 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 220.98 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 220.98 104.14 0)
       (effects
         (font
@@ -3313,12 +3443,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 254 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 254 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 254 104.14 0)
       (effects
         (font
@@ -3389,12 +3524,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 287.02 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 287.02 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 287.02 104.14 0)
       (effects
         (font
@@ -3465,12 +3605,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 320.04 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 320.04 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 320.04 104.14 0)
       (effects
         (font
@@ -3541,12 +3686,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 353.06 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 353.06 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 353.06 104.14 0)
       (effects
         (font
@@ -3710,12 +3860,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 55.88 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 55.88 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 55.88 124.46 0)
       (effects
         (font
@@ -3786,12 +3941,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 88.9 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 88.9 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 88.9 124.46 0)
       (effects
         (font
@@ -3862,12 +4022,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 121.92 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 121.92 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 121.92 124.46 0)
       (effects
         (font
@@ -3938,12 +4103,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 154.94 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 154.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 154.94 124.46 0)
       (effects
         (font
@@ -4014,12 +4184,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 187.96 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 187.96 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 187.96 124.46 0)
       (effects
         (font
@@ -4090,12 +4265,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 220.98 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 220.98 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 220.98 124.46 0)
       (effects
         (font
@@ -4166,12 +4346,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 254 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 254 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 254 124.46 0)
       (effects
         (font
@@ -4242,12 +4427,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 287.02 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 287.02 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 287.02 124.46 0)
       (effects
         (font
@@ -4318,12 +4508,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 320.04 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 320.04 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 320.04 124.46 0)
       (effects
         (font
@@ -4394,12 +4589,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 353.06 124.46 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 353.06 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 353.06 124.46 0)
       (effects
         (font
@@ -4563,12 +4763,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 55.88 144.78 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 55.88 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 55.88 144.78 0)
       (effects
         (font
@@ -4639,12 +4844,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 88.9 144.78 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 88.9 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 88.9 144.78 0)
       (effects
         (font
@@ -4715,12 +4925,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 121.92 144.78 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 121.92 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 121.92 144.78 0)
       (effects
         (font
@@ -4791,12 +5006,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 154.94 144.78 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 154.94 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 154.94 144.78 0)
       (effects
         (font
@@ -4867,12 +5087,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 187.96 144.78 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 187.96 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 187.96 144.78 0)
       (effects
         (font
@@ -4943,12 +5168,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 220.98 144.78 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 220.98 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 220.98 144.78 0)
       (effects
         (font
@@ -5019,12 +5249,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 254 144.78 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 254 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 254 144.78 0)
       (effects
         (font
@@ -5095,12 +5330,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 287.02 144.78 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 287.02 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 287.02 144.78 0)
       (effects
         (font
@@ -5171,12 +5411,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 320.04 144.78 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 320.04 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 320.04 144.78 0)
       (effects
         (font
@@ -5247,12 +5492,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 353.06 144.78 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 353.06 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 353.06 144.78 0)
       (effects
         (font
@@ -5416,12 +5666,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 55.88 165.1 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 55.88 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 55.88 165.1 0)
       (effects
         (font
@@ -5492,12 +5747,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 88.9 165.1 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 88.9 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 88.9 165.1 0)
       (effects
         (font
@@ -5568,12 +5828,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 121.92 165.1 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 121.92 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 121.92 165.1 0)
       (effects
         (font
@@ -5644,12 +5909,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 154.94 165.1 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 154.94 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 154.94 165.1 0)
       (effects
         (font
@@ -5720,12 +5990,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 187.96 165.1 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 187.96 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 187.96 165.1 0)
       (effects
         (font
@@ -5796,12 +6071,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 220.98 165.1 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 220.98 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 220.98 165.1 0)
       (effects
         (font
@@ -5872,12 +6152,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 254 165.1 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 254 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 254 165.1 0)
       (effects
         (font
@@ -5948,12 +6233,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 287.02 165.1 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 287.02 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 287.02 165.1 0)
       (effects
         (font
@@ -6024,12 +6314,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 320.04 165.1 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 320.04 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 320.04 165.1 0)
       (effects
         (font
@@ -6100,12 +6395,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 353.06 165.1 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 353.06 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 353.06 165.1 0)
       (effects
         (font
@@ -6269,12 +6569,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 55.88 185.42 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 55.88 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 55.88 185.42 0)
       (effects
         (font
@@ -6345,12 +6650,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 88.9 185.42 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 88.9 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 88.9 185.42 0)
       (effects
         (font
@@ -6421,12 +6731,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 121.92 185.42 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 121.92 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 121.92 185.42 0)
       (effects
         (font
@@ -6497,12 +6812,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 154.94 185.42 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 154.94 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 154.94 185.42 0)
       (effects
         (font
@@ -6573,12 +6893,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 187.96 185.42 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 187.96 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 187.96 185.42 0)
       (effects
         (font
@@ -6649,12 +6974,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 220.98 185.42 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 220.98 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 220.98 185.42 0)
       (effects
         (font
@@ -6725,12 +7055,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 254 185.42 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 254 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 254 185.42 0)
       (effects
         (font
@@ -6801,12 +7136,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 287.02 185.42 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 287.02 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 287.02 185.42 0)
       (effects
         (font
@@ -6877,12 +7217,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 320.04 185.42 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 320.04 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 320.04 185.42 0)
       (effects
         (font
@@ -6953,12 +7298,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 353.06 185.42 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 353.06 185.42 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 353.06 185.42 0)
       (effects
         (font
@@ -7122,12 +7472,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 55.88 205.74 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 55.88 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 55.88 205.74 0)
       (effects
         (font
@@ -7198,12 +7553,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 88.9 205.74 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 88.9 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 88.9 205.74 0)
       (effects
         (font
@@ -7274,12 +7634,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 121.92 205.74 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 121.92 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 121.92 205.74 0)
       (effects
         (font
@@ -7350,12 +7715,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 154.94 205.74 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 154.94 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 154.94 205.74 0)
       (effects
         (font
@@ -7426,12 +7796,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 187.96 205.74 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 187.96 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 187.96 205.74 0)
       (effects
         (font
@@ -7502,12 +7877,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 220.98 205.74 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 220.98 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 220.98 205.74 0)
       (effects
         (font
@@ -7578,12 +7958,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 254 205.74 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 254 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 254 205.74 0)
       (effects
         (font
@@ -7654,12 +8039,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 287.02 205.74 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 287.02 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 287.02 205.74 0)
       (effects
         (font
@@ -7730,12 +8120,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 320.04 205.74 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 320.04 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 320.04 205.74 0)
       (effects
         (font
@@ -7806,12 +8201,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 353.06 205.74 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 353.06 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 353.06 205.74 0)
       (effects
         (font
@@ -7975,12 +8375,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 55.88 226.06 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 55.88 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 55.88 226.06 0)
       (effects
         (font
@@ -8051,12 +8456,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 88.9 226.06 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 88.9 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 88.9 226.06 0)
       (effects
         (font
@@ -8127,12 +8537,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 121.92 226.06 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 121.92 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 121.92 226.06 0)
       (effects
         (font
@@ -8203,12 +8618,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 154.94 226.06 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 154.94 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 154.94 226.06 0)
       (effects
         (font
@@ -8279,12 +8699,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 187.96 226.06 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 187.96 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 187.96 226.06 0)
       (effects
         (font
@@ -8355,12 +8780,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 220.98 226.06 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 220.98 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 220.98 226.06 0)
       (effects
         (font
@@ -8431,12 +8861,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 254 226.06 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 254 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 254 226.06 0)
       (effects
         (font
@@ -8507,12 +8942,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 287.02 226.06 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 287.02 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 287.02 226.06 0)
       (effects
         (font
@@ -8583,12 +9023,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 320.04 226.06 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 320.04 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 320.04 226.06 0)
       (effects
         (font
@@ -8659,12 +9104,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf"
       (at 353.06 226.06 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "APT1608SURCK"
+      (at 353.06 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Kingbright"
       (at 353.06 226.06 0)
       (effects
         (font

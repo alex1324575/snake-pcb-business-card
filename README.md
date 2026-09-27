@@ -74,6 +74,8 @@ Open [`SnakeBusinessCard.kicad_pro`](SnakeBusinessCard.kicad_pro) in **KiCad 10*
 
 - [Schematic PDF](exports/SnakeBusinessCard_Schematic.pdf)
 - [Bill of materials](exports/SnakeBusinessCard_BOM.csv)
+- [Procurement BOM with exact MPNs](exports/Procurement_BOM.csv)
+- [Component review and open issues](docs/COMPONENT_REVIEW.md)
 - [Hardware design notes](docs/HARDWARE.md)
 - [Fabrication and assembly](docs/ASSEMBLY.md)
 
@@ -126,6 +128,6 @@ tools/             Contact asset and hardware export tools
 
 Host tests exercise movement, growth, collision handling, timing rollover, button debounce, pause/restart behavior, full-board victory, display mapping, and injected I²C failures. The board-contract check compares the firmware with the actual netlist and all 90 LED positions.
 
-The next engineering milestone is sample-board validation: display brightness and current, I²C waveforms, thermal behavior, repeated power cycles, fault recovery, and NFC tuning. Passive component ordering codes and assembly details also require final review before manufacturing.
+All fitted parts have exact procurement MPNs. Before assembly, close the capacitor effective-capacitance check, switch-area via finding, and assembly-process decisions in the [component review](docs/COMPONENT_REVIEW.md). Then validate sample-board brightness/current, I²C waveforms, thermal behavior, power cycling, fault recovery and NFC tuning. The [engineering plan](docs/PROTOTYPE_PLAN.md) describes each step and its required evidence.
 
 See [verification](docs/VERIFICATION.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Contributions should include a focused change description and the checks relevant to that change; the [contribution guide](CONTRIBUTING.md) explains the workflow.

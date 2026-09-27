@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>SnakeBusinessCard.kicad_sch</source>
-    <date>2026-09-17T23:06:59</date>
+    <date>2026-09-27T09:35:20</date>
     <tool>Eeschema 10.0.6</tool>
     <textvar name="AUTHOR">Alex Parker</textvar>
     <textvar name="DESIGN_STAGE">PLACEMENT REVIEW</textvar>
@@ -117,16 +117,19 @@
   </design>
   <components>
     <comp ref="C1">
-      <value>1u / 10V X7R</value>
+      <value>1u / 35V X7R</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">C1608X7R1V105K080AC</field>
+        <field name="Manufacturer">TDK</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="C1608X7R1V105K080AC"/>
+      <property name="Manufacturer" value="TDK"/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -143,16 +146,19 @@
       </units>
     </comp>
     <comp ref="C2">
-      <value>1u / 10V X7R</value>
+      <value>1u / 35V X7R</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">C1608X7R1V105K080AC</field>
+        <field name="Manufacturer">TDK</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="C1608X7R1V105K080AC"/>
+      <property name="Manufacturer" value="TDK"/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -171,14 +177,17 @@
     <comp ref="D91">
       <value>TPD1E10B06</value>
       <footprint>Diode_SMD:D_SOD-523</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf</datasheet>
       <fields>
         <field name="MPN">TPD1E10B06DYAR</field>
+        <field name="Manufacturer">Texas Instruments</field>
         <field name="Footprint">Diode_SMD:D_SOD-523</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="D_TVS" description="Bidirectional transient-voltage-suppression diode"/>
       <property name="MPN" value="TPD1E10B06DYAR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="diode TVS thyrector"/>
@@ -197,15 +206,17 @@
     <comp ref="J1">
       <value>UJC-HP-3-SMT-TR</value>
       <footprint>SnakeCard:CUI_UJC-HP-3-SMT-TR</footprint>
-      <datasheet>https://www.usb.org/sites/default/files/documents/usb_type-c.zip</datasheet>
+      <datasheet>https://www.sameskydevices.com/product/resource/ujc-hp-3-smt-tr.pdf</datasheet>
       <fields>
         <field name="MPN">UJC-HP-3-SMT-TR</field>
+        <field name="Manufacturer">Same Sky</field>
         <field name="Footprint">SnakeCard:CUI_UJC-HP-3-SMT-TR</field>
-        <field name="Datasheet">https://www.usb.org/sites/default/files/documents/usb_type-c.zip</field>
+        <field name="Datasheet">https://www.sameskydevices.com/product/resource/ujc-hp-3-smt-tr.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="USB_C_Receptacle_PowerOnly_6P" description="USB Power-Only 6P Type-C Receptacle connector"/>
       <property name="MPN" value="UJC-HP-3-SMT-TR"/>
+      <property name="Manufacturer" value="Same Sky"/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="usb universal serial bus type-C power-only charging-only 6P 6C"/>
@@ -232,14 +243,17 @@
     <comp ref="R1">
       <value>5.1k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF5101V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF5101V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -258,14 +272,17 @@
     <comp ref="R2">
       <value>5.1k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF5101V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF5101V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -286,12 +303,14 @@
       <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
       <fields>
         <field name="MPN"/>
+        <field name="Manufacturer"/>
         <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
       <property name="MPN" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
@@ -311,12 +330,14 @@
       <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
       <fields>
         <field name="MPN"/>
+        <field name="Manufacturer"/>
         <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
       <property name="MPN" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
@@ -336,12 +357,14 @@
       <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
       <fields>
         <field name="MPN"/>
+        <field name="Manufacturer"/>
         <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
       <property name="MPN" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
@@ -359,15 +382,17 @@
     <comp ref="U3">
       <value>TLV75533PDBVR</value>
       <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
-      <datasheet>http://www.ti.com/lit/ds/symlink/tlv755p.pdf</datasheet>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlv755p.pdf</datasheet>
       <fields>
         <field name="MPN">TLV75533PDBVR</field>
+        <field name="Manufacturer">Texas Instruments</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
-        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="TLV75533PDBV" description="500mA Low Dropout Voltage Regulator, Fixed Output 3.3V, SOT-23-5"/>
       <property name="MPN" value="TLV75533PDBVR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="LDO Regulator Fixed Positive"/>
@@ -389,15 +414,17 @@
     <comp ref="U5">
       <value>TPD2E2U06DCK</value>
       <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
-      <datasheet>http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf</datasheet>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf</datasheet>
       <fields>
         <field name="MPN">TPD2E2U06DCKR</field>
+        <field name="Manufacturer">Texas Instruments</field>
         <field name="Footprint">Package_TO_SOT_SMD:SOT-323_SC-70</field>
-        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="TPD2E2U06DCK" description="Dual-Channel High-Speed ESD Protection, SC-70"/>
       <property name="MPN" value="TPD2E2U06DCKR"/>
+      <property name="Manufacturer" value="Texas Instruments"/>
       <property name="Sheetname" value="01 Power USB"/>
       <property name="Sheetfile" value="01_Power_USB.kicad_sch"/>
       <property name="ki_keywords" value="TVS"/>
@@ -415,16 +442,19 @@
       </units>
     </comp>
     <comp ref="C10">
-      <value>100n / 10V X7R</value>
+      <value>100n / 50V X7R</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">C1608X7R1H104K080AA</field>
+        <field name="Manufacturer">TDK</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="C1608X7R1H104K080AA"/>
+      <property name="Manufacturer" value="TDK"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -441,16 +471,19 @@
       </units>
     </comp>
     <comp ref="C11">
-      <value>4.7u / 10V X7R</value>
+      <value>4.7u / 16V</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">GRM188Z71C475KE21D</field>
+        <field name="Manufacturer">Murata Manufacturing</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="GRM188Z71C475KE21D"/>
+      <property name="Manufacturer" value="Murata Manufacturing"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -467,16 +500,19 @@
       </units>
     </comp>
     <comp ref="C12">
-      <value>100n / 10V X7R</value>
+      <value>100n / 50V X7R</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">C1608X7R1H104K080AA</field>
+        <field name="Manufacturer">TDK</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="C1608X7R1H104K080AA"/>
+      <property name="Manufacturer" value="TDK"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -493,16 +529,19 @@
       </units>
     </comp>
     <comp ref="R10">
-      <value>10k</value>
+      <value>10k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF1002V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF1002V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -519,16 +558,19 @@
       </units>
     </comp>
     <comp ref="R11">
-      <value>10k</value>
+      <value>10k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF1002V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF1002V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -545,16 +587,19 @@
       </units>
     </comp>
     <comp ref="R12">
-      <value>10k</value>
+      <value>10k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF1002V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF1002V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -571,16 +616,19 @@
       </units>
     </comp>
     <comp ref="R13">
-      <value>10k</value>
+      <value>10k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF1002V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF1002V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -597,16 +645,19 @@
       </units>
     </comp>
     <comp ref="R14">
-      <value>10k</value>
+      <value>10k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF1002V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF1002V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -623,16 +674,19 @@
       </units>
     </comp>
     <comp ref="R15">
-      <value>10k</value>
+      <value>10k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF1002V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF1002V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -651,14 +705,17 @@
     <comp ref="SW1">
       <value>UP</value>
       <footprint>Button_Switch_SMD:SW_SPST_SKQG_WithStem</footprint>
+      <datasheet>https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf</datasheet>
       <fields>
         <field name="MPN">SKQGABE010</field>
+        <field name="Manufacturer">Alps Alpine</field>
         <field name="Footprint">Button_Switch_SMD:SW_SPST_SKQG_WithStem</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="SKQGABE010"/>
+      <property name="Manufacturer" value="Alps Alpine"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -676,14 +733,17 @@
     <comp ref="SW2">
       <value>DOWN</value>
       <footprint>Button_Switch_SMD:SW_SPST_SKQG_WithStem</footprint>
+      <datasheet>https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf</datasheet>
       <fields>
         <field name="MPN">SKQGABE010</field>
+        <field name="Manufacturer">Alps Alpine</field>
         <field name="Footprint">Button_Switch_SMD:SW_SPST_SKQG_WithStem</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="SKQGABE010"/>
+      <property name="Manufacturer" value="Alps Alpine"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -701,14 +761,17 @@
     <comp ref="SW3">
       <value>LEFT</value>
       <footprint>Button_Switch_SMD:SW_SPST_SKQG_WithStem</footprint>
+      <datasheet>https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf</datasheet>
       <fields>
         <field name="MPN">SKQGABE010</field>
+        <field name="Manufacturer">Alps Alpine</field>
         <field name="Footprint">Button_Switch_SMD:SW_SPST_SKQG_WithStem</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="SKQGABE010"/>
+      <property name="Manufacturer" value="Alps Alpine"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -726,14 +789,17 @@
     <comp ref="SW4">
       <value>RIGHT</value>
       <footprint>Button_Switch_SMD:SW_SPST_SKQG_WithStem</footprint>
+      <datasheet>https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf</datasheet>
       <fields>
         <field name="MPN">SKQGABE010</field>
+        <field name="Manufacturer">Alps Alpine</field>
         <field name="Footprint">Button_Switch_SMD:SW_SPST_SKQG_WithStem</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="SKQGABE010"/>
+      <property name="Manufacturer" value="Alps Alpine"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -751,14 +817,17 @@
     <comp ref="SW5">
       <value>START</value>
       <footprint>Button_Switch_SMD:SW_SPST_SKQG_WithStem</footprint>
+      <datasheet>https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf</datasheet>
       <fields>
         <field name="MPN">SKQGABE010</field>
+        <field name="Manufacturer">Alps Alpine</field>
         <field name="Footprint">Button_Switch_SMD:SW_SPST_SKQG_WithStem</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="SKQGABE010"/>
+      <property name="Manufacturer" value="Alps Alpine"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
@@ -778,12 +847,14 @@
       <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
       <fields>
         <field name="MPN"/>
+        <field name="Manufacturer"/>
         <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
       <property name="MPN" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
@@ -803,12 +874,14 @@
       <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
       <fields>
         <field name="MPN"/>
+        <field name="Manufacturer"/>
         <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
       <property name="MPN" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
@@ -828,12 +901,14 @@
       <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
       <fields>
         <field name="MPN"/>
+        <field name="Manufacturer"/>
         <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
       <property name="MPN" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
@@ -853,12 +928,14 @@
       <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
       <fields>
         <field name="MPN"/>
+        <field name="Manufacturer"/>
         <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
       <property name="MPN" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
@@ -878,12 +955,14 @@
       <footprint>TestPoint:TestPoint_Pad_D1.0mm</footprint>
       <fields>
         <field name="MPN"/>
+        <field name="Manufacturer"/>
         <field name="Footprint">TestPoint:TestPoint_Pad_D1.0mm</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="TestPoint" description="test point"/>
       <property name="MPN" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
@@ -904,12 +983,14 @@
       <datasheet>https://www.st.com/resource/en/datasheet/stm32g030k8.pdf</datasheet>
       <fields>
         <field name="MPN">STM32G030K8T6</field>
+        <field name="Manufacturer">STMicroelectronics</field>
         <field name="Footprint">Package_QFP:LQFP-32_7x7mm_P0.8mm</field>
         <field name="Datasheet">https://www.st.com/resource/en/datasheet/stm32g030k8.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="STM32G030K8Tx" description="STMicroelectronics Arm Cortex-M0+ MCU, 64KB flash, 8KB RAM, 64 MHz, 2.0-3.6V, 29 GPIO, LQFP32"/>
       <property name="MPN" value="STM32G030K8T6"/>
+      <property name="Manufacturer" value="STMicroelectronics"/>
       <property name="Sheetname" value="02 MCU Inputs Debug"/>
       <property name="Sheetfile" value="02_MCU_Inputs_Debug.kicad_sch"/>
       <property name="ki_keywords" value="Arm Cortex-M0+ STM32G0 STM32G0x0 Value line"/>
@@ -956,16 +1037,19 @@
       </units>
     </comp>
     <comp ref="C20">
-      <value>100n / 10V X7R</value>
+      <value>100n / 50V X7R</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">C1608X7R1H104K080AA</field>
+        <field name="Manufacturer">TDK</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="C1608X7R1H104K080AA"/>
+      <property name="Manufacturer" value="TDK"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -982,16 +1066,19 @@
       </units>
     </comp>
     <comp ref="C21">
-      <value>100n / 10V X7R</value>
+      <value>100n / 50V X7R</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">C1608X7R1H104K080AA</field>
+        <field name="Manufacturer">TDK</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="C1608X7R1H104K080AA"/>
+      <property name="Manufacturer" value="TDK"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1008,16 +1095,19 @@
       </units>
     </comp>
     <comp ref="C22">
-      <value>100n / 10V X7R</value>
+      <value>100n / 50V X7R</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">C1608X7R1H104K080AA</field>
+        <field name="Manufacturer">TDK</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="C1608X7R1H104K080AA"/>
+      <property name="Manufacturer" value="TDK"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1034,16 +1124,19 @@
       </units>
     </comp>
     <comp ref="C23">
-      <value>1u / 10V X7R</value>
+      <value>1u / 35V X7R</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">C1608X7R1V105K080AC</field>
+        <field name="Manufacturer">TDK</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="C1608X7R1V105K080AC"/>
+      <property name="Manufacturer" value="TDK"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1060,16 +1153,19 @@
       </units>
     </comp>
     <comp ref="C24">
-      <value>1u / 10V X7R</value>
+      <value>1u / 35V X7R</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">C1608X7R1V105K080AC</field>
+        <field name="Manufacturer">TDK</field>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="C1608X7R1V105K080AC"/>
+      <property name="Manufacturer" value="TDK"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
@@ -1086,16 +1182,19 @@
       </units>
     </comp>
     <comp ref="R20">
-      <value>2.2k</value>
+      <value>2.2k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF2201V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF2201V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1112,16 +1211,19 @@
       </units>
     </comp>
     <comp ref="R21">
-      <value>2.2k</value>
+      <value>2.2k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF2201V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF2201V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1138,16 +1240,19 @@
       </units>
     </comp>
     <comp ref="R22">
-      <value>100k</value>
+      <value>100k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF1003V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF1003V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1164,16 +1269,19 @@
       </units>
     </comp>
     <comp ref="R23">
-      <value>10k</value>
+      <value>10k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF1002V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF1002V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1192,14 +1300,17 @@
     <comp ref="R24">
       <value>20k 1%</value>
       <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <datasheet>https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</datasheet>
       <fields>
-        <field name="MPN"/>
+        <field name="MPN">ERJ3EKF2002V</field>
+        <field name="Manufacturer">Panasonic Industry</field>
         <field name="Footprint">Resistor_SMD:R_0603_1608Metric</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="R" description="Resistor"/>
-      <property name="MPN" value=""/>
+      <property name="MPN" value="ERJ3EKF2002V"/>
+      <property name="Manufacturer" value="Panasonic Industry"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
@@ -1218,15 +1329,17 @@
     <comp ref="U2">
       <value>IS31FL3737-QFLS4-TR</value>
       <footprint>SnakeCard:IS31FL3737_QFN40_5x5mm_P0.4mm_EP3.4mm</footprint>
-      <datasheet>http://www.issi.com/WW/pdf/31FL3737.pdf</datasheet>
+      <datasheet>https://www.lumissil.com/assets/pdf/core/IS31FL3737_DS.pdf</datasheet>
       <fields>
         <field name="MPN">IS31FL3737-QFLS4-TR</field>
+        <field name="Manufacturer">Lumissil Microsystems</field>
         <field name="Footprint">SnakeCard:IS31FL3737_QFN40_5x5mm_P0.4mm_EP3.4mm</field>
-        <field name="Datasheet">http://www.issi.com/WW/pdf/31FL3737.pdf</field>
+        <field name="Datasheet">https://www.lumissil.com/assets/pdf/core/IS31FL3737_DS.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="IS31FL3737" description="12x12 LED matrix driver with 8-bit PWM and breathing, QFN-40"/>
       <property name="MPN" value="IS31FL3737-QFLS4-TR"/>
+      <property name="Manufacturer" value="Lumissil Microsystems"/>
       <property name="Sheetname" value="03 LED Driver"/>
       <property name="Sheetfile" value="03_LED_Driver.kicad_sch"/>
       <property name="ki_keywords" value="led matrix pwm"/>
@@ -1284,14 +1397,17 @@
     <comp ref="D1">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1310,14 +1426,17 @@
     <comp ref="D2">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1336,14 +1455,17 @@
     <comp ref="D3">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1362,14 +1484,17 @@
     <comp ref="D4">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1388,14 +1513,17 @@
     <comp ref="D5">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1414,14 +1542,17 @@
     <comp ref="D6">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1440,14 +1571,17 @@
     <comp ref="D7">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1466,14 +1600,17 @@
     <comp ref="D8">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1492,14 +1629,17 @@
     <comp ref="D9">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1518,14 +1658,17 @@
     <comp ref="D10">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1544,14 +1687,17 @@
     <comp ref="D11">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1570,14 +1716,17 @@
     <comp ref="D12">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1596,14 +1745,17 @@
     <comp ref="D13">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1622,14 +1774,17 @@
     <comp ref="D14">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1648,14 +1803,17 @@
     <comp ref="D15">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1674,14 +1832,17 @@
     <comp ref="D16">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1700,14 +1861,17 @@
     <comp ref="D17">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1726,14 +1890,17 @@
     <comp ref="D18">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1752,14 +1919,17 @@
     <comp ref="D19">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1778,14 +1948,17 @@
     <comp ref="D20">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1804,14 +1977,17 @@
     <comp ref="D21">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1830,14 +2006,17 @@
     <comp ref="D22">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1856,14 +2035,17 @@
     <comp ref="D23">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1882,14 +2064,17 @@
     <comp ref="D24">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1908,14 +2093,17 @@
     <comp ref="D25">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1934,14 +2122,17 @@
     <comp ref="D26">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1960,14 +2151,17 @@
     <comp ref="D27">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -1986,14 +2180,17 @@
     <comp ref="D28">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2012,14 +2209,17 @@
     <comp ref="D29">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2038,14 +2238,17 @@
     <comp ref="D30">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2064,14 +2267,17 @@
     <comp ref="D31">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2090,14 +2296,17 @@
     <comp ref="D32">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2116,14 +2325,17 @@
     <comp ref="D33">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2142,14 +2354,17 @@
     <comp ref="D34">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2168,14 +2383,17 @@
     <comp ref="D35">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2194,14 +2412,17 @@
     <comp ref="D36">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2220,14 +2441,17 @@
     <comp ref="D37">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2246,14 +2470,17 @@
     <comp ref="D38">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2272,14 +2499,17 @@
     <comp ref="D39">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2298,14 +2528,17 @@
     <comp ref="D40">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2324,14 +2557,17 @@
     <comp ref="D41">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2350,14 +2586,17 @@
     <comp ref="D42">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2376,14 +2615,17 @@
     <comp ref="D43">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2402,14 +2644,17 @@
     <comp ref="D44">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2428,14 +2673,17 @@
     <comp ref="D45">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2454,14 +2702,17 @@
     <comp ref="D46">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2480,14 +2731,17 @@
     <comp ref="D47">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2506,14 +2760,17 @@
     <comp ref="D48">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2532,14 +2789,17 @@
     <comp ref="D49">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2558,14 +2818,17 @@
     <comp ref="D50">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2584,14 +2847,17 @@
     <comp ref="D51">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2610,14 +2876,17 @@
     <comp ref="D52">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2636,14 +2905,17 @@
     <comp ref="D53">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2662,14 +2934,17 @@
     <comp ref="D54">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2688,14 +2963,17 @@
     <comp ref="D55">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2714,14 +2992,17 @@
     <comp ref="D56">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2740,14 +3021,17 @@
     <comp ref="D57">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2766,14 +3050,17 @@
     <comp ref="D58">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2792,14 +3079,17 @@
     <comp ref="D59">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2818,14 +3108,17 @@
     <comp ref="D60">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2844,14 +3137,17 @@
     <comp ref="D61">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2870,14 +3166,17 @@
     <comp ref="D62">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2896,14 +3195,17 @@
     <comp ref="D63">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2922,14 +3224,17 @@
     <comp ref="D64">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2948,14 +3253,17 @@
     <comp ref="D65">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -2974,14 +3282,17 @@
     <comp ref="D66">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3000,14 +3311,17 @@
     <comp ref="D67">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3026,14 +3340,17 @@
     <comp ref="D68">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3052,14 +3369,17 @@
     <comp ref="D69">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3078,14 +3398,17 @@
     <comp ref="D70">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3104,14 +3427,17 @@
     <comp ref="D71">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3130,14 +3456,17 @@
     <comp ref="D72">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3156,14 +3485,17 @@
     <comp ref="D73">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3182,14 +3514,17 @@
     <comp ref="D74">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3208,14 +3543,17 @@
     <comp ref="D75">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3234,14 +3572,17 @@
     <comp ref="D76">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3260,14 +3601,17 @@
     <comp ref="D77">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3286,14 +3630,17 @@
     <comp ref="D78">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3312,14 +3659,17 @@
     <comp ref="D79">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3338,14 +3688,17 @@
     <comp ref="D80">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3364,14 +3717,17 @@
     <comp ref="D81">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3390,14 +3746,17 @@
     <comp ref="D82">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3416,14 +3775,17 @@
     <comp ref="D83">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3442,14 +3804,17 @@
     <comp ref="D84">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3468,14 +3833,17 @@
     <comp ref="D85">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3494,14 +3862,17 @@
     <comp ref="D86">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3520,14 +3891,17 @@
     <comp ref="D87">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3546,14 +3920,17 @@
     <comp ref="D88">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3572,14 +3949,17 @@
     <comp ref="D89">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3598,14 +3978,17 @@
     <comp ref="D90">
       <value>RED</value>
       <footprint>SnakeCard:Kingbright_APT1608SURCK</footprint>
+      <datasheet>https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</datasheet>
       <fields>
         <field name="MPN">APT1608SURCK</field>
+        <field name="Manufacturer">Kingbright</field>
         <field name="Footprint">SnakeCard:Kingbright_APT1608SURCK</field>
-        <field name="Datasheet"/>
+        <field name="Datasheet">https://www.kingbrightusa.com/images/catalog/SPEC/APT1608SURCK.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="LED" description="Light emitting diode"/>
       <property name="MPN" value="APT1608SURCK"/>
+      <property name="Manufacturer" value="Kingbright"/>
       <property name="Sheetname" value="04 LED Matrix"/>
       <property name="Sheetfile" value="04_LED_Matrix.kicad_sch"/>
       <property name="ki_keywords" value="LED diode"/>
@@ -3626,12 +4009,14 @@
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
         <field name="MPN"/>
+        <field name="Manufacturer"/>
         <field name="Footprint">Capacitor_SMD:C_0603_1608Metric</field>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="C" description="Unpolarized capacitor"/>
       <property name="MPN" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Sheetname" value="05 NFC"/>
       <property name="Sheetfile" value="05_NFC.kicad_sch"/>
       <property name="dnp"/>
@@ -3652,12 +4037,14 @@
       <value>PCB LOOP / TUNE</value>
       <fields>
         <field name="MPN"/>
+        <field name="Manufacturer"/>
         <field name="Footprint"/>
         <field name="Datasheet"/>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="L" description="Inductor"/>
       <property name="MPN" value=""/>
+      <property name="Manufacturer" value=""/>
       <property name="Sheetname" value="05 NFC"/>
       <property name="Sheetfile" value="05_NFC.kicad_sch"/>
       <property name="exclude_from_bom"/>
@@ -3680,12 +4067,14 @@
       <datasheet>https://www.st.com/resource/en/datasheet/st25tn01k.pdf</datasheet>
       <fields>
         <field name="MPN">ST25TN01K-AFH5</field>
+        <field name="Manufacturer">STMicroelectronics</field>
         <field name="Footprint">SnakeCard:ST25TN01K_UFDFPN5_1.7x1.4mm</field>
         <field name="Datasheet">https://www.st.com/resource/en/datasheet/st25tn01k.pdf</field>
         <field name="Description"/>
       </fields>
       <libsource lib="SnakeCard" part="ST25TN01K_AFH5" description=""/>
       <property name="MPN" value="ST25TN01K-AFH5"/>
+      <property name="Manufacturer" value="STMicroelectronics"/>
       <property name="Sheetname" value="05 NFC"/>
       <property name="Sheetfile" value="05_NFC.kicad_sch"/>
       <sheetpath names="/05 NFC/" tstamps="/7b4a5613-b43e-5267-b2b4-43e409275f10/"/>

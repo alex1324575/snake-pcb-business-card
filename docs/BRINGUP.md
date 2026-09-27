@@ -2,7 +2,7 @@
 
 This procedure is for an assembled prototype. The project has digital design checks and host firmware tests; it has not been flashed or validated on physical hardware.
 
-Prepare a USB-C 5 V supply, multimeter, a 3.3 V-compatible SWD programmer such as ST-LINK, and [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html). A current monitor and logic analyzer are useful for electrical checks.
+First close the pre-assembly items in [Component review](COMPONENT_REVIEW.md). Prepare a current-limited 5 V source with a suitable USB-C connection, multimeter, a 3.3 V-compatible SWD programmer such as ST-LINK, and [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html). Use an oscilloscope for rail transients and I2C rise/fall measurements; a logic analyzer helps inspect transactions.
 
 ## 1. Inspect before power
 
@@ -53,7 +53,7 @@ Normal startup shows the example initials **AP**, followed by the ready pattern.
 | Rails and power | 5 V / 3.3 V readings, USB current, regulator/driver temperature |
 | Display | All 90 pixels, orientation, brightness, ghosting |
 | Inputs | All directions, START short/long press, debounce |
-| I²C | Clock/data edges, ACKs, address 0x50, sustained operation |
+| I²C | Rise/fall <=300 ns at U2, ACKs, address 0x50, sustained operation |
 | Recovery | Display blanking on an induced bus fault, bounded recovery, restart from ready |
 | Watchdog / reset | Actual reset behavior, repeated power cycles, SWD reconnect under reset |
 | Contact | Printed QR scan, tuned NFC read range, written URI and read-back |

@@ -12,8 +12,11 @@ This release is a **digitally validated prototype**. It has not been assembled, 
 | Firmware host tests | [Firmware verification](../firmware/verification/) | Game rules, UI/debounce and mocked driver transactions/failure handling |
 | Cortex-M0+ build | [Release outputs](../firmware/release/) | Target compilation, link layout, image metadata and hashes |
 | QR / NDEF | [Contact validation](../contact/contact_validation.json) and native contact audit in [verification](../verification/) | Decoded URI, native rear artwork orientation and NDEF content |
+| Procurement | [Component review](COMPONENT_REVIEW.md) and [per-reference table](../verification/hardware/component_review.csv) | Exact MPN coverage and native/export consistency; physical and assembly findings remain open |
 
 KiCad checks do not prove every component choice or analog behavior. Host tests do not execute the MCU peripherals. A 3D preview does not certify connector fit, and decoding a rasterized QR does not certify printed contrast.
+
+The procurement metadata audit compares the procurement update with the earlier public revision and confirms that electrical connections and PCB geometry were preserved. A separate schematic annotation audit records two corrected notes: the documented LED current now matches the existing firmware's GCC=32. The older public-identity equivalence report remains historical evidence for its recorded board hash; the metadata audit links that hash to the current board. Current ERC/DRC, contact and board-contract reports have been regenerated.
 
 ## Reproduce firmware and mapping checks
 

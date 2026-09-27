@@ -782,12 +782,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" "http://www.issi.com/WW/pdf/31FL3737.pdf"
+    (property "Datasheet" "https://www.lumissil.com/assets/pdf/core/IS31FL3737_DS.pdf"
       (at 157.48 109.22 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "IS31FL3737-QFLS4-TR"
+      (at 157.48 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Lumissil Microsystems"
       (at 157.48 109.22 0)
       (effects
         (font
@@ -1559,7 +1564,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "2.2k"
+    (property "Value" "2.2k 1%"
       (at 44.56 67.31 0)
       (effects
         (font
@@ -1569,12 +1574,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 35.56 66.04 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF2201V"
+      (at 35.56 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 35.56 66.04 0)
       (effects
         (font
@@ -1643,7 +1653,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "2.2k"
+    (property "Value" "2.2k 1%"
       (at 85.2 67.31 0)
       (effects
         (font
@@ -1653,12 +1663,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 76.2 66.04 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF2201V"
+      (at 76.2 66.04 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 76.2 66.04 0)
       (effects
         (font
@@ -1727,7 +1742,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "100k"
+    (property "Value" "100k 1%"
       (at 44.56 153.67 0)
       (effects
         (font
@@ -1737,12 +1752,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 35.56 152.4 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF1003V"
+      (at 35.56 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 35.56 152.4 0)
       (effects
         (font
@@ -1811,7 +1831,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "10k"
+    (property "Value" "10k 1%"
       (at 85.2 153.67 0)
       (effects
         (font
@@ -1821,12 +1841,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 76.2 152.4 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF1002V"
+      (at 76.2 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 76.2 152.4 0)
       (effects
         (font
@@ -1905,12 +1930,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 111.76 152.4 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF2002V"
+      (at 111.76 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 111.76 152.4 0)
       (effects
         (font
@@ -2001,7 +2031,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "100n / 10V X7R"
+    (property "Value" "100n / 50V X7R"
       (at 290.94 64.77 0)
       (effects
         (font
@@ -2011,12 +2041,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf"
       (at 281.94 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "C1608X7R1H104K080AA"
+      (at 281.94 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "TDK"
       (at 281.94 63.5 0)
       (effects
         (font
@@ -2085,7 +2120,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "100n / 10V X7R"
+    (property "Value" "100n / 50V X7R"
       (at 341.74 64.77 0)
       (effects
         (font
@@ -2095,12 +2130,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf"
       (at 332.74 63.5 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "C1608X7R1H104K080AA"
+      (at 332.74 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "TDK"
       (at 332.74 63.5 0)
       (effects
         (font
@@ -2169,7 +2209,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "100n / 10V X7R"
+    (property "Value" "100n / 50V X7R"
       (at 290.94 107.95 0)
       (effects
         (font
@@ -2179,12 +2219,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.tdk.com/info/en/documents/chara_sheet/C1608X7R1H104K080AA.pdf"
       (at 281.94 106.68 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "C1608X7R1H104K080AA"
+      (at 281.94 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "TDK"
       (at 281.94 106.68 0)
       (effects
         (font
@@ -2253,7 +2298,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "1u / 10V X7R"
+    (property "Value" "1u / 35V X7R"
       (at 341.74 107.95 0)
       (effects
         (font
@@ -2263,12 +2308,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf"
       (at 332.74 106.68 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "C1608X7R1V105K080AC"
+      (at 332.74 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "TDK"
       (at 332.74 106.68 0)
       (effects
         (font
@@ -2337,7 +2387,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "1u / 10V X7R"
+    (property "Value" "1u / 35V X7R"
       (at 290.94 151.13 0)
       (effects
         (font
@@ -2347,12 +2397,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf"
       (at 281.94 149.86 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "C1608X7R1V105K080AC"
+      (at 281.94 149.86 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "TDK"
       (at 281.94 149.86 0)
       (effects
         (font
@@ -2422,7 +2477,7 @@
         (size 1.8 1.8))
       (justify left))
     (uuid "ad0599cd-f5a1-502f-b231-ef33740039cc"))
-  (text "REXT = 20k; GCC = 0x12; highest pixel PWM = 255. About 2.95 mA pulse / 0.231 mA average per LED.\n12 scan slots remain active with 9 populated rows. Unused CS11/12 and SW10/11/12 stay disabled.\nHold SDB low; set function page to software shutdown / GCC=0; release SDB; clear pixels; set GCC; enable SSD last."
+  (text "REXT = 20k; GCC = 0x20 (32); highest pixel PWM = 255. About 5.25 mA pulse / 0.410 mA average per LED (nominal).\n12 scan slots remain active with 9 populated rows. Unused CS11/12 and SW10/11/12 stay disabled.\nHold SDB low; set function page to software shutdown / GCC=0; release SDB; clear pixels; set GCC; enable SSD last."
     (at 25.4 246.38 0)
     (effects
       (font

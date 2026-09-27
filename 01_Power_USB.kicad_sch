@@ -1336,12 +1336,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+    (property "Datasheet" "https://www.sameskydevices.com/product/resource/ujc-hp-3-smt-tr.pdf"
       (at 50.8 71.12 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "UJC-HP-3-SMT-TR"
+      (at 50.8 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Same Sky"
       (at 50.8 71.12 0)
       (effects
         (font
@@ -1499,12 +1504,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 104.14 81.28 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF5101V"
+      (at 104.14 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 104.14 81.28 0)
       (effects
         (font
@@ -1583,12 +1593,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf"
       (at 139.7 81.28 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "ERJ3EKF5101V"
+      (at 139.7 81.28 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Panasonic Industry"
       (at 139.7 81.28 0)
       (effects
         (font
@@ -1689,12 +1704,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf"
       (at 83.82 182.88 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "TPD2E2U06DCKR"
+      (at 83.82 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Texas Instruments"
       (at 83.82 182.88 0)
       (effects
         (font
@@ -1796,12 +1816,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd1e10b06.pdf"
       (at 152.4 182.88 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "TPD1E10B06DYAR"
+      (at 152.4 182.88 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Texas Instruments"
       (at 152.4 182.88 0)
       (effects
         (font
@@ -1902,12 +1927,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv755p.pdf"
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv755p.pdf"
       (at 292.1 71.12 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" "TLV75533PDBVR"
+      (at 292.1 71.12 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "Texas Instruments"
       (at 292.1 71.12 0)
       (effects
         (font
@@ -2027,7 +2057,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "1u / 10V X7R"
+    (property "Value" "1u / 35V X7R"
       (at 247.76 105.41 0)
       (effects
         (font
@@ -2037,12 +2067,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf"
       (at 238.76 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "C1608X7R1V105K080AC"
+      (at 238.76 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "TDK"
       (at 238.76 104.14 0)
       (effects
         (font
@@ -2111,7 +2146,7 @@
       (effects
         (font
           (size 1.27 1.27))))
-    (property "Value" "1u / 10V X7R"
+    (property "Value" "1u / 35V X7R"
       (at 334.12 105.41 0)
       (effects
         (font
@@ -2121,12 +2156,17 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "Datasheet" ""
+    (property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/capacitor/ceramic/mlcc/charasheet/c1608x7r1v105k080ac.pdf"
       (at 325.12 104.14 0)
       (effects
         (font
           (size 1.27 1.27)) hide))
-    (property "MPN" ""
+    (property "MPN" "C1608X7R1V105K080AC"
+      (at 325.12 104.14 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" "TDK"
       (at 325.12 104.14 0)
       (effects
         (font
@@ -2359,6 +2399,11 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
+    (property "Manufacturer" ""
+      (at 231.14 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
     (pin "1"
       (uuid "6d64d6eb-a40b-516c-aaaf-ecb86ce42c12"))
     (instances
@@ -2420,6 +2465,11 @@
       (effects
         (font
           (size 1.27 1.27)) hide))
+    (property "Manufacturer" ""
+      (at 292.1 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
     (pin "1"
       (uuid "6d6986a8-3c8a-543e-84f5-c42e2be5aa91"))
     (instances
@@ -2477,6 +2527,11 @@
         (font
           (size 1.27 1.27)) hide))
     (property "MPN" ""
+      (at 353.06 210.82 0)
+      (effects
+        (font
+          (size 1.27 1.27)) hide))
+    (property "Manufacturer" ""
       (at 353.06 210.82 0)
       (effects
         (font

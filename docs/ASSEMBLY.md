@@ -20,7 +20,7 @@ Preserve a common origin and scale for every fabrication layer. Bottom layers sh
 
 ## Procurement
 
-Active parts, LEDs, connector and switches have specified manufacturer part numbers in the BOM. Several passive parts specify electrical requirements without a frozen purchasing part number. Select those parts before ordering assembly, including tolerance, package, voltage rating and effective ceramic capacitance under DC bias. Confirm the regulator's input/output capacitor requirements against the [TI TLV755P documentation](https://www.ti.com/product/TLV755P).
+All 125 fitted parts now have exact manufacturer part numbers in the [procurement BOM](../exports/Procurement_BOM.csv). The [component review register](COMPONENT_REVIEW.md) covers every reference and identifies conditional selections. C1/C2 effective capacitance, switch-area vias and assembly-process decisions remain open; a complete purchasing identity is not assembly approval. Confirm supplier availability and review substitutions against the exact source documents.
 
 Test points, the printed antenna and the QR artwork are PCB features. They are not purchased components. C30 is **do not populate** until NFC measurements establish a tuning value.
 
@@ -32,7 +32,10 @@ Test points, the printed antenna and the QR artwork are PCB features. They are n
 - **NFC area:** keep ground pours, panel copper, metallic artwork and labels out of the antenna/feed keepout. Changes here require another antenna review.
 - **QR:** retain the full 21 mm square and its four-module quiet zone. Sample black-mask reflectivity, white-ink registration and phone readability before quantity production.
 - **Thin-board handling:** use appropriate assembly support and handling fixtures around the connector and fine-pitch parts.
+- **Switch flux ingress:** SW2 has an under-body via and SW5 has a nearby via. Resolve the manufacturer's through-hole restriction before assembly; ordinary tenting does not establish compliance. Follow [the switch review](POWER_COMPONENT_REVIEW.md#sw1-sw5-tactile-switches).
 
 ## Prototype acceptance
 
 Follow [Bring-up](BRINGUP.md) on the first assembled board. Measure supply rails, USB current, LED brightness and temperature; test buttons, firmware, power cycling and contact functions. Antenna tuning, phone read range, ESD behavior and connector durability remain physical validation tasks. Record results against the exact board revision and firmware image before increasing the build quantity.
+
+The staged [engineering plan](PROTOTYPE_PLAN.md) lists the remaining pre-assembly gates and sample-test sequence.
