@@ -1,0 +1,40 @@
+{
+  "scope": "Actual native Altium validation of saved and reopened public example files",
+  "application": "Altium Designer Professional 26.9.1",
+  "date": "2026-10-07",
+  "utc_offset": "-07:00",
+  "project_validate": {
+    "time": "10:37:25",
+    "errors": 0,
+    "warnings": 2,
+    "messages": [
+      "Net LED_IICRST has no driving source (Pin R23-1, Pin U2-39)",
+      "Net NRST has no driving source (Pin C12-1, Pin R10-2, Pin TP8-1, Pin U1-6)",
+      "Compile successful, no errors found."
+    ]
+  },
+  "pcb_drc": {
+    "time": "10:43:11",
+    "rule_violations": 0,
+    "warnings": 0,
+    "waived_violations": 0,
+    "rules_processed": 22,
+    "report": "PCB_DRC.txt",
+    "pcb_sha256": "939bd0d4c3ef61256d38f62013ce1c461c96a23d1fef93eaa07e6456df078ab3"
+  },
+  "physical_assembly_or_tests_performed": false,
+  "pcb_library_reopen": {
+    "date": "2026-10-11",
+    "utc_offset": "-07:00",
+    "time": "13:14:25",
+    "scope": "Read-only native reopen after QR repair, native save and container cleanup",
+    "errors": 0,
+    "footprints": 15,
+    "physical_pads": 123,
+    "model_group_qr_fills": 195,
+    "active_workboard_qr_fills": 195,
+    "protected_rows": 571,
+    "pcblib_sha256": "bfd0715ea9eb91e2f11a6b55355a6a01aab80f3c8d209258be6e096152f16864",
+    "audit": "public_native_audit.json"
+  }
+}

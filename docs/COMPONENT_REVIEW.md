@@ -1,6 +1,6 @@
 # Component procurement and review register
 
-Updated **2026-09-27**. The complete native design contains **135 schematic references**: **125 fitted parts across 17 orderable MPNs**, **C30 left unpopulated**, and **9 PCB features** (L1 and TP1-TP8). Board-only NT1 and QR1 are fabricated copper/artwork, not purchased parts.
+Updated **2026-10-07**. The baseline purchasing selections remain unchanged: **135 schematic references**, **125 fitted parts across 17 MPNs**, **C30 left unpopulated**, and **9 PCB features** (L1 and TP1-TP8). Board-only NT1 and QR1 are fabricated copper/artwork, not purchased parts. The separate [Altium laboratory variant](ALTIUM.md) retains the circuit and part-value variants while using later layout/paste treatment.
 
 ## Records
 
@@ -12,7 +12,7 @@ Updated **2026-09-27**. The complete native design contains **135 schematic refe
 - [Power, protection, connector and switch review](POWER_COMPONENT_REVIEW.md).
 - [MCU, display and NFC review](DISPLAY_MCU_NFC_REVIEW.md).
 
-**A complete MPN is an identity, not a hardware test result.** The review status distinguishes checked documentation from open measurements and assembly decisions. Quantities are for one board before assembly attrition/spares. No parts have been ordered, stock reserved or substitutions approved.
+**A complete MPN is an identity, not a hardware test result.** Quantities below are for one board before assembly attrition/spares. Five bare laboratory boards have been ordered; discrete-component purchase and receipt are unconfirmed. Sourcing alternatives have been screened separately, but the baseline table and machine-readable catalog are unchanged. Availability is not reserved, and no substituted part has been qualified on an assembled board.
 
 ## Procurement summary
 
@@ -45,8 +45,8 @@ The 23 fitted passives retain their nominal values and 0603 footprints. Capacito
 | ID | Affected references | Finding | Required closure / stage |
 |---|---|---|---|
 | CAP-01 | C1, C2 | Exact-part effective capacitance under combined operating conditions has not been established | Document minimum >0.47 uF after bias/tolerance/temperature/aging before assembly approval; confirm supply behavior on a sample |
-| ASM-01 | SW2, SW5 | Under/near-switch vias conflict with the manufacturer's flux-ingress assembly restriction | Move vias or obtain documented approval of an appropriate process before assembly |
-| ASM-02 | U2 | Ground vias in exposed pad and project paste windows require process selection | Assembler agreement on via filling/capping or other justified treatment and stencil before assembly |
+| ASM-01 | SW2, SW5 | Baseline under/near-switch vias; the laboratory layout mitigates signal vias but retains a nearby SW5 ground via without manufacturer approval | Remains open; resolve the layout/process deviation, document approval where required and verify the first sample |
+| ASM-02 | U2 | Open exposed-pad ground vias; a 0.10 mm top stencil with nine windows is proposed, but the process is unqualified | Agree on via treatment/paste/profile and inspect the first hidden joint; the proposed stencil does not close this item |
 | ASM-03 | U1, fitted passives, J1 | Some IPC lands differ from manufacturer examples; connector has plated slots on a thin board | Review lands, stencil, finished slots and mechanical fit with assembler; inspect first samples |
 | PWR-01 | J1, U3, U5, D91 | ESD component ratings do not qualify the whole input network; D91 clamp may exceed U3 absolute maximum | Define test conditions before prototype use; measure startup/hot-plug/ESD stress and revise if required before product qualification |
 | ELEC-01 | U1-U3, D1-D90, R20/R21/R24 | Current, rail stability, thermal margin and I2C edges are calculated, not measured | Measure the sample; U2 rise/fall <=300 ns; retain firmware GCC limit 32 |
@@ -54,6 +54,8 @@ The 23 fitted passives retain their nominal values and 0603 footprints. Capacito
 | SRC-01 | All fitted MPNs | Manufacturer identities are assigned, but actual supplier availability/lead times are not reserved | Confirm approved exact parts and quantities at ordering; review each proposed substitute |
 
 The current package is **not an assembly release or production qualification**. Open physical checks are intentional; the switch and capacitor findings must not disappear behind a passing digital report.
+
+All eight findings above remain open. The native Altium library/binding work and fresh public schematic/PCB checks do not establish the required component, assembly or measured-hardware evidence. See [Assembly](ASSEMBLY.md) for orientation and switch-last handling, and [Verification](VERIFICATION.md) for revision-specific result boundaries.
 
 ## Reproduce and maintain the records
 

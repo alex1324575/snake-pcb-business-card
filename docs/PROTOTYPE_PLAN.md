@@ -1,6 +1,6 @@
 # Engineering plan: from design to a working card
 
-Updated 2026-09-27. The current milestone is **pre-prototype review**. A clean KiCad check and passing firmware CI establish useful digital evidence; a board has not yet been assembled or powered.
+Updated 2026-10-11. The current milestone is **laboratory prototype preparation**: sourcing work and native checks of the public Altium files are recorded, and five bare development boards have been ordered. Receipt, stencil/component purchases and assembly remain unconfirmed. No assembled board has been powered or measured. The [Altium laboratory variant](ALTIUM.md) is separate from the unchanged KiCad baseline and fabrication exports; its [public saved-file release audit](../verification/altium/public_native_audit.json) passed on 2026-10-11.
 
 ## Typical development sequence
 
@@ -21,9 +21,9 @@ A personal portfolio project can stop after a well-documented working prototype.
 
 Use [Component review](COMPONENT_REVIEW.md) as the issue register. Resolve these before approving an assembly order:
 
-- **Switch-area vias:** move the SW2/SW5 vias or obtain a documented manufacturer/assembler-approved process for the deviation. Generic solder-mask tenting is not evidence that the switch's flux-ingress restriction is satisfied.
+- **Switch-area vias:** the KiCad baseline's SW2/SW5 finding remains open. The later laboratory layout moves four button-signal vias but retains a ground via near SW5 without manufacturer approval. Resolve the remaining deviation and document the process; generic solder-mask tenting does not establish compliance.
 - **Regulator capacitors:** establish exact-part effective capacitance for C1/C2 above 0.47 uF after bias, tolerance, temperature and aging. The selected 35 V rating is useful voltage margin, but does not replace that evidence.
-- **Assembly process:** agree on U2 exposed-pad vias, paste/stencil treatment, existing land-pattern deviations, USB plated slots, and the switches' soldering/no-wash restrictions.
+- **Assembly process:** review the proposed top-only 0.10 mm stencil, nine U2 exposed-pad windows and open ground vias. Complete reflow/rework and cleaning before hand-soldering switches last. Agree on the remaining land-pattern deviations, USB plated slots and switch restrictions; the starting process is not qualified.
 - **Sources and test access:** confirm exact MPN availability and substitutions, the SWD fixture, test equipment and who will perform first-board measurements.
 
 The input ESD/LDO protection relationship also needs a documented validation plan: component clamp ratings do not guarantee that the assembled regulator survives a transient. A controlled engineering sample may be used to investigate this open item; it is not a qualified product release.
@@ -32,13 +32,13 @@ The input ESD/LDO protection relationship also needs a documented validation pla
 
 After any layout fixes, regenerate the schematic PDF, BOM, Gerber/drill files, checks and hashes from the same source revision. Add an assembly drawing and component position file (CPL/pick-and-place) for the chosen assembler. Verify pin 1, LED polarity and connector orientation in the factory's preview; KiCad rotation conventions are not universal factory conventions.
 
-The generic [procurement BOM](../exports/Procurement_BOM.csv) is manufacturer-part-number based. A factory may additionally require its own stock identifiers and file format. For example, JLCPCB documents its [BOM requirements](https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly) and [BOM/CPL matching checks](https://jlcpcb.com/help/article/common-bom-and-cpl-matching-issues-and-explanations). No factory upload, order or payment has been performed.
+The generic [procurement BOM](../exports/Procurement_BOM.csv) describes the baseline MPN selections. Reviewed sourcing alternatives require their own traceable BOM revision before use. For factory assembly, prepare the required stock identifiers and placement format; JLCPCB documents its [BOM requirements](https://jlcpcb.com/help/article/bill-of-materials-for-pcb-assembly) and [BOM/CPL matching checks](https://jlcpcb.com/help/article/common-bom-and-cpl-matching-issues-and-explanations).
 
-Request fabrication and assembly feedback before placing the sample order. Record any approved departures from the component drawings. Keep C30 unpopulated and distinguish the printed antenna/test pads from purchased components.
+The five-board laboratory fabrication order concerns development files. Review matching stencil CAM and assembly feedback before approving the remaining process. Record any approved departures from component drawings. Keep C30 unpopulated and distinguish the printed antenna/test pads from purchased components. Existing public KiCad Gerbers do not become exports of the Altium layout through documentation changes.
 
 ### 3. Build a small sample batch
 
-For this card, a practical first batch is **3-5 engineering samples**, subject to the assembler's minimum quantity and cost. Inspect and test the first assembled unit before committing more units where the process permits. Factory assembly is worth considering because the board has 90 LEDs and a fine-pitch QFN; it is a project recommendation, not a claim that hand assembly is impossible.
+The recorded plan is laboratory assembly of the five-board batch. Confirm equipment, paste, stencil availability and the actual delivered parts, then assemble and validate **one card first**. Ninety LEDs and the fine-pitch QFN make placement and joint inspection significant tasks; allow rework before populating the remaining boards. Record the actual MPNs installed on each card, including any reviewed substitutions.
 
 Prepare a current-limited 5 V source with a suitable USB-C connection, multimeter, ST-LINK/SWD fixture and oscilloscope. A logic analyzer helps debug I2C transactions, but an oscilloscope is needed to assess analog edges, ripple and transients. NFC tuning needs an appropriate RF measurement setup or outside lab support.
 

@@ -27,3 +27,16 @@ dist/
 *.bak
 *.zip
 *-rescue.lib
+
+# Local Altium editor state, history and unsanitized generated reports
+altium/History/
+altium/__Previews/
+altium/Outputs/
+altium/Project Logs*/
+altium/*Preview
+altium/*.PrjPcbStructure
+altium/*.PrjPCBStructure
+altium/*.PrjPcbLogs
+altium/*.PrjPCBLogs
+altium/*.PcbDoc.htm
+altium/*.SchDoc.htm

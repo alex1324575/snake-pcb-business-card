@@ -15,7 +15,7 @@ The front combines a compact game interface with a clean nameplate. The back car
 
 All example artwork uses **Alex Parker**, a fictional identity. The example QR code and NFC payload both point to **https://example.com/**.
 
-> **Prototype status:** the design has passed digital checks, and the firmware has been built and tested on a host computer. An assembled board has not yet been powered or validated. The images are KiCad renders; see the [verification record](docs/VERIFICATION.md) for the exact scope.
+> **Prototype status:** digital checks and firmware host tests are recorded for the KiCad baseline. The separate public Altium laboratory variant passed native validation on October 7, 2026: 0 schematic errors with 2 reviewed warnings, and 0 PCB DRC violations, warnings or waivers. Its [saved-file release audit](verification/altium/public_native_audit.json) passed on October 11; both native QR objects decode to `https://example.com/`. A five-board laboratory batch has been ordered; assembly and measured hardware validation remain pending. The images are KiCad renders. See the [verification record](docs/VERIFICATION.md) for revision-specific results.
 
 ## At a glance
 
@@ -36,7 +36,7 @@ All example artwork uses **Alex Parker**, a fictional identity. The example QR c
 |---|---|
 | ![Front of the example Alex Parker PCB, with LED matrix and controls](docs/images/front.png) | ![Back of the example PCB, with example.com QR code, NFC antenna, and SWD pads](docs/images/back.png) |
 
-The native KiCad project, six-sheet schematic, custom libraries, manufacturing exports, firmware, and verification reports are included. The USB-C connector supplies power only; it is not a USB data or firmware-update interface.
+The KiCad baseline includes a six-sheet schematic, custom libraries, manufacturing exports, firmware, and verification reports. The separate [Altium laboratory variant](docs/ALTIUM.md) provides a single-sheet schematic and local symbol/footprint libraries. Its layout and paste treatment differ from the baseline. The USB-C connector supplies power only; it is not a USB data or firmware-update interface.
 
 ## Play
 
@@ -79,6 +79,8 @@ Open [`SnakeBusinessCard.kicad_pro`](SnakeBusinessCard.kicad_pro) in **KiCad 10*
 - [Hardware design notes](docs/HARDWARE.md)
 - [Fabrication and assembly](docs/ASSEMBLY.md)
 
+For Altium Designer, open [`altium/SnakeCard_Native.PrjPcb`](altium/SnakeCard_Native.PrjPcb). Its 29-symbol SchLib and 15-model PcbLib are included. Read the [variant and validation notes](docs/ALTIUM.md) before exporting manufacturing files; the existing `fabrication/` directory belongs to the KiCad baseline.
+
 ### Build and test the firmware
 
 Install Python 3.9+ and an Arm GNU `arm-none-eabi-gcc` toolchain, then run:
@@ -114,6 +116,7 @@ Use the public example as a starting point for your nameplate, contact URL, and 
 
 ```text
 *.kicad_*          Native KiCad project, schematic, and routed PCB
+altium/            Separate Altium laboratory variant and local libraries
 library/           Project symbols, footprints, and envelope models
 firmware/          C source, host tests, build tools, and firmware images
 contact/           Example QR and NFC assets
@@ -128,6 +131,6 @@ tools/             Contact asset and hardware export tools
 
 Host tests exercise movement, growth, collision handling, timing rollover, button debounce, pause/restart behavior, full-board victory, display mapping, and injected I²C failures. The board-contract check compares the firmware with the actual netlist and all 90 LED positions.
 
-All fitted parts have exact procurement MPNs. Before assembly, close the capacitor effective-capacitance check, switch-area via finding, and assembly-process decisions in the [component review](docs/COMPONENT_REVIEW.md). Then validate sample-board brightness/current, I²C waveforms, thermal behavior, power cycling, fault recovery and NFC tuning. The [engineering plan](docs/PROTOTYPE_PLAN.md) describes each step and its required evidence.
+All fitted parts have baseline procurement MPNs. Component and stencil purchases are unconfirmed; assembly preparation is documented in [Assembly](docs/ASSEMBLY.md). The capacitor effective-capacitance check, switch-area via finding and other [component review](docs/COMPONENT_REVIEW.md) items remain open. The Altium layout mitigates part of the switch-via finding but retains a nearby SW5 ground via without manufacturer approval. Validate one assembled sample's power, display, inputs and contact functions before building the remaining boards. The [engineering plan](docs/PROTOTYPE_PLAN.md) lists the required evidence.
 
 See [verification](docs/VERIFICATION.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Contributions should include a focused change description and the checks relevant to that change; the [contribution guide](CONTRIBUTING.md) explains the workflow.

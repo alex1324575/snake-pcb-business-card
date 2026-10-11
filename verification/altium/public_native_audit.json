@@ -1,0 +1,100 @@
+{
+  "schema": "public-native-privacy-and-design-gate-v1",
+  "pass": true,
+  "cad_inputs_written": false,
+  "identity": "Alex Parker",
+  "contact_uri": "https://example.com/",
+  "files": {
+    "SnakeCard_Native.SchDoc": "0709ea0ba8f5b60646e6f8bd784d70a9e4c0dd915a42703e0baa6cf087e10171",
+    "SnakeCard_Native.PcbDoc": "939bd0d4c3ef61256d38f62013ce1c461c96a23d1fef93eaa07e6456df078ab3",
+    "SnakeCardNative.SchLib": "72e35caeecc50cdd0313f5a56101a1ce1e477080e3f06b1fc960953488c5d522",
+    "SnakeCardNative.PcbLib": "bfd0715ea9eb91e2f11a6b55355a6a01aab80f3c8d209258be6e096152f16864",
+    "SnakeCard_Native.PrjPcb": "48481abf8da432a79bb0c1edc66da6eb113fdc1a298f8824ddad46f1d7e16202"
+  },
+  "privacy_findings": [],
+  "schematic": {
+    "placed_components": 135,
+    "electrical_pins": 346,
+    "fictional_identity_title": true,
+    "primary_pin_ids_models_coordinates_preserved": true,
+    "native_auxiliary_pin_id_regenerations": 346
+  },
+  "schematic_library": {
+    "symbols": 29,
+    "model_bindings": 29,
+    "library_pins": 136,
+    "symbol_variant_and_model_data_preserved": true
+  },
+  "pcb": {
+    "pcb_components": 136,
+    "electrical_components": 135,
+    "graphical_qr_components": 1,
+    "physical_pad_count": 366,
+    "all_pads_tracks_vias_copper_geometry_preserved": true,
+    "fill_header_count": 205,
+    "fill_header_count_matches_data": true,
+    "board_outline_stackup_settings_preserved": true,
+    "component_positions_rotations_models_preserved": true,
+    "rule_save_provenance": {
+      "native_rules": 43,
+      "scopes_priorities_enabled_states_values_preserved": true,
+      "observed_inherited_rule_layer_changes": 5,
+      "rule_bytes_claimed_unchanged": false
+    },
+    "text_save_provenance": {
+      "text_objects": 453,
+      "identity_contact_text_changes": 4,
+      "text_geometry_style_bytes_preserved": true,
+      "native_font_padding_fields_zeroed": 906,
+      "native_wide_text_indices_recomputed": 145
+    }
+  },
+  "pcb_qr": {
+    "native_fill_count": 195,
+    "actual_native_geometry_decoded_uri": "https://example.com/",
+    "noncoordinate_fill_flags_owner_style_bytes_preserved": true,
+    "extent_mm": [
+      20.999999,
+      20.999999
+    ],
+    "raster": "PublicNativeBoardQR.png"
+  },
+  "pcb_library": {
+    "footprints": 15,
+    "physical_pad_count": 123,
+    "nonqr_footprint_streams_preserved": true,
+    "public_graphical_qr_pad_count": 0,
+    "qr_header_count_matches_data": true
+  },
+  "library_qr": {
+    "native_fill_count": 195,
+    "actual_native_geometry_decoded_uri": "https://example.com/",
+    "noncoordinate_fill_flags_owner_style_bytes_preserved": true,
+    "extent_mm": [
+      20.999999,
+      20.999999
+    ],
+    "raster": "PublicNativeLibraryQR.png"
+  },
+  "native_3d_model_counts": {
+    "pcb_embedded": 0,
+    "pcb_external": 0,
+    "library_embedded": 0,
+    "library_external": 0
+  },
+  "date": "2026-10-11",
+  "utc_offset": "-07:00",
+  "native_library_save_and_reopen": {
+    "application": "Altium Designer Professional 26.9.1",
+    "final_read_only_reopen_time": "13:14:25",
+    "errors": 0,
+    "model_group_qr_fills": 195,
+    "active_workboard_qr_fills": 195,
+    "protected_rows_before": 571,
+    "protected_rows_after": 571,
+    "read_only_reopen_changed_cad": false,
+    "native_save_preserved_public_qr": true,
+    "container_cleanup_and_nonqr_encoding_restoration_after_save": true,
+    "physical_testing_performed": false
+  }
+}
