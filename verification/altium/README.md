@@ -1,46 +1,47 @@
 # Altium verification records
 
-These records concern the public files in [`altium/`](../../altium/), a separate laboratory variant of the project. The existing KiCad sources and manufacturing exports retain their baseline revision. Read the [variant notes](../../docs/ALTIUM.md) before generating fabrication files.
+These records apply to the public files in [`altium/`](../../altium/). They cover the laboratory variant described in [Altium](../../docs/ALTIUM.md); the KiCad sources and fabrication exports retain their baseline revision.
 
-## Recorded results
+## Results
 
-| Check | Result | Evidence |
-|---|---|---|
-| Native project Validate | 0 errors; 2 reviewed reset warnings | [Native validation record](native_validation.json), 2026-10-07 10:37:25, UTC-07:00 |
-| Native PCB DRC | 0 violations, 0 warnings, 0 waived violations; 22 rules processed | [Full native DRC report](PCB_DRC.txt), 2026-10-07 10:43:11, UTC-07:00 |
-| Public artwork and saved-file comparison | Passed; no privacy findings; both native QR payloads decode to `https://example.com/` | [Saved-file release audit](public_native_audit.json), 2026-10-11, UTC-07:00 |
-| Native footprint-library save/reopen confirmation | 195 fills in both QR component group and active workboard; 571 protected records unchanged; 0 errors | [Native validation record](native_validation.json), final read-only probe 2026-10-11 13:14:25, UTC-07:00 |
+| Date | Check | Result | Evidence |
+|---|---|---|---|
+| 2026-10-07 | Project Validate | 0 errors; 2 reviewed reset warnings | [Native validation](native_validation.json) |
+| 2026-10-07 | PCB DRC | 0 violations, 0 warnings, 0 waivers; 22 rules processed | [DRC report](PCB_DRC.txt) |
+| 2026-10-11 | Saved-file comparison and contact check | Passed; no private identity/path findings; both QR payloads are `https://example.com/` | [Audit](public_native_audit.json) |
+| 2026-10-11 | Footprint-library reopen | 195 QR fills in both component group and active workboard; 571 protected records unchanged; 0 errors | [Native validation](native_validation.json) |
 
-The native checks ran in Altium Designer Professional 26.9.1 after saving and reopening the public documents. The two schematic warnings remain visible on `LED_IICRST` and `NRST`. Their disposition and the 11 retained development symbol-library findings are documented in [Altium](../../docs/ALTIUM.md). No fresh zero-finding library report is claimed.
+Native checks ran in **Altium Designer Professional 26.9.1** after saving and reopening the documents. The two schematic warnings are on `LED_IICRST` and `NRST`. Their disposition and the **11 retained symbol-library naming/sequence findings** are in [Altium](../../docs/ALTIUM.md). The library reopen was a read-only geometry check, not a repeat of project Validate, PCB DRC or the symbol-library rule check.
 
-The PCB DRC result is bound to the PCB SHA-256 in `native_validation.json`. The report lists the actual constraints and their scopes. Five zero-gap switch rules apply narrowly between each switch's own keepout and its own pads; the global clearance rules remain 0.15 mm and 0.20 mm. A DRC pass covers the configured checks, not all manufacturing constraints.
+The PCB DRC result is bound to the SHA-256 in `native_validation.json`. Five zero-gap switch rules apply between each switch's own keepout and pads; global clearances remain **0.15 mm** and **0.20 mm**. The report lists rule values and scopes. The [hash manifest](file_hashes.json) identifies the CAD and verification files.
 
-The [hash manifest](file_hashes.json) identifies the released CAD files and verification artifacts. The [PCB QR raster](PublicNativeBoardQR.png) and [footprint-library QR raster](PublicNativeLibraryQR.png) were generated from the saved native fills for decoding; they are verification images, not fabricated-board photographs.
+## Saved-file comparison
 
-## Saved-file audit method
+The audit reads native compound-file streams and compares them with a fixed development reference. It checks:
 
-The release audit reads the saved native compound-file streams rather than relying on editor screenshots or contact labels. It compares them with a fixed development reference and records the hashes of the five public project files. It checks:
+- Four relative project documents: schematic, PCB and both local libraries.
+- **135 schematic components and 346 electrical pins:** primary pin identifiers, coordinates, parameters and footprint bindings.
+- **29 symbols, 136 library pins and 29 symbol footprint models.**
+- **136 PCB component objects and 366 pads:** placement, routing, vias, copper, outline and stackup.
+- **15 footprint models and 123 library pads:** all named streams of the 14 electrical footprint subtrees match the reference; the remaining model is padless QR artwork.
+- Public contact text and absence of private identity, contact and user-path data in live streams, directory names and whole-file bytes.
+- Both QR objects: **195 native fills**, matching count headers, verified coordinates/layers, a **21 mm** extent, and unchanged noncoordinate flags, ownership and style.
 
-- Exactly four relative project document members: the schematic, PCB and two local libraries.
-- The 135 schematic components, 346 electrical pins, primary pin identifiers, coordinates, parameters and footprint-model associations.
-- The 29 symbols, 136 library pins and 29 symbol footprint models.
-- The PCB's 136 component objects and 366 physical pads, including routing, vias, copper, outline, stackup and component placement.
-- The 15 footprint models and 123 library pads. All named streams of the 14 electrical footprint subtrees must match the reference; the remaining footprint is padless QR artwork.
-- Public identity and contact text, plus a scan of live streams, directory names and whole-file bytes for private identity, contact and user-path data.
-- The actual QR fills in both the PCB and footprint library: 195 rectangles per object, matching primitive-count headers, the verified public coordinates and layers, and a 21 mm extent. Noncoordinate fill flags, ownership and style remain checked. Each saved native geometry is rasterized and decoded to confirm `https://example.com/`.
+The public identity is **Alex Parker**. The [PCB QR raster](PublicNativeBoardQR.png) and [library QR raster](PublicNativeLibraryQR.png) were generated from saved native fills and decode to `https://example.com/`. They are verification images; printed silkscreen readability still needs a physical check.
 
-The public example identity is **Alex Parker**. A contact label or renamed footprint is insufficient: the encoded QR geometry must also pass. Decoding a rasterized native QR does not establish readability of printed silkscreen.
+## Native encoding changes
 
-## Native encoding and comparison scope
+The audit distinguishes design changes from native serialization changes. Allowed differences are recorded in the audit:
 
-The comparison allows only documented native save changes: regenerated auxiliary pin-parameter IDs while preserving primary pin associations; editor viewport bounds and host-path/time metadata; exact font-buffer padding normalization; and wide-text index changes that still resolve to the intended text. Text coordinates, layers, visibility and style remain checked.
+- Regenerated auxiliary pin-parameter IDs with primary pin associations preserved.
+- Editor viewport bounds and host-path/time metadata.
+- Exact font-buffer padding normalization and wide-text index changes that resolve to the intended text. Text position, layer, visibility and style remain checked.
+- Five inherited switch-clearance layer fields changed from `UNKNOWN` to `TOP`. Rule identity, scope, priority, enabled state and value remain checked.
 
-Five inherited switch-clearance rule layer fields changed from `UNKNOWN` to `TOP` during native saving. Rule identities, scopes, priorities, enabled states and values remain checked. These observations do not justify ignoring arbitrary rule or geometry changes. Container repacking removes unreachable data and unused padding while preserving named-stream content, apart from the documented public text/path/QR changes and exact encoding restoration of the electrical footprint subtrees.
+Container repacking removes unreachable data and unused padding. Named-stream content is preserved except for documented public text/path/QR changes and exact encoding restoration of the electrical footprint subtrees. The library QR replacement changes its primitive data, count header and corresponding GUID index data/header; QR parameters and wide-string metadata remain intact. These are scoped preservation checks, not whole-file byte identity.
 
-The footprint-library QR replacement changed only its primitive data, primitive-count header and corresponding GUID index data/header. QR parameters and wide-string metadata remained intact, and the 14 electrical footprint subtrees remained exact. The library was then saved and reopened in Altium, and the final saved-file audit passed. The final native reopen probe confirmed the QR object counts without writing CAD files; it was not a new project Validate, PCB DRC or symbol-library rule check.
+Native embedded and external 3D model streams are empty. The repository's board renders come from KiCad.
 
-The resulting records establish preservation within those stated scopes. They do not claim whole-file byte identity. Native embedded and external 3D model streams are empty; the README images are KiCad renders.
+## Outstanding hardware validation
 
-## Physical work remains open
-
-No assembled-board power-up, MCU firmware execution, measured power/display performance, USB transient qualification, hidden-joint acceptance or NFC tuning is recorded. All eight [component-review findings](../../docs/COMPONENT_REVIEW.md) remain open. In particular, the retained nearby SW5 ground via and open exposed-pad vias still need a documented assembly process and sample evidence. See [Assembly](../../docs/ASSEMBLY.md) and the [bring-up guide](../../docs/BRINGUP.md).
+All **eight** [component-review findings](../../docs/COMPONENT_REVIEW.md) remain open. No assembly, power-up, measured electrical/thermal result, USB transient qualification or NFC tuning is recorded. The nearby SW5 ground via and open exposed-pad vias require an agreed assembly process and sample inspection. See [Assembly](../../docs/ASSEMBLY.md) and [Bring-up](../../docs/BRINGUP.md).

@@ -4,9 +4,9 @@ This is a prototype hardware and firmware project. Small, well-documented change
 
 ## Before changing a board
 
-Open the native KiCad project and preserve the current routing. A change to the MCU pin map, LED polarity, power circuit, or driver address must also update the firmware, board-contract checks, and documentation.
+Choose the KiCad or [Altium](docs/ALTIUM.md) revision before editing; their layouts and manufacturing outputs differ. A change to the MCU pin map, LED polarity, power circuit, or driver address must also update the firmware, mapping checks, and documentation.
 
-Run KiCad ERC and DRC after schematic or PCB changes. Regenerate affected manufacturing files and images from the edited native project. Include the relevant report and describe any remaining violations rather than suppressing them to obtain a clean count.
+Run KiCad ERC/DRC for KiCad changes, or project Validate and PCB DRC for Altium changes. Regenerate matching manufacturing files and images from the edited project. Include the relevant reports and explain any remaining violations.
 
 ## Firmware changes
 

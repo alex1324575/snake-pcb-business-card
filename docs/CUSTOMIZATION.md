@@ -2,11 +2,13 @@
 
 The public example uses **ALEX PARKER / Electrical Engineer**, startup initials **AP**, and **https://example.com/**. Keep identity artwork, QR content and NFC content synchronized when adapting it.
 
+This workflow edits the KiCad project. The contact scripts use `pcbnew` and do not update the [Altium project](ALTIUM.md).
+
 ## 1. Edit the visible identity
 
 Open the root KiCad project and edit the front/back text in the PCB editor. Preserve silkscreen clearance around pads, board edges and the QR quiet zone. Change drawing-sheet metadata if you want your name to appear in schematic exports. The native `.kicad_pcb` is the editable routed design.
 
-A premium finish depends on readable spacing and restrained artwork. Keep the antenna area free of added copper, metal lettering or mask openings. Check the front and back views after editing; bottom-side text and artwork must be readable from the physical back of the card.
+Keep the antenna area free of added copper, metal lettering or mask openings. Check the front and back views after editing; bottom-side text and artwork must be readable from the physical back of the card.
 
 ## 2. Replace QR and NFC content together
 

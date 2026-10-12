@@ -1,55 +1,34 @@
 # Snake PCB Business Card
 
-A playable business card built around a 10 × 9 LED matrix, an STM32 microcontroller, and a single game of Snake.
+A USB-powered PCB business card with a 10 × 9 LED matrix, five buttons, and Snake firmware. A separate passive NFC tag and a printed QR code carry the contact URL.
 
 [![Firmware CI](https://github.com/alex1324575/snake-pcb-business-card/actions/workflows/firmware.yml/badge.svg)](https://github.com/alex1324575/snake-pcb-business-card/actions/workflows/firmware.yml)
 ![KiCad 10](https://img.shields.io/badge/KiCad-10-314CB0)
 ![Firmware C11](https://img.shields.io/badge/firmware-C11-436B54)
 ![Prototype](https://img.shields.io/badge/status-prototype-C88B36)
 
-![Isometric KiCad render of the Snake PCB business card, using the fictional name Alex Parker](docs/images/isometric.png)
+![Isometric KiCad render of the example board](docs/images/isometric.png)
 
-**USB-C power. Five buttons. Ninety LEDs. A business card you can actually play.**
+**Status:** five bare boards have been ordered. Assembly and first-board bring-up are pending. Firmware host tests and the Arm build run in CI; hardware check results are listed in [Verification](docs/VERIFICATION.md).
 
-The front combines a compact game interface with a clean nameplate. The back carries a QR code, a passive NFC antenna, and programming pads. The design uses black solder mask, white silkscreen, and an ENIG finish on a 0.8 mm board.
+The images are KiCad renders. Public artwork uses the fictional name **Alex Parker** and the URL **https://example.com/**.
 
-All example artwork uses **Alex Parker**, a fictional identity. The example QR code and NFC payload both point to **https://example.com/**.
+## Hardware
 
-> **Prototype status:** digital checks and firmware host tests are recorded for the KiCad baseline. The separate public Altium laboratory variant passed native validation on October 7, 2026: 0 schematic errors with 2 reviewed warnings, and 0 PCB DRC violations, warnings or waivers. Its [saved-file release audit](verification/altium/public_native_audit.json) passed on October 11; both native QR objects decode to `https://example.com/`. A five-board laboratory batch has been ordered; assembly and measured hardware validation remain pending. The images are KiCad renders. See the [verification record](docs/VERIFICATION.md) for revision-specific results.
-
-## At a glance
-
-| | |
+| Feature | Implementation |
 |---|---|
-| Board | 85.6 × 54 mm, rounded corners, two layers, 0.8 mm thick |
+| Board | 85.6 × 54 mm, two layers, 0.8 mm thick, R2 corners |
+| Finish | Black solder mask, white silkscreen, ENIG |
 | MCU | STM32G030K8T6, Cortex-M0+, 64 KB Flash / 8 KB SRAM |
-| Display | 10 × 9 discrete red LEDs, IS31FL3737 PWM driver |
-| Controls | Four direction buttons and START |
+| Display | 90 discrete red LEDs, IS31FL3737 PWM driver |
+| Input | Four direction buttons and START |
 | Power | USB-C 5 V input, 3.3 V regulation; no battery |
-| Contact | Printed QR code and independent ST25TN01K passive NFC |
-| Firmware | C11, register-level board support, no heap or RTOS |
-| Programming | SWD through five pads on the back |
-
-## The board
+| Contact | Rear QR code and ST25TN01K passive NFC tag |
+| Programming | Rear SWD pads |
 
 | Front | Back |
 |---|---|
-| ![Front of the example Alex Parker PCB, with LED matrix and controls](docs/images/front.png) | ![Back of the example PCB, with example.com QR code, NFC antenna, and SWD pads](docs/images/back.png) |
-
-The KiCad baseline includes a six-sheet schematic, custom libraries, manufacturing exports, firmware, and verification reports. The separate [Altium laboratory variant](docs/ALTIUM.md) provides a single-sheet schematic and local symbol/footprint libraries. Its layout and paste treatment differ from the baseline. The USB-C connector supplies power only; it is not a USB data or firmware-update interface.
-
-## Play
-
-1. Connect USB-C power. The board shows an **AP** startup mark, then the idle animation.
-2. Press and release **START** to begin.
-3. Use the direction buttons to steer. Eat the flashing pixel; avoid walls and your own body.
-4. Press **START** to pause or resume. Hold it for about 0.8 seconds to return to idle.
-
-The snake speeds up as it grows. Filling all 90 cells wins the game at 87 points. The final score appears as two digits. Hold **UP** while idle to see the highest score from the current power session.
-
-For assembly checks, hold **START** while applying power to enter the LED/button diagnostic. Release it, then press START again to exit.
-
-## Architecture
+| ![Front of the example board](docs/images/front.png) | ![Back of the example board](docs/images/back.png) |
 
 ```mermaid
 flowchart LR
@@ -58,79 +37,68 @@ flowchart LR
     LDO --> LED[IS31FL3737]
     KEYS[Five buttons] --> MCU
     MCU -->|I2C + shutdown| LED
-    LED --> MATRIX[10 x 9 red LED matrix]
+    LED --> MATRIX[10 x 9 LED matrix]
     SWD[Rear SWD pads] --- MCU
-    PHONE[Phone] -.-> NFC[Passive NFC / example URL]
+    PHONE[Phone] -.-> NFC[Passive NFC tag]
     PHONE -.-> QR[Printed QR code]
 ```
 
-The NFC tag is independent of the game electronics. It does not need USB power and is not programmed by the MCU in this design.
+USB-C supplies power only. Firmware is programmed over SWD. The NFC tag operates without USB power and must be provisioned separately from the MCU.
 
-## Get started
+## Design files
 
-### Open the hardware
+The repository contains two layout revisions. Use the outputs associated with the revision you are building.
 
-Open [`SnakeBusinessCard.kicad_pro`](SnakeBusinessCard.kicad_pro) in **KiCad 10** with the standard KiCad libraries installed. Project-specific symbols and footprints resolve through `${KIPRJMOD}`.
+| Project | Contents | Manufacturing outputs |
+|---|---|---|
+| [KiCad 10](SnakeBusinessCard.kicad_pro) | Six-sheet schematic, routed PCB, custom libraries | Included in [`exports/`](exports/) and [`fabrication/`](fabrication/) |
+| [Altium Designer](altium/SnakeCard_Native.PrjPcb) | Single-sheet schematic, routed PCB, 29-symbol SchLib and 15-model PcbLib | Regenerate from Altium; this layout has later via and paste changes |
+
+KiCad project libraries resolve through `${KIPRJMOD}`. The [Altium notes](docs/ALTIUM.md) describe its layout changes and local libraries.
 
 - [Schematic PDF](exports/SnakeBusinessCard_Schematic.pdf)
-- [Bill of materials](exports/SnakeBusinessCard_BOM.csv)
-- [Procurement BOM with exact MPNs](exports/Procurement_BOM.csv)
-- [Component review and open issues](docs/COMPONENT_REVIEW.md)
+- [Procurement BOM](exports/Procurement_BOM.csv)
 - [Hardware design notes](docs/HARDWARE.md)
+- [Component review and open issues](docs/COMPONENT_REVIEW.md)
 - [Fabrication and assembly](docs/ASSEMBLY.md)
 
-For Altium Designer, open [`altium/SnakeCard_Native.PrjPcb`](altium/SnakeCard_Native.PrjPcb). Its 29-symbol SchLib and 15-model PcbLib are included. Read the [variant and validation notes](docs/ALTIUM.md) before exporting manufacturing files; the existing `fabrication/` directory belongs to the KiCad baseline.
+## Firmware
 
-### Build and test the firmware
+The firmware uses C11 and register-level board support, with no heap or RTOS. It implements game logic, button debounce, PWM display control, and fault recovery.
 
-Install Python 3.9+ and an Arm GNU `arm-none-eabi-gcc` toolchain, then run:
-
-```sh
-cd firmware
-python tools/build.py --build
-```
-
-For host tests, also install a native GCC/Clang compiler or Microsoft C++ Build Tools:
+From the repository root, with Python 3.9+ and an Arm GNU toolchain installed:
 
 ```sh
-python tools/build.py --test-host --sanitize
-python tools/check_board_contract.py
+python firmware/tools/build.py --build
 ```
 
-The build emits HEX, BIN, ELF, a linker map, and a manifest under `firmware/release/`. Set `ARM_GCC_BIN` or pass `--gcc-bin` if the cross-compiler is not on PATH. See the [firmware guide](firmware/README.md) for toolchain versions, controls, architecture, and test details.
+Host tests also require GCC, Clang, or Microsoft C++ Build Tools:
 
-### Program a sample
-
-Use a 3.3 V-compatible ST-LINK and power the board through USB-C. Connect SWDIO, SWCLK, NRST, GND, and the target-voltage sense input. The pads are **1.0 mm in diameter on 3.0 mm centers**, not a standard 2.54 mm header.
-
-Follow the [first-board guide](docs/BRINGUP.md) for the correct back-view pad order, programming commands, and initial checks.
-
-## Make it yours
-
-Use the public example as a starting point for your nameplate, contact URL, and visual treatment. Regenerate both the QR artwork and NFC payload when changing the URL.
-
-- [Personalization workflow](docs/CUSTOMIZATION.md)
-- [QR and NFC data](docs/CONTACT.md)
-
-## Repository layout
-
-```text
-*.kicad_*          Native KiCad project, schematic, and routed PCB
-altium/            Separate Altium laboratory variant and local libraries
-library/           Project symbols, footprints, and envelope models
-firmware/          C source, host tests, build tools, and firmware images
-contact/           Example QR and NFC assets
-exports/           Schematic PDF, BOM, and exported netlist
-fabrication/       Gerber and drill exports
-verification/      Hardware check results
-docs/              Design, assembly, bring-up, and customization guides
-tools/             Contact asset and hardware export tools
+```sh
+python firmware/tools/build.py --test-host --sanitize
+python firmware/tools/check_board_contract.py
 ```
 
-## Verification and next steps
+Outputs are written to [`firmware/release/`](firmware/release/). Set `ARM_GCC_BIN` or use `--gcc-bin` if the cross-compiler is not on PATH. Toolchain and sanitizer support are documented in the [firmware guide](firmware/README.md).
 
-Host tests exercise movement, growth, collision handling, timing rollover, button debounce, pause/restart behavior, full-board victory, display mapping, and injected I²C failures. The board-contract check compares the firmware with the actual netlist and all 90 LED positions.
+### Controls
 
-All fitted parts have baseline procurement MPNs. Component and stencil purchases are unconfirmed; assembly preparation is documented in [Assembly](docs/ASSEMBLY.md). The capacitor effective-capacitance check, switch-area via finding and other [component review](docs/COMPONENT_REVIEW.md) items remain open. The Altium layout mitigates part of the switch-via finding but retains a nearby SW5 ground via without manufacturer approval. Validate one assembled sample's power, display, inputs and contact functions before building the remaining boards. The [engineering plan](docs/PROTOTYPE_PLAN.md) lists the required evidence.
+- Press START to begin, pause, or resume.
+- Use the direction buttons to steer toward the flashing food pixel.
+- Hold START for about 0.8 seconds to return to idle.
+- Hold UP while idle to view the highest score from the current power session.
+- Hold START during power-up to enter the LED/button diagnostic; release it and press START again to exit.
 
-See [verification](docs/VERIFICATION.md) and [third-party notices](THIRD_PARTY_NOTICES.md). Contributions should include a focused change description and the checks relevant to that change; the [contribution guide](CONTRIBUTING.md) explains the workflow.
+The snake accelerates as it grows. Filling all 90 cells ends the game at 87 points. Scores use two-digit LED glyphs.
+
+### Programming and bring-up
+
+Use a 3.3 V-compatible ST-LINK and USB-C power. Connect SWDIO, SWCLK, NRST, GND, and target-voltage sense. The rear pads are 1.0 mm in diameter on 3.0 mm centers.
+
+The [bring-up guide](docs/BRINGUP.md) gives the back-view pad order, programming commands, and first-board measurements. Assemble and test one card before populating the remaining boards. Capacitor selection, switch-area vias, QFN assembly, input protection, and NFC tuning still have open review items.
+
+## Contact details and documentation
+
+Use [Customization](docs/CUSTOMIZATION.md) to change the nameplate, startup initials, QR artwork, and NFC payload. The [contact guide](docs/CONTACT.md) covers tag provisioning.
+
+See [Verification](docs/VERIFICATION.md) for results and test scope, and the [prototype plan](docs/PROTOTYPE_PLAN.md) for the next build. Contribution instructions and licensing information are in [CONTRIBUTING](CONTRIBUTING.md) and [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md).
