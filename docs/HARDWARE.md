@@ -37,7 +37,7 @@ The USB connector supplies power only. It has no USB data connection or firmware
 | Input | Five SKQGABE010 momentary switches |
 | Regulator | TLV75533PDBVR, 3.3 V |
 | NFC | ST25TN01K-AFH5 and an eight-turn printed antenna |
-| Example identity | ALEX PARKER / Electrical Engineer |
+| Example identity | ALEX XU / Electrical Engineer |
 
 The 0.8 mm dimension describes the PCB substrate; components and the connector add height. The simplified USB/NFC 3D models show placement envelopes, not complete manufacturer mechanical tolerances. Procurement and assembly details are in [Assembly](ASSEMBLY.md).
 

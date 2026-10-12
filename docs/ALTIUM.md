@@ -37,9 +37,9 @@ Generate a matching BOM, placement file, drawings, Gerbers, and drills from Alti
 
 | Check | Result | Date |
 |---|---|---|
-| Project Validate | 0 errors, 2 reviewed warnings | 2026-10-07 |
-| PCB DRC | 0 violations, 0 warnings, 0 waivers; 22 rules processed | 2026-10-07 |
-| Saved-file and contact audit | Passed; both QR objects decode to `https://example.com/` | 2026-10-11 |
+| Project Validate | 0 errors, 2 reviewed warnings | 2026-10-12 |
+| PCB DRC | 0 violations, 0 warnings, 0 waivers; 22 rules processed | 2026-10-12 |
+| Saved-file and contact audit | Passed; both QR objects decode to `https://example.com/` | 2026-10-12 |
 | Footprint-library reopen check | 15 models, 123 pads; 195 QR fills in both model and workboard; 0 errors | 2026-10-11 |
 
 Native validation and the library reopen check used Altium Designer Professional 26.9.1. The [native validation record](../verification/altium/native_validation.json), [DRC report](../verification/altium/PCB_DRC.txt), and [saved-file audit](../verification/altium/public_native_audit.json) identify the checked files. Comparison methods and file hashes are in [Altium verification](../verification/altium/README.md).

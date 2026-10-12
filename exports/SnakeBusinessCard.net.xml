@@ -2,9 +2,9 @@
 <export version="E">
   <design>
     <source>SnakeBusinessCard.kicad_sch</source>
-    <date>2026-09-27T09:35:20</date>
+    <date>2026-10-12T01:39:24</date>
     <tool>Eeschema 10.0.6</tool>
-    <textvar name="AUTHOR">Alex Parker</textvar>
+    <textvar name="AUTHOR">Alex Xu</textvar>
     <textvar name="DESIGN_STAGE">PLACEMENT REVIEW</textvar>
     <sheet number="1" name="/" tstamps="/">
       <title_block>

@@ -1,8 +1,8 @@
 # Prototype build plan
 
-Updated 2026-10-11.
+Updated 2026-10-12.
 
-Five bare development boards have been ordered for laboratory assembly. Receipt, stencil/component purchases and assembly are unconfirmed. The next milestone is **one working, measured card**. The [Altium laboratory variant](ALTIUM.md) has separate files from the KiCad baseline and its fabrication exports; its [saved-file audit](../verification/altium/public_native_audit.json) passed on October 11.
+Five bare development boards have been ordered for laboratory assembly. Receipt, stencil/component purchases and assembly are unconfirmed. The next milestone is **one working, measured card**. The [Altium laboratory variant](ALTIUM.md) has separate files from the KiCad baseline and its fabrication exports; its [saved-file audit](../verification/altium/public_native_audit.json) passed on October 12.
 
 ## 1. Resolve the assembly inputs
 

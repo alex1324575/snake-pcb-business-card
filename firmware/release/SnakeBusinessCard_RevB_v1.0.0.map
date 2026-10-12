@@ -432,7 +432,7 @@ END GROUP
                 0x08001330       0x32 build/target/app.o
  .rodata.letter_a.4520
                 0x08001362        0x5 build/target/app.o
- .rodata.letter_p.4521
+ .rodata.letter_x.4521
                 0x08001367        0x5 build/target/app.o
  .rodata.ready_path.4522
                 0x0800136c       0x10 build/target/app.o

@@ -130,7 +130,7 @@
 			(outputdirectory "")
 		)
 	)
-	(property "AUTHOR" "Alex Parker")
+	(property "AUTHOR" "Alex Xu")
 	(property "DESIGN_STAGE" "PLACEMENT REVIEW")
 	(footprint "SnakeCard:Kingbright_APT1608SURCK"
 		(layer "F.Cu")
@@ -33596,7 +33596,7 @@
 			(justify left)
 		)
 	)
-	(gr_text "PARKER"
+	(gr_text "XU"
 		(at 111 97 0)
 		(layer "F.SilkS")
 		(uuid "9069bd64-31ff-45f7-b386-25e66d8b1c2f")
@@ -33717,7 +33717,7 @@
 			(justify left mirror)
 		)
 	)
-	(gr_text "REV B / AP-01"
+	(gr_text "REV B / AX-01"
 		(at 129.6 131 0)
 		(layer "B.SilkS")
 		(uuid "8601c96a-4381-48c0-a534-5b105e360940")

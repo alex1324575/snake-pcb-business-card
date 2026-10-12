@@ -11,7 +11,7 @@ A USB-powered PCB business card with a 10 × 9 LED matrix, five buttons, and Sna
 
 **Status:** five bare boards have been ordered. Assembly and first-board bring-up are pending. Firmware host tests and the Arm build run in CI; hardware check results are listed in [Verification](docs/VERIFICATION.md).
 
-The images are KiCad renders. Public artwork uses the fictional name **Alex Parker** and the URL **https://example.com/**.
+The images are KiCad renders. Public artwork uses **Alex Xu** and the URL **https://example.com/**.
 
 ## Hardware
 

@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : altium/SnakeCard_Native.PcbDoc
-Date     : 10/7/2026
-Time     : 10:43:11 AM
+Date     : 10/12/2026
+Time     : 2:02:10 AM
 
 Processing Rule : Clearance Constraint (Gap=0mm) (IsFill And IsKeepOut And InComponent('SW1')),(IsPad And InComponent('SW1'))
 Rule Violations :0

@@ -1,0 +1,28 @@
+{
+  "schema": "public-nameplate-change-v1",
+  "date": "2026-10-12",
+  "identity": "Alex Xu",
+  "initials": "AX",
+  "contact_uri": "https://example.com/",
+  "previous_public_commit": "25998e8b34a95096c65f767740e29480b49ff193",
+  "pass": true,
+  "scope": "Front surname, revision identifier and AUTHOR metadata only",
+  "circuit_routing_pad_and_footprint_changes": false,
+  "files": [
+    {
+      "file": "SnakeBusinessCard.kicad_pcb",
+      "previous_sha256": "16a28285f6f04f0e54aa1c4b87c7dc6d09589935be81e559dc1e121aa344a5ce",
+      "updated_sha256": "3a272c0a6979c11571479a7b75521436a31925dbd4ce29893c037deb8c47f2ed",
+      "exact_text_substitutions": 3,
+      "all_other_native_bytes_preserved": true
+    },
+    {
+      "file": "SnakeBusinessCard.kicad_pro",
+      "previous_sha256": "6b22b21466833f44e3fc4e868e22ff1c972c48268d72395d5d8b8ac30c61b4bb",
+      "updated_sha256": "30c0dd8d84ac836dab75b80aa3d1488096946f662abc9978629110104d60c6c1",
+      "exact_text_substitutions": 1,
+      "all_other_native_bytes_preserved": true
+    }
+  ],
+  "hardware_tested": false
+}

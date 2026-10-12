@@ -1,6 +1,6 @@
 # Verification
 
-Updated 2026-10-11.
+Updated 2026-10-12.
 
 Recorded checks cover the KiCad baseline and the separate [Altium laboratory variant](ALTIUM.md). No assembled-board power-up or measured hardware result is recorded. The two variants have separate source files and reports; the KiCad fabrication exports retain their existing revision.
 
@@ -15,17 +15,17 @@ Recorded checks cover the KiCad baseline and the separate [Altium laboratory var
 | Cortex-M0+ build | [Release outputs](../firmware/release/) | Target compilation, link layout, image metadata and hashes |
 | QR and NDEF | [Contact validation](../contact/contact_validation.json) and [native contact audit](../verification/) | Decoded URI, rear artwork orientation and NDEF content |
 | Procurement | [Component review](COMPONENT_REVIEW.md) and [per-reference table](../verification/hardware/component_review.csv) | MPN coverage and native/export consistency |
-| Altium project Validate | [Native validation record](../verification/altium/native_validation.json) | 2026-10-07: 0 errors; 2 reviewed reset warnings |
-| Altium PCB DRC | [Native DRC report](../verification/altium/PCB_DRC.txt) | 2026-10-07: 0 violations, 0 warnings, 0 waivers; 22 rules processed |
-| Altium saved-file comparison and contact check | [Audit](../verification/altium/public_native_audit.json), [file hashes](../verification/altium/file_hashes.json) | 2026-10-11: preservation checks passed; both saved QR objects decode to `https://example.com/` |
+| Altium project Validate | [Native validation record](../verification/altium/native_validation.json) | 2026-10-12: 0 errors; 2 reviewed reset warnings |
+| Altium PCB DRC | [Native DRC report](../verification/altium/PCB_DRC.txt) | 2026-10-12: 0 violations, 0 warnings, 0 waivers; 22 rules processed |
+| Altium saved-file comparison and contact check | [Audit](../verification/altium/public_native_audit.json), [file hashes](../verification/altium/file_hashes.json) | 2026-10-12: preservation checks passed; both saved QR objects decode to `https://example.com/` |
 
 ## Revision and comparison scope
 
-The KiCad ERC/DRC, contact and board-contract reports were regenerated for the September 27 baseline update. The procurement metadata audit confirms that the update preserved electrical connections and PCB geometry. The schematic annotation audit records two corrected notes so the documented LED current matches the firmware's GCC limit of 32. The earlier public-identity equivalence report applies to its recorded board hash; the metadata audit links it to the current baseline.
+The KiCad ERC/DRC, contact, rendering and board-contract reports were regenerated on October 12 for the Alex Xu example. The nameplate comparison confirms that only identity text and AUTHOR metadata changed; see the [identity update record](../verification/hardware/example_identity_update.json). The procurement metadata audit confirms that the update preserved electrical connections and PCB geometry. The schematic annotation audit records two corrected notes so the documented LED current matches the firmware's GCC limit of 32. The earlier public-identity equivalence report applies to its recorded board hash; the procurement metadata audit links it to the pre-rename baseline, and the identity update record links that revision to the current board.
 
 The Altium checks ran on saved and reopened public files in **Altium Designer Professional 26.9.1**. The two project warnings are "no driving source" on `LED_IICRST` and `NRST`; their disposition is in [Altium](ALTIUM.md). The PCB hash in the validation record identifies the board used for DRC. Earlier October 3/5 development checks apply to their own source revision. The symbol-library check retains **11 naming/sequence findings**.
 
-The October 11 audit checks saved native data, including pins, nets, placement, geometry, parameters and footprint bindings. Both QR objects contain **195 fills** with matching primitive-count headers and a **21 mm** extent. A read-only Altium reopen confirmed the library's 195 fills in both the component group and active workboard, **571 protected records unchanged**, and **0 errors**. See the [audit method](../verification/altium/README.md) for the exact comparison scope and allowed native encoding changes.
+The October 12 audit checks saved native data, including pins, nets, placement, geometry, parameters and footprint bindings. Both QR objects contain **195 fills** with matching primitive-count headers and a **21 mm** extent. The October 11 read-only Altium reopen confirmed the unchanged library's 195 fills in both the component group and active workboard, **571 protected records unchanged**, and **0 errors**. See the [audit method](../verification/altium/README.md) for the exact comparison scope and allowed native encoding changes.
 
 These checks cover their recorded inputs and configured rules. Host tests do not run MCU peripherals; DRC does not qualify solder joints, connector fit, transients or NFC performance. Raster QR decoding also requires confirmation on the fabricated silkscreen.
 

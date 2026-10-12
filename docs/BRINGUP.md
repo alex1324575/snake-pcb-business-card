@@ -44,7 +44,7 @@ Source builds, checksums and the equivalent CLI command are in the [firmware REA
 
 Hold START while applying power. Diagnostic mode should scan D1 through D90 from the upper-left corner, across each row and then downward. Check the corners and every intermediate pixel for missing LEDs, polarity errors or row/column swaps. Press each direction to show its corresponding marker. Release START, then give a fresh short press to exit.
 
-Normal startup shows the example initials **AP**, followed by the ready pattern. A short START press/release starts the game; directions turn the snake. START pauses/resumes; holding it for about 0.8 seconds returns to ready. Confirm collision, score, restart and power-on high-score reset. Full controls are in the firmware README.
+Normal startup shows the example initials **AX**, followed by the ready pattern. A short START press/release starts the game; directions turn the snake. START pauses/resumes; holding it for about 0.8 seconds returns to ready. Confirm collision, score, restart and power-on high-score reset. Full controls are in the firmware README.
 
 ## 5. Measure and record
 

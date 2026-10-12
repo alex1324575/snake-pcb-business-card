@@ -1,6 +1,6 @@
 # Firmware verification
 
-This directory records automated checks of the public **Alex Parker / AP** example firmware. The board has **not been programmed or tested physically**.
+This directory records automated checks of the public **Alex Xu / AX** example firmware. The board has **not been programmed or tested physically**.
 
 ## Completed locally
 

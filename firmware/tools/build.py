@@ -196,7 +196,7 @@ def build(explicit):
     stack_usage = "".join(public_text(p.read_text(), bindir) for p in sorted((ROOT / out).glob("*.su")))
     (ROOT / out / "stack_usage.txt").write_text(stack_usage, encoding="utf-8")
     manifest = {"version": "1.0.0", "board": "SnakeBusinessCard Rev B / STM32G030K8T6",
-                "identity": "Alex Parker (fictional example)",
+                "identity": "Alex Xu (public example)",
                 "compiler": version, "build_flags": common,
                 "debug_path_mapping": "checkout directory -> .; toolchain installation -> arm-toolchain",
                 "map_path_mapping": "toolchain installation -> <arm-toolchain>",

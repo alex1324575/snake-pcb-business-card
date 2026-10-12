@@ -1,6 +1,6 @@
 # Make your own card
 
-The public example uses **ALEX PARKER / Electrical Engineer**, startup initials **AP**, and **https://example.com/**. Keep identity artwork, QR content and NFC content synchronized when adapting it.
+The public example uses **ALEX XU / Electrical Engineer**, startup initials **AX**, and **https://example.com/**. Keep identity artwork, QR content and NFC content synchronized when adapting it.
 
 This workflow edits the KiCad project. The contact scripts use `pcbnew` and do not update the [Altium project](ALTIUM.md).
 

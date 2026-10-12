@@ -1,6 +1,6 @@
 # QR and passive NFC
 
-The public example represents **Alex Parker** and points to **https://example.com/**. Replace both the QR and NFC data before making personal cards. The example address is not a personal profile.
+The public example represents **Alex Xu** and points to **https://example.com/**. Replace both the QR and NFC data before making personal cards. The example address is not a personal profile.
 
 ## QR on the PCB
 

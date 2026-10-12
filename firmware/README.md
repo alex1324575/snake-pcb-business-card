@@ -1,6 +1,6 @@
 # Snake firmware
 
-Bare-metal C11 firmware for **Snake Business Card Rev B**, using an STM32G030K8T6 and an IS31FL3737 to drive a 10 × 9 LED matrix. The public example uses the fictional identity **Alex Parker** and an **AP** startup graphic.
+Bare-metal C11 firmware for **Snake Business Card Rev B**, using an STM32G030K8T6 and an IS31FL3737 to drive a 10 × 9 LED matrix. The public example uses the identity **Alex Xu** and an **AX** startup graphic.
 
 The firmware has passed native host tests, AddressSanitizer checks, an Arm target build, and automated checks against the published board. **It has not been flashed to or tested on an assembled board.**
 
@@ -8,7 +8,7 @@ The firmware has passed native host tests, AddressSanitizer checks, an Arm targe
 
 | Input | Action |
 |---|---|
-| Power on | Show AP for approximately 0.8 seconds, then the idle animation |
+| Power on | Show AX for approximately 0.8 seconds, then the idle animation |
 | Short press and release START | Start, pause, resume, or restart |
 | Direction button | Turn; one turn is accepted per movement interval |
 | Hold START for approximately 0.8 seconds | Return to the idle screen |

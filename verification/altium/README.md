@@ -6,9 +6,9 @@ These records apply to the public files in [`altium/`](../../altium/). They cove
 
 | Date | Check | Result | Evidence |
 |---|---|---|---|
-| 2026-10-07 | Project Validate | 0 errors; 2 reviewed reset warnings | [Native validation](native_validation.json) |
-| 2026-10-07 | PCB DRC | 0 violations, 0 warnings, 0 waivers; 22 rules processed | [DRC report](PCB_DRC.txt) |
-| 2026-10-11 | Saved-file comparison and contact check | Passed; no private identity/path findings; both QR payloads are `https://example.com/` | [Audit](public_native_audit.json) |
+| 2026-10-12 | Project Validate | 0 errors; 2 reviewed reset warnings | [Native validation](native_validation.json) |
+| 2026-10-12 | PCB DRC | 0 violations, 0 warnings, 0 waivers; 22 rules processed | [DRC report](PCB_DRC.txt) |
+| 2026-10-12 | Saved-file comparison and contact check | Passed; no private identity/path findings; both QR payloads are `https://example.com/` | [Audit](public_native_audit.json) |
 | 2026-10-11 | Footprint-library reopen | 195 QR fills in both component group and active workboard; 571 protected records unchanged; 0 errors | [Native validation](native_validation.json) |
 
 Native checks ran in **Altium Designer Professional 26.9.1** after saving and reopening the documents. The two schematic warnings are on `LED_IICRST` and `NRST`. Their disposition and the **11 retained symbol-library naming/sequence findings** are in [Altium](../../docs/ALTIUM.md). The library reopen was a read-only geometry check, not a repeat of project Validate, PCB DRC or the symbol-library rule check.
@@ -27,7 +27,7 @@ The audit reads native compound-file streams and compares them with a fixed deve
 - Public contact text and absence of private identity, contact and user-path data in live streams, directory names and whole-file bytes.
 - Both QR objects: **195 native fills**, matching count headers, verified coordinates/layers, a **21 mm** extent, and unchanged noncoordinate flags, ownership and style.
 
-The public identity is **Alex Parker**. The [PCB QR raster](PublicNativeBoardQR.png) and [library QR raster](PublicNativeLibraryQR.png) were generated from saved native fills and decode to `https://example.com/`. They are verification images; printed silkscreen readability still needs a physical check.
+The public identity is **Alex Xu**. The [PCB QR raster](PublicNativeBoardQR.png) and [library QR raster](PublicNativeLibraryQR.png) were generated from saved native fills and decode to `https://example.com/`. They are verification images; printed silkscreen readability still needs a physical check.
 
 ## Native encoding changes
 

@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "board": "SnakeBusinessCard Rev B / STM32G030K8T6",
-  "identity": "Alex Parker (fictional example)",
+  "identity": "Alex Xu (public example)",
   "compiler": "arm-none-eabi-gcc.exe (GNU Tools for Arm Embedded Processors 9-2019-q4-major) 9.2.1 20191025 (release) [ARM/arm-9-branch revision 277599]",
   "build_flags": [
     "-mcpu=cortex-m0plus",
@@ -48,7 +48,7 @@
     "include/is31fl3737.h": "e02bf3f2de072857ea072a174e0f3122fc40f9746cb02bc7aa6d30dc550e5c04",
     "include/snake.h": "d585858d82c923e193bb6db81b9a64e234a83ffcd28d68fddceca383eb933038",
     "include/stm32g030_min.h": "0c76ac808e46fa81c21ce64cb20360ac2de4813dc0f971b5e1da4a7029fad640",
-    "src/app.c": "430a12d60730040d27dedb829f4d8038ee0b6b565d575dddf1e2246982e62660",
+    "src/app.c": "4a92c3782fb524a39ac1260e8cf3e5ae0dd3bd14ec22433990e7337c11aecb10",
     "src/board.c": "f5f0e214cf2b58bebd1f43a7f7b62b704cc9e557d101683833b25f3e63ce020d",
     "src/buttons.c": "f8af8d14976e90a050d92bba406d1431cf743e7994cbd1bec4307d79e8317727",
     "src/is31fl3737.c": "8f69ebde5771538b01f694b14a1cd1d28c2f5811b2e93fc5ea8c3f49f94b1fac",
@@ -60,25 +60,25 @@
     "tests/test_build_paths.py": "5e32c6e1b0b69c252bf8999e5c0511dc9812911bdc7011cd6b2e8cca28309a72",
     "tests/test_is31fl3737.c": "225a077767257bf52b77ddbd3e2e0e57e0785128788588fe081b96bf76727da0",
     "tests/test_snake.c": "4993d61030c158abdbede62ea171192d169daf5641a5e2ed0ba1eb157b084512",
-    "tools/build.py": "cb583de18db338428f8615ca593096d7bbafafc20f58d6c3adb062b56544188e",
+    "tools/build.py": "26ba360f9f67d65b428c99701e3f0fda6841a3a77a779ad0c96d3e86e4dd4075",
     "tools/check_board_contract.py": "626a7a5b0a444dc8d3cb659a67a08a91df6a485c756f099d1f7ff6fa68416c00"
   },
   "artifacts": {
     "SnakeBusinessCard_RevB_v1.0.0.elf": {
       "bytes": 160212,
-      "sha256": "22a6d0baf3f21babde4d1ed38b41c870c375dfacc57ecdcb6bb21d858689c447"
+      "sha256": "7b0f29fc764ed452413af809d5af6cbe671ad485198d725f53b27d31cd2517d3"
     },
     "SnakeBusinessCard_RevB_v1.0.0.bin": {
       "bytes": 4988,
-      "sha256": "093b52509174bbfc59a1566ad7876e606afef90cd916c91299746b0fb047d94f"
+      "sha256": "84c34252222ed50ec8cdf4b4fc6e0a164ec299a704075b5f259474a9cf9a7e3b"
     },
     "SnakeBusinessCard_RevB_v1.0.0.hex": {
       "bytes": 14096,
-      "sha256": "c13367a40c25d7d42db0018e33ca13aee09e48afe32f6cee9ac168e3e3402aac"
+      "sha256": "5135512f03168708ac35a4407ac3e3c9376dda407b056cb58413b46955484962"
     },
     "SnakeBusinessCard_RevB_v1.0.0.map": {
       "bytes": 44421,
-      "sha256": "7b843cae593c2b13d5dfab7e44ddfc4acf3037a4445b8416fc3c6e2c08e9caf7"
+      "sha256": "3b317658ed04afdb2c75d468d23ad8a1ee885769873452aea533c9d81f0e159c"
     }
   },
   "hardware_tested": false

@@ -123,9 +123,9 @@ static void game_frame(const snake_t *game, uint32_t now, uint8_t *pixels)
 
 void app_render(const app_t *app, uint32_t now, uint8_t pixels[SNAKE_CAPACITY])
 {
-    /* Example identity: Alex Parker. Each row is a three-bit glyph. */
+    /* Example identity: Alex Xu. Each row is a three-bit glyph. */
     static const uint8_t letter_a[5] = {2,5,7,5,5};
-    static const uint8_t letter_p[5] = {6,5,6,4,4};
+    static const uint8_t letter_x[5] = {5,5,2,5,5};
     static const uint8_t ready_path[] = {22,23,24,25,26,36,46,45,44,43,53,63,64,65,66,67};
     unsigned i;
     uint32_t elapsed = now - app->state_since;
@@ -133,7 +133,7 @@ void app_render(const app_t *app, uint32_t now, uint8_t pixels[SNAKE_CAPACITY])
     switch (app->state) {
     case APP_SPLASH:
         glyph(pixels, 1u, letter_a, IS31FL3737_PWM_HEAD);
-        glyph(pixels, 6u, letter_p, IS31FL3737_PWM_HEAD);
+        glyph(pixels, 6u, letter_x, IS31FL3737_PWM_HEAD);
         break;
     case APP_READY:
         if (app->buttons.stable & BUTTON_UP) score_frame(pixels, app->high_score);

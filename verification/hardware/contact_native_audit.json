@@ -2,7 +2,7 @@
   "pass": true,
   "expected_url": "https://example.com/",
   "board_file": "SnakeBusinessCard.kicad_pcb",
-  "board_sha256": "16a28285f6f04f0e54aa1c4b87c7dc6d09589935be81e559dc1e121aa344a5ce",
+  "board_sha256": "3a272c0a6979c11571479a7b75521436a31925dbd4ce29893c037deb8c47f2ed",
   "native_geometry_sha256": "9750d078202f1bf43d157d300e619c2e2c4982556533abe483b37c9a65306775",
   "native_rectangle_count": 195,
   "native_layer": "B.SilkS",
