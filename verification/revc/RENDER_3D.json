@@ -1,0 +1,1471 @@
+{
+  "result": "PASS",
+  "scope": "Rendering-only visualization of final Rev C assembly; no CAD modification or new hardware qualification",
+  "renderer": "KiCad 10.0.6 native high-quality ray tracer",
+  "source_pcb": {
+    "path": "altium/SnakeCard_Native.PcbDoc",
+    "sha256": "e0576f69a7d1885fe67e007584b13f9af226be99a0ac097dd3b44aec097050f9"
+  },
+  "placement_source": {
+    "path": "docs/revc/assembly/assembly_variant.json",
+    "sha256": "01918f1675a62e4bf06dd8d6348654052dac5342c956ee777140dceaaa6aea80"
+  },
+  "fitted_models": 125,
+  "top_models": 123,
+  "bottom_models": 2,
+  "omitted_dnp": [
+    "C30"
+  ],
+  "native_import": {
+    "errors": 0,
+    "ignored_unpopulated_internal_plane_layer_names": 16,
+    "coordinate_transform_mm": "x_render=x_native+5.7011; y_render=132.0036-y_native",
+    "fitted_placement_side_rotation_matches": 125,
+    "copper_pad_centers_matched": 361,
+    "max_pad_center_error_mm": 3.625e-06,
+    "paste_only_U2_windows": 9,
+    "via_count": 189,
+    "plated_coil_holes": 2,
+    "plated_USB_slots": 4,
+    "outline_segments": 8,
+    "board_size_mm": [
+      85.6,
+      54
+    ],
+    "corner_radius_mm": 2
+  },
+  "render_copy_adjustments": [
+    "Attach package models only to the 125 fitted references; retain imported positions and sides.",
+    "Set black/white/ENIG visualization colors and open via masks to match final fabrication appearance."
+  ],
+  "limitations": [
+    "Generic package models, not exact selected manufacturer CAD.",
+    "U2 generic model has a hidden 3.6mm exposed pad; actual controlled PCB pad is 3.4mm.",
+    "USB and NFC models are approximate project envelopes.",
+    "No photographed or tested physical assembly is represented."
+  ],
+  "images": [
+    {
+      "path": "docs/images/revc-3d-isometric.png",
+      "sha256": "1b3c04676b54d7664665b0901e2605eb86677fefe64c6be21f6997899a6b801e",
+      "pixels": [
+        2384,
+        1568
+      ],
+      "nontransparent_bounds": [
+        375,
+        268,
+        2051,
+        1567
+      ],
+      "entire_board_inside_frame": true
+    },
+    {
+      "path": "docs/images/revc-3d-top.png",
+      "sha256": "d3f510c6f0cf990bf1924a5dfce1df8a82d8bf8172cace9f3bbf4f8e7fb0908d",
+      "pixels": [
+        2184,
+        1488
+      ],
+      "nontransparent_bounds": [
+        328,
+        251,
+        1887,
+        1236
+      ],
+      "entire_board_inside_frame": true
+    },
+    {
+      "path": "docs/images/revc-3d-bottom.png",
+      "sha256": "eaf9630c2d8f9303875dd94854e623a6b21b71abfe8b9c8ccd7e7ebef4bc0bfe",
+      "pixels": [
+        2184,
+        1488
+      ],
+      "nontransparent_bounds": [
+        315,
+        239,
+        1869,
+        1248
+      ],
+      "entire_board_inside_frame": true
+    }
+  ],
+  "models": [
+    {
+      "reference": "D34",
+      "side": "Top",
+      "native_origin_mm": [
+        153.5000003,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D71",
+      "side": "Top",
+      "native_origin_mm": [
+        143.000001,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D7",
+      "side": "Top",
+      "native_origin_mm": [
+        163.9999997,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D5",
+      "side": "Top",
+      "native_origin_mm": [
+        157.000001,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "R22",
+      "side": "Top",
+      "native_origin_mm": [
+        152.2000004,
+        8.6000006
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "D6",
+      "side": "Top",
+      "native_origin_mm": [
+        160.499999,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D52",
+      "side": "Top",
+      "native_origin_mm": [
+        146.4999991,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D39",
+      "side": "Top",
+      "native_origin_mm": [
+        171.0000009,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D38",
+      "side": "Top",
+      "native_origin_mm": [
+        167.5000003,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "R13",
+      "side": "Top",
+      "native_origin_mm": [
+        129.2000007,
+        18.1999992
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "D68",
+      "side": "Top",
+      "native_origin_mm": [
+        167.5000003,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D63",
+      "side": "Top",
+      "native_origin_mm": [
+        149.9999997,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "C11",
+      "side": "Top",
+      "native_origin_mm": [
+        149.3984007,
+        11.8407993
+      ],
+      "native_rotation_deg": 45.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "model_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "R24",
+      "side": "Top",
+      "native_origin_mm": [
+        167.7999997,
+        13.7999978
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "D86",
+      "side": "Top",
+      "native_origin_mm": [
+        160.499999,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D75",
+      "side": "Top",
+      "native_origin_mm": [
+        157.000001,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D36",
+      "side": "Top",
+      "native_origin_mm": [
+        160.499999,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "R21",
+      "side": "Top",
+      "native_origin_mm": [
+        134.6,
+        21.6999998
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "D41",
+      "side": "Top",
+      "native_origin_mm": [
+        143.000001,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D11",
+      "side": "Top",
+      "native_origin_mm": [
+        143.000001,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "C1",
+      "side": "Top",
+      "native_origin_mm": [
+        175.0000005,
+        11.9500015
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "model_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "D90",
+      "side": "Top",
+      "native_origin_mm": [
+        174.499999,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D55",
+      "side": "Top",
+      "native_origin_mm": [
+        157.000001,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D62",
+      "side": "Top",
+      "native_origin_mm": [
+        146.4999991,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D65",
+      "side": "Top",
+      "native_origin_mm": [
+        157.000001,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D1",
+      "side": "Top",
+      "native_origin_mm": [
+        143.000001,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D4",
+      "side": "Top",
+      "native_origin_mm": [
+        153.5000003,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D24",
+      "side": "Top",
+      "native_origin_mm": [
+        153.5000003,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D79",
+      "side": "Top",
+      "native_origin_mm": [
+        171.0000009,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D53",
+      "side": "Top",
+      "native_origin_mm": [
+        149.9999997,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D35",
+      "side": "Top",
+      "native_origin_mm": [
+        157.000001,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D17",
+      "side": "Top",
+      "native_origin_mm": [
+        163.9999997,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D58",
+      "side": "Top",
+      "native_origin_mm": [
+        167.5000003,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D59",
+      "side": "Top",
+      "native_origin_mm": [
+        171.0000009,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D87",
+      "side": "Top",
+      "native_origin_mm": [
+        163.9999997,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "R2",
+      "side": "Top",
+      "native_origin_mm": [
+        171.4999999,
+        9.4000015
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "C24",
+      "side": "Top",
+      "native_origin_mm": [
+        166.5999995,
+        16.5999998
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "model_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "D40",
+      "side": "Top",
+      "native_origin_mm": [
+        174.499999,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D32",
+      "side": "Top",
+      "native_origin_mm": [
+        146.4999991,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "SW1",
+      "side": "Top",
+      "native_origin_mm": [
+        115.9999991,
+        18.5000011
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_SKQG_WithStem.step",
+      "model_sha256": "9b350b7fcf8e4dfb903602044057659e0b1a5d24a367b1b5e244791955935ca5"
+    },
+    {
+      "reference": "D28",
+      "side": "Top",
+      "native_origin_mm": [
+        167.5000003,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D18",
+      "side": "Top",
+      "native_origin_mm": [
+        167.5000003,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D15",
+      "side": "Top",
+      "native_origin_mm": [
+        157.000001,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D8",
+      "side": "Top",
+      "native_origin_mm": [
+        167.5000003,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D31",
+      "side": "Top",
+      "native_origin_mm": [
+        143.000001,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "R20",
+      "side": "Top",
+      "native_origin_mm": [
+        130.9999996,
+        21.6999998
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "D78",
+      "side": "Top",
+      "native_origin_mm": [
+        167.5000003,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D27",
+      "side": "Top",
+      "native_origin_mm": [
+        163.9999997,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D12",
+      "side": "Top",
+      "native_origin_mm": [
+        146.4999991,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D81",
+      "side": "Top",
+      "native_origin_mm": [
+        143.000001,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "R11",
+      "side": "Top",
+      "native_origin_mm": [
+        121.9999998,
+        18.1999992
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "U4",
+      "side": "Top",
+      "native_origin_mm": [
+        138.2500004,
+        37.0000022
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KIPRJMOD}/library/3dmodels/ST25TN01K_envelope.wrl",
+      "model_sha256": "fdafb9c39d5d7ea684649fd3a7bd5700f0aa7b9ceede5c2dc5d682835efd5d7c"
+    },
+    {
+      "reference": "R14",
+      "side": "Top",
+      "native_origin_mm": [
+        132.8000011,
+        18.1999992
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "D46",
+      "side": "Top",
+      "native_origin_mm": [
+        160.499999,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D77",
+      "side": "Top",
+      "native_origin_mm": [
+        163.9999997,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D76",
+      "side": "Top",
+      "native_origin_mm": [
+        160.499999,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D73",
+      "side": "Top",
+      "native_origin_mm": [
+        149.9999997,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "R1",
+      "side": "Top",
+      "native_origin_mm": [
+        171.4999999,
+        12.0000014
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "D88",
+      "side": "Top",
+      "native_origin_mm": [
+        167.5000003,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D84",
+      "side": "Top",
+      "native_origin_mm": [
+        153.5000003,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D83",
+      "side": "Top",
+      "native_origin_mm": [
+        149.9999997,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D67",
+      "side": "Top",
+      "native_origin_mm": [
+        163.9999997,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D22",
+      "side": "Top",
+      "native_origin_mm": [
+        146.4999991,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D33",
+      "side": "Top",
+      "native_origin_mm": [
+        149.9999997,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D70",
+      "side": "Top",
+      "native_origin_mm": [
+        174.499999,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D57",
+      "side": "Top",
+      "native_origin_mm": [
+        163.9999997,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D50",
+      "side": "Top",
+      "native_origin_mm": [
+        174.499999,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D37",
+      "side": "Top",
+      "native_origin_mm": [
+        163.9999997,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D21",
+      "side": "Top",
+      "native_origin_mm": [
+        143.000001,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "C23",
+      "side": "Top",
+      "native_origin_mm": [
+        171.4999999,
+        4.5000012
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "model_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "D43",
+      "side": "Top",
+      "native_origin_mm": [
+        149.9999997,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D61",
+      "side": "Top",
+      "native_origin_mm": [
+        143.000001,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D9",
+      "side": "Top",
+      "native_origin_mm": [
+        171.0000009,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D14",
+      "side": "Top",
+      "native_origin_mm": [
+        153.5000003,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "U3",
+      "side": "Top",
+      "native_origin_mm": [
+        174.8000009,
+        15.1000003
+      ],
+      "native_rotation_deg": 90.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step",
+      "model_sha256": "720a6eab0024069bbee68e7cb4c3ff1149468a34611225cdc852662c5d0ec2b7"
+    },
+    {
+      "reference": "D69",
+      "side": "Top",
+      "native_origin_mm": [
+        171.0000009,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D25",
+      "side": "Top",
+      "native_origin_mm": [
+        157.000001,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D45",
+      "side": "Top",
+      "native_origin_mm": [
+        157.000001,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D49",
+      "side": "Top",
+      "native_origin_mm": [
+        171.0000009,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "C22",
+      "side": "Top",
+      "native_origin_mm": [
+        164.7000008,
+        4.0000022
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "model_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "D29",
+      "side": "Top",
+      "native_origin_mm": [
+        171.0000009,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "SW3",
+      "side": "Top",
+      "native_origin_mm": [
+        108.4999989,
+        12.0000014
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_SKQG_WithStem.step",
+      "model_sha256": "9b350b7fcf8e4dfb903602044057659e0b1a5d24a367b1b5e244791955935ca5"
+    },
+    {
+      "reference": "D85",
+      "side": "Top",
+      "native_origin_mm": [
+        157.000001,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D74",
+      "side": "Top",
+      "native_origin_mm": [
+        153.5000003,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D13",
+      "side": "Top",
+      "native_origin_mm": [
+        149.9999997,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D42",
+      "side": "Top",
+      "native_origin_mm": [
+        146.4999991,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D47",
+      "side": "Top",
+      "native_origin_mm": [
+        163.9999997,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D89",
+      "side": "Top",
+      "native_origin_mm": [
+        171.0000009,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D2",
+      "side": "Top",
+      "native_origin_mm": [
+        146.4999991,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "R23",
+      "side": "Top",
+      "native_origin_mm": [
+        139.9999994,
+        21.6999998
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "D23",
+      "side": "Top",
+      "native_origin_mm": [
+        149.9999997,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D64",
+      "side": "Top",
+      "native_origin_mm": [
+        153.5000003,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "R12",
+      "side": "Top",
+      "native_origin_mm": [
+        125.6000003,
+        18.1999992
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "SW5",
+      "side": "Top",
+      "native_origin_mm": [
+        132.7000013,
+        12.0000014
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_SKQG_WithStem.step",
+      "model_sha256": "9b350b7fcf8e4dfb903602044057659e0b1a5d24a367b1b5e244791955935ca5"
+    },
+    {
+      "reference": "R15",
+      "side": "Top",
+      "native_origin_mm": [
+        136.399999,
+        18.1999992
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "D26",
+      "side": "Top",
+      "native_origin_mm": [
+        160.499999,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "SW2",
+      "side": "Top",
+      "native_origin_mm": [
+        115.9999991,
+        5.5000017
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_SKQG_WithStem.step",
+      "model_sha256": "9b350b7fcf8e4dfb903602044057659e0b1a5d24a367b1b5e244791955935ca5"
+    },
+    {
+      "reference": "C20",
+      "side": "Top",
+      "native_origin_mm": [
+        163.9999997,
+        14.750001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "model_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "D16",
+      "side": "Top",
+      "native_origin_mm": [
+        160.499999,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D20",
+      "side": "Top",
+      "native_origin_mm": [
+        174.499999,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D19",
+      "side": "Top",
+      "native_origin_mm": [
+        171.0000009,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D54",
+      "side": "Top",
+      "native_origin_mm": [
+        153.5000003,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D10",
+      "side": "Top",
+      "native_origin_mm": [
+        174.499999,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D30",
+      "side": "Top",
+      "native_origin_mm": [
+        174.499999,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "R10",
+      "side": "Top",
+      "native_origin_mm": [
+        141.0999997,
+        2.800002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0603_1608Metric.step",
+      "model_sha256": "1875571c326d0d9e96f36b4efeb8094068ef7619f0a449c781caf0b49c2e5861"
+    },
+    {
+      "reference": "D44",
+      "side": "Top",
+      "native_origin_mm": [
+        153.5000003,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "C2",
+      "side": "Top",
+      "native_origin_mm": [
+        170.3999996,
+        16.1000008
+      ],
+      "native_rotation_deg": 90.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "model_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "D60",
+      "side": "Top",
+      "native_origin_mm": [
+        174.499999,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D3",
+      "side": "Top",
+      "native_origin_mm": [
+        149.9999997,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "C21",
+      "side": "Top",
+      "native_origin_mm": [
+        166.2000003,
+        11.1749992
+      ],
+      "native_rotation_deg": 90.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "model_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "C12",
+      "side": "Top",
+      "native_origin_mm": [
+        144.5000006,
+        2.800002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "model_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    },
+    {
+      "reference": "D82",
+      "side": "Top",
+      "native_origin_mm": [
+        146.4999991,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D56",
+      "side": "Top",
+      "native_origin_mm": [
+        160.499999,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D72",
+      "side": "Top",
+      "native_origin_mm": [
+        146.4999991,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D80",
+      "side": "Top",
+      "native_origin_mm": [
+        174.499999,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "SW4",
+      "side": "Top",
+      "native_origin_mm": [
+        123.4999994,
+        12.0000014
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Button_Switch_SMD.3dshapes/SW_SPST_SKQG_WithStem.step",
+      "model_sha256": "9b350b7fcf8e4dfb903602044057659e0b1a5d24a367b1b5e244791955935ca5"
+    },
+    {
+      "reference": "D66",
+      "side": "Top",
+      "native_origin_mm": [
+        160.499999,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "D91",
+      "side": "Top",
+      "native_origin_mm": [
+        177.9999996,
+        16.3000004
+      ],
+      "native_rotation_deg": 90.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-523.step",
+      "model_sha256": "b525222377930c32abea58606bffba3aaf171cc66ac292b82d28a82d646d995d"
+    },
+    {
+      "reference": "U5",
+      "side": "Top",
+      "native_origin_mm": [
+        176.5000001,
+        9.5000013
+      ],
+      "native_rotation_deg": 180.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-323_SC-70.step",
+      "model_sha256": "acbf75a28fe41aa90efb38cd2b78220968d6eb6ebae1625dfd532dbeb268fece"
+    },
+    {
+      "reference": "D51",
+      "side": "Top",
+      "native_origin_mm": [
+        143.000001,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "J1",
+      "side": "Top",
+      "native_origin_mm": [
+        179.5999989,
+        9.5000013
+      ],
+      "native_rotation_deg": 90.0,
+      "model": "${KIPRJMOD}/library/3dmodels/USB_UJC_HP_3_envelope.wrl",
+      "model_sha256": "1d6aeef6d6712fbdc09ea57691a0c3968dfa8a0975784b7f0048b3024611de4f"
+    },
+    {
+      "reference": "D48",
+      "side": "Top",
+      "native_origin_mm": [
+        167.5000003,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0603_1608Metric.step",
+      "model_sha256": "98343205ec260ec165026ba2d44329a23096779ac36c553ea84aa7b370242e6d"
+    },
+    {
+      "reference": "U2",
+      "side": "Top",
+      "native_origin_mm": [
+        162.0000011,
+        9.7000009
+      ],
+      "native_rotation_deg": 0.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Package_DFN_QFN.3dshapes/QFN-40-1EP_5x5mm_P0.4mm_EP3.6x3.6mm.step",
+      "model_sha256": "8f37bc7a9aab4742c34f137d9822c0352acc227532830034555744338483cdfc"
+    },
+    {
+      "reference": "U1",
+      "side": "Bottom",
+      "native_origin_mm": [
+        144.5000006,
+        9.5000013
+      ],
+      "native_rotation_deg": 180.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Package_QFP.3dshapes/LQFP-32_7x7mm_P0.8mm.step",
+      "model_sha256": "be0e412f1c66fee70039b0e109e0cc7c823161dda97593718afa97569bc61ce3"
+    },
+    {
+      "reference": "C10",
+      "side": "Bottom",
+      "native_origin_mm": [
+        150.9000005,
+        9.7000009
+      ],
+      "native_rotation_deg": 270.0,
+      "model": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0603_1608Metric.step",
+      "model_sha256": "4857b3dc717675bf1fb22edda622ac3b3ae03cf44d81eefaf3fa3ba3a86d84c1"
+    }
+  ]
+}

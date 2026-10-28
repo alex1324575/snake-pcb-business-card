@@ -8,6 +8,8 @@ KiCad library data is distributed under **CC BY-SA 4.0 with the KiCad design exc
 
 Standard component models used to produce the KiCad preview images come from the installed KiCad libraries. The two small envelope models under `library/3dmodels/` are simplified project geometry, not manufacturer tolerance models. The rendered images show the example PCB design and do not represent a photographed or tested assembly.
 
+Current [Rev C 3D previews](docs/revc/3D_VISUALIZATION.md) use these package/envelope models on a rendering-only import of the native Altium layout. Their model inventory and exact hashes are recorded in [RENDER_3D.json](verification/revc/RENDER_3D.json). External STEP models are referenced by name and are not redistributed in this repository.
+
 ## Arm GNU runtime
 
 Firmware images link the Arm GNU toolchain's newlib-nano routines and libgcc helpers. The included [toolchain license collection](firmware/references/ARM_GNU_TOOLCHAIN_LICENSES.txt) preserves their notices, including the GCC Runtime Library Exception and newlib terms. [Toolchain notes](firmware/references/TOOLCHAIN.md) describe the exact build version and provenance. No compiler installer or unrelated tool executable is bundled.

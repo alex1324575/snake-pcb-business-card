@@ -14,7 +14,7 @@ Updated 28 October 2026. Open [SnakeCard_RevC.PrjPcb](../altium/SnakeCard_RevC.P
 
 All 135 schematic instances have local symbol and footprint associations. The source audit checks 346 electrical pins, 39 named nets and 30 isolated no-connect pins. The PCB has 136 component instances, including the board-only QR artwork. Repeated physical pads may share an electrical pin number; U2's grounded exposed pad is electrical pin 41, while its nine paste windows are aperture geometry.
 
-C30 is an unpopulated NFC tuning position. The printed antenna and probe features are not purchased parts. Library geometry is 2D; no complete component 3D-model set is supplied. Current Top/Bottom images are final CAM renders.
+C30 is an unpopulated NFC tuning position. The printed antenna and probe features are not purchased parts. Native library geometry remains 2D. The [populated 3D previews](revc/3D_VISUALIZATION.md) use a separate rendering copy of this layout with package models; the original [CAM views](../verification/revc/CAM_VISUAL_REVIEW.md) remain available for layer inspection.
 
 ## Rev C changes
 

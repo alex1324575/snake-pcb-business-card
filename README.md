@@ -4,11 +4,13 @@ A USB-powered PCB business card with a 10 × 9 LED matrix, five buttons and Snak
 
 [![Firmware CI](https://github.com/alex1324575/snake-pcb-business-card/actions/workflows/firmware.yml/badge.svg)](https://github.com/alex1324575/snake-pcb-business-card/actions/workflows/firmware.yml)
 
+![Populated Rev C PCB in an isometric 3D view](docs/images/revc-3d-isometric.png)
+
 | Rev C — Top | Rev C — Bottom |
 |---|---|
-| ![Rev C Top CAM view](docs/images/revc-top.png) | ![Rev C Bottom CAM view](docs/images/revc-bottom.png) |
+| ![Populated Rev C Top 3D view](docs/images/revc-3d-top.png) | ![Populated Rev C Bottom 3D view](docs/images/revc-3d-bottom.png) |
 
-These views are rendered from the final manufacturing layers, not photographs of an assembled board. Public artwork uses **ALEX XU** and **https://example.com/**.
+3D assembly previews use the current Rev C layout and all 125 fitted parts. See [model provenance](docs/revc/3D_VISUALIZATION.md) for package-model approximations. Public artwork uses **ALEX XU** and **https://example.com/**.
 
 ## Current revision
 

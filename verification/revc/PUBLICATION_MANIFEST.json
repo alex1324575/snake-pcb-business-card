@@ -105,8 +105,14 @@
     {
       "path": "README.md",
       "transformation": "Current revision documentation and publication checks",
-      "sha256": "f0b49ecdab3154be6471afe1f63cbb115478caeef3191027dc23e27348a4899d",
-      "bytes": 5323
+      "sha256": "30898068f4116cc20d574188625c2b7eacf6916d48028b50b153d72f335576b5",
+      "bytes": 5493
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "3b383d8ad917ab0b1e63439711d34f8ff688de39966e419fddec4afb124ea976",
+      "bytes": 2279
     },
     {
       "path": "altium/SnakeCardNative.PcbLib",
@@ -146,8 +152,8 @@
     {
       "path": "docs/ALTIUM.md",
       "transformation": "Current revision documentation and publication checks",
-      "sha256": "677a93396d7d10b5ce1c0b695c4327e9414d2502073ec3afb3235b3e40a8015a",
-      "bytes": 5192
+      "sha256": "f30ef482ed09cdd523c76fca233743280bb9dd8d0a51dde75b5507cb04f611b6",
+      "bytes": 5334
     },
     {
       "path": "docs/ASSEMBLY.md",
@@ -222,6 +228,24 @@
       "bytes": 6530
     },
     {
+      "path": "docs/images/revc-3d-bottom.png",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "eaf9630c2d8f9303875dd94854e623a6b21b71abfe8b9c8ccd7e7ebef4bc0bfe",
+      "bytes": 242905
+    },
+    {
+      "path": "docs/images/revc-3d-isometric.png",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "1b3c04676b54d7664665b0901e2605eb86677fefe64c6be21f6997899a6b801e",
+      "bytes": 1272652
+    },
+    {
+      "path": "docs/images/revc-3d-top.png",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "d3f510c6f0cf990bf1924a5dfce1df8a82d8bf8172cace9f3bbf4f8e7fb0908d",
+      "bytes": 432411
+    },
+    {
       "path": "docs/images/revc-bottom.png",
       "verified_original_sha256": "6b73e859a38406a17431efddde0a93c75da56dc838f756b00788a8aaa4e91b35",
       "transformation": "Byte-identical reviewed CAM image",
@@ -241,6 +265,12 @@
       "transformation": "Byte-identical reviewed CAM image",
       "sha256": "ea1b3a22151b25fe0966c40cc9b6c278c6021afc9c28b2ac2b349de94264acbe",
       "bytes": 335754
+    },
+    {
+      "path": "docs/revc/3D_VISUALIZATION.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "c09b10bb00ee41deac303e32ca21ca82b57dacd607e09a12b9ff41f595a976ef",
+      "bytes": 2503
     },
     {
       "path": "docs/revc/FABRICATION_NOTES.md",
@@ -652,6 +682,12 @@
       "transformation": "Current revision documentation and publication checks",
       "sha256": "3aade3ddea8407e7cfe7cba22d6e049b4a6188080251188e6bdf328fef03f250",
       "bytes": 1989
+    },
+    {
+      "path": "verification/revc/RENDER_3D.json",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "76f2cdb910cdde4f5effffd6529d5301468a2a46a19a733e1aa0e3c659eef2e9",
+      "bytes": 45592
     },
     {
       "path": "verification/revc/SCHEMATIC_PDF_REVIEW.json",
