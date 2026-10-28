@@ -1,0 +1,94 @@
+{
+  "review_date": "2026-10-27",
+  "status": "RECOMMENDATION_NOT_APPLIED_BY_THIS_REVIEW",
+  "selected_u3": {
+    "manufacturer": "Texas Instruments",
+    "mpn": "TPS7A2433DBVR",
+    "lcsc": "C2866134",
+    "datasheet": "https://www.ti.com/lit/ds/symlink/tps7a24.pdf",
+    "datasheet_revision": "SBVS386E, September 2022; package addenda current at retrieval",
+    "exact_order_page": "https://www.ti.com/product/TPS7A24/part-details/TPS7A2433DBVR",
+    "procurement": "https://www.lcsc.com/product-detail/C2866134.html",
+    "pin_map": {
+      "1": "IN",
+      "2": "GND",
+      "3": "EN",
+      "4": "NC",
+      "5": "OUT"
+    },
+    "positive_input_enable_absolute_max_v": 20,
+    "negative_input_enable_absolute_min_v": -0.3,
+    "input_enable_operating_max_v": 18,
+    "output_effective_capacitance_min_uf_inferred_from_explicit_50_percent_derating": 0.5,
+    "reverse_current_blocking": false,
+    "disabled_output": "high impedance",
+    "native_lands_accepted_dimensionally": true,
+    "native_land_geometry": {
+      "pad_long_mm": 1.325,
+      "pad_width_mm": 0.6,
+      "pitch_mm": 0.95,
+      "opposite_row_spacing_mm": 2.275
+    }
+  },
+  "selected_d91": {
+    "manufacturer": "Nexperia",
+    "mpn": "PESD5Z6.0,115",
+    "lcsc": "C461166",
+    "datasheet": "https://assets.nexperia.com/documents/data-sheet/PESD5Z6_0.pdf",
+    "datasheet_revision": "16 September 2026",
+    "procurement": "https://www.lcsc.com/product-detail/C461166.html",
+    "package": "SC-79 / SOD523",
+    "polarity": "unidirectional",
+    "pin_map": {
+      "1": "K / VBUS_5V",
+      "2": "A / GND"
+    },
+    "standoff_v": 6,
+    "clamp_max_at_5a_8_20us_25c_v": 13,
+    "clamp_max_at_10a_8_20us_25c_v": 18,
+    "guarantees_protected_ic_negative_stress_above_minus_0_3v": false,
+    "native_pad_dimensions_mm": [
+      0.6,
+      0.7
+    ],
+    "native_pad_spacing_mm": 1.4
+  },
+  "existing_capacitors": {
+    "references": [
+      "C1",
+      "C2"
+    ],
+    "manufacturer": "Samsung Electro-Mechanics",
+    "mpn": "CL10B105KA8NNNC",
+    "prototype_effective_acceptance_min_uf": 0.5,
+    "retained_typical_screen_input_uf": 0.61,
+    "retained_typical_screen_output_uf": 0.6993,
+    "combined_corner_guarantee_closed": false
+  },
+  "not_selected": [
+    {
+      "mpn": "AP2205-33W5-7",
+      "reason": "Higher output-capacitor assessment burden; TPS7A24 preserves existing nominal capacitors."
+    },
+    {
+      "mpn": "SC1006-01LTG",
+      "manufacturer": "Littelfuse",
+      "reason": "8.5/10.5 V clamp figures are typical, not guaranteed maxima; not selected for a guaranteed positive rating comparison."
+    },
+    {
+      "mpn": "ESD5Z6.0T1G",
+      "manufacturer": "onsemi",
+      "reason": "Maximum20.5 V clamp exceeds replacement U3 positive20 V absolute rating at the stated maximum-current test."
+    },
+    {
+      "mpn": "T6V0S5A-7",
+      "manufacturer": "Diodes Incorporated",
+      "reason": "Maximum20 V clamp leaves no static margin to replacement U3 positive20 V absolute rating."
+    }
+  ],
+  "requires_native_readback": true,
+  "hardware_results_entered": false,
+  "production_esd_claim_supported": false,
+  "measured_geometry_source": "../../engineering-review-20261026/electrical/actual_electrical_inventory.json",
+  "measured_board_sha256": "79b43f05ff88d4faba876225f47f78b5072b034843425330ed8078656210dd0e"
+}

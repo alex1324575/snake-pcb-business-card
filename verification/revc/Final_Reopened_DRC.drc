@@ -1,0 +1,102 @@
+Protel Design System Design Rule Check
+PCB File : altium\SnakeCard_Native.PcbDoc
+Date     : 10/28/2026
+Time     : 1:15:55 AM
+
+Processing Rule : Clearance Constraint (Gap=0mm) (IsFill And IsKeepOut And InComponent('SW1')),(IsPad And InComponent('SW1'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.2mm) (InNamedPolygon('B.Cu-GND')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mm) (IsFill And IsKeepOut And InComponent('SW2')),(IsPad And InComponent('SW2'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mm) (IsFill And IsKeepOut And InComponent('SW5')),(IsPad And InComponent('SW5'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mm) (IsFill And IsKeepOut And InComponent('SW4')),(IsPad And InComponent('SW4'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mm) (IsFill And IsKeepOut And InComponent('SW3')),(IsPad And InComponent('SW3'))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.15mm) (Max=10mm) (Preferred=0.2mm) (All)
+Rule Violations :0
+
+Processing Rule : Routing Topology Rule(Topology=Shortest) (All)
+Rule Violations :0
+
+Processing Rule : Routing Layers(All)
+Rule Violations :0
+
+Processing Rule : Routing Via (MinHoleWidth=0.711mm) (MaxHoleWidth=0.711mm) (PreferredHoleWidth=0.711mm) (MinWidth=1.27mm) (MaxWidth=1.27mm) (PreferedWidth=1.27mm) (All)
+Rule Violations :0
+
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=0.254mm) (Max=0.254mm) (Prefered=0.254mm)  and Width Constraints (Min=0.381mm) (Max=0.381mm) (Prefered=0.381mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Fabrication Testpoint Style (Under Component=Yes) (All)
+Rule Violations :0
+
+Processing Rule : Fabrication Testpoint Usage (Valid =One Required, Allow multiple per net=No) (All)
+Rule Violations :0
+
+Processing Rule : Assembly Testpoint Style (Under Component=Yes) (All)
+Rule Violations :0
+
+Processing Rule : Assembly Testpoint Usage (Valid =One Required, Allow multiple per net=No) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.1mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.3mm) (Max=2.54mm) (All)
+Rule Violations :0
+
+Processing Rule : Pads and Vias to follow the Drill pairs settings
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.13mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.15mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) 
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:01

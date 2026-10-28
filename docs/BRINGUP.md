@@ -1,63 +1,61 @@
-# First-board bring-up
+# Rev C first-board bring-up
 
-This procedure is for an assembled prototype. The project has digital design checks and host firmware tests; it has not been flashed or validated on physical hardware.
+This procedure applies to **Altium Rev C / SC-REVC-LCSC-P1**. No MCU execution or physical test result is recorded. Confirm the board, installed BOM and drawings match Rev C before applying power; the historical KiCad rear-pad drawing does not apply.
 
-First close the pre-assembly items in [Component review](COMPONENT_REVIEW.md). Prepare a current-limited 5 V source with a suitable USB-C connection, multimeter, a 3.3 V-compatible SWD programmer such as ST-LINK, and [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html). Use an oscilloscope for rail transients and I2C rise/fall measurements; a logic analyzer helps inspect transactions.
+Use the [assembly manual](revc/assembly/ASSEMBLY_MANUAL.md) and the complete [P01–P14 qualification record](revc/electrical/QUALIFICATION_PLAN.md). Prepare a current-limited 5 V USB source, multimeter, microscope, 3.3 V-compatible SWD programmer and oscilloscope with short ground springs. NFC tuning requires a suitable RF fixture. Record board serial, installed MPNs/lots, firmware hash, instruments, conditions, readings and trace filenames.
 
-## 1. Inspect before power
+## 1. Inspect without power
 
-Check LED polarity, U1/U2 orientation, the QFN exposed-pad assembly, USB solder joints and obvious bridges. Leave C30 unpopulated. With power disconnected, inspect resistance between the supply rails and ground for an unintended short; interpret charging capacitors rather than treating a transient reading as a pass/fail threshold.
+Check all 90 LED cathodes, IC pin-1 marks, D91 polarity, MCU leads, QFN joints and USB shell/contact joints. D91 must be **PESD5Z6.0,115, K1 to VBUS_5V and A2 to GND**. U3 must be TPS7A2433DBVR. Keep C30 unpopulated and U4's NC pads isolated.
 
-## 2. Identify the rear debug pads
+Check VBUS–GND and +3V3–GND resistance in both probe polarities and observe capacitor charging. A persistent near-zero reading requires diagnosis. Inspect hidden QFN joints with the selected qualified method; visible leads alone are insufficient.
 
-Place the board **back side up, with rear text upright**. The five SWD pads read from left to right:
+## 2. Connect SWD on both faces
 
-```text
-TP8     TP7     TP6     TP5     TP4
-RST     CLK     DIO     GND     3V3
-```
+Rev C's contacts are distributed across both faces. The placement register uses the unmirrored native Top coordinate frame; the Bottom drawing mirrors X for a direct underside view. Native board-local coordinates are `(X − 100 mm, Y)`.
 
-![Back of the example board](images/back.png)
+| Programmer signal | PCB contact | Face | Native X / Y, mm |
+|---|---|---|---|
+| SWDIO | TP6 | Bottom | 137.9982 / 12.2936 |
+| SWCLK | TP7 | **Top** | 142.6464 / 9.4996 |
+| NRST | TP8 | Bottom | 157.9880 / 2.9972 |
+| Target-voltage sense | TP4, +3V3 | Bottom | 145.9992 / 1.5240 |
+| Ground | TP5 | Bottom | 148.9964 / 2.9972 |
 
-These are **1.0 mm diameter surface pads on 3.0 mm centers**, located 3.0 mm from the lower card edge. They are not through-holes or a 2.54 mm pin header. Use a aligned pogo-pin fixture or fine temporary wires.
+Use [the current drawings](revc/assembly/ASSEMBLY_REFERENCE.html) to locate each contact. A two-sided pogo fixture or short temporary wires must support the board without pressing on LEDs or the NFC area. These positions are not a 2.54 mm header or the historical five-pad row.
 
-| Board pad | Programmer connection |
-|---|---|
-| TP8 RST | NRST |
-| TP7 CLK | SWCLK |
-| TP6 DIO | SWDIO |
-| TP5 GND | GND |
-| TP4 3V3 | VTref / target-voltage sense |
+Power through controlled USB input. Connect TP4 only to the programmer's documented **target-voltage sense input**; disable programmer target-power output. Do not externally energize +3V3 while VBUS is absent. U3 does not limit reverse current. Connect GND first and disconnect it last.
 
-Power the board through USB-C. TP4 senses the board's 3.3 V rail; connect it to the programmer's documented voltage-sense input. It is not an invitation to connect an unidentified programmer power output. TP1–TP3 are a separate group for 5 V, 3.3 V and ground measurements.
+## 3. Establish the power rails
 
-## 3. Check power and flash
+1. Begin with regulated 5 V, display disabled and a 20 mA current limit. This is a fault-detection starting point, not a guaranteed operating-current specification. If current limiting occurs, power off and diagnose before increasing the limit.
+2. Measure at U3 IN/OUT and U1 VDD. The steady +3V3 acceptance band is **3.135–3.465 V**, with no sustained oscillation, unexplained heating or current-limit event.
+3. Capture startup/shutdown at 4.75, 5.00 and 5.25 V. Use short probe connections and record the actual waveform; a multimeter average cannot establish transient safety.
+4. Keep the prototype envelope at 10–40 °C ambient, firmware GCC ≤32 and the project's 100 mA input-current screen pending qualification.
 
-1. Apply USB power and measure approximately 5 V at TP1 and 3.3 V at TP4, relative to ground. Disconnect and investigate unexpected current or heating.
-2. Connect through ST-LINK/SWD in **Under Reset** mode, with NRST connected. Confirm STM32G030 and 64 KiB Flash.
-3. Program and verify [SnakeBusinessCard_RevB_v1.0.0.hex](../firmware/release/SnakeBusinessCard_RevB_v1.0.0.hex), then reset. The HEX contains its addresses. A BIN must be written at **0x08000000**.
-4. Keep boot option bytes and read protection unchanged for routine firmware installation.
+C1/C2 require effective capacitance **≥0.50 µF** after the declared bias, tolerance, temperature, measurement uncertainty and aging allowances. A nominal 1 µF label or typical-data curve does not close this acceptance item.
 
-Source builds, checksums and the equivalent CLI command are in the [firmware README](../firmware/README.md). Programming requires SWD; the USB connector has no data path.
+## 4. Identify, program and recover the MCU
 
-## 4. Check every LED and button
+Use a documented 3.3 V-compatible programmer such as ST-LINK and [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html).
 
-Hold START while applying power. Diagnostic mode should scan D1 through D90 from the upper-left corner, across each row and then downward. Check the corners and every intermediate pixel for missing LEDs, polarity errors or row/column swaps. Press each direction to show its corresponding marker. Release START, then give a fresh short press to exit.
+1. Start SWD at 100 kHz. Use connect-under-reset with NRST connected if needed.
+2. Confirm STM32G030 identity and 64 KiB Flash.
+3. Program and verify [SnakeBusinessCard_RevB_v1.0.0.hex](../firmware/release/SnakeBusinessCard_RevB_v1.0.0.hex), then reset. Original release filenames are retained; the unchanged firmware's native Rev C connection contract was checked separately. HEX includes its address; BIN must be written at **0x08000000**.
+4. Keep boot option bytes and read protection unchanged for routine installation. Record the exact image hash and programming log.
 
-Normal startup shows the example initials **AX**, followed by the ready pattern. A short START press/release starts the game; directions turn the snake. START pauses/resumes; holding it for about 0.8 seconds returns to ready. Confirm collision, score, restart and power-on high-score reset. Full controls are in the firmware README.
+The [firmware guide](../firmware/README.md) provides tool setup and image checksums. Its older physical rear-pad drawing is historical; use the Rev C table above. USB has no firmware-upload data path.
 
-## 5. Measure and record
+## 5. Check pixels, inputs and game behavior
 
-| Test | Record |
-|---|---|
-| Rails and power | 5 V / 3.3 V readings, USB current, regulator/driver temperature |
-| Display | All 90 pixels, orientation, brightness, ghosting |
-| Inputs | All directions, START short/long press, debounce |
-| I²C | Rise/fall <=300 ns at U2, ACKs, address 0x50, sustained operation |
-| Recovery | Display blanking on an induced bus fault, bounded recovery, restart from ready |
-| Watchdog / reset | Actual reset behavior, repeated power cycles, SWD reconnect under reset |
-| Contact | Printed QR scan, tuned NFC read range, written URI and read-back |
+Hold START during power-up to enter diagnostics. Check D1 through D90 individually from upper-left, across each row, then downward. Confirm no reversal, missing pixel, row/column swap or visible ghosting. Test all five buttons. Release START and give a fresh short press to exit.
 
-Perform fault injection with suitable current limiting and instrumentation; do not short a supply to test software recovery. Keep the firmware's GCC limit at 32 while establishing the baseline. The LED-current calculation is not a substitute for measurement.
+Normal startup shows **AX**. START begins/pauses/resumes, a long press returns to idle, and the direction buttons steer. Confirm collision, score, restart and power-session high score. Keep GCC ≤32 in diagnostics as well as normal play.
 
-Record board revision, firmware SHA-256, supply, instruments, phone models and measured results. A blank test result means **not tested**. Follow [Contact and NFC](CONTACT.md) for the separate passive-tag workflow.
+## 6. Execute and record qualification
+
+P01–P14 cover inspection, startup/load response, I²C timing, 30-minute worst-pattern thermal/current tests, pixels/buttons, fault/watchdog recovery, repeated SWD access, hot-plug, NFC, positive/negative system stress and regulator reverse bias. Follow their exact conditions and acceptance criteria in the [qualification record](revc/electrical/QUALIFICATION_PLAN.md).
+
+Do not short a rail to simulate a bus fault. Use a controlled fixture and instrumentation. P14 must check output-to-input reverse stress during fast VBUS removal; steady operation does not close it. Keep C30 DNP until measured NFC tuning supports a selected value, then verify the example URL on at least one iOS and one Android phone.
+
+All 14 results currently remain **NOT TESTED**. Enter measured PASS/FAIL evidence against the exact assembled variant, resolve failures and repeat affected tests after rework before accepting the first article.

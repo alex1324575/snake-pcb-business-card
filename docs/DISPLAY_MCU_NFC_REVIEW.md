@@ -1,5 +1,7 @@
 # MCU, display and NFC component review
 
+> **Historical KiCad review.** The selections and geometry below describe the recorded Rev B baseline. Rev C uses the IS31FL3737B and KENTO KT-0603R selection, with a different layout and thermal path. Use the [current component register](COMPONENT_REVIEW.md), [BOM](revc/assembly/BOM.md) and [qualification record](revc/electrical/QUALIFICATION_PLAN.md).
+
 Reviewed 2026-09-26 against the public Rev B netlist, native PCB, project footprints and current firmware. **These parts are selected for prototype procurement; this is a document and connectivity review, not an assembled-board approval.** No component was substituted and no PCB geometry was changed during this review.
 
 ## Exact purchasing identities and primary references

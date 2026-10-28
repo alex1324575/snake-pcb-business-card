@@ -1,0 +1,3021 @@
+{
+  "pcb_sha256": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+  "result": "PASS",
+  "round_holes": 191,
+  "plated_vias": 189,
+  "printed_antenna_round_holes": 2,
+  "plated_slots": 4,
+  "NPTH_holes": 0,
+  "source_pad_stream_identical_to_review": false,
+  "source_geometry_equivalence": {
+    "pad_geometry_all_bytes_equivalent": true,
+    "via_stream_byte_identical": true,
+    "component_geometry_and_uid_equivalent": true,
+    "net_identity_and_order_equivalent": true,
+    "rule_stream_byte_identical": true,
+    "normalization": "Only primitive row order and component-owner index rebinding; no pad field or flag exception"
+  },
+  "coordinate_format": "mm 4:4, absolute origin, trailing zero suppression; Excellon METRIC,LZ",
+  "max_center_error_mm": 2.5688908180867286e-06,
+  "slot_dimensions_mm": [
+    1.2,
+    0.5
+  ],
+  "parser_warnings": [
+    "fabrication/revc\\SnakeCard_Native-SlotHoles-Plated.TXT:8 \"G90\": G90 header statement found after end of header"
+  ],
+  "warning_disposition": "Gerbonara reports G90 after the header; G90 explicitly selects absolute coordinates. All 195 geometries match source, including endpoint orientation. No parser warning is suppressed.",
+  "files": [
+    {
+      "name": "SnakeCard_Native-RoundHoles-Plated.TXT",
+      "sha256": "f73352eb1b081f7d5a990bc06b6b6d06e573a204e69787ff10ef37ae5d3a10be"
+    },
+    {
+      "name": "SnakeCard_Native-SlotHoles-Plated.TXT",
+      "sha256": "e00d4c6d0d46e3bff18c5cdff1e1cb9bd44ec5c708730db1028dc307e8c7cb53"
+    }
+  ],
+  "matches": [
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 172.72,
+        "y": 4.826,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 172.72,
+        "y": 4.826,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 165.96359999999999,
+        "y": 5.0038,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 165.9636,
+        "y": 5.0038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 167.3098,
+        "y": 11.1252,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 167.3098,
+        "y": 11.1252,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 120.80239999999999,
+        "y": 5.9436,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 120.8024,
+        "y": 5.9436,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.4210854715202004e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 173.6598,
+        "y": 9.524999999999999,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 173.6598,
+        "y": 9.525,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 169.164,
+        "y": 16.5354,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 169.164,
+        "y": 16.5354,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 116.4844,
+        "y": 3.5052,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 116.4844,
+        "y": 3.5052,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 178.9938,
+        "y": 19.811999999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 178.9938,
+        "y": 19.812,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 180.00979999999998,
+        "y": 26.796999999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 180.0098,
+        "y": 26.797,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.864289338439558e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 180.49239999999998,
+        "y": 30.3022,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 180.4924,
+        "y": 30.3022,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 181.00039999999998,
+        "y": 33.807399999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 181.0004,
+        "y": 33.8074,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.929642751054232e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 145.1864,
+        "y": 15.239999999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 145.1864,
+        "y": 15.24,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 144.272,
+        "y": 16.357599999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 144.272,
+        "y": 16.3576,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 156.1592,
+        "y": 41.859199999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 156.1592,
+        "y": 41.8592,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.30499999999998,
+        "y": 14.5034,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.305,
+        "y": 14.5034,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 158.49599999999998,
+        "y": 15.011399999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 158.496,
+        "y": 15.0114,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.847716647714797e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 159.9946,
+        "y": 15.494,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 159.9946,
+        "y": 15.494,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 171.831,
+        "y": 28.194,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 171.831,
+        "y": 28.194,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 168.3258,
+        "y": 28.194,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 168.3258,
+        "y": 28.194,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 164.82059999999998,
+        "y": 28.194,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 164.8206,
+        "y": 28.194,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 169.4434,
+        "y": 5.968999999999999,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 169.4434,
+        "y": 5.969,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 8.881784197001252e-16
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 180.7464,
+        "y": 19.1008,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 180.7464,
+        "y": 19.1008,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 164.4904,
+        "y": 1.4986,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 164.4904,
+        "y": 1.4986,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 162.99179999999998,
+        "y": 1.4986,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 162.9918,
+        "y": 1.4986,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.4932,
+        "y": 1.4986,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.4932,
+        "y": 1.4986,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 175.3362,
+        "y": 28.194,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 175.3362,
+        "y": 28.194,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 143.8148,
+        "y": 28.194,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 143.8148,
+        "y": 28.194,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 140.0048,
+        "y": 17.9832,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 140.0048,
+        "y": 17.9832,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 142.23999999999998,
+        "y": 15.239999999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 142.24,
+        "y": 15.24,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.847716647714797e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 146.4056,
+        "y": 9.4996,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 146.4056,
+        "y": 9.4996,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 126.49199999999999,
+        "y": 1.5239999999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 126.492,
+        "y": 1.524,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.4212589332811784e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 136.75359999999998,
+        "y": 3.0987999999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 136.7536,
+        "y": 3.0988,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842517866562357e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 130.8354,
+        "y": 16.002,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 130.8354,
+        "y": 16.002,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 134.0104,
+        "y": 3.5559999999999996,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 134.0104,
+        "y": 3.556,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 4.440892098500626e-16
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 120.2944,
+        "y": 15.239999999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 120.2944,
+        "y": 15.24,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 142.6464,
+        "y": 7.6708,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 142.6464,
+        "y": 7.6708,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 173.1772,
+        "y": 31.1912,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 173.1772,
+        "y": 31.1912,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 173.736,
+        "y": 17.7292,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 173.736,
+        "y": 17.7292,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 172.8724,
+        "y": 10.7188,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 172.8724,
+        "y": 10.7188,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 172.77079999999998,
+        "y": 6.2992,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 172.7708,
+        "y": 6.2992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 168.04639999999998,
+        "y": 5.6895999999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 168.0464,
+        "y": 5.6896,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.8435583831733384e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 140.3096,
+        "y": 23.723599999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 140.3096,
+        "y": 23.7236,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 144.90699999999998,
+        "y": 4.064,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 144.907,
+        "y": 4.064,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 159.2072,
+        "y": 24.231599999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 159.2072,
+        "y": 24.2316,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 162.6616,
+        "y": 45.211999999999996,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 162.6616,
+        "y": 45.212,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 163.4998,
+        "y": 16.9926,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 163.4998,
+        "y": 16.9926,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 136.29639999999998,
+        "y": 20.9042,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 136.2964,
+        "y": 20.9042,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 144.52599999999998,
+        "y": 11.328399999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 144.526,
+        "y": 11.3284,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.847716647714797e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 142.6464,
+        "y": 9.4996,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 142.6464,
+        "y": 9.4996,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 123.6218,
+        "y": 16.002,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 123.6218,
+        "y": 16.002,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 135.53439999999998,
+        "y": 6.908799999999999,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 135.5344,
+        "y": 6.9088,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.8435583831733384e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 159.2072,
+        "y": 27.685999999999996,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 159.2072,
+        "y": 27.686,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 142.6464,
+        "y": 11.328399999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 142.6464,
+        "y": 11.3284,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 142.0368,
+        "y": 27.685999999999996,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 142.0368,
+        "y": 27.686,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.4932,
+        "y": 15.011399999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.4932,
+        "y": 15.0114,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 129.3114,
+        "y": 20.9042,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 129.3114,
+        "y": 20.9042,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.31539999999998,
+        "y": 35.2044,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.3154,
+        "y": 35.2044,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.31539999999998,
+        "y": 45.694599999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.3154,
+        "y": 45.6946,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.929642751054232e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.31539999999998,
+        "y": 28.194,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.3154,
+        "y": 28.194,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.31539999999998,
+        "y": 42.1894,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.3154,
+        "y": 42.1894,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.31539999999998,
+        "y": 17.703799999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.3154,
+        "y": 17.7038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.864289338439558e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.31539999999998,
+        "y": 31.699199999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.3154,
+        "y": 31.6992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.864289338439558e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.31539999999998,
+        "y": 21.209,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.3154,
+        "y": 21.209,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.31539999999998,
+        "y": 24.688799999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.3154,
+        "y": 24.6888,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.864289338439558e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 161.31539999999998,
+        "y": 38.709599999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 161.3154,
+        "y": 38.7096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.929642751054232e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 142.1384,
+        "y": 41.9608,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 142.1384,
+        "y": 41.9608,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 113.22590004,
+        "y": 14.78710022,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 113.2259,
+        "y": 14.7871,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.2360679702654392e-07
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 123.49470093999999,
+        "y": 13.850000239999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 123.4947,
+        "y": 13.85,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 9.70154619233562e-07
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 144.52599999999998,
+        "y": 7.6708,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 144.526,
+        "y": 7.6708,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 147.32,
+        "y": 24.688799999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 147.32,
+        "y": 24.6888,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 147.32,
+        "y": 35.2044,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 147.32,
+        "y": 35.2044,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 147.32,
+        "y": 42.1894,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 147.32,
+        "y": 42.1894,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 147.32,
+        "y": 45.694599999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 147.32,
+        "y": 45.6946,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 147.32,
+        "y": 28.194,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 147.32,
+        "y": 28.194,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 147.32,
+        "y": 38.709599999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 147.32,
+        "y": 38.7096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 147.32,
+        "y": 21.209,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 147.32,
+        "y": 21.209,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 147.32,
+        "y": 31.699199999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 147.32,
+        "y": 31.6992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 147.32,
+        "y": 17.703799999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 147.32,
+        "y": 17.7038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 180.98809878,
+        "y": 7.9799992799999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 180.9881,
+        "y": 7.98,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.4166156871053198e-06
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 156.7688,
+        "y": 1.4731999999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 156.7688,
+        "y": 1.4732,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.220446049250313e-16
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 166.243,
+        "y": 17.551399999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 166.243,
+        "y": 17.5514,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 146.4056,
+        "y": 11.328399999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 146.4056,
+        "y": 11.3284,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 176.36489999999998,
+        "y": 1.9798004599999999,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 176.3649,
+        "y": 1.9798,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 4.599999998688995e-07
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 135.75300002,
+        "y": 5.46250114,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 135.753,
+        "y": 5.4625,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.1401754246664816e-06
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 171.67319995999998,
+        "y": 15.11350038,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 171.6732,
+        "y": 15.1135,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.820994662824911e-07
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 140.0048,
+        "y": 3.7592,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 140.0048,
+        "y": 3.7592,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.30499999999998,
+        "y": 7.264399999999999,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.305,
+        "y": 7.2644,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.8435583831733384e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 150.8252,
+        "y": 21.209,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 150.8252,
+        "y": 21.209,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 150.8252,
+        "y": 35.2044,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 150.8252,
+        "y": 35.2044,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 150.8252,
+        "y": 31.699199999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 150.8252,
+        "y": 31.6992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 150.8252,
+        "y": 38.709599999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 150.8252,
+        "y": 38.7096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 150.8252,
+        "y": 42.1894,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 150.8252,
+        "y": 42.1894,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 150.8252,
+        "y": 45.694599999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 150.8252,
+        "y": 45.6946,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 150.8252,
+        "y": 17.703799999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 150.8252,
+        "y": 17.7038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 150.8252,
+        "y": 24.688799999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 150.8252,
+        "y": 24.6888,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 150.8252,
+        "y": 28.194,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 150.8252,
+        "y": 28.194,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.3304,
+        "y": 42.1894,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.3304,
+        "y": 42.1894,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.3304,
+        "y": 38.709599999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.3304,
+        "y": 38.7096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.3304,
+        "y": 24.688799999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.3304,
+        "y": 24.6888,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.3304,
+        "y": 28.194,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.3304,
+        "y": 28.194,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.3304,
+        "y": 45.694599999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.3304,
+        "y": 45.6946,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.3304,
+        "y": 17.703799999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.3304,
+        "y": 17.7038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.3304,
+        "y": 31.699199999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.3304,
+        "y": 31.6992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.3304,
+        "y": 35.2044,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.3304,
+        "y": 35.2044,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.3304,
+        "y": 21.209,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.3304,
+        "y": 21.209,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 171.831,
+        "y": 42.1894,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 171.831,
+        "y": 42.1894,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 171.831,
+        "y": 17.703799999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 171.831,
+        "y": 17.7038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 171.831,
+        "y": 21.209,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 171.831,
+        "y": 21.209,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 171.831,
+        "y": 35.2044,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 171.831,
+        "y": 35.2044,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 171.831,
+        "y": 38.709599999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 171.831,
+        "y": 38.7096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 171.831,
+        "y": 45.694599999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 171.831,
+        "y": 45.6946,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 171.831,
+        "y": 24.688799999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 171.831,
+        "y": 24.6888,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 169.4434,
+        "y": 10.312399999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 169.4434,
+        "y": 10.3124,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.7763568394002505e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 171.831,
+        "y": 31.699199999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 171.831,
+        "y": 31.6992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 175.9204,
+        "y": 10.5156,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 175.9204,
+        "y": 10.5156,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 173.07559999999998,
+        "y": 7.7216,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 173.0756,
+        "y": 7.7216,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 168.3258,
+        "y": 31.699199999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 168.3258,
+        "y": 31.6992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 168.3258,
+        "y": 17.703799999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 168.3258,
+        "y": 17.7038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 168.3258,
+        "y": 35.2044,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 168.3258,
+        "y": 35.2044,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 168.3258,
+        "y": 24.688799999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 168.3258,
+        "y": 24.6888,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 168.3258,
+        "y": 45.694599999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 168.3258,
+        "y": 45.6946,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 168.3258,
+        "y": 38.709599999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 168.3258,
+        "y": 38.7096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 168.3258,
+        "y": 21.209,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 168.3258,
+        "y": 21.209,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 169.4434,
+        "y": 8.8646,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 169.4434,
+        "y": 8.8646,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 168.3258,
+        "y": 42.1894,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 168.3258,
+        "y": 42.1894,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.30499999999998,
+        "y": 8.7122,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.305,
+        "y": 8.7122,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 164.82059999999998,
+        "y": 17.703799999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 164.8206,
+        "y": 17.7038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.864289338439558e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 164.82059999999998,
+        "y": 35.2044,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 164.8206,
+        "y": 35.2044,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 164.82059999999998,
+        "y": 38.709599999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 164.8206,
+        "y": 38.7096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.929642751054232e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 164.82059999999998,
+        "y": 21.209,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 164.8206,
+        "y": 21.209,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 164.82059999999998,
+        "y": 42.1894,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 164.8206,
+        "y": 42.1894,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 164.82059999999998,
+        "y": 31.699199999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 164.8206,
+        "y": 31.6992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.864289338439558e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 169.4434,
+        "y": 7.416799999999999,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 169.4434,
+        "y": 7.4168,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 8.881784197001252e-16
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 164.82059999999998,
+        "y": 45.694599999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 164.8206,
+        "y": 45.6946,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.929642751054232e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 164.82059999999998,
+        "y": 24.688799999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 164.8206,
+        "y": 24.6888,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.864289338439558e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 155.75279999999998,
+        "y": 17.779999999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 155.7528,
+        "y": 17.78,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.864289338439558e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 169.4434,
+        "y": 3.0479999999999996,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 169.4434,
+        "y": 3.048,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 4.440892098500626e-16
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 157.8356,
+        "y": 28.194,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 157.8356,
+        "y": 28.194,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 166.52239999999998,
+        "y": 1.5748,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 166.5224,
+        "y": 1.5748,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 157.8356,
+        "y": 38.709599999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 157.8356,
+        "y": 38.7096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 157.8356,
+        "y": 17.703799999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 157.8356,
+        "y": 17.7038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 178.0032,
+        "y": 4.4196,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 178.0032,
+        "y": 4.4196,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 157.8356,
+        "y": 45.694599999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 157.8356,
+        "y": 45.6946,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 157.8356,
+        "y": 35.2044,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 157.8356,
+        "y": 35.2044,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 157.8356,
+        "y": 42.1894,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 157.8356,
+        "y": 42.1894,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 157.8356,
+        "y": 31.699199999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 157.8356,
+        "y": 31.6992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 157.8356,
+        "y": 24.688799999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 157.8356,
+        "y": 24.6888,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 157.8356,
+        "y": 21.209,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 157.8356,
+        "y": 21.209,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 142.39239999999998,
+        "y": 34.6964,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 142.3924,
+        "y": 34.6964,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 175.3362,
+        "y": 31.699199999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 175.3362,
+        "y": 31.6992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 175.3362,
+        "y": 38.709599999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 175.3362,
+        "y": 38.7096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 175.3362,
+        "y": 42.1894,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 175.3362,
+        "y": 42.1894,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 175.3362,
+        "y": 21.209,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 175.3362,
+        "y": 21.209,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 175.3362,
+        "y": 35.2044,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 175.3362,
+        "y": 35.2044,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 175.3362,
+        "y": 17.703799999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 175.3362,
+        "y": 17.7038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 175.3362,
+        "y": 24.688799999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 175.3362,
+        "y": 24.6888,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 175.3362,
+        "y": 45.694599999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 175.3362,
+        "y": 45.6946,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 169.4434,
+        "y": 11.7602,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 169.4434,
+        "y": 11.7602,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 154.30499999999998,
+        "y": 5.816599999999999,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 154.305,
+        "y": 5.8166,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.8435583831733384e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 158.72459999999998,
+        "y": 6.095999999999999,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 158.7246,
+        "y": 6.096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.8435583831733384e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 141.605,
+        "y": 20.8788,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 141.605,
+        "y": 20.8788,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 155.8036,
+        "y": 2.8956,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 155.8036,
+        "y": 2.8956,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 117.2464,
+        "y": 8.2804,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 117.2464,
+        "y": 8.2804,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 160.147,
+        "y": 6.095999999999999,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 160.147,
+        "y": 6.096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 8.881784197001252e-16
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 177.1396,
+        "y": 13.3096,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 177.1396,
+        "y": 13.3096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 138.5316,
+        "y": 13.716,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 138.5316,
+        "y": 13.716,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 138.0744,
+        "y": 14.5796,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 138.0744,
+        "y": 14.5796,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 174.498,
+        "y": 10.668,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 174.498,
+        "y": 10.668,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 158.72459999999998,
+        "y": 4.6735999999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 158.7246,
+        "y": 4.6736,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.8435583831733384e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 176.88559999999998,
+        "y": 16.1036,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 176.8856,
+        "y": 16.1036,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 160.147,
+        "y": 4.6735999999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 160.147,
+        "y": 4.6736,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 8.881784197001252e-16
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 170.48479999999998,
+        "y": 27.685999999999996,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 170.4848,
+        "y": 27.686,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.864289338439558e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 172.8216,
+        "y": 2.9972,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 172.8216,
+        "y": 2.9972,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 150.1847009,
+        "y": 2.1638005999999996,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 150.1847,
+        "y": 2.1638,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.0816653851798527e-06
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 151.0792,
+        "y": 11.7348,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 151.0792,
+        "y": 11.7348,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 144.52599999999998,
+        "y": 9.4996,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 144.526,
+        "y": 9.4996,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 127.22859999999999,
+        "y": 16.002,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 127.2286,
+        "y": 16.002,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 1.4210854715202004e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 120.72590027999999,
+        "y": 8.75000028,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 120.7259,
+        "y": 8.75,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.9597979380183693e-07
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 143.8148,
+        "y": 17.703799999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 143.8148,
+        "y": 17.7038,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 143.8148,
+        "y": 45.694599999999994,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 143.8148,
+        "y": 45.6946,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 181.9656,
+        "y": 4.1148,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 181.9656,
+        "y": 4.1148,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 143.8148,
+        "y": 35.2044,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 143.8148,
+        "y": 35.2044,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 143.8148,
+        "y": 38.709599999999995,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 143.8148,
+        "y": 38.7096,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 7.105427357601002e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 181.91479999999999,
+        "y": 12.8524,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 181.9148,
+        "y": 12.8524,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 143.8148,
+        "y": 42.1894,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 143.8148,
+        "y": 42.1894,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 143.8148,
+        "y": 31.699199999999998,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 143.8148,
+        "y": 31.6992,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 143.8148,
+        "y": 21.209,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 143.8148,
+        "y": 21.209,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 143.8148,
+        "y": 24.688799999999997,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 143.8148,
+        "y": 24.6888,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 3.552713678800501e-15
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "VIA",
+        "x": 183.00699999999998,
+        "y": 47.8028,
+        "diameter": 0.7111999999999999
+      },
+      "actual": {
+        "x": 183.007,
+        "y": 47.8028,
+        "diameter": 0.7112
+      },
+      "center_error_mm": 2.842170943040401e-14
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "L1.2",
+        "x": 135.89,
+        "y": 35.5092,
+        "diameter": 0.29999939999999997
+      },
+      "actual": {
+        "x": 135.89,
+        "y": 35.5092,
+        "diameter": 0.3
+      },
+      "center_error_mm": 0.0
+    },
+    {
+      "type": "round",
+      "expected": {
+        "owner": "L1.1",
+        "x": 127.40000174,
+        "y": 44.0500008,
+        "diameter": 0.29999939999999997
+      },
+      "actual": {
+        "x": 127.4,
+        "y": 44.05,
+        "diameter": 0.3
+      },
+      "center_error_mm": 1.9150978984395282e-06
+    },
+    {
+      "type": "slot",
+      "expected": {
+        "owner": "J1.S4",
+        "x": 183.39999895999998,
+        "y": 13.820000299999998,
+        "length": 1.20000014,
+        "width": 0.49999899999999997,
+        "angle_deg": 0.0
+      },
+      "actual": {
+        "x": 183.4,
+        "y": 13.82,
+        "length": 1.1999999999999886,
+        "width": 0.5,
+        "angle_deg": 180.0,
+        "endpoints": [
+          [
+            183.75,
+            13.82
+          ],
+          [
+            183.05,
+            13.82
+          ]
+        ]
+      },
+      "center_error_mm": 1.0824047577758125e-06
+    },
+    {
+      "type": "slot",
+      "expected": {
+        "owner": "J1.S3",
+        "x": 183.39999895999998,
+        "y": 5.18000234,
+        "length": 1.20000014,
+        "width": 0.49999899999999997,
+        "angle_deg": 0.0
+      },
+      "actual": {
+        "x": 183.4,
+        "y": 5.18,
+        "length": 1.1999999999999886,
+        "width": 0.5,
+        "angle_deg": 180.0,
+        "endpoints": [
+          [
+            183.75,
+            5.18
+          ],
+          [
+            183.05,
+            5.18
+          ]
+        ]
+      },
+      "center_error_mm": 2.560703040319369e-06
+    },
+    {
+      "type": "slot",
+      "expected": {
+        "owner": "J1.S2",
+        "x": 179.59999893999998,
+        "y": 13.820000299999998,
+        "length": 1.20000014,
+        "width": 0.49999899999999997,
+        "angle_deg": 0.0
+      },
+      "actual": {
+        "x": 179.6,
+        "y": 13.82,
+        "length": 1.1999999999999886,
+        "width": 0.5,
+        "angle_deg": 180.0,
+        "endpoints": [
+          [
+            179.95,
+            13.82
+          ],
+          [
+            179.25,
+            13.82
+          ]
+        ]
+      },
+      "center_error_mm": 1.1016351638383542e-06
+    },
+    {
+      "type": "slot",
+      "expected": {
+        "owner": "J1.S1",
+        "x": 179.59999893999998,
+        "y": 5.18000234,
+        "length": 1.20000014,
+        "width": 0.49999899999999997,
+        "angle_deg": 0.0
+      },
+      "actual": {
+        "x": 179.6,
+        "y": 5.18,
+        "length": 1.1999999999999886,
+        "width": 0.5,
+        "angle_deg": 180.0,
+        "endpoints": [
+          [
+            179.95,
+            5.18
+          ],
+          [
+            179.25,
+            5.18
+          ]
+        ]
+      },
+      "center_error_mm": 2.5688908180867286e-06
+    }
+  ]
+}

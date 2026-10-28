@@ -1,0 +1,158 @@
+{
+  "result": "PASS",
+  "pcb_sha256": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+  "rules_sha256": "f20b6580b3fa99a5bef3a966ef0c7feff56aca0469f0c2336a1bcbbb12bf7ed7",
+  "gerber_files": [
+    {
+      "name": "SnakeCard_Native.GTL",
+      "sha256": "99bab68c3db53dbee4c9dbfaae77ca790551c5eb5f691f6d2e5617d9dca3befc",
+      "modified_local": "2026-10-28T11:12:59"
+    },
+    {
+      "name": "SnakeCard_Native.GBL",
+      "sha256": "231b500574d8dd0ce57a9497f7aa747fe8a097e7932bdd1a99ec6293a8450ca1",
+      "modified_local": "2026-10-28T11:12:59"
+    },
+    {
+      "name": "SnakeCard_Native.GTO",
+      "sha256": "2f47dac308555a6ca23f714e1cc223d37c2ce8c343a82fac2a1fa1b2149ec380",
+      "modified_local": "2026-10-28T11:12:59"
+    },
+    {
+      "name": "SnakeCard_Native.GBO",
+      "sha256": "86615b4a81963e0fed4e8746b814913efe7807b848d72f6c4aa07815d581f9d0",
+      "modified_local": "2026-10-28T11:12:59"
+    },
+    {
+      "name": "SnakeCard_Native.GTS",
+      "sha256": "dd804775cde9148eb46d4fd5f3a310482d659cd9517b10d477933ea8aeaf0111",
+      "modified_local": "2026-10-28T11:12:59"
+    },
+    {
+      "name": "SnakeCard_Native.GBS",
+      "sha256": "8211d607649ceefe41e241b2bda92237218d4ae8c6681321f1bc93a4090a96b2",
+      "modified_local": "2026-10-28T11:12:59"
+    },
+    {
+      "name": "SnakeCard_Native.GTP",
+      "sha256": "9e2e07259b7e2d70f6c36f3df4fa4e0bfc3af868a6e8b9b55805488d74471e9a",
+      "modified_local": "2026-10-28T11:12:59"
+    },
+    {
+      "name": "SnakeCard_Native.GBP",
+      "sha256": "a8ba5496fd3820cd8d6f367dccefc0f99f116321d1c1d878407085f59b5f4766",
+      "modified_local": "2026-10-28T11:12:59"
+    },
+    {
+      "name": "SnakeCard_Native.GM",
+      "sha256": "72b86ebfa9f4919031288c12b2549f5ffaf5922e1cb7f5eae347cc23066b7f96",
+      "modified_local": "2026-10-28T11:12:59"
+    }
+  ],
+  "drill_files": [
+    {
+      "name": "SnakeCard_Native-RoundHoles-Plated.TXT",
+      "sha256": "f73352eb1b081f7d5a990bc06b6b6d06e573a204e69787ff10ef37ae5d3a10be",
+      "modified_local": "2026-10-28T11:14:50"
+    },
+    {
+      "name": "SnakeCard_Native-SlotHoles-Plated.TXT",
+      "sha256": "e00d4c6d0d46e3bff18c5cdff1e1cb9bd44ec5c708730db1028dc307e8c7cb53",
+      "modified_local": "2026-10-28T11:14:50"
+    }
+  ],
+  "preview_sha256": {
+    "final_cam_top.png": "ea1b3a22151b25fe0966c40cc9b6c278c6021afc9c28b2ac2b349de94264acbe",
+    "final_cam_bottom.png": "6b73e859a38406a17431efddde0a93c75da56dc838f756b00788a8aaa4e91b35",
+    "fabrication_reference.png": "dc4c20a2926642605b1fec07f5f8e6f2fc9bc03c9201d5dadd7c6c1a665464cc"
+  },
+  "render_binding_sha256": "27303bb19c408aba3e4ced5b99bd8b80642be155551ffbeec62e52127347ad17",
+  "source_audit_sha256": "1e6e9f84ebdc2f072873fcc21fd1546183946c8ec4aa3ce744adbe855edf2d29",
+  "drill_audit_sha256": "1b59eada3adba02685335d042acad9c2fd2fbf3b3781400cdddce80b3f675f49",
+  "checks": [
+    {
+      "check": "Actual Top CAM inspected",
+      "result": "PASS",
+      "finding": "ALEX XU / Electrical Engineer public artwork; NFC coil on left; 10 by 9 LED grid on right; five controls and USB power area below. CLK is readable next to the Top SWCLK test pad, near native TP7 (142.6464,9.4996 mm)."
+    },
+    {
+      "check": "Actual Bottom CAM inspected",
+      "result": "PASS",
+      "finding": "Direct underside view mirrors X only. REV C / AX-01 is readable at lower right. DIO is readable beside Bottom SWDIO pad TP6 (137.9982,12.2936 mm), adjacent to MCU. No stale REV B marking visible."
+    },
+    {
+      "check": "Public QR decoded from actual Bottom CAM image",
+      "result": "PASS",
+      "finding": "OpenCV QRCodeDetector decoded https://example.com/ from final_cam_bottom.png. This matches the intended ALEX XU public example card; it does not expose a private contact link."
+    },
+    {
+      "check": "Both board faces and outline",
+      "result": "PASS",
+      "finding": "Both copper/silk faces rendered from their corresponding actual layers; 85.60 by 54.00 mm design envelope with four R2 corners. GM has eight nonzero segments, four valid arcs, closed degree-two topology and zero invalid arcs."
+    },
+    {
+      "check": "Fabrication reference inspected",
+      "result": "PASS",
+      "finding": "Dimensions, corner callout, 191 round holes and four horizontal USB shell plated slots agree with the independent CAM/native audit. No outlying holes or duplicated profile visible."
+    },
+    {
+      "check": "Export generation consistency",
+      "result": "PASS",
+      "finding": "All nine Gerbers report 2026-10-28T11:12:59 local modification time and show corrected Rev C/SWD silk. Both NC files were natively re-exported at 2026-10-28T11:14:50 local. Their hashes are identical to the previously reviewed files, and all 195 geometries match the same final saved PCB. Final native export record, ERC and package manifest are separate parent-task evidence."
+    }
+  ],
+  "silk_metadata": [
+    {
+      "text": "REV C / AX-01",
+      "layer": 34,
+      "native_xy_mm": [
+        129.45000272,
+        2.61839456
+      ]
+    },
+    {
+      "text": "CLK",
+      "layer": 33,
+      "native_xy_mm": [
+        139.7999998,
+        9.19999938
+      ]
+    },
+    {
+      "text": "DIO",
+      "layer": 34,
+      "native_xy_mm": [
+        137.00000032,
+        11.99999886
+      ]
+    }
+  ],
+  "minimum_copper_edge_mm": {
+    "top": 0.3822,
+    "bottom": 0.3330495609286923
+  },
+  "outside_board_copper_area_mm2": {
+    "top": 0.0,
+    "bottom": 0.0
+  },
+  "paste": {
+    "top_min_area_ratio": 0.7641867420751424,
+    "top_min_web_mm": 0.14997806436089997,
+    "bottom_min_area_ratio": 1.9458499460127263,
+    "bottom_min_web_mm": 0.29999999999998295
+  },
+  "drills": {
+    "round_holes": 191,
+    "plated_slots": 4,
+    "NPTH": 0,
+    "max_center_error_mm": 2.5688908180867286e-06
+  },
+  "limits": [
+    "This review inspects actual exported geometry and derived engineering previews, not a photographed PCB.",
+    "No new native DRC or NC export was invoked by this review.",
+    "No physical assembly, material thickness, QR print/read tolerance, NFC, thermal or ESD qualification is asserted.",
+    "Parser format warnings are retained in corrected_release_audit.json and native_drill_audit.json; geometric matches were independently checked.",
+    "The final native export/validation record and release manifest remain separate evidence maintained by the parent task."
+  ],
+  "native_nc_export_freshness": "Two NC files re-exported natively 2026-10-28 11:14:50 local; content hashes identical to the reviewed geometrically matching files."
+}

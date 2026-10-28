@@ -1,5 +1,7 @@
 # Make your own card
 
+> **Historical KiCad editing workflow.** These scripts modify the root KiCad design and its contact assets; they do not modify Altium Rev C. For Rev C, edit the [native Altium project](ALTIUM.md), deliberately update both the placed QR artwork and its library model, regenerate matching outputs and repeat source/CAM/contact checks. Current public Rev C remains ALEX XU / example.com.
+
 The public example uses **ALEX XU / Electrical Engineer**, startup initials **AX**, and **https://example.com/**. Keep identity artwork, QR content and NFC content synchronized when adapting it.
 
 This workflow edits the KiCad project. The contact scripts use `pcbnew` and do not update the [Altium project](ALTIUM.md).

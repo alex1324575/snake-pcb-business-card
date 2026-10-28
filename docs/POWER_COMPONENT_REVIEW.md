@@ -1,5 +1,7 @@
 # Power, connector, protection, and switch review
 
+> **Historical KiCad review.** The U3/U5/D91 selections, layout and process findings below describe the recorded September baseline. Rev C selects TPS7A2433DBVR, TPD2E2U06QDCKRQ1 and polarized PESD5Z6.0,115; D91 K1 is VBUS_5V and A2 is GND. Use the [current BOM](revc/assembly/BOM.md), [power ECO](revc/electrical/POWER_ECO_RECOMMENDATION.md) and [assembly manual](revc/assembly/ASSEMBLY_MANUAL.md).
+
 Completed **2026-09-27**, using manufacturer sources checked on 2026-09-26 and comparisons with the exported netlist, native PCB, and firmware. This is a component suitability review for a prototype, not a record of measurements on an assembled board. Procurement quantities and the complete passive-component selections are maintained in the project BOM.
 
 ## Disposition by component
@@ -31,7 +33,7 @@ Native schematic and PCB agree: **1=VBUS_5V, 2=GND, 3=VBUS_5V (EN), 4=NC, 5=+3V3
 
 **Design assessment.** Nominal 5 V has 0.5 V headroom to the recommended input maximum and 1 V to the absolute maximum. Those are static margins, not a transient protection allowance. The procurement selection for C1/C2 is **TDK C1608X7R1V105K080AC, 1 uF, 35 V, X7R, 0603**. The passive review must close the actual DC-bias, tolerance, and temperature derating calculation; the 35 V rating alone is not that evidence.
 
-A screening calculation at **5.25 V input and 100 mA output**, chosen as a test case rather than a measured board load, gives `(5.25 - 3.3) * 0.1 = 0.195 W`. Applying the JEDEC thermal figure gives a 45 C rise; a 25 C ambient would give approximately 70 C junction temperature. The card's two-layer copper geometry can change that result. The LED current estimate in [Hardware](HARDWARE.md#led-mapping-and-current) excludes MCU/driver overhead and tolerances, so it cannot establish a measured worst-case total current.
+A screening calculation at **5.25 V input and 100 mA output**, chosen as a test case rather than a measured board load, gives `(5.25 - 3.3) * 0.1 = 0.195 W`. Applying the JEDEC thermal figure gives a 45 C rise; a 25 C ambient would give approximately 70 C junction temperature. The card's two-layer copper geometry can change that result. The LED current estimate in [Hardware](HARDWARE.md#display-mapping-and-current-limit) excludes MCU/driver overhead and tolerances, so it cannot establish a measured worst-case total current.
 
 **Open checks:** measure input/output overshoot and undershoot, inrush, worst display-pattern current, and regulator temperature. Keep the SWD 3.3 V contact as voltage reference; externally driving +3V3 with USB absent can backfeed the regulator. Capture power-off behavior as well as startup.
 

@@ -1,8 +1,16 @@
 # Preserve exact bytes across Windows/Linux checkouts. Verification manifests
 # hash native KiCad sources, generated exports, and firmware artifacts.
-* -text
+* -text whitespace=cr-at-eol
 *.png binary
 *.pdf binary
 *.bin binary
 *.elf binary
 *.ndef binary
+
+# Native exports and generated vector paths retain their original spacing.
+altium/*.PrjPcb -whitespace
+fabrication/revc/* -whitespace
+fabrication/revc/README.md whitespace=cr-at-eol
+docs/revc/assembly/*.svg -whitespace
+verification/revc/*.html -whitespace
+verification/revc/*.drc -whitespace

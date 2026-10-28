@@ -1,0 +1,239 @@
+{
+  "pcb_sha256": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+  "native_outline_errors": [],
+  "serialized_outline_vertex_count": 9,
+  "functional_outline_segment_count": 8,
+  "rules_sha256": "f20b6580b3fa99a5bef3a966ef0c7feff56aca0469f0c2336a1bcbbb12bf7ed7",
+  "unchanged_source_streams": {
+    "/Pads6/Data": false,
+    "/Vias6/Data": true,
+    "/Components6/Data": false,
+    "/Nets6/Data": true
+  },
+  "source_geometry_equivalence": {
+    "pad_geometry_all_bytes_equivalent": true,
+    "via_stream_byte_identical": true,
+    "component_geometry_and_uid_equivalent": true,
+    "net_identity_and_order_equivalent": true,
+    "rule_stream_byte_identical": true,
+    "normalization": "Only primitive row order and component-owner index rebinding; no pad field or flag exception"
+  },
+  "net_identity_fields_unchanged": true,
+  "net_cache_exceptions": [
+    "DELAYTOTAL",
+    "MANHATTANLENGTH",
+    "ROUTEDLENGTH"
+  ],
+  "stack": {
+    "core_mm": 0.72888094,
+    "copper_mm": 0.07111999999999999,
+    "mask_mm": 0.02032,
+    "core_plus_copper_mm": 0.80000094,
+    "modeled_with_mask_mm": 0.82032094,
+    "matches_nominal_0p8_excluding_mask": true
+  },
+  "cam": {
+    "GTL": {
+      "sha256": "99bab68c3db53dbee4c9dbfaae77ca790551c5eb5f691f6d2e5617d9dca3befc",
+      "parser_warnings": [
+        "fabrication/revc\\SnakeCard_Native.GTL:9 \"G71\": Deprecated G71 unit mode statement found. This deprecated since 2012."
+      ],
+      "object_count": 1838,
+      "minimum_copper_to_design_edge_mm": 0.3822,
+      "outside_design_board_area_mm2": 0.0,
+      "nearest_copper_xy": [
+        143.256,
+        0.3822
+      ],
+      "nearest_edge_xy": [
+        143.256,
+        0.0
+      ],
+      "copper_in_0p2mm_edge_band_mm2": 0.0,
+      "envelope_note": "R2 design-intent sampling error <0.00004 mm; CAM feature chord error 0.0002 mm. Native profile checked separately."
+    },
+    "GBL": {
+      "sha256": "231b500574d8dd0ce57a9497f7aa747fe8a097e7932bdd1a99ec6293a8450ca1",
+      "parser_warnings": [
+        "fabrication/revc\\SnakeCard_Native.GBL:9 \"G71\": Deprecated G71 unit mode statement found. This deprecated since 2012."
+      ],
+      "object_count": 710,
+      "minimum_copper_to_design_edge_mm": 0.3330495609286923,
+      "outside_design_board_area_mm2": 0.0,
+      "nearest_copper_xy": [
+        165.68836459707057,
+        0.3330495609286923
+      ],
+      "nearest_edge_xy": [
+        165.68836459707057,
+        0.0
+      ],
+      "copper_in_0p2mm_edge_band_mm2": 0.0,
+      "envelope_note": "R2 design-intent sampling error <0.00004 mm; CAM feature chord error 0.0002 mm. Native profile checked separately."
+    },
+    "GTP": {
+      "sha256": "9e2e07259b7e2d70f6c36f3df4fa4e0bfc3af868a6e8b9b55805488d74471e9a",
+      "parser_warnings": [
+        "fabrication/revc\\SnakeCard_Native.GTP:8 \"G71\": Deprecated G71 unit mode statement found. This deprecated since 2012."
+      ],
+      "object_count": 294,
+      "aperture_count": 294,
+      "stencil_assumed_thickness_mm": 0.1,
+      "minimum_area_ratio": 0.7641867420751424,
+      "ratio_below_0p66_count": 0,
+      "worst_aperture_centroid": [
+        138.75,
+        37.39999999999999
+      ],
+      "minimum_aperture_web_mm": 0.14997806436089997,
+      "note": "Geometric screen only; paste alloy, stencil treatment, print process and component reflow limits require process acceptance."
+    },
+    "GBP": {
+      "sha256": "a8ba5496fd3820cd8d6f367dccefc0f99f116321d1c1d878407085f59b5f4766",
+      "parser_warnings": [
+        "fabrication/revc\\SnakeCard_Native.GBP:8 \"G71\": Deprecated G71 unit mode statement found. This deprecated since 2012."
+      ],
+      "object_count": 34,
+      "aperture_count": 34,
+      "stencil_assumed_thickness_mm": 0.1,
+      "minimum_area_ratio": 1.9458499460127263,
+      "ratio_below_0p66_count": 0,
+      "worst_aperture_centroid": [
+        140.32499999999996,
+        11.500000000000007
+      ],
+      "minimum_aperture_web_mm": 0.29999999999998295,
+      "note": "Geometric screen only; paste alloy, stencil treatment, print process and component reflow limits require process acceptance."
+    },
+    "GM": {
+      "sha256": "72b86ebfa9f4919031288c12b2549f5ffaf5922e1cb7f5eae347cc23066b7f96",
+      "parser_warnings": [
+        "fabrication/revc\\SnakeCard_Native.GM:8 \"G71\": Deprecated G71 unit mode statement found. This deprecated since 2012."
+      ],
+      "object_count": 8,
+      "segments": [
+        {
+          "kind": "Line",
+          "start": [
+            183.6,
+            0.0
+          ],
+          "end": [
+            102.0,
+            0.0
+          ]
+        },
+        {
+          "kind": "Arc",
+          "start": [
+            102.0,
+            0.0
+          ],
+          "end": [
+            100.0,
+            2.0
+          ],
+          "center": [
+            102.0,
+            2.0
+          ],
+          "radius_error_mm": 0.0
+        },
+        {
+          "kind": "Line",
+          "start": [
+            100.0,
+            2.0
+          ],
+          "end": [
+            100.0,
+            52.0
+          ]
+        },
+        {
+          "kind": "Arc",
+          "start": [
+            100.0,
+            52.0
+          ],
+          "end": [
+            102.0,
+            54.0
+          ],
+          "center": [
+            102.0,
+            52.0
+          ],
+          "radius_error_mm": 0.0
+        },
+        {
+          "kind": "Line",
+          "start": [
+            102.0,
+            54.0
+          ],
+          "end": [
+            183.6,
+            54.0
+          ]
+        },
+        {
+          "kind": "Arc",
+          "start": [
+            183.6,
+            54.0
+          ],
+          "end": [
+            185.6,
+            52.0
+          ],
+          "center": [
+            183.6,
+            52.0
+          ],
+          "radius_error_mm": 0.0
+        },
+        {
+          "kind": "Line",
+          "start": [
+            185.6,
+            52.0
+          ],
+          "end": [
+            185.6,
+            2.0
+          ]
+        },
+        {
+          "kind": "Arc",
+          "start": [
+            185.6,
+            2.0
+          ],
+          "end": [
+            183.6,
+            0.0
+          ],
+          "center": [
+            183.6,
+            2.0
+          ],
+          "radius_error_mm": 0.0
+        }
+      ],
+      "nonzero_segments": 8,
+      "closed_degree_two": true,
+      "invalid_arcs": 0
+    }
+  },
+  "drill_files_found": [
+    "SnakeCard_Native-RoundHoles-Plated.TXT",
+    "SnakeCard_Native-SlotHoles-Plated.TXT"
+  ],
+  "disposition": "HOLD production approval pending supplier acceptance and physical qualification; native/CAM completion is controlled by FINAL_NATIVE_EXPORT.json and FINAL_CHECK_STATUS.json",
+  "limits": [
+    "No DRC is executed by this script.",
+    "No actual board or physical material property is measured.",
+    "Output freshness must be bound to the final saved CAD by a native export record and release manifest."
+  ]
+}

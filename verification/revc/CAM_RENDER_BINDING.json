@@ -1,0 +1,14 @@
+{
+  "pcb_sha256": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+  "gerbers": {
+    "GTL": "99bab68c3db53dbee4c9dbfaae77ca790551c5eb5f691f6d2e5617d9dca3befc",
+    "GBL": "231b500574d8dd0ce57a9497f7aa747fe8a097e7932bdd1a99ec6293a8450ca1",
+    "GTO": "2f47dac308555a6ca23f714e1cc223d37c2ce8c343a82fac2a1fa1b2149ec380",
+    "GBO": "86615b4a81963e0fed4e8746b814913efe7807b848d72f6c4aa07815d581f9d0",
+    "GTS": "dd804775cde9148eb46d4fd5f3a310482d659cd9517b10d477933ea8aeaf0111",
+    "GBS": "8211d607649ceefe41e241b2bda92237218d4ae8c6681321f1bc93a4090a96b2",
+    "GM": "72b86ebfa9f4919031288c12b2549f5ffaf5922e1cb7f5eae347cc23066b7f96"
+  },
+  "drill_audit_pcb_sha256": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+  "note": "Vector-derived rendering; no generated or retouched board imagery."
+}

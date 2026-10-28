@@ -1,0 +1,18 @@
+References,Quantity_per_board,Manufacturer,Manufacturer_part_number,Supplier,Supplier_part_number,Description,Datasheet
+U1,1,STMicroelectronics,STM32G030K8T6,LCSC,C431631,STM32G0 MCU; LQFP-32,https://www.st.com/resource/en/datasheet/stm32g030k8.pdf
+U2,1,Lumissil / ISSI,IS31FL3737B-QFLS4-TR,LCSC,C2940515,LED matrix driver; QFN-40 with exposed GND pad,https://www.lumissil.com/assets/pdf/core/IS31FL3737B_DS.pdf
+U5,1,Texas Instruments,TPD2E2U06QDCKRQ1,LCSC,C915089,Dual CC-line ESD protection; DCK SC70-3,https://www.ti.com/lit/ds/symlink/tpd2e2u06-q1.pdf
+"D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11,D12,D13,D14,D15,D16,D17,D18,D19,D20,D21,D22,D23,D24,D25,D26,D27,D28,D29,D30,D31,D32,D33,D34,D35,D36,D37,D38,D39,D40,D41,D42,D43,D44,D45,D46,D47,D48,D49,D50,D51,D52,D53,D54,D55,D56,D57,D58,D59,D60,D61,D62,D63,D64,D65,D66,D67,D68,D69,D70,D71,D72,D73,D74,D75,D76,D77,D78,D79,D80,D81,D82,D83,D84,D85,D86,D87,D88,D89,D90",90,Hubei KENTO,KT-0603R,LCSC,C2286,Red 1608 LED,https://datasheet.lcsc.com/datasheet/pdf/011ec3e8cb1e825f6961d29bc4db4c7a.pdf
+J1,1,Same Sky,UJC-HP-3-SMT-TR,LCSC,C3198015,USB-C power-only receptacle; 0.8 mm PCB,https://www.sameskydevices.com/product/resource/ujc-hp-3-smt-tr.pdf
+"SW1,SW2,SW3,SW4,SW5",5,Alps Alpine,SKQGABE010,LCSC,C115351,Tactile switch; manual solder after reflow,https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf
+D91,1,Nexperia,"PESD5Z6.0,115",LCSC,C461166,6 V unidirectional TVS; SOD523,https://assets.nexperia.com/documents/data-sheet/PESD5Z6_0.pdf
+"R10,R11,R12,R13,R14,R15,R23",7,Panasonic,ERJ3EKF1002V,LCSC,C191124,10 kohm; 1%; 0603,https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf
+"R1,R2",2,Panasonic,ERJ3EKF5101V,LCSC,C123727,5.1 kohm; 1%; 0603,https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf
+"R20,R21",2,Panasonic,ERJ3EKF2201V,LCSC,C116387,2.2 kohm; 1%; 0603,https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf
+R24,1,Panasonic,ERJ3EKF2002V,LCSC,C403057,20 kohm; 1%; 0603; driver REXT,https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf
+U3,1,Texas Instruments,TPS7A2433DBVR,LCSC,C2866134,3.3 V LDO; DBV SOT-23-5; 18 V operating input,https://www.ti.com/lit/ds/symlink/tps7a24.pdf
+U4,1,STMicroelectronics,ST25TN01K-AFH5,LCSC,C3303589,Passive NFC tag; UFDFPN5,https://www.st.com/resource/en/datasheet/st25tn01k.pdf
+C11,1,Murata,GRM188Z71C475KE21D,LCSC,C389010,4.7 uF; 16 V; 0603; ceramic,https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf
+"C1,C2,C23,C24",4,Samsung Electro-Mechanics,CL10B105KA8NNNC,LCSC,C29936,1 uF; 25 V; X7R; 0603,https://product.samsungsem.com/mlcc/CL10B105KA8NNN.do
+"C10,C12,C20,C21,C22",5,Yageo,CC0603KRX7R9BB104,LCSC,C14663,100 nF; 50 V; X7R; 0603,https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104
+R22,1,UNI-ROYAL,0603WAF1003T5E,LCSC,C25803,100 kohm; 1%; 0603,https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf

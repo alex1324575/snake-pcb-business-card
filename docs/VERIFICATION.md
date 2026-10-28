@@ -1,35 +1,45 @@
 # Verification
 
-Updated 2026-10-12.
+Updated 28 October 2026. This page summarizes the current **Altium Rev C** evidence. CAD and document review is complete; supplier process acceptance is pending and **P01–P14 are all NOT TESTED**. No assembled-board power-up, environmental result or production qualification is recorded.
 
-Recorded checks cover the KiCad baseline and the separate [Altium laboratory variant](ALTIUM.md). No assembled-board power-up or measured hardware result is recorded. The two variants have separate source files and reports; the KiCad fabrication exports retain their existing revision.
+## Current Rev C results
 
-## Results and evidence
-
-| Check | Evidence | Scope |
+| Check | Result | Evidence |
 |---|---|---|
-| KiCad schematic ERC | [Verification reports](../verification/) | Electrical rule consistency |
-| KiCad PCB DRC and parity | [Verification reports](../verification/) | Design rules, unrouted connections and schematic/PCB correspondence |
-| Firmware board contract | [Board contract report](../firmware/references/BOARD_CONTRACT_REPORT.md) | XML and PCB pad nets, all 90 LED positions, display dimensions and selected GPIO assignments |
-| Firmware host tests | [Firmware verification](../firmware/verification/) | Game logic, UI/debounce and mocked driver transactions and failure handling |
-| Cortex-M0+ build | [Release outputs](../firmware/release/) | Target compilation, link layout, image metadata and hashes |
-| QR and NDEF | [Contact validation](../contact/contact_validation.json) and [native contact audit](../verification/) | Decoded URI, rear artwork orientation and NDEF content |
-| Procurement | [Component review](COMPONENT_REVIEW.md) and [per-reference table](../verification/hardware/component_review.csv) | MPN coverage and native/export consistency |
-| Altium project Validate | [Native validation record](../verification/altium/native_validation.json) | 2026-10-12: 0 errors; 2 reviewed reset warnings |
-| Altium PCB DRC | [Native DRC report](../verification/altium/PCB_DRC.txt) | 2026-10-12: 0 violations, 0 warnings, 0 waivers; 22 rules processed |
-| Altium saved-file comparison and contact check | [Audit](../verification/altium/public_native_audit.json), [file hashes](../verification/altium/file_hashes.json) | 2026-10-12: preservation checks passed; both saved QR objects decode to `https://example.com/` |
+| Native PCB DRC | 0 violations, 0 warnings, 0 waivers; saved, closed and reopened before the run | [Native report](../verification/revc/Final_Reopened_DRC.html) |
+| Rule preservation | All 43 stored native rule records unchanged; 31 sections processed in the final DRC report | [Final status](../verification/revc/FINAL_CHECK_STATUS.json) |
+| Native schematic validation | Compile successful, 0 errors and 2 reviewed warnings | [Native report](../verification/revc/Final_Native_ERC.html), [warning review](../verification/revc/NATIVE_VALIDATION_REVIEW.md) |
+| Saved schematic/library/PCB audit | 135 schematic instances, 29 symbols, 15 footprints, 346 pins, 39 named nets, 30 isolated NC pins; 217 firmware contract checks passed | [Source audit](../verification/revc/FINAL_SOURCE_AUDIT.md) |
+| PCB metadata and geometry | Controlled MPNs/comments applied; physical placement, pad/via data, nets and rules preserved under the documented comparison method | [PCB audit](../verification/revc/PCB_METADATA_AUDIT.json) |
+| Final CAM | Nine native Gerbers checked for profile, copper edge, mask, paste, artwork and revision | [Actual CAM review](../verification/revc/CAM_VISUAL_REVIEW.md) |
+| Native NC geometry | 191 plated round holes and four 1.2 × 0.5 mm plated slots match the saved PCB; no NPTH | [Drill audit](../verification/revc/native_drill_audit.json) |
+| Native schematic PDF | Single-sheet export and rendered page/detail visually reviewed | [PDF](../exports/SnakeCard_RevC_Schematic.pdf), [review](../verification/revc/SCHEMATIC_PDF_REVIEW.json) |
+| Controlled assembly package | 125 fitted parts: 123 Top, 2 Bottom; 17 purchasing groups; four drawings reviewed | [Assembly validation](revc/assembly/assembly_validation.json) |
 
-## Revision and comparison scope
+The [final status](../verification/revc/FINAL_CHECK_STATUS.json) and [native export record](../verification/revc/FINAL_NATIVE_EXPORT.json) retain the engineering source/output binding. The PCB DRC ran on 28 October 2026 at 01:15:55 local time. Gerbers were exported at 11:12:59, NC files at 11:14:50, schematic validation ran at 11:16:49 and the schematic PDF was exported at 11:24:51.
 
-The KiCad ERC/DRC, contact, rendering and board-contract reports were regenerated on October 12 for the Alex Xu example. The nameplate comparison confirms that only identity text and AUTHOR metadata changed; see the [identity update record](../verification/hardware/example_identity_update.json). The procurement metadata audit confirms that the update preserved electrical connections and PCB geometry. The schematic annotation audit records two corrected notes so the documented LED current matches the firmware's GCC limit of 32. The earlier public-identity equivalence report applies to its recorded board hash; the procurement metadata audit links it to the pre-rename baseline, and the identity update record links that revision to the current board.
+## Public copies and recorded hashes
 
-The Altium checks ran on saved and reopened public files in **Altium Designer Professional 26.9.1**. The two project warnings are "no driving source" on `LED_IICRST` and `NRST`; their disposition is in [Altium](ALTIUM.md). The PCB hash in the validation record identifies the board used for DRC. Earlier October 3/5 development checks apply to their own source revision. The symbol-library check retains **11 naming/sequence findings**.
+The reports describe the original verified engineering files. Public CAD copies have local metadata/path cleanup and container repacking; publication also removes PDF author metadata and workstation paths from report copies. The [publication manifest](../verification/revc/PUBLICATION_MANIFEST.json) records both original and published hashes, transformations and preservation checks. Electrical data and the frozen 43-rule stream remain unchanged. A fresh native DRC/ERC run on the repacked public copies is not claimed.
 
-The October 12 audit checks saved native data, including pins, nets, placement, geometry, parameters and footprint bindings. Both QR objects contain **195 fills** with matching primitive-count headers and a **21 mm** extent. The October 11 read-only Altium reopen confirmed the unchanged library's 195 fills in both the component group and active workboard, **571 protected records unchanged**, and **0 errors**. See the [audit method](../verification/altium/README.md) for the exact comparison scope and allowed native encoding changes.
+## Retained schematic warnings
 
-These checks cover their recorded inputs and configured rules. Host tests do not run MCU peripherals; DRC does not qualify solder joints, connector fit, transients or NFC performance. Raster QR decoding also requires confirmation on the fabricated silkscreen.
+Both warnings concern intentional reset-bias networks and remain visible in the native report:
 
-## Reproduce firmware and mapping checks
+- **LED_IICRST:** no driving source on R23-1 / U2-39. R23 is a 10 kΩ pull-down to GND; the driver requires this active-high reset input low during normal operation.
+- **NRST:** no driving source on C12-1 / R10-2 / TP8-1 / U1-6. R10 is a 10 kΩ pull-up to +3V3, with C12 filtering the MCU reset input.
+
+No No-ERC suppression, pin-type alteration or rule relaxation was used to claim zero warnings. Startup and programming recovery still require bench tests.
+
+## Evidence boundaries
+
+Native DRC checks configured constraints. Independent final-CAM review supplements gaps in the frozen rules, which include zero global board-edge and silk-to-silk clearances. The measured minimum copper-to-edge distances are **0.3822 mm Top / 0.33305 mm Bottom**. Paste aperture calculations and drill/source comparisons are geometric screens; they do not qualify a supplier's process.
+
+The saved-source audit compares native circuit semantics, footprint bindings and documented geometry invariants. Native serialization order and component-owner indexes are handled explicitly. It does not claim byte identity of files saved by Altium, nor replace native ERC/DRC.
+
+Firmware host tests cover game logic, application behavior and mocked display transactions/failure handling. The retained target build checks compilation and linking. The 217 native Rev C contract checks establish selected connection/mapping agreement; they do not execute MCU peripherals or prove hardware timing. Original `RevB` image names remain because the tested firmware source was not changed for this CAD revision.
+
+## Reproduce software checks
 
 From the repository root:
 
@@ -37,17 +47,16 @@ From the repository root:
 python -m unittest discover -s firmware/tests -p "test_build*.py"
 python firmware/tools/build.py --build
 python firmware/tools/build.py --test-host --sanitize
-python firmware/tools/check_board_contract.py
 ```
 
-The build requires an Arm GNU toolchain; host tests require a supported native compiler. [Firmware setup](../firmware/README.md) covers tool selection and sanitizer support. The board-contract checker uses Python's standard library, reads the root PCB and exported XML, and records input hashes and negative controls.
+See [firmware setup](../firmware/README.md) for toolchains and sanitizer support. The existing `firmware/tools/check_board_contract.py`, procurement/export tools and root KiCad reports target the historical KiCad inputs. Running them does not regenerate the native Rev C audit.
 
-Artifact checks reject checkout, user-home and private toolchain paths. Paths from precompiled system libraries, such as `/usr` on Linux, are allowed because compiler prefix maps cannot rewrite their existing debug records.
+For native CAD changes, follow [Altium](ALTIUM.md), regenerate affected outputs from the same saved revision and record new hashes. Keep BOM, placement, stencil, manufacturing layers, firmware identity and reports together. A filename alone does not identify a checked revision.
 
-After KiCad hardware edits, refill zones, save the board, regenerate the XML netlist and rerun ERC/DRC and the board-contract check before exporting fabrication files. For Altium edits, run project Validate and PCB DRC and regenerate that revision's outputs; see [Altium](ALTIUM.md). After contact edits, regenerate QR/NDEF and rerun the contact audit in [Customization](CUSTOMIZATION.md). Keep reports and exports associated with the same source revision.
+## Physical qualification and acceptance
 
-## Physical validation
+The [qualification record](revc/electrical/QUALIFICATION_PLAN.md) defines P01–P14, measurements and required evidence. Every result is currently **NOT TESTED**. It includes inspection, startup/shutdown, load response, I²C timing, thermal/current testing, pixels/buttons, fault recovery, SWD repeatability, hot-plug, NFC, positive/negative transients and regulator reverse bias.
 
-Five bare laboratory boards have been ordered. Receipt, stencil/component purchases and assembly are unconfirmed. All **eight** [component-review findings](COMPONENT_REVIEW.md) remain open.
+Supplier acceptance is required for finished board thickness, USB plated-slot tolerances, stencil printing and assembly inspection. Effective capacitance at C1/C2, U2 heat flow, U3 reverse stress, system protection and NFC tuning require physical evidence. [Layout tradeoffs](revc/LAYOUT_TRADEOFFS.md) and [component review](COMPONENT_REVIEW.md) preserve these limits.
 
-Test one assembled sample for supply current, rail stability, temperature, display and button operation, I2C timing, watchdog recovery, USB fit and transients, NFC read range, and printed QR readability. Use [Bring-up](BRINGUP.md) for inspection, programming and test procedures. Record the board revision, firmware hash, instrument settings and measured results.
+Historical KiCad and earlier Altium reports remain for traceability and apply only to their recorded inputs. They do not upgrade earlier boards to Rev C or establish a physical pass.

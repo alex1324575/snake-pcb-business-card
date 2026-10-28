@@ -1,51 +1,61 @@
-# Altium project
+# Altium Rev C
 
-Open [SnakeCard_Native.PrjPcb](../altium/SnakeCard_Native.PrjPcb) in Altium Designer. It contains a single-sheet schematic, a routed PCB, and local symbol and footprint libraries.
+Updated 28 October 2026. Open [SnakeCard_RevC.PrjPcb](../altium/SnakeCard_RevC.PrjPcb) in Altium Designer. Rev C is the current prototype design; the root KiCad project is historical.
 
-## Files and libraries
+## Native files
 
 | File | Contents |
 |---|---|
-| [SnakeCard_Native.SchDoc](../altium/SnakeCard_Native.SchDoc) | Schematic organized by function on a 10 mil grid |
-| [SnakeCard_Native.PcbDoc](../altium/SnakeCard_Native.PcbDoc) | Laboratory layout revision |
-| [SnakeCardNative.SchLib](../altium/SnakeCardNative.SchLib) | 29 symbols, including value and assembly variants |
+| [SnakeCard_Native.SchDoc](../altium/SnakeCard_Native.SchDoc) | Single-sheet schematic grouped by function |
+| [SnakeCard_Native.PcbDoc](../altium/SnakeCard_Native.PcbDoc) | Routed Rev C PCB, nominal 0.8 mm stack and repaired R2 outline |
+| [SnakeCardNative.SchLib](../altium/SnakeCardNative.SchLib) | 29 local schematic symbols and selected procurement fields |
 | [SnakeCardNative.PcbLib](../altium/SnakeCardNative.PcbLib) | 14 electrical footprints and one padless QR artwork model |
+| [Schematic PDF](../exports/SnakeCard_RevC_Schematic.pdf) | Native single-sheet export for circuit review |
 
-All 135 schematic components have local library and footprint associations. The schematic has 346 electrical pins; the symbol library has 136 pins across its 29 symbols. Repeated physical pads share their electrical pin numbers.
+All 135 schematic instances have local symbol and footprint associations. The source audit checks 346 electrical pins, 39 named nets and 30 isolated no-connect pins. The PCB has 136 component instances, including the board-only QR artwork. Repeated physical pads may share an electrical pin number; U2's grounded exposed pad is electrical pin 41, while its nine paste windows are aperture geometry.
 
-U2 has 41 electrical pins, including the grounded exposed pad. Its nine paste windows are aperture geometry, not additional pins. C30 is a separate unpopulated NFC tuning position. The printed antenna and QR artwork are excluded from the purchasing BOM.
+C30 is an unpopulated NFC tuning position. The printed antenna and probe features are not purchased parts. Library geometry is 2D; no complete component 3D-model set is supplied. Current Top/Bottom images are final CAM renders.
 
-The footprint library contains 2D geometry without 3D component models. The repository's board images are KiCad renders.
+## Rev C changes
 
-## Differences from the KiCad layout
+- One closed 85.6 × 54 mm profile with four R2 corners; duplicate mechanical outline removed and copper repoured.
+- Nominal stack saved as 0.72888 mm dielectric plus 0.03556 mm copper per face, excluding solder mask.
+- Layout reconstructed under the unchanged 43-rule set, including the required 1.27 mm via lands and 0.7112 mm via holes.
+- Controlled procurement variant **SC-REVC-LCSC-P1** applied to schematic, symbol library and PCB metadata.
+- U3 changed to **TPS7A2433DBVR** and D91 to polarized **Nexperia PESD5Z6.0,115**; D91 K1 connects to VBUS_5V and A2 to GND.
+- REV C / AX-01 artwork and side-correct programming labels: CLK near Top TP7 and DIO near Bottom TP6.
+- Final native Gerber, NC and schematic PDF exports reviewed against the saved source.
 
-The Altium project derives from a later laboratory revision. It includes:
+The [layout tradeoffs](revc/LAYOUT_TRADEOFFS.md) describe uneven fanouts, layer-direction exceptions, the U2 thermal path and preserved orthogonal NFC coil corners. DRC was not relaxed for appearance. The [library override policy](revc/assembly/LIBRARY_OVERRIDE_POLICY.md) controls intentional placed-instance differences; do not apply an unrestricted library update to the board.
 
-- Relocation of four button-signal vias.
-- Corrections to imported pad shapes, mask and paste geometry.
-- Filled QR artwork and restored switch keepouts.
-- Selected silkscreen clearance corrections.
-- No paste on C30 or SW1-SW5; switches are hand-soldered after reflow and cleaning.
+## Recorded validation
 
-A ground via remains near SW5. This deviation is still open under **ASM-01** in the [component review register](COMPONENT_REVIEW.md).
+Native checks used Altium Designer Professional 26.9.1 on the saved engineering source on 28 October 2026.
 
-The proposed stencil is top-only, frameless, and 0.10 mm thick. U2 retains nine exposed-pad windows. See [Assembly](ASSEMBLY.md) for aperture dimensions and the switch-last sequence; the reflow process still needs sample validation.
-
-Generate a matching BOM, placement file, drawings, Gerbers, and drills from Altium when building this revision. The existing `exports/` and `fabrication/` directories belong to the KiCad revision.
-
-## Validation
-
-| Check | Result | Date |
+| Check | Result | Evidence |
 |---|---|---|
-| Project Validate | 0 errors, 2 reviewed warnings | 2026-10-12 |
-| PCB DRC | 0 violations, 0 warnings, 0 waivers; 22 rules processed | 2026-10-12 |
-| Saved-file and contact audit | Passed; both QR objects decode to `https://example.com/` | 2026-10-12 |
-| Footprint-library reopen check | 15 models, 123 pads; 195 QR fills in both model and workboard; 0 errors | 2026-10-11 |
+| PCB DRC after save, close and reopen | 0 violations, 0 warnings, 0 waivers; 31 processed report sections, 43 stored rule records unchanged | [Native DRC](../verification/revc/Final_Reopened_DRC.html) |
+| Native schematic validation | 0 errors, 2 reviewed warnings | [Native ERC](../verification/revc/Final_Native_ERC.html) |
+| Saved source, bindings and firmware pin contract | Passed | [Source audit](../verification/revc/FINAL_SOURCE_AUDIT.md) |
+| Final manufacturing outputs | Nine Gerbers and two NC files checked against source | [CAM review](../verification/revc/CAM_VISUAL_REVIEW.md) |
 
-Native validation and the library reopen check used Altium Designer Professional 26.9.1. The [native validation record](../verification/altium/native_validation.json), [DRC report](../verification/altium/PCB_DRC.txt), and [saved-file audit](../verification/altium/public_native_audit.json) identify the checked files. Comparison methods and file hashes are in [Altium verification](../verification/altium/README.md).
+The two retained compiler warnings are "no driving source" on reset-bias networks:
 
-The schematic warnings are on `LED_IICRST` and `NRST`, both passive reset networks. `LED_IICRST` has an intentional pull-down; `NRST` has a pull-up, filter capacitor, and debugger test point.
+| Net | Circuit and disposition |
+|---|---|
+| LED_IICRST | R23 is a 10 kΩ pull-down to GND. U2 pin 39 is an active-high reset input and is held low for normal operation. |
+| NRST | R10 is a 10 kΩ pull-up to +3V3, with C12 filtering and TP8 debugger access. |
 
-The development symbol-library check retained 11 findings: ten missing pin-name fields in passive/ESD symbols and one noncontinuous pin-number sequence in the power-only USB-C symbol. Pin numbers and footprint mappings are present. This library check predates the public artwork update.
+No No-ERC suppression or pin-type change was used to hide these warnings. Physical reset behavior remains untested.
 
-Assembly, MCU execution, USB transient and thermal measurements, and NFC tuning remain pending. Use the [bring-up guide](BRINGUP.md) for the first assembled board.
+The public native files have local metadata/path cleanup and container repacking. The PDF's author metadata and reports' workstation paths were removed for publication. The [publication manifest](../verification/revc/PUBLICATION_MANIFEST.json) maps the original verified files to these public copies and records the transformation checks. Electrical content and the 43-rule stream were preserved; a new native DRC run on the repacked public files is not claimed.
+
+## Editing and exporting
+
+1. Open the Rev C project with both local libraries available. Confirm the active board and output directory before exporting on another workstation.
+2. Retain controlled MPNs and intentional instance overrides, or record an explicit ECO.
+3. After edits, validate the schematic, refill copper, save, close/reopen the PCB and run the full configured DRC.
+4. Regenerate the schematic PDF, BOM, placement, drawings, Gerbers and NC files from the same saved revision. Review actual exported geometry and bind new hashes to the checks.
+5. Repeat affected physical tests after a circuit, layout, part or firmware change.
+
+The checked Rev C manufacturing files are in [fabrication/revc](../fabrication/revc/). Earlier KiCad exports and Altium records describe their own revisions. Supplier process acceptance and P01–P14 remain open.

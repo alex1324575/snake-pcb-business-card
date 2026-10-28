@@ -1,0 +1,8 @@
+Version=RevCProcurementECO1;Mode=stage;Saved=False;NoPCBAccess=True
+PlannedComponents=164;PlannedParameters=1386
+SourceComponents=135;LibraryComponents=29;SourcePins=346;LibraryPins=136
+PreflightErrors=0
+ChangedObjects=1550;AddedParameters=1240;Mutated=1;Saved=False
+ProtectedBefore=4189;ProtectedAfter=4189
+Errors=0
+ACTION=Review schematic appearance, save both candidate documents explicitly, then independent saved-record semantic/geometry/model audit

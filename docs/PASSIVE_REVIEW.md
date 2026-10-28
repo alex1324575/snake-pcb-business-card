@@ -1,5 +1,7 @@
 # Passive component selection and review
 
+> **Historical KiCad review.** The part selections and acceptance floor below apply to the recorded September baseline. Current Rev C uses different selected capacitor/resistor families and a C1/C2 effective-capacitance floor of ≥0.50 µF. Use the [Rev C BOM](revc/assembly/BOM.md) and [qualification record](revc/electrical/QUALIFICATION_PLAN.md) for the current build.
+
 Review date: **2026-09-27**. This review freezes procurement part numbers for the 23 fitted resistors and capacitors. It is a document review, not an assembled-board qualification. C30 remains unpopulated.
 
 ## Selected parts

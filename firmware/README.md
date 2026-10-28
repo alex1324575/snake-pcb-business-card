@@ -4,6 +4,8 @@ Bare-metal C11 firmware for **Snake Business Card Rev B**, using an STM32G030K8T
 
 The firmware has passed native host tests, AddressSanitizer checks, an Arm target build, and automated checks against the published board. **It has not been flashed to or tested on an assembled board.**
 
+Rev C retains this tested source and the original `RevB` image filenames. Its native connection/mapping contract passed 217 checks; see [Rev C verification](../docs/VERIFICATION.md). This establishes the recorded pin-contract compatibility, not MCU execution. Rev C programming uses contacts on both faces, as shown below.
+
 ## Play
 
 | Input | Action |
@@ -67,7 +69,7 @@ The second command reads the native PCB and exported XML netlist in this reposit
 
 ## Program the board
 
-USB-C provides power only. Programming uses the rear SWD test points and a 3.3 V compatible ST-LINK.
+USB-C provides power only. Use a 3.3 V-compatible SWD programmer such as ST-LINK. **Rev C uses both faces: TP7/SWCLK is Top; TP4, TP5, TP6 and TP8 are Bottom.** The historical rear-row arrangement does not apply. Follow the [Rev C contact positions and drawings](../docs/BRINGUP.md#2-connect-swd-on-both-faces).
 
 | Board test point | Signal | Debug probe connection |
 |---|---|---|
@@ -77,7 +79,7 @@ USB-C provides power only. Programming uses the rear SWD test points and a 3.3 V
 | TP7 | SWCLK | SWCLK |
 | TP8 | NRST | NRST |
 
-Power the board from USB-C. TP4 is the target voltage reference; connect it to the probe's voltage-sense input. Confirm the probe's pinout before connecting a power-output pin. See the repository's [bring-up guide](../docs/BRINGUP.md) for physical connections and acceptance checks.
+Power the board from controlled USB-C input. TP4 is target-voltage sense; connect it only to the probe's documented sense input and disable programmer target-power output. Rev C's regulator does not block reverse current; do not externally energize +3V3 without VBUS. See [Bring-up](../docs/BRINGUP.md) for physical connections and acceptance checks.
 
 In [STM32CubeProgrammer](https://www.st.com/en/development-tools/stm32cubeprog.html), select ST-LINK, SWD, and Under Reset. Connect NRST, verify the target and its 64 KB Flash capacity, then download the HEX image with verification and reset. From the `firmware` directory, the corresponding command is:
 

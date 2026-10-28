@@ -1,0 +1,94 @@
+{
+  "peak_current_A": 0.00525,
+  "all90_nominal_A": 0.0369140625,
+  "conservative_nominal_without_PWM_fraction_A": 0.03705882352941177,
+  "ideal_NFC_L_H_at_50pF": 2.7551857265626438e-06,
+  "current_calculation": {
+    "r24_ohm": 20000,
+    "gcc": 32,
+    "pwm": 255,
+    "pwm_divisor": 256,
+    "scan_divisor": 12.75,
+    "led_count": 90,
+    "peak_formula": "(840 / R24_ohm) * (GCC / 256)",
+    "all90_formula": "peak_current_A * (255 / 256) / 12.75 * 90",
+    "all90_nominal_mA_rounded": 36.91,
+    "conservative_driver_nominal_led_contribution_W_at_3_3V": 0.12229411764705884,
+    "boundary": "Nominal LED contribution only; excludes tolerances, driver overhead and MCU load. Not a complete worst-case power bound."
+  },
+  "selected_power_eco": {
+    "implementation_status": "APPLIED IN SAVED NATIVE CAD AND SELECTED BOM",
+    "implementation_review_date": "2026-10-28",
+    "implementation_evidence": {
+      "record": "POWER_ECO_RECOMMENDATION.md",
+      "native_schematic_library_stage": "../native-plan/revc-procurement-stage-report.txt",
+      "native_pcb_metadata_stage": "../native-plan/revc-pcb-metadata-stage-result.tsv",
+      "saved_pcb_geometry_rule_audit": "../../../verification/revc/PCB_METADATA_AUDIT.json",
+      "selected_bom": "../assembly/BOM.md",
+      "binding_note": "Use the final release manifest for current source/output hashes; physical test records must also identify the actual installed variant."
+    },
+    "u3": {
+      "manufacturer": "Texas Instruments",
+      "mpn": "TPS7A2433DBVR",
+      "lcsc": "C2866134",
+      "datasheet_revision": "SBVS386E, September 2022",
+      "input_enable_operating_max_V": 18,
+      "input_enable_absolute_min_V": -0.3,
+      "input_enable_absolute_max_V": 20,
+      "reverse_current_blocking": false
+    },
+    "d91": {
+      "manufacturer": "Nexperia",
+      "mpn": "PESD5Z6.0,115",
+      "lcsc": "C461166",
+      "datasheet_revision": "16 September 2026",
+      "polarity": "unidirectional",
+      "pin1": "K / VBUS_5V",
+      "pin2": "A / GND",
+      "maximum_clamp_V_at_5A_8_20us_25C": 13,
+      "maximum_clamp_V_at_10A_8_20us_25C": 18
+    },
+    "static_positive_rating_headroom_V_at_5A": 7,
+    "static_positive_rating_headroom_V_at_10A": 2,
+    "positive_mismatch_disposition": "CORRECTED IN SAVED CAD AND SELECTED BOM. Native implementation and exact replacement readback are verified; this closes only the original component-rating mismatch, not system protection or physical design qualification.",
+    "system_transient_qualification": "NOT TESTED",
+    "negative_stress_qualification": "NOT TESTED",
+    "reverse_current_qualification": "NOT TESTED"
+  },
+  "effective_capacitance": {
+    "references": [
+      "C1",
+      "C2"
+    ],
+    "mpn": "CL10B105KA8NNNC",
+    "minimum_after_uncertainty_and_aging_uF": 0.5,
+    "criterion_basis": "TPS7A24 nominal 1 uF minimum capacitor recommendation explicitly assumes 50 percent derating; project applies >=0.50 uF effective acceptance at both C1 and C2.",
+    "retained_typical_input_screen_uF_at_5_5V": 0.61,
+    "retained_typical_output_screen_uF_at_3_3V": 0.6993,
+    "input_typical_screen_headroom_percent": 22,
+    "output_typical_screen_headroom_percent": 39.86,
+    "combined_corner_guarantee": false,
+    "qualification": "NOT TESTED"
+  },
+  "prototype_envelope": {
+    "connector_input_min_V": 4.75,
+    "connector_input_max_V": 5.25,
+    "nominal_output_V": 3.3,
+    "load_ceiling_A": 0.1,
+    "ambient_min_C": 10,
+    "ambient_max_C": 40,
+    "ldo_pass_element_dissipation_W_at_5_25V_100mA": 0.195,
+    "ldo_formula": "(5.25 - 3.3) * 0.1; excludes ground-current loss",
+    "thermal_qualification": "NOT TESTED",
+    "nfc_qualification": "NOT TESTED"
+  },
+  "sources": {
+    "power_eco_review": "POWER_ECO_RECOMMENDATION.md",
+    "power_eco_source_record": "POWER_ECO_SOURCES.json",
+    "regulator": "https://www.ti.com/lit/ds/symlink/tps7a24.pdf",
+    "tvs": "https://assets.nexperia.com/documents/data-sheet/PESD5Z6_0.pdf",
+    "driver": "https://www.lumissil.com/assets/pdf/core/IS31FL3737B_DS.pdf"
+  },
+  "hardware_results_entered": false,
+  "status": "Calculations and acceptance criteria; U3/D91 native implementation verified; no physical qualification results"
+}

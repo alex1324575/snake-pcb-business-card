@@ -1,87 +1,68 @@
-# Fabrication and assembly
+# Rev C fabrication and assembly
 
-Updated 2026-10-07.
+Updated 28 October 2026. This guide applies to **Altium Rev C / SC-REVC-LCSC-P1**. Use the current [Gerber/NC files](../fabrication/revc/), [BOM](revc/assembly/BOM.md), [placement register](revc/assembly/PLACEMENT_REGISTER.md) and [drawings](revc/assembly/ASSEMBLY_REFERENCE.html) together. Earlier KiCad BOM, stencil and debug-pad instructions describe a different revision.
 
-Choose the source variant before assembly. The root KiCad design, [BOM](../exports/SnakeBusinessCard_BOM.csv) and existing [fabrication directory](../fabrication/) form the baseline package. The separate [Altium laboratory variant](ALTIUM.md) has later layout and paste changes; regenerate manufacturing outputs from that variant when using it. Keep the board, purchasing BOM, placement drawing and stencil tied to the same revision. A passing digital check does not establish production readiness.
+Native validation and final CAM review are complete. Supplier process acceptance and every physical qualification test remain open. A zero DRC result does not approve a soldering process.
 
-## Prototype preparation status
+## Fabrication inputs
 
-| Item | Recorded status |
+The [fabrication specification](revc/FABRICATION_NOTES.md) is the detailed acceptance document.
+
+| Parameter | Rev C requirement |
 |---|---|
-| Laboratory PCB batch | Five bare boards ordered; receipt is unconfirmed |
-| Components | Sourcing reviewed; purchase and receipt are unconfirmed |
-| Stencil | Top-only 0.10 mm process specified; purchase and CAM approval are unconfirmed |
-| Assembly and bring-up | Not completed; no measured hardware results |
+| Profile | 85.6 × 54 mm, four R2 corners |
+| Material / layers | FR-4, two copper layers |
+| Nominal thickness | 0.8 mm; supplier tolerance and first-article USB fit require acceptance |
+| Copper / finish | Nominal 1 oz each face / ENIG |
+| Appearance | Black solder mask, white silkscreen, ALEX XU, REV C / AX-01 |
+| Standard vias | 189 vias: 1.27 mm land / 0.7112 mm hole, open on both faces under the preserved rules |
+| Other round holes | Two printed-coil holes, 0.3 mm diameter |
+| Plated slots | Four horizontal J1 shell slots, 1.2 × 0.5 mm overall |
+| NPTH | None |
+| Stencil process | Top only, assessed at 0.10 mm; supplier printing/process acceptance pending |
 
-The laboratory order concerns development files. The public Altium files have fresh native schematic/PCB checks recorded in [Verification](VERIFICATION.md); those checks do not approve the fabrication package or qualify the assembly process.
+Preserve the common millimeter origin and scale. Do not manually mirror Bottom manufacturing layers. Obtain supplier acceptance for finished thickness, slot plating/tolerances and stencil requirements. Confirm the public QR artwork in the actual fabrication preview.
 
-## PCB order parameters
+## Controlled assembly inputs
 
-| Parameter | Design value |
+- [BOM](revc/assembly/BOM.md): 17 purchasing groups and 125 fitted parts per board.
+- [Per-reference placement register](revc/assembly/PLACEMENT_REGISTER.md): selected MPN, side, native origin and rotation.
+- [Searchable drawings](revc/assembly/ASSEMBLY_REFERENCE.html): side-correct pad/reference views.
+- [Detailed assembly manual](revc/assembly/ASSEMBLY_MANUAL.md): orientation, tools, sequence and programming access.
+- [Library override policy](revc/assembly/LIBRARY_OVERRIDE_POLICY.md): intentional placed-instance geometry and update controls.
+
+There are **123 Top parts and two Bottom parts**. The defined prototype process reflows 118 Top parts, manually installs Bottom U1/C10, then hand-solders the five Top switches. C30 stays DNP until NFC measurements establish a value. The printed antenna, QR artwork and probe features are not purchased parts.
+
+## Orientation checks
+
+Use the actual selected manufacturer's markings and the controlled drawings. A legacy library identifier does not select a purchasing part.
+
+| Item | Rev C placement requirement |
 |---|---|
-| Finished dimensions | 85.6 × 54 mm, R2 corners |
-| Layers / thickness | 2 / 0.8 mm |
-| Copper | 35 µm, approximately 1 oz, per side |
-| Finish | ENIG |
-| Solder mask / silkscreen | Graphite black / white |
-| Minimum track / clearance | 0.15 / 0.15 mm |
-| Standard via | 0.60 mm pad / 0.30 mm drill |
-| Minimum copper-to-edge clearance | 0.30 mm; review the USB mounting region separately |
-| USB plated slots | Four 0.50 × 1.20 mm slots, 1.00 × 1.70 mm copper pads |
+| D1–D90, KENTO KT-0603R | Physical cathode faces left in Top view, toward PCB pad 1 / ROW. Supplier terminal numbering differs from the CAD numbering; test one received LED before placing the array. |
+| U1 | Bottom LQFP-32; match package pin 1 to the mirrored Bottom drawing. |
+| U2 | Top QFN-40; match pin 1; exposed pad 41 is GND. Retain nine separate paste windows. |
+| U3, TPS7A2433DBVR | IN1, GND2, EN3, NC4, OUT5; use the exact selected order code. |
+| D91, PESD5Z6.0,115 | **Polarized:** cathode K / pad 1 to VBUS_5V; anode A / pad 2 to GND. The earlier bidirectional-device instruction does not apply. |
+| U4 | Coil on pins 3/4. Pins 1/2 and center pad 5 are NC; do not ground the center pad. |
+| U5, TPD2E2U06QDCKRQ1 | Match exact DCK package and pin-1 marker. |
+| Resistors / ceramic capacitors | Not polarized; verify value and reference. |
+| SW1–SW5 / J1 | Match mechanical outline, contact lands and plated slots. |
 
-Preserve a common origin and scale for every fabrication layer. Bottom layers should remain in their exported orientation; do not manually mirror them. Confirm that the manufacturer's CAM process recognizes the plated slots and retains the QR silkscreen geometry.
+## Process controls
 
-## Procurement
+1. Assign a serial number and record PCB/firmware hashes, installed MPNs/lots, paste and stencil revision, equipment and operator.
+2. Inspect bare-board registration, shorts and connector geometry. Support the thin board flat.
+3. Print Top paste and inspect the QFN windows, fine-pitch lands and all 90 LEDs. Do not print Bottom for this process; do not paste C30 or switches.
+4. Place Top reflow parts, check polarity, then reflow using a measured profile within paste and component limits.
+5. Inspect and rework before manual assembly. U2's hidden joint requires X-ray or another qualified inspection method for product release; visible perimeter fillets do not establish exposed-pad quality.
+6. Support the populated Top while soldering Bottom U1/C10. Install switches last, after reflow/rework and compatible cleaning; prevent liquid flux/cleaner entering the mechanisms.
+7. Inspect every MCU lead and the USB joints, then follow [Bring-up](BRINGUP.md). Accept one controlled first article before repeating the build.
 
-All 125 fitted parts now have exact manufacturer part numbers in the [procurement BOM](../exports/Procurement_BOM.csv). The [component review register](COMPONENT_REVIEW.md) covers every reference and identifies conditional selections. C1/C2 effective capacitance, switch-area vias and assembly-process decisions remain open; a complete purchasing identity is not assembly approval. Confirm supplier availability and review substitutions against the exact source documents.
+The selected LED land pattern and U3 lands are reviewed prototype deviations, not exact copies of every manufacturer's example. U2 has no via drill within its exposed pad under the frozen large-via rules. Printing yield, hidden-joint quality, heat flow and mechanical fit require first-article evidence.
 
-Test points, the printed antenna and the QR artwork are PCB features. They are not purchased components. C30 is **do not populate** until NFC measurements establish a tuning value.
+## Programming access
 
-## Assembly details requiring attention
+Rev C does **not** have the earlier single rear five-pad row. TP7/SWCLK is **Top**; TP6/SWDIO, TP8/NRST, TP4/+3V3 sense and TP5/GND are Bottom. Use the [side-correct table](BRINGUP.md#2-connect-swd-on-both-faces) and drawings; a fixture must access both faces.
 
-- **LED polarity:** D1–D90 use APT1608SURCK. Pad 1 is cathode; pad 2 is anode. Check the actual reel orientation against the footprint before assembly.
-- **QFN exposed pad:** U2 has 0.4 mm lead pitch and a 3.4 × 3.4 mm exposed pad. The footprint uses nine paste windows and 16 ground vias below the exposed pad. Agree on stencil thickness, paste coverage and via treatment with the assembler to control solder loss into the vias. Filling/capping requirements can affect cost.
-- **USB mechanics:** confirm the connector's seating, shell tabs, plated slots and plug clearance on the 0.8 mm board. The simplified render is insufficient for this check.
-- **NFC area:** keep ground pours, panel copper, metallic artwork and labels out of the antenna/feed keepout. Changes here require another antenna review.
-- **QR:** retain the full 21 mm square and its four-module quiet zone. Sample black-mask reflectivity, white-ink registration and phone readability before quantity production.
-- **Thin-board handling:** use appropriate assembly support and handling fixtures around the connector and fine-pitch parts.
-- **Switch flux ingress:** the KiCad baseline has an under-body SW2 via and a nearby SW5 via. The later laboratory layout moves four button-signal vias but retains a ground via near SW5. ASM-01 remains open for both scopes; no manufacturer approval of that retained deviation is recorded. Ordinary tenting does not establish compliance. Follow [the switch review](POWER_COMPONENT_REVIEW.md#sw1-sw5-tactile-switches).
-
-## Polarity and orientation
-
-Use the front/component-side view with the name upright and USB-C opening on the right. Check the actual delivered markings under magnification before reflow.
-
-| References | Placement rule |
-|---|---|
-| D1-D90 | Board pad 1 is cathode / LED_ROW on the left; pad 2 is anode / LED_COL on the right. Check the selected LED's own polarity marks. Manufacturer pin numbers can differ from the CAD numbers. |
-| U1, U2 | Pin-1 identifier at upper-left. U2's exposed pad is GND. |
-| U3 | Three-lead side down, two-lead side up; pin 1 bottom-left. |
-| U4 | Pin 1 upper-left; center pad 5 is NC. Its package connection drawing is a bottom view. |
-| U5 | Single GND lead left, two IO leads right; pin 1 bottom-right for the reviewed DCK package. |
-| J1 | Socket opening faces outward to the right; dry-fit all four shell anchors in the plated slots. |
-| SW1-SW5 | Leads extend left/right. A 180-degree rotation preserves the circuit; a 90-degree rotation does not match the land pattern. |
-| Resistors and fitted MLCCs | No electrical polarity; match value and exact BOM part. |
-| D91 | Exact TPD1E10B06DYAR is bidirectional; 180-degree reversal is electrically equivalent. Keep its terminal axis aligned with the footprint. |
-| C30 | Leave unpopulated until NFC measurements establish a value. |
-
-For a screened KENTO KT-0603R alternative, the manufacturer's pin 1 is anode and pin 2 is cathode. The board still requires cathode left. Confirm one received LED against its drawing and a diode-mode check before placing the full matrix. This alternative is not a change to the baseline purchasing BOM.
-
-## Laboratory stencil and switch sequence
-
-The laboratory process uses a proposed **top-only, frameless, 0.10 mm stainless stencil**, with apertures taken 1:1 from that variant's F.Paste layer. Its reviewed development output has 328 apertures and no bottom apertures. C30 and SW1-SW5 are excluded; all 90 LEDs and all five U4 pads retain paste. U2 retains 40 perimeter apertures and nine exposed-pad windows. Review the actual supplier CAM before approving a stencil. These counts apply to the laboratory source, not automatically to the unchanged KiCad fabrication directory.
-
-The nine U2 windows are 0.9 x 0.9 mm rounded apertures on 1.1 mm centers, providing approximately 62.2% exposed-pad coverage. The 0.10 mm thickness is a calculated starting point for the fine-pitch QFN. Profile the selected paste on the actual board; package temperature limits alone do not specify an oven recipe. Sixteen open ground vias intersect the exposed-pad paste windows, so solder wicking and hidden-joint quality remain open assembly risks. Tape, tenting or extra paste does not establish joint acceptance.
-
-1. Place and reflow the components that have paste apertures. Inspect polarity, pin 1, bridges and the QFN joints; complete any necessary rework.
-2. Finish required cleaning, then dry and inspect the board before mounting switches.
-3. Hand-solder SW1-SW5 last with minimal suitable flux. The reviewed [Alps specification](https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf) limits hand soldering to 350 C, 3 seconds continuously and a 60 W maximum iron; avoid force on the terminals.
-4. Do not use water-soluble flux or wash mounted switches. Complete nearby flux-producing work before they are installed, and avoid subsequent backside wave/flow soldering.
-5. Inspect and test one card's switch feel, contact behavior and electrical operation before populating the remaining boards.
-
-This sequence addresses the documented flux-ingress mechanism. The retained nearby SW5 hole still requires a documented process decision and sample verification; the sequence is not manufacturer approval of that layout deviation.
-
-## Prototype acceptance
-
-Follow [Bring-up](BRINGUP.md) on the first assembled board. Measure supply rails, USB current, LED brightness and temperature; test buttons, firmware, power cycling and contact functions. Antenna tuning, phone read range, ESD behavior and connector durability remain physical validation tasks. Record results against the exact board revision and firmware image before increasing the build quantity.
-
-The staged [engineering plan](PROTOTYPE_PLAN.md) lists the remaining pre-assembly gates and sample-test sequence.
+Power through controlled 5 V USB. Connect +3V3 only to programmer target-voltage sense and disable programmer target-power output. U3 does not provide reverse blocking. The [qualification record](revc/electrical/QUALIFICATION_PLAN.md) defines the 14 outstanding physical tests, including reverse-bias and system-transient measurements.

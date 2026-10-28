@@ -1,0 +1,90 @@
+{
+  "status": "CAD AND DOCUMENT REVIEW COMPLETE / HOLD PRODUCTION APPROVAL",
+  "date": "2026-10-28",
+  "source_sha256": {
+    "SnakeCard_Native.PcbDoc": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+    "SnakeCard_Native.SchDoc": "e89ae0a8a44abdfa60d52b0149ef2538445f9739bfb2a0a2584648abac8499e6",
+    "SnakeCardNative.SchLib": "b38650103eb216bfb903f709078879ed2f240235a41dd01132069392601be80b",
+    "SnakeCardNative.PcbLib": "6db82a8fb481856cf4fbd6e820096e55a97f81b061d9465c8c14d90b058462a9",
+    "SnakeCard_RevC.PrjPcb": "cfea391022bcfad626b99f7bc75d0f513b53b83704d0ebe1e7ebf4bb2b269746"
+  },
+  "native_pcb_drc": {
+    "result": "PASS",
+    "generated_local": "2026-10-28 01:15:55",
+    "violations": 0,
+    "warnings": 0,
+    "waivers": 0,
+    "processed_rule_sections": 31,
+    "frozen_rule_records": 43,
+    "frozen_rules_sha256": "f20b6580b3fa99a5bef3a966ef0c7feff56aca0469f0c2336a1bcbbb12bf7ed7",
+    "saved_closed_reopened_before_run": true,
+    "reports": {
+      "Final_Reopened_DRC.html": "c77095690bb2d9bfa875d081c059de9a13c60e7bac1269c707eab76cbf02b537",
+      "Final_Reopened_DRC.drc": "ca487e3e584c4266e3d71b6e26502feed3631d701410cea144c47c880ad36d93"
+    }
+  },
+  "saved_native_source_audit": {
+    "result": "PASS",
+    "pins": 346,
+    "nets": 39,
+    "no_connects": 30,
+    "schematic_instances": 135,
+    "symbols": 29,
+    "footprints": 15,
+    "pcb_instances": 136,
+    "firmware_pin_contract_checks": 217
+  },
+  "assembly": {
+    "result": "PASS",
+    "fitted": 125,
+    "top": 123,
+    "bottom": 2,
+    "purchased_lines": 17,
+    "all_four_drawings_visually_reviewed": true
+  },
+  "native_project_erc": {
+    "result": "COMPILE SUCCESSFUL / TWO REVIEWED WARNINGS",
+    "errors": 0,
+    "warnings": 2,
+    "compiled_local": "2026-10-28 11:16:49",
+    "review": "NATIVE_VALIDATION_REVIEW.json"
+  },
+  "native_schematic_appearance": {
+    "result": "PASS",
+    "native_view_visible": true,
+    "pdf_review": "SCHEMATIC_PDF_REVIEW.json"
+  },
+  "final_cam_export": {
+    "result": "PASS",
+    "record": "FINAL_NATIVE_EXPORT.json",
+    "gerbers": 9,
+    "native_nc_files": 2
+  },
+  "drill_geometry": {
+    "result": "PASS",
+    "round": 191,
+    "plated_slots": 4,
+    "slot_length_width_mm": [
+      1.2,
+      0.5
+    ],
+    "same_session_native_export": true
+  },
+  "supplier_process_acceptance": "PENDING",
+  "physical_tests": {
+    "P01": "NOT TESTED",
+    "P02": "NOT TESTED",
+    "P03": "NOT TESTED",
+    "P04": "NOT TESTED",
+    "P05": "NOT TESTED",
+    "P06": "NOT TESTED",
+    "P07": "NOT TESTED",
+    "P08": "NOT TESTED",
+    "P09": "NOT TESTED",
+    "P10": "NOT TESTED",
+    "P11": "NOT TESTED",
+    "P12": "NOT TESTED",
+    "P13": "NOT TESTED",
+    "P14": "NOT TESTED"
+  }
+}

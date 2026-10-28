@@ -1,0 +1,41 @@
+{
+  "fitted_count": 125,
+  "unique_references": 125,
+  "top_count": 123,
+  "bottom_references": [
+    "C10",
+    "U1"
+  ],
+  "all_fitted_refs_exist_in_native": true,
+  "missing_schematic_refs": [],
+  "c30_excluded": true,
+  "source_pcb_sha256": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+  "source_schematic_sha256": "e89ae0a8a44abdfa60d52b0149ef2538445f9739bfb2a0a2584648abac8499e6",
+  "source_schlib_sha256": "b38650103eb216bfb903f709078879ed2f240235a41dd01132069392601be80b",
+  "source_binding": {
+    "mode": "Final explicit native hashes",
+    "source_hashes": {
+      "pcb": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+      "schematic": "e89ae0a8a44abdfa60d52b0149ef2538445f9739bfb2a0a2584648abac8499e6",
+      "schlib": "b38650103eb216bfb903f709078879ed2f240235a41dd01132069392601be80b"
+    },
+    "geometry_baseline_pcb_sha256": "79b43f05ff88d4faba876225f47f78b5072b034843425330ed8078656210dd0e",
+    "pad_stream_byte_identical": false,
+    "pad_geometry_equivalence": {
+      "pad_geometry_all_bytes_equivalent": true,
+      "via_stream_byte_identical": true,
+      "component_geometry_and_uid_equivalent": true,
+      "net_identity_and_order_equivalent": true,
+      "rule_stream_byte_identical": true,
+      "normalization": "Only primitive row order and component-owner index rebinding; no pad field or flag exception"
+    },
+    "via_stream_byte_identical": true,
+    "component_geometry_and_identity_exact": true,
+    "frozen_rules_unchanged": true,
+    "metadata_readback_required": true,
+    "procurement_metadata_readback_passed": true
+  },
+  "procurement_group_count": 17,
+  "placement_signature_sha256": "5bd9da2b3ceff3417794714bcc8320e1957928db397cf1cbd1544b3715577aba",
+  "status": "Final source hashes and native metadata readback passed; physical qualification not executed"
+}

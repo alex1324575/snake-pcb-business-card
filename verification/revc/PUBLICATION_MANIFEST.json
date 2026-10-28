@@ -1,0 +1,706 @@
+{
+  "schema": "revc-publication-v1",
+  "revision": "Rev C",
+  "published_date": "2026-10-28",
+  "identity": "ALEX XU",
+  "contact_url": "https://example.com/",
+  "status": "ENGINEERING PROTOTYPE; SUPPLIER ACCEPTANCE AND P01-P14 PHYSICAL TESTS PENDING",
+  "provenance": "Native validation and export records identify verified engineering originals. Publication copies normalize host paths and private metadata. This is not a new native ERC/DRC run. This manifest binds both hashes; electrical, library, routing and rule streams are preserved.",
+  "cad_equivalence": {
+    "SnakeCard_Native.SchDoc": {
+      "named_streams_preserved": 3,
+      "storages_preserved": 0,
+      "windows_structured_storage_read_pass": true,
+      "metadata_fields_normalized": [],
+      "changed_named_streams": [],
+      "all_other_named_streams_byte_identical": true
+    },
+    "SnakeCardNative.SchLib": {
+      "named_streams_preserved": 89,
+      "storages_preserved": 29,
+      "windows_structured_storage_read_pass": true,
+      "metadata_fields_normalized": [],
+      "changed_named_streams": [],
+      "all_other_named_streams_byte_identical": true
+    },
+    "SnakeCard_Native.PcbDoc": {
+      "named_streams_preserved": 106,
+      "storages_preserved": 52,
+      "windows_structured_storage_read_pass": true,
+      "metadata_fields_normalized": [
+        {
+          "stream_role": "board",
+          "field": "FILENAME"
+        },
+        {
+          "stream_role": "board",
+          "field": "REPORTFILENAME"
+        }
+      ],
+      "changed_named_streams": [
+        "/Board6/Data",
+        "/Design Rule Checker Options6/Data"
+      ],
+      "all_other_named_streams_byte_identical": true,
+      "frozen_rules_sha256": "f20b6580b3fa99a5bef3a966ef0c7feff56aca0469f0c2336a1bcbbb12bf7ed7"
+    },
+    "SnakeCardNative.PcbLib": {
+      "named_streams_preserved": 137,
+      "storages_preserved": 52,
+      "windows_structured_storage_read_pass": true,
+      "metadata_fields_normalized": [
+        {
+          "stream_role": "library",
+          "field": "FILENAME"
+        }
+      ],
+      "changed_named_streams": [
+        "/Library/Data"
+      ],
+      "all_other_named_streams_byte_identical": true
+    },
+    "SnakeCard_RevC.PrjPcb": {
+      "generated_document_entries_removed": 17,
+      "cached_paths_made_relative": 2,
+      "electrical_compiler_settings_changed": false
+    }
+  },
+  "pdf_equivalence": {
+    "page_content_stream_byte_identical": true,
+    "pages": 1,
+    "annotations": 135,
+    "private_author_removed": true,
+    "before_after_render_sha256": "39500b22e4cc3e306e0796b55c30a72be2923a2503dfe08ed23864d6b546b62c",
+    "before_after_render_byte_identical": true
+  },
+  "native_drc": {
+    "violations": 0,
+    "warnings": 0,
+    "waivers": 0,
+    "frozen_rule_records": 43
+  },
+  "native_erc": {
+    "errors": 0,
+    "reviewed_warnings": 2
+  },
+  "files": [
+    {
+      "path": ".gitattributes",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "01cd1c3ae5c47c1ecd57f83ac9fdbdec81588ab281a0b3e451186309e1e3f1cc",
+      "bytes": 538
+    },
+    {
+      "path": ".github/workflows/firmware.yml",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "f09476d17622b2153dabae48fdd539bd392c7135ca3c96285d728509f590dbf9",
+      "bytes": 1216
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "fc51822567fd1133d214e400b591287d1f82acd28dc501f7ea19a2b01864d1cc",
+      "bytes": 3275
+    },
+    {
+      "path": "README.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "f0b49ecdab3154be6471afe1f63cbb115478caeef3191027dc23e27348a4899d",
+      "bytes": 5323
+    },
+    {
+      "path": "altium/SnakeCardNative.PcbLib",
+      "verified_original_sha256": "6db82a8fb481856cf4fbd6e820096e55a97f81b061d9465c8c14d90b058462a9",
+      "transformation": "CFB allocation repack; approved host-path fields only",
+      "sha256": "d27a4a1bfd573f6b235c0514d1c84de7945e7760722b76bb0f8d0ea625504ba0",
+      "bytes": 264704
+    },
+    {
+      "path": "altium/SnakeCardNative.SchLib",
+      "verified_original_sha256": "b38650103eb216bfb903f709078879ed2f240235a41dd01132069392601be80b",
+      "transformation": "CFB allocation repack; approved host-path fields only",
+      "sha256": "f007b6a36de62c99d8de6cb45b9f6ba7ed5bc0974f46d67cf22f3501090bd439",
+      "bytes": 173056
+    },
+    {
+      "path": "altium/SnakeCard_Native.PcbDoc",
+      "verified_original_sha256": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+      "transformation": "CFB allocation repack; approved host-path fields only",
+      "sha256": "e0576f69a7d1885fe67e007584b13f9af226be99a0ac097dd3b44aec097050f9",
+      "bytes": 1701888
+    },
+    {
+      "path": "altium/SnakeCard_Native.SchDoc",
+      "verified_original_sha256": "e89ae0a8a44abdfa60d52b0149ef2538445f9739bfb2a0a2584648abac8499e6",
+      "transformation": "CFB allocation repack; approved host-path fields only",
+      "sha256": "b6e77098163cf0b81bba34dbed7e8cc6b27c9781764675fa2ede3ec8738b79ad",
+      "bytes": 1004032
+    },
+    {
+      "path": "altium/SnakeCard_RevC.PrjPcb",
+      "verified_original_sha256": "cfea391022bcfad626b99f7bc75d0f513b53b83704d0ebe1e7ebf4bb2b269746",
+      "transformation": "Relative output-document settings; omit generated-document sidebar entries",
+      "sha256": "d90f7c35574d36b42ca085a431846e0cb75ed67f6afba3bb8190720a6d6267aa",
+      "bytes": 35641
+    },
+    {
+      "path": "docs/ALTIUM.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "677a93396d7d10b5ce1c0b695c4327e9414d2502073ec3afb3235b3e40a8015a",
+      "bytes": 5192
+    },
+    {
+      "path": "docs/ASSEMBLY.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "0fba16339395b0dc18dd7231a589e53f38f1df88fdf74c2c9fb643ff7a3b553d",
+      "bytes": 5719
+    },
+    {
+      "path": "docs/BRINGUP.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "6f2ce6582281cd98ecaf8661fb2ee6eae05e39fe53a3a16be422ab2a8975f611",
+      "bytes": 5909
+    },
+    {
+      "path": "docs/COMPONENT_REVIEW.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "dd361fb750ed6adac0fe36426b124fe5d1ae33ff165aed10cf801fa278084715",
+      "bytes": 5431
+    },
+    {
+      "path": "docs/CONTACT.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "a265b071987c9a537cac246243be5622ba9bcd786f369059f84977691efe9aa3",
+      "bytes": 3851
+    },
+    {
+      "path": "docs/CUSTOMIZATION.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "bf9e2b803c2e5033f5db5937d7545992d945e59de98ed868fad408942b7dca8e",
+      "bytes": 3871
+    },
+    {
+      "path": "docs/DISPLAY_MCU_NFC_REVIEW.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "c90d4e3a48fe47297831129eb293a157354640a40dd54acc7c6a15f77f8511b1",
+      "bytes": 10035
+    },
+    {
+      "path": "docs/HARDWARE.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "351dc43dd18e245107b6964bed62199da48ae42e844a015695766cd53bcfdc33",
+      "bytes": 5584
+    },
+    {
+      "path": "docs/PASSIVE_REVIEW.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "4f5850322d5ce6afe7d32f2801b16b1513dc71e209207126fd23def804748f44",
+      "bytes": 10005
+    },
+    {
+      "path": "docs/POWER_COMPONENT_REVIEW.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "e8e672f46864548dfb9771d231a23c9d7c59e3263a5eebb6973435b957c3daff",
+      "bytes": 12365
+    },
+    {
+      "path": "docs/PROTOTYPE_PLAN.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "8f69c045bb92112eeb97a128b7599ef73cc179a13083aeb1ffe3d4fd39d09bad",
+      "bytes": 4040
+    },
+    {
+      "path": "docs/REVISION_HISTORY.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "430df42573fc135ed3cfda4975a69aeaf372b14f1c11ef8e96c549839ebe6a5d",
+      "bytes": 1931
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "ecd4a774b2ec7ffde7f8a97ed8d7912240e8ff826a466f34beed9b5557e3873f",
+      "bytes": 6530
+    },
+    {
+      "path": "docs/images/revc-bottom.png",
+      "verified_original_sha256": "6b73e859a38406a17431efddde0a93c75da56dc838f756b00788a8aaa4e91b35",
+      "transformation": "Byte-identical reviewed CAM image",
+      "sha256": "6b73e859a38406a17431efddde0a93c75da56dc838f756b00788a8aaa4e91b35",
+      "bytes": 329361
+    },
+    {
+      "path": "docs/images/revc-fabrication.png",
+      "verified_original_sha256": "dc4c20a2926642605b1fec07f5f8e6f2fc9bc03c9201d5dadd7c6c1a665464cc",
+      "transformation": "Byte-identical reviewed CAM image",
+      "sha256": "dc4c20a2926642605b1fec07f5f8e6f2fc9bc03c9201d5dadd7c6c1a665464cc",
+      "bytes": 177040
+    },
+    {
+      "path": "docs/images/revc-top.png",
+      "verified_original_sha256": "ea1b3a22151b25fe0966c40cc9b6c278c6021afc9c28b2ac2b349de94264acbe",
+      "transformation": "Byte-identical reviewed CAM image",
+      "sha256": "ea1b3a22151b25fe0966c40cc9b6c278c6021afc9c28b2ac2b349de94264acbe",
+      "bytes": 335754
+    },
+    {
+      "path": "docs/revc/FABRICATION_NOTES.md",
+      "verified_original_sha256": "a4f31072c8dba6a271476fe241603107f104bbb9ad8af957ac5bd09e6718da9c",
+      "transformation": "Publication text/path normalization",
+      "sha256": "e7f006e2acc4260a04d3c3051ace71cff328c6fcb5de1c837656bd4a0a7690e3",
+      "bytes": 5725
+    },
+    {
+      "path": "docs/revc/LAYOUT_TRADEOFFS.md",
+      "verified_original_sha256": "21403382821715e5ef5fdb0ff274447f8a554132b6b2691f7abeab8825814c8f",
+      "transformation": "Publication text/path normalization",
+      "sha256": "21403382821715e5ef5fdb0ff274447f8a554132b6b2691f7abeab8825814c8f",
+      "bytes": 2526
+    },
+    {
+      "path": "docs/revc/README.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "33b77992b68dce612e3c3dffc9f196bcd7feeee61f0cfe2c4ce16c7699cb372a",
+      "bytes": 985
+    },
+    {
+      "path": "docs/revc/REVIEW.md",
+      "verified_original_sha256": "3f468afa6376674a8dc700024092d2145b66b0571b45abf72a22e534a736d9e5",
+      "transformation": "Publication text/path normalization and revision index",
+      "sha256": "4a51277801a0f82fd56a17b0b35fbf88fd318feaa9580fbb995fb03065d22009",
+      "bytes": 9235
+    },
+    {
+      "path": "docs/revc/assembly/ASSEMBLY_MANUAL.md",
+      "verified_original_sha256": "8b830fbd31b7c6cd9f69425e88c01532fc1c06250c4af42642ce4b558db3fdea",
+      "transformation": "Publication text/path normalization",
+      "sha256": "8b830fbd31b7c6cd9f69425e88c01532fc1c06250c4af42642ce4b558db3fdea",
+      "bytes": 7765
+    },
+    {
+      "path": "docs/revc/assembly/ASSEMBLY_REFERENCE.html",
+      "verified_original_sha256": "b5dd5b11debb9e9aae180b70242c7f5ada69ee999cb56f40b5bcb68fb79fa1f7",
+      "transformation": "Publication text/path normalization",
+      "sha256": "773eca29198439808d893ae4dd804774a4c500cc3c35ce3f822a412fa0e37803",
+      "bytes": 17069
+    },
+    {
+      "path": "docs/revc/assembly/BOM.csv",
+      "verified_original_sha256": "00fa162638b96887eaf9785c0645ad2aee131ec019b152c0984b7c1363508cd0",
+      "transformation": "Publication text/path normalization",
+      "sha256": "00fa162638b96887eaf9785c0645ad2aee131ec019b152c0984b7c1363508cd0",
+      "bytes": 2956
+    },
+    {
+      "path": "docs/revc/assembly/BOM.md",
+      "verified_original_sha256": "8c1289cccfb38305a392ee0a5a0db3649905408b3c11a82a6bc0670c27bd2e33",
+      "transformation": "Publication text/path normalization",
+      "sha256": "2f0a62e55435810a25274ea64e383c43e37ca509f514942551da553206310c93",
+      "bytes": 5867
+    },
+    {
+      "path": "docs/revc/assembly/LIBRARY_OVERRIDE_POLICY.md",
+      "verified_original_sha256": "2ccfacf112943fd69eadbdba4e08cf7d68e8af8e6675f21e8dd398b94e3edb69",
+      "transformation": "Publication text/path normalization",
+      "sha256": "2ccfacf112943fd69eadbdba4e08cf7d68e8af8e6675f21e8dd398b94e3edb69",
+      "bytes": 1618
+    },
+    {
+      "path": "docs/revc/assembly/PLACEMENT_REGISTER.md",
+      "verified_original_sha256": "105d5976a19a60c30a34efb433aa32aacf94b006230d82e4595223faa43f1703",
+      "transformation": "Publication text/path normalization",
+      "sha256": "7bf838fd5e59b55ac9c781d31e9ef96a4d14f8867fa7ca9d4b87d558268d0b80",
+      "bytes": 8550
+    },
+    {
+      "path": "docs/revc/assembly/assembly_bottom.png",
+      "verified_original_sha256": "b2b83de00e8528d2ee9761770ce9019df499cc8bf0a05cfdc07e271d4303c956",
+      "transformation": "Byte-identical reviewed image",
+      "sha256": "b2b83de00e8528d2ee9761770ce9019df499cc8bf0a05cfdc07e271d4303c956",
+      "bytes": 132234
+    },
+    {
+      "path": "docs/revc/assembly/assembly_bottom.svg",
+      "verified_original_sha256": "2f37eb9c537d2c536fa8e0a0fee2a12d7973dd49ec23838d5878a82e1f79d24c",
+      "transformation": "Publication text/path normalization",
+      "sha256": "40ec56e10f9e9ce4523b2185c30e6cb6aa143615e2bd6aaab3c41962d08e4fa0",
+      "bytes": 32001
+    },
+    {
+      "path": "docs/revc/assembly/assembly_bottom_detail.png",
+      "verified_original_sha256": "27d410e3fe0e551c0d5973a533a5f799918a91438f94a96f8762db5f993fc575",
+      "transformation": "Byte-identical reviewed image",
+      "sha256": "27d410e3fe0e551c0d5973a533a5f799918a91438f94a96f8762db5f993fc575",
+      "bytes": 115638
+    },
+    {
+      "path": "docs/revc/assembly/assembly_bottom_detail.svg",
+      "verified_original_sha256": "ba396c953fa599454765998003aa1e7c4d4cf8a820d701a91a8597cdd56bb9dd",
+      "transformation": "Publication text/path normalization",
+      "sha256": "13e68f925e83e06a92006dd7055e38c6e42e8d53eb180d41abaf3165dc1399a8",
+      "bytes": 26728
+    },
+    {
+      "path": "docs/revc/assembly/assembly_top.png",
+      "verified_original_sha256": "820fa0d4b84d44b719d9874a8c35a4e2746c02536cf018dbb04915ce8917934a",
+      "transformation": "Byte-identical reviewed image",
+      "sha256": "820fa0d4b84d44b719d9874a8c35a4e2746c02536cf018dbb04915ce8917934a",
+      "bytes": 176827
+    },
+    {
+      "path": "docs/revc/assembly/assembly_top.svg",
+      "verified_original_sha256": "06233c8d3ab7067f504f0f8c05b0cf08433d4461382735fce5e3c27271aa554c",
+      "transformation": "Publication text/path normalization",
+      "sha256": "d4cee1186da99db88e03d1288035c95c01a89a06bf575b768324dc4744c7f2c5",
+      "bytes": 146620
+    },
+    {
+      "path": "docs/revc/assembly/assembly_top_detail.png",
+      "verified_original_sha256": "92ecf266073a7db8017f48d4800d52ad38a0a6fc611224bea76ea254fc7a3ef2",
+      "transformation": "Byte-identical reviewed image",
+      "sha256": "92ecf266073a7db8017f48d4800d52ad38a0a6fc611224bea76ea254fc7a3ef2",
+      "bytes": 132332
+    },
+    {
+      "path": "docs/revc/assembly/assembly_top_detail.svg",
+      "verified_original_sha256": "66e00d48e9bb57127526bf7e81737e576ca4b74d92fee27d2042812746d48006",
+      "transformation": "Publication text/path normalization",
+      "sha256": "61586ed31e9c85401f6a12a573009042c9926dc256a2b375dfec20325067c6ca",
+      "bytes": 78959
+    },
+    {
+      "path": "docs/revc/assembly/assembly_validation.json",
+      "verified_original_sha256": "acbe77a8f6125b9db1a3aa344b0442f16d821a82342490647e79af1c66cd0702",
+      "transformation": "Publication text/path normalization",
+      "sha256": "34d64396e860db6e58397c21a7f963cc35153a48fb5089c3eb896d75b9bba2eb",
+      "bytes": 1850
+    },
+    {
+      "path": "docs/revc/assembly/assembly_variant.json",
+      "verified_original_sha256": "a63538bd49c9b900c341de3a76ce95af74b3ca81970507340c8464b6209d3ec6",
+      "transformation": "Publication text/path normalization",
+      "sha256": "01918f1675a62e4bf06dd8d6348654052dac5342c956ee777140dceaaa6aea80",
+      "bytes": 127228
+    },
+    {
+      "path": "docs/revc/electrical/POWER_ECO_RECOMMENDATION.md",
+      "verified_original_sha256": "564c2440df53dafc4c17863e73593607a1d93fdcf32cbba91bc6a0f2d353b785",
+      "transformation": "Publication text/path normalization",
+      "sha256": "6918147051236d1863991c06fbfd0cbbfbe7c196517a7a954bbaea0b2cdc1bc0",
+      "bytes": 9802
+    },
+    {
+      "path": "docs/revc/electrical/POWER_ECO_SOURCES.json",
+      "verified_original_sha256": "1e28c6b76649e7828bcb6e302bde9d1d56a3232c4a0492e2a908959fc3e3bb0c",
+      "transformation": "Publication text/path normalization",
+      "sha256": "82117046f147ca64fa44f02c8486d586247d1725593920b592432d83237648d4",
+      "bytes": 3319
+    },
+    {
+      "path": "docs/revc/electrical/QUALIFICATION_PLAN.md",
+      "verified_original_sha256": "1578b8611bab61f9f512bf42001e508e31bae29452ae6f3da01f3693901e9283",
+      "transformation": "Publication text/path normalization",
+      "sha256": "4c16fe0bb8cd5c96b624d4176ed27ad9479a6552556e700abda5028268af7a88",
+      "bytes": 14773
+    },
+    {
+      "path": "docs/revc/electrical/calculations.json",
+      "verified_original_sha256": "bbee32e3dc7a274da91721dc8a39b346d47979ad6d33799506ced489a4657946",
+      "transformation": "Publication text/path normalization",
+      "sha256": "79d2219f7c1c8154d062aeff21ca5a412aaa552fab706d97ea7c4cc9829f6ba0",
+      "bytes": 4211
+    },
+    {
+      "path": "docs/revc/native-plan/revc-pcb-metadata-stage-result.tsv",
+      "verified_original_sha256": "35efd0abf6323299e0ba128de4e52cdc2a65826347c5b8f26cb3302787c49a65",
+      "transformation": "Publication text/path normalization",
+      "sha256": "a8a44fc90e4c32acf88cd987304df5c72014c13955b59180bec22fb018e00939",
+      "bytes": 9258
+    },
+    {
+      "path": "docs/revc/native-plan/revc-procurement-stage-report.txt",
+      "verified_original_sha256": "d55515b55d3646fcfd84f1a3ddaed551c0b745a2c7b4a539fc7b4079f597731b",
+      "transformation": "Publication text/path normalization",
+      "sha256": "de1642d5f4719d602a63b5ac12c80a2eb5d1b72b437c67ac9896f8e6067de328",
+      "bytes": 455
+    },
+    {
+      "path": "docs/revc/native-plan/revc-swd-silk-stage-result.tsv",
+      "verified_original_sha256": "dcd335e41cdc12d60e9f09bbcd5bfcdc74590094f6ec3f800bbefecb1ec569de",
+      "transformation": "Publication text/path normalization",
+      "sha256": "e8dc705e3843679ac64d19dfaa3363d3ba9154d4d1638244e72491b61b809446",
+      "bytes": 126
+    },
+    {
+      "path": "exports/README.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "c6d6e230447d743f8de821eb24412d59eb8d0b08ab1459555cb16970c370ffd0",
+      "bytes": 1029
+    },
+    {
+      "path": "exports/SnakeCard_RevC_Schematic.pdf",
+      "verified_original_sha256": "ab565e6a0428c126d637a5671c2d16b9b947fae50df2bf21ddca13ec95a4557b",
+      "transformation": "Remove private PDF author metadata; preserve vector pages, annotations and navigation",
+      "sha256": "731928a6bc425dabed7b72f463ccf5f1b5c6fd890ef6a0cd792158fa6b7682aa",
+      "bytes": 731531
+    },
+    {
+      "path": "fabrication/README.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "bc0a961cb0af1d708b493cc294bc3a12870c8576dd79212478630cc1867a2a1b",
+      "bytes": 1163
+    },
+    {
+      "path": "fabrication/revc/README.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "71653771f1cdbf4f5a22a00d1b75ed3197031ed4dce6142b2c6e5328f4335264",
+      "bytes": 832
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native-RoundHoles-Plated.TXT",
+      "verified_original_sha256": "f73352eb1b081f7d5a990bc06b6b6d06e573a204e69787ff10ef37ae5d3a10be",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "f73352eb1b081f7d5a990bc06b6b6d06e573a204e69787ff10ef37ae5d3a10be",
+      "bytes": 3053
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native-SlotHoles-Plated.TXT",
+      "verified_original_sha256": "e00d4c6d0d46e3bff18c5cdff1e1cb9bd44ec5c708730db1028dc307e8c7cb53",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "e00d4c6d0d46e3bff18c5cdff1e1cb9bd44ec5c708730db1028dc307e8c7cb53",
+      "bytes": 215
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native.GBL",
+      "verified_original_sha256": "231b500574d8dd0ce57a9497f7aa747fe8a097e7932bdd1a99ec6293a8450ca1",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "231b500574d8dd0ce57a9497f7aa747fe8a097e7932bdd1a99ec6293a8450ca1",
+      "bytes": 42192
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native.GBO",
+      "verified_original_sha256": "86615b4a81963e0fed4e8746b814913efe7807b848d72f6c4aa07815d581f9d0",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "86615b4a81963e0fed4e8746b814913efe7807b848d72f6c4aa07815d581f9d0",
+      "bytes": 29182
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native.GBP",
+      "verified_original_sha256": "a8ba5496fd3820cd8d6f367dccefc0f99f116321d1c1d878407085f59b5f4766",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "a8ba5496fd3820cd8d6f367dccefc0f99f116321d1c1d878407085f59b5f4766",
+      "bytes": 2231
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native.GBS",
+      "verified_original_sha256": "8211d607649ceefe41e241b2bda92237218d4ae8c6681321f1bc93a4090a96b2",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "8211d607649ceefe41e241b2bda92237218d4ae8c6681321f1bc93a4090a96b2",
+      "bytes": 7452
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native.GM",
+      "verified_original_sha256": "72b86ebfa9f4919031288c12b2549f5ffaf5922e1cb7f5eae347cc23066b7f96",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "72b86ebfa9f4919031288c12b2549f5ffaf5922e1cb7f5eae347cc23066b7f96",
+      "bytes": 580
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native.GTL",
+      "verified_original_sha256": "99bab68c3db53dbee4c9dbfaae77ca790551c5eb5f691f6d2e5617d9dca3befc",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "99bab68c3db53dbee4c9dbfaae77ca790551c5eb5f691f6d2e5617d9dca3befc",
+      "bytes": 63771
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native.GTO",
+      "verified_original_sha256": "2f47dac308555a6ca23f714e1cc223d37c2ce8c343a82fac2a1fa1b2149ec380",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "2f47dac308555a6ca23f714e1cc223d37c2ce8c343a82fac2a1fa1b2149ec380",
+      "bytes": 18664
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native.GTP",
+      "verified_original_sha256": "9e2e07259b7e2d70f6c36f3df4fa4e0bfc3af868a6e8b9b55805488d74471e9a",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "9e2e07259b7e2d70f6c36f3df4fa4e0bfc3af868a6e8b9b55805488d74471e9a",
+      "bytes": 11046
+    },
+    {
+      "path": "fabrication/revc/SnakeCard_Native.GTS",
+      "verified_original_sha256": "dd804775cde9148eb46d4fd5f3a310482d659cd9517b10d477933ea8aeaf0111",
+      "transformation": "Byte-identical native machine output",
+      "sha256": "dd804775cde9148eb46d4fd5f3a310482d659cd9517b10d477933ea8aeaf0111",
+      "bytes": 16227
+    },
+    {
+      "path": "firmware/README.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "d3b2135fc9d946dc9eb93cc3aa73b8f803c84fb46a156f84e03de53ab08d7f57",
+      "bytes": 8817
+    },
+    {
+      "path": "procurement/README.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "e633c67e97bfa044e97107b4a26bd119ab3d1062e3d554e63f2f8cbc65dc5d01",
+      "bytes": 904
+    },
+    {
+      "path": "tools/check_revc_release.py",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "f52d8c0ec3a9a272b774c709266612e89be291265902202af1bc444df16f04f3",
+      "bytes": 3924
+    },
+    {
+      "path": "verification/altium/README.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "f6659b47e01cd509e0bc5ebc3264e5b60fa88d6b6fb001bcb16c2088c84849d3",
+      "bytes": 5073
+    },
+    {
+      "path": "verification/revc/CAM_RENDER_BINDING.json",
+      "verified_original_sha256": "27303bb19c408aba3e4ced5b99bd8b80642be155551ffbeec62e52127347ad17",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "77892426a9bfc19c01fe1676dac0e15e1ad3cfe81fc5e3faf41b0fb0afb881a2",
+      "bytes": 834
+    },
+    {
+      "path": "verification/revc/CAM_VISUAL_REVIEW.json",
+      "verified_original_sha256": "7e51a8d85a5c6413f106806978ce1e0d0f4249f0e2ec75cd01eed05f6ef9416b",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "e53a659da55c91aa5952e24950d95d66f050e4822199e1601e1bdd057bebb507",
+      "bytes": 6554
+    },
+    {
+      "path": "verification/revc/CAM_VISUAL_REVIEW.md",
+      "verified_original_sha256": "d4ddd4ea70186cb0125f1f1d542d82464e4ab31ec544b784175b3a7c32efdcfc",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "0415f5824b4821e7435ab4d620f21df55a20b89034322cb69431c96895b8858c",
+      "bytes": 2913
+    },
+    {
+      "path": "verification/revc/FINAL_CHECK_STATUS.json",
+      "verified_original_sha256": "53ca561643765c047a8b4034cb77f52723adad117f7245246739bd536257e50a",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "f38aebcbbddad701478344b4444bcf68f9295abf8f3330115f11bb9b98ca52ab",
+      "bytes": 2728
+    },
+    {
+      "path": "verification/revc/FINAL_NATIVE_EXPORT.json",
+      "verified_original_sha256": "a220b4e1e55d073ff1673c8495308b1ad50139b4c80e37b68be66b8054382148",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "5fdc7d67e1ac48cae9249103500bd89f0e3f46b1e8a0d0aba76cf965a8aa5ed0",
+      "bytes": 4101
+    },
+    {
+      "path": "verification/revc/FINAL_SOURCE_AUDIT.json",
+      "verified_original_sha256": "a03be73ea6c23b91063350fb719ba9e87bbdffb7802e5e02cef97cdf98ad8e5a",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "e4d71542d340c8abcd57e50990ee0dc60240ba3d9de96cc0d8f1cc8e5e0a6985",
+      "bytes": 200803
+    },
+    {
+      "path": "verification/revc/FINAL_SOURCE_AUDIT.md",
+      "verified_original_sha256": "dc3e1e51daaefc2c87030b513f8057ba37fdae6198bb25006c210f22735d103e",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "c2afcee0b233fb192d63e67340399943c4290353397da2e9fd8000579473c542",
+      "bytes": 2049
+    },
+    {
+      "path": "verification/revc/Final_Native_ERC.html",
+      "verified_original_sha256": "734e56e80419246e07a65c15c519ac4869d1d66292e6cbf5f74e8a03685e070a",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "98a9a89fe3614eafb7828e9e5cce5b7f39207298b482c136b5444e04177aaea5",
+      "bytes": 7331
+    },
+    {
+      "path": "verification/revc/Final_Reopened_DRC.drc",
+      "verified_original_sha256": "ca487e3e584c4266e3d71b6e26502feed3631d701410cea144c47c880ad36d93",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "76662bba2aafd77f8d23f874d68bda29c5de7e3a9fc1059cf9fc03950e04a1f0",
+      "bytes": 3620
+    },
+    {
+      "path": "verification/revc/Final_Reopened_DRC.html",
+      "verified_original_sha256": "c77095690bb2d9bfa875d081c059de9a13c60e7bac1269c707eab76cbf02b537",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "7cf0355ac6042fe1a085a76144701c169efc25c6c91fe6b12d621dd8952b730e",
+      "bytes": 15782
+    },
+    {
+      "path": "verification/revc/NATIVE_VALIDATION_REVIEW.json",
+      "verified_original_sha256": "bcb64d6a52e102d636ad44be42950b1c8ecf66d582edcc8c618d6646e1f3d839",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "b9feb02d15173f23cd54deceb2bb526d32ec8ac3c9b0d7c8d220e0c8f94d7f3e",
+      "bytes": 1445
+    },
+    {
+      "path": "verification/revc/NATIVE_VALIDATION_REVIEW.md",
+      "verified_original_sha256": "8f870f5c503d1346efc0661af1721f851a5cbb195321d4e65133dffcfcbe4f4d",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "250b3f239cb09e832ba473d1f2a30645b238e9b6d7d46463cfbe63b0e76b6463",
+      "bytes": 1195
+    },
+    {
+      "path": "verification/revc/PCB_METADATA_AUDIT.json",
+      "verified_original_sha256": "981b58cce0c6e88a3ff810b38e186e4cfd371ffd3112b19275b868b245305afd",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "bfe7964fe7a2947661846b9af4e1a7a69730566124c88e83852ab6d8e430ade2",
+      "bytes": 1358
+    },
+    {
+      "path": "verification/revc/README.md",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "3aade3ddea8407e7cfe7cba22d6e049b4a6188080251188e6bdf328fef03f250",
+      "bytes": 1989
+    },
+    {
+      "path": "verification/revc/SCHEMATIC_PDF_REVIEW.json",
+      "verified_original_sha256": "bb97b747678902ebdf8a0a326a0392f66ab2a46591ac308218418336e1b33131",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "883b5d98669a29d6269f68136dae0abff2e00049a5c0860c60b7b58ae376e203",
+      "bytes": 1603
+    },
+    {
+      "path": "verification/revc/corrected_release_audit.json",
+      "verified_original_sha256": "e88ab89e36090476b6d0803eab10185fdb0f56ff8d6de7738f044554155e5d93",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "a4f99f50e08a595cdf45452991810eb564d4d0126b82933b45461a73a3edd912",
+      "bytes": 6968
+    },
+    {
+      "path": "verification/revc/native_drill_audit.json",
+      "verified_original_sha256": "1b59eada3adba02685335d042acad9c2fd2fbf3b3781400cdddce80b3f675f49",
+      "transformation": "Publication text/path normalization; original evidence hashes retained",
+      "sha256": "7a9789519f2f42b59826b4237a91dbaae2c4588346dac2dce92fd8996bc19dac",
+      "bytes": 65031
+    }
+  ],
+  "firmware_binding": {
+    "source_files": 20,
+    "matches_retained_tested_source": true,
+    "source_sha256": {
+      "include/app.h": "4ce6605c0a3910eae9e0f2b928ae0b68ea94d45a6012c1592d048bd3993ee262",
+      "include/board.h": "7755e1a53269ab23d9f77538545fa4ac97983b9d440098ed02ccd763008d26f3",
+      "include/buttons.h": "0e182ca8eb5b3384d9a153734e24341c3997be564666b86e13d4c2b42daf46c2",
+      "include/is31fl3737.h": "e02bf3f2de072857ea072a174e0f3122fc40f9746cb02bc7aa6d30dc550e5c04",
+      "include/snake.h": "d585858d82c923e193bb6db81b9a64e234a83ffcd28d68fddceca383eb933038",
+      "include/stm32g030_min.h": "0c76ac808e46fa81c21ce64cb20360ac2de4813dc0f971b5e1da4a7029fad640",
+      "src/app.c": "4a92c3782fb524a39ac1260e8cf3e5ae0dd3bd14ec22433990e7337c11aecb10",
+      "src/board.c": "f5f0e214cf2b58bebd1f43a7f7b62b704cc9e557d101683833b25f3e63ce020d",
+      "src/buttons.c": "f8af8d14976e90a050d92bba406d1431cf743e7994cbd1bec4307d79e8317727",
+      "src/is31fl3737.c": "8f69ebde5771538b01f694b14a1cd1d28c2f5811b2e93fc5ea8c3f49f94b1fac",
+      "src/main.c": "92415764fff599b8dd8221dfca4fcb300ba4c93cddfc6723ec028a3a29572109",
+      "src/snake.c": "5980cad0675181b22fd951fa84a871f92a7bdaa59420db221ab79872fc9605e9",
+      "src/startup.S": "0e6fe2910a72eb24d6bf48833327e7687b69b51fe27421ac18720d87f9ebeb23",
+      "stm32g030k8.ld": "a89d1f52a7d76b9a75bb8d2652f529f7ad441aedca322198e94776c1c215b1c6",
+      "tests/test_app.c": "27d931da105662bb2fe306aca4dad14a94a39c45cc4a5fc2f97502b2ca41b157",
+      "tests/test_build_paths.py": "5e32c6e1b0b69c252bf8999e5c0511dc9812911bdc7011cd6b2e8cca28309a72",
+      "tests/test_is31fl3737.c": "225a077767257bf52b77ddbd3e2e0e57e0785128788588fe081b96bf76727da0",
+      "tests/test_snake.c": "4993d61030c158abdbede62ea171192d169daf5641a5e2ed0ba1eb157b084512",
+      "tools/build.py": "26ba360f9f67d65b428c99701e3f0fda6841a3a77a779ad0c96d3e86e4dd4075",
+      "tools/check_board_contract.py": "626a7a5b0a444dc8d3cb659a67a08a91df6a485c756f099d1f7ff6fa68416c00"
+    },
+    "hardware_tested": false,
+    "note": "Retained release images keep their original RevB filenames."
+  }
+}

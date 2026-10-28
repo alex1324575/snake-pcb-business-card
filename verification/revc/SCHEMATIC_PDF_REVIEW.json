@@ -1,0 +1,32 @@
+{
+  "result": "PASS",
+  "native_exported_local": "2026-10-28 11:24:51",
+  "pdf_sha256": "ab565e6a0428c126d637a5671c2d16b9b947fae50df2bf21ddca13ec95a4557b",
+  "schematic_sha256": "e89ae0a8a44abdfa60d52b0149ef2538445f9739bfb2a0a2584648abac8499e6",
+  "pages": 1,
+  "page_size_points": [
+    792,
+    612
+  ],
+  "vector_native_altium_smart_pdf": true,
+  "export_scope": "Current SnakeCard_Native.SchDoc; no BOM appended",
+  "reviewed": [
+    "Complete sheet rendered at 2800-pixel width: headings, grid, reference/value text, footer and all circuit regions visible without clipping.",
+    "Power section rendered at 600 dpi: U3 order code, C1/C2 values, D91 order code and cathode-left drawing checked.",
+    "The original native document view is visible again and was inspected at full-sheet fit."
+  ],
+  "required_text_checks": [
+    "ALEX XU",
+    "TPS7A2433DBVR",
+    "PESD5Z6.0,115",
+    "SOURCE CIRCUIT: REV C"
+  ],
+  "renderer": "Bundled Poppler pdftoppm",
+  "renderer_messages": [
+    "No display font for Symbol",
+    "No display font for ArialUnicode"
+  ],
+  "renderer_message_disposition": "Warnings retained; the complete-sheet and detailed rendered output was visually checked. No missing visible character or symbol was observed.",
+  "print_note": "Single vector sheet with Letter media; zoom electronically or enlarge for a readable workshop print. No CAD geometry or PDF content was rescaled after export.",
+  "metadata_note": "Public PDF removes the private author field; page-content stream and all 135 annotation entries are retained. Public file hash is in PUBLICATION_MANIFEST.json."
+}

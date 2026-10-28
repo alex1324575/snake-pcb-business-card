@@ -1,75 +1,67 @@
-# Component procurement and review register
+# Rev C component selection and review
 
-Updated **2026-10-07**. The baseline purchasing selections remain unchanged: **135 schematic references**, **125 fitted parts across 17 MPNs**, **C30 left unpopulated**, and **9 PCB features** (L1 and TP1-TP8). Board-only NT1 and QR1 are fabricated copper/artwork, not purchased parts. The separate [Altium laboratory variant](ALTIUM.md) retains the circuit and part-value variants while using later layout/paste treatment.
+Updated 28 October 2026. The current prototype variant is **SC-REVC-LCSC-P1**, with **125 fitted parts across 17 purchasing groups**. Exact selected procurement metadata was applied to the native schematic, SchLib and PCB and checked on saved files. Supplier availability, delivered-part identity and physical suitability remain separate acceptance steps.
 
-## Records
+## Controlled records
 
-- [Procurement BOM](../exports/Procurement_BOM.csv): one purchasing line per selected MPN, fitted quantity, manufacturer, footprint, source and open items.
-- [Per-reference review table](../verification/hardware/component_review.csv): every schematic reference, including deliberate non-purchased items.
-- [Native KiCad BOM](../exports/SnakeBusinessCard_BOM.csv): exported schematic fields, including Manufacturer, MPN and Datasheet.
-- [Selection catalog](../procurement/parts.json): machine-readable assignments synchronized into the schematic and PCB.
-- [Passive selection and calculations](PASSIVE_REVIEW.md).
-- [Power, protection, connector and switch review](POWER_COMPONENT_REVIEW.md).
-- [MCU, display and NFC review](DISPLAY_MCU_NFC_REVIEW.md).
+- [BOM](revc/assembly/BOM.md) and [CSV](revc/assembly/BOM.csv): exact manufacturer, MPN, fitted quantity and supplier reference.
+- [Placement register](revc/assembly/PLACEMENT_REGISTER.md): per-reference side, native origin, angle and selected MPN.
+- [Drawings](revc/assembly/ASSEMBLY_REFERENCE.html) and [assembly manual](revc/assembly/ASSEMBLY_MANUAL.md): side-correct orientation and process.
+- [Saved-source audit](../verification/revc/FINAL_SOURCE_AUDIT.md) and [PCB metadata audit](../verification/revc/PCB_METADATA_AUDIT.json): native binding and geometry checks.
+- [Power ECO](revc/electrical/POWER_ECO_RECOMMENDATION.md) and [qualification record](revc/electrical/QUALIFICATION_PLAN.md): electrical reasoning and unexecuted acceptance tests.
 
-**A complete MPN is an identity, not a hardware test result.** Quantities below are for one board before assembly attrition/spares. Five bare laboratory boards have been ordered; discrete-component purchase and receipt are unconfirmed. Sourcing alternatives have been screened separately, but the baseline table and machine-readable catalog are unchanged. Availability is not reserved, and no substituted part has been qualified on an assembled board.
+Root `procurement/parts.json`, earlier procurement exports and the earlier passive/power/display review documents describe the historical KiCad selection. Do not use them as the Rev C purchasing list or run a KiCad metadata sync expecting it to update the Altium project.
 
-## Procurement summary
+## Selected parts
 
-| References | Quantity fitted | Manufacturer | Exact MPN |
+Quantities are for one card before spares and assembly attrition.
+
+| References | Qty fitted | Manufacturer | Exact MPN |
 |---|---:|---|---|
 | U1 | 1 | STMicroelectronics | STM32G030K8T6 |
-| U2 | 1 | Lumissil Microsystems | IS31FL3737-QFLS4-TR |
-| U3 | 1 | Texas Instruments | TLV75533PDBVR |
+| U2 | 1 | Lumissil / ISSI | IS31FL3737B-QFLS4-TR |
+| U3 | 1 | Texas Instruments | TPS7A2433DBVR |
 | U4 | 1 | STMicroelectronics | ST25TN01K-AFH5 |
-| U5 | 1 | Texas Instruments | TPD2E2U06DCKR |
-| D91 | 1 | Texas Instruments | TPD1E10B06DYAR |
-| D1-D90 | 90 | Kingbright | APT1608SURCK |
+| U5 | 1 | Texas Instruments | TPD2E2U06QDCKRQ1 |
+| D91 | 1 | Nexperia | PESD5Z6.0,115 |
+| D1–D90 | 90 | Hubei KENTO | KT-0603R |
 | J1 | 1 | Same Sky | UJC-HP-3-SMT-TR |
-| SW1-SW5 | 5 | Alps Alpine | SKQGABE010 |
-| C1, C2, C23, C24 | 4 | TDK | C1608X7R1V105K080AC |
-| C10, C12, C20-C22 | 5 | TDK | C1608X7R1H104K080AA |
-| C11 | 1 | Murata Manufacturing | GRM188Z71C475KE21D |
-| R1, R2 | 2 | Panasonic Industry | ERJ3EKF5101V |
-| R10-R15, R23 | 7 | Panasonic Industry | ERJ3EKF1002V |
-| R20, R21 | 2 | Panasonic Industry | ERJ3EKF2201V |
-| R22 | 1 | Panasonic Industry | ERJ3EKF1003V |
-| R24 | 1 | Panasonic Industry | ERJ3EKF2002V |
-| C30 | 0 | Not selected | DNP: determine value from NFC measurements |
-| L1, TP1-TP8 | 0 purchased | PCB fabrication | No discrete part |
+| SW1–SW5 | 5 | Alps Alpine | SKQGABE010 |
+| C1, C2, C23, C24 | 4 | Samsung Electro-Mechanics | CL10B105KA8NNNC |
+| C10, C12, C20–C22 | 5 | Yageo | CC0603KRX7R9BB104 |
+| C11 | 1 | Murata | GRM188Z71C475KE21D |
+| R1, R2 | 2 | Panasonic | ERJ3EKF5101V |
+| R10–R15, R23 | 7 | Panasonic | ERJ3EKF1002V |
+| R20, R21 | 2 | Panasonic | ERJ3EKF2201V |
+| R22 | 1 | UNI-ROYAL | 0603WAF1003T5E |
+| R24 | 1 | Panasonic | ERJ3EKF2002V |
 
-The 23 fitted passives retain their nominal values and 0603 footprints. Capacitor ratings increase from 10 V to 35 V (1 uF), 50 V (100 nF) and 16 V (4.7 uF); resistors are explicitly 1%. C11's purchasing specification is **X7R(Murata)**, with the manufacturer-specific temperature test condition explained in the passive review. Its compact schematic value reads `4.7u / 16V`.
+C30 is DNP. The printed antenna, test/probe features and QR are not fitted purchasing parts. Legacy geometry identifiers such as `Kingbright_APT1608SURCK` do not override the exact selected MPN and corrected component Comment.
 
-## Open issue register
+**D91 is polarized:** pin 1 cathode to VBUS_5V, pin 2 anode to GND. The old bidirectional TI part is not selected. **LED physical cathode faces left in Top view**, toward PCB pad 1 / ROW; the selected supplier's terminal numbering differs from the CAD. Confirm received markings before placement.
 
-| ID | Affected references | Finding | Required closure / stage |
-|---|---|---|---|
-| CAP-01 | C1, C2 | Exact-part effective capacitance under combined operating conditions has not been established | Document minimum >0.47 uF after bias/tolerance/temperature/aging before assembly approval; confirm supply behavior on a sample |
-| ASM-01 | SW2, SW5 | Baseline under/near-switch vias; the laboratory layout mitigates signal vias but retains a nearby SW5 ground via without manufacturer approval | Remains open; resolve the layout/process deviation, document approval where required and verify the first sample |
-| ASM-02 | U2 | Open exposed-pad ground vias; a 0.10 mm top stencil with nine windows is proposed, but the process is unqualified | Agree on via treatment/paste/profile and inspect the first hidden joint; the proposed stencil does not close this item |
-| ASM-03 | U1, fitted passives, J1 | Some IPC lands differ from manufacturer examples; connector has plated slots on a thin board | Review lands, stencil, finished slots and mechanical fit with assembler; inspect first samples |
-| PWR-01 | J1, U3, U5, D91 | ESD component ratings do not qualify the whole input network; D91 clamp may exceed U3 absolute maximum | Define test conditions before prototype use; measure startup/hot-plug/ESD stress and revise if required before product qualification |
-| ELEC-01 | U1-U3, D1-D90, R20/R21/R24 | Current, rail stability, thermal margin and I2C edges are calculated, not measured | Measure the sample; U2 rise/fall <=300 ns; retain firmware GCC limit 32 |
-| RF-01 | U4, L1/NT1, C30 | Antenna is not tuned and a physical tag has not been written/read | Measure/tune, provision URI, verify phones and read range; C30 stays DNP until measured selection |
-| SRC-01 | All fitted MPNs | Manufacturer identities are assigned, but actual supplier availability/lead times are not reserved | Confirm approved exact parts and quantities at ordering; review each proposed substitute |
+## Completed corrective work
 
-The current package is **not an assembly release or production qualification**. Open physical checks are intentional; the switch and capacitor findings must not disappear behind a passing digital report.
+| Area | CAD/document disposition |
+|---|---|
+| Part identity | Selected fields, Comments, descriptions and library references synchronized and saved; native audit passed. |
+| Positive protection-rating mismatch | U3/D91 ECO applied; closes the identified component-rating defect within the stated datasheet waveform/temperature boundary. |
+| Outline, stack and release outputs | Saved outline/stack corrected; final DRC and actual CAM/drill review complete. |
+| Assembly and SWD instructions | Controlled side-correct drawings, polarized-part instructions and two-sided SWD table provided. |
 
-All eight findings above remain open. The native Altium library/binding work and fresh public schematic/PCB checks do not establish the required component, assembly or measured-hardware evidence. See [Assembly](ASSEMBLY.md) for orientation and switch-last handling, and [Verification](VERIFICATION.md) for revision-specific result boundaries.
+## Remaining acceptance gates
 
-## Reproduce and maintain the records
+| Area | Required evidence |
+|---|---|
+| Supplier and delivered parts | Verify exact MPN, package marking, quantities, lot/moisture labels and all substitutions; no current stock or delivery claim is made. |
+| C1/C2 capacitance | Effective CIN/COUT ≥0.50 µF after combined bias, temperature, tolerance, uncertainty and aging allowance; startup/load-step evidence. |
+| U2 thermal and hidden joint | Qualified paste/reflow inspection and worst-pattern current/temperature testing; no via drill exists inside the exposed pad. |
+| LED/U3 lands and thin-board connector | Supplier process acceptance and first-article solder/fit inspection of the reviewed alternate lands and plated slots. |
+| Switch process | Manual installation after reflow/rework and compatible cleaning; verify solder limits, flux exclusion and operation. |
+| Protection and reverse bias | Positive/negative system stress, hot-plug and fastest input-collapse measurements; no product ESD claim from component ratings. |
+| MCU/display and recovery | All pixels/buttons, I²C timing, reset/watchdog recovery and repeated SWD programming. |
+| NFC and QR | Measured tuning, correct written/read-back public URL, phone trials and fabricated QR readability. |
 
-```sh
-python tools/procurement.py --check
-```
+All **P01–P14 are NOT TESTED**. Earlier issue identifiers apply to their recorded historical geometry; the current acceptance record is the [Rev C qualification plan](revc/electrical/QUALIFICATION_PLAN.md). A complete MPN and a passing DRC are not physical qualification.
 
-After an intentional selection change:
-
-```sh
-python tools/procurement.py --sync
-python tools/export_hardware.py --kicad-cli /path/to/kicad-cli
-python tools/procurement.py --write-tables
-python firmware/tools/check_board_contract.py
-```
-
-`--sync` changes selected value labels and hidden procurement fields only, and checks that the remaining native circuit/PCB content is preserved. The checker verifies complete reference coverage, population, native/ XML metadata, footprints and generated tables. It does not determine electrical suitability; the linked review documents contain that reasoning. See [Engineering plan](PROTOTYPE_PLAN.md) for the path to a measured sample.
+For a proposed substitution, record the exact manufacturer/order code and review electrical limits, pin map, package/lands, polarity, thermal behavior and assembly process. Update all affected native files and controlled records, then repeat the necessary CAD and physical checks. Do not substitute by nominal value or supplier short code alone.

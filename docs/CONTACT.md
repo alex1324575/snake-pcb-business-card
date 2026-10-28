@@ -1,5 +1,7 @@
 # QR and passive NFC
 
+> **Contact assets and historical KiCad geometry.** The dimensions, generated files and script workflow below describe the root KiCad record. The final Rev C Bottom CAM separately decodes to the same example URL; see [CAM verification](../verification/revc/CAM_VISUAL_REVIEW.md). Use the [Rev C qualification record](revc/electrical/QUALIFICATION_PLAN.md) for current tuning/phone acceptance. Neither revision has a measured RF or fabricated-QR pass.
+
 The public example represents **Alex Xu** and points to **https://example.com/**. Replace both the QR and NFC data before making personal cards. The example address is not a personal profile.
 
 ## QR on the PCB

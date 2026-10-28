@@ -1,0 +1,5069 @@
+{
+  "variant_id": "SC-REVC-LCSC-P1",
+  "revision": "C",
+  "status": "Controlled prototype build specification; not production qualification",
+  "identity": "ALEX XU public example; not personal Y4",
+  "source_pcb_sha256": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+  "source_schematic_sha256": "e89ae0a8a44abdfa60d52b0149ef2538445f9739bfb2a0a2584648abac8499e6",
+  "source_schlib_sha256": "b38650103eb216bfb903f709078879ed2f240235a41dd01132069392601be80b",
+  "source_binding": {
+    "mode": "Final explicit native hashes",
+    "source_hashes": {
+      "pcb": "a3c1bad7ac39c80c9fc90f9bd20d366df778fe45630cac338fb5efb860d3ac84",
+      "schematic": "e89ae0a8a44abdfa60d52b0149ef2538445f9739bfb2a0a2584648abac8499e6",
+      "schlib": "b38650103eb216bfb903f709078879ed2f240235a41dd01132069392601be80b"
+    },
+    "geometry_baseline_pcb_sha256": "79b43f05ff88d4faba876225f47f78b5072b034843425330ed8078656210dd0e",
+    "pad_stream_byte_identical": false,
+    "pad_geometry_equivalence": {
+      "pad_geometry_all_bytes_equivalent": true,
+      "via_stream_byte_identical": true,
+      "component_geometry_and_uid_equivalent": true,
+      "net_identity_and_order_equivalent": true,
+      "rule_stream_byte_identical": true,
+      "normalization": "Only primitive row order and component-owner index rebinding; no pad field or flag exception"
+    },
+    "via_stream_byte_identical": true,
+    "component_geometry_and_identity_exact": true,
+    "frozen_rules_unchanged": true,
+    "metadata_readback_required": true,
+    "procurement_metadata_readback_passed": true
+  },
+  "source_note": "Selected Rev C procurement variant with 27 October U3/D91 ECO; no evidence of purchase or current stock. Native geometry is compared with the exact audited baseline before drawing generation.",
+  "fitted_per_board": 125,
+  "top_fitted": 123,
+  "bottom_fitted": 2,
+  "top_reflow": 118,
+  "manual_switches": 5,
+  "manual_bottom": 2,
+  "coordinate_convention": "Native component origin XY, mm; +X right and +Y up when viewing Top. Board-local X=native X-100. Bottom drawing mirrors X, not coordinate data. Native rotations are not supplier machine rotations.",
+  "groups": [
+    {
+      "references": [
+        "U1"
+      ],
+      "manufacturer": "STMicroelectronics",
+      "manufacturer_part_number": "STM32G030K8T6",
+      "supplier": "LCSC",
+      "supplier_part": "C431631",
+      "description": "STM32G0 MCU; LQFP-32",
+      "fit": true,
+      "quantity_per_board": 1,
+      "qualification_note": "",
+      "datasheet": "https://www.st.com/resource/en/datasheet/stm32g030k8.pdf",
+      "comment": "STM32G030K8T6"
+    },
+    {
+      "references": [
+        "U2"
+      ],
+      "manufacturer": "Lumissil / ISSI",
+      "manufacturer_part_number": "IS31FL3737B-QFLS4-TR",
+      "supplier": "LCSC",
+      "supplier_part": "C2940515",
+      "description": "LED matrix driver; QFN-40 with exposed GND pad",
+      "fit": true,
+      "quantity_per_board": 1,
+      "qualification_note": "B variant; PWM implementation only; R24=20 kohm and firmware GCC <=32; board qualification pending",
+      "datasheet": "https://www.lumissil.com/assets/pdf/core/IS31FL3737B_DS.pdf",
+      "comment": "IS31FL3737B-QFLS4-TR"
+    },
+    {
+      "references": [
+        "U5"
+      ],
+      "manufacturer": "Texas Instruments",
+      "manufacturer_part_number": "TPD2E2U06QDCKRQ1",
+      "supplier": "LCSC",
+      "supplier_part": "C915089",
+      "description": "Dual CC-line ESD protection; DCK SC70-3",
+      "fit": true,
+      "quantity_per_board": 1,
+      "qualification_note": "Exact Q1 MPN; retain moisture label; board ESD test pending",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tpd2e2u06-q1.pdf",
+      "comment": "TPD2E2U06QDCKRQ1"
+    },
+    {
+      "references": [
+        "D1",
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6",
+        "D7",
+        "D8",
+        "D9",
+        "D10",
+        "D11",
+        "D12",
+        "D13",
+        "D14",
+        "D15",
+        "D16",
+        "D17",
+        "D18",
+        "D19",
+        "D20",
+        "D21",
+        "D22",
+        "D23",
+        "D24",
+        "D25",
+        "D26",
+        "D27",
+        "D28",
+        "D29",
+        "D30",
+        "D31",
+        "D32",
+        "D33",
+        "D34",
+        "D35",
+        "D36",
+        "D37",
+        "D38",
+        "D39",
+        "D40",
+        "D41",
+        "D42",
+        "D43",
+        "D44",
+        "D45",
+        "D46",
+        "D47",
+        "D48",
+        "D49",
+        "D50",
+        "D51",
+        "D52",
+        "D53",
+        "D54",
+        "D55",
+        "D56",
+        "D57",
+        "D58",
+        "D59",
+        "D60",
+        "D61",
+        "D62",
+        "D63",
+        "D64",
+        "D65",
+        "D66",
+        "D67",
+        "D68",
+        "D69",
+        "D70",
+        "D71",
+        "D72",
+        "D73",
+        "D74",
+        "D75",
+        "D76",
+        "D77",
+        "D78",
+        "D79",
+        "D80",
+        "D81",
+        "D82",
+        "D83",
+        "D84",
+        "D85",
+        "D86",
+        "D87",
+        "D88",
+        "D89",
+        "D90"
+      ],
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier": "LCSC",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "fit": true,
+      "quantity_per_board": 90,
+      "qualification_note": "Cathode to PCB pad 1 / ROW / left on Top view; supplier numbering is reversed; first-board solder/brightness qualification pending",
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/011ec3e8cb1e825f6961d29bc4db4c7a.pdf",
+      "comment": "KT-0603R"
+    },
+    {
+      "references": [
+        "J1"
+      ],
+      "manufacturer": "Same Sky",
+      "manufacturer_part_number": "UJC-HP-3-SMT-TR",
+      "supplier": "LCSC",
+      "supplier_part": "C3198015",
+      "description": "USB-C power-only receptacle; 0.8 mm PCB",
+      "fit": true,
+      "quantity_per_board": 1,
+      "qualification_note": "",
+      "datasheet": "https://www.sameskydevices.com/product/resource/ujc-hp-3-smt-tr.pdf",
+      "comment": "UJC-HP-3-SMT-TR"
+    },
+    {
+      "references": [
+        "SW1",
+        "SW2",
+        "SW3",
+        "SW4",
+        "SW5"
+      ],
+      "manufacturer": "Alps Alpine",
+      "manufacturer_part_number": "SKQGABE010",
+      "supplier": "LCSC",
+      "supplier_part": "C115351",
+      "description": "Tactile switch; manual solder after reflow",
+      "fit": true,
+      "quantity_per_board": 5,
+      "qualification_note": "No paste apertures; observe manufacturer solder and cleaning limits",
+      "datasheet": "https://tech.alpsalpine.com/cms.media/SKQGAB_KQG_719_EN_cc4e10226e.pdf",
+      "comment": null
+    },
+    {
+      "references": [
+        "D91"
+      ],
+      "manufacturer": "Nexperia",
+      "manufacturer_part_number": "PESD5Z6.0,115",
+      "supplier": "LCSC",
+      "supplier_part": "C461166",
+      "description": "6 V unidirectional TVS; SOD523",
+      "fit": true,
+      "quantity_per_board": 1,
+      "qualification_note": "Polarized: pad 1 cathode to VBUS_5V; pad 2 anode to GND. Match cathode marking to pad 1. System positive/negative ESD qualification remains open",
+      "datasheet": "https://assets.nexperia.com/documents/data-sheet/PESD5Z6_0.pdf",
+      "comment": "PESD5Z6.0,115"
+    },
+    {
+      "references": [
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R23"
+      ],
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF1002V",
+      "supplier": "LCSC",
+      "supplier_part": "C191124",
+      "description": "10 kohm; 1%; 0603",
+      "fit": true,
+      "quantity_per_board": 7,
+      "qualification_note": "",
+      "datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf",
+      "comment": "10k 1%"
+    },
+    {
+      "references": [
+        "R1",
+        "R2"
+      ],
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF5101V",
+      "supplier": "LCSC",
+      "supplier_part": "C123727",
+      "description": "5.1 kohm; 1%; 0603",
+      "fit": true,
+      "quantity_per_board": 2,
+      "qualification_note": "",
+      "datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf",
+      "comment": "5.1k 1%"
+    },
+    {
+      "references": [
+        "R20",
+        "R21"
+      ],
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF2201V",
+      "supplier": "LCSC",
+      "supplier_part": "C116387",
+      "description": "2.2 kohm; 1%; 0603",
+      "fit": true,
+      "quantity_per_board": 2,
+      "qualification_note": "",
+      "datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf",
+      "comment": "2.2k 1%"
+    },
+    {
+      "references": [
+        "R24"
+      ],
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF2002V",
+      "supplier": "LCSC",
+      "supplier_part": "C403057",
+      "description": "20 kohm; 1%; 0603; driver REXT",
+      "fit": true,
+      "quantity_per_board": 1,
+      "qualification_note": "",
+      "datasheet": "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf",
+      "comment": "20k 1%"
+    },
+    {
+      "references": [
+        "U3"
+      ],
+      "manufacturer": "Texas Instruments",
+      "manufacturer_part_number": "TPS7A2433DBVR",
+      "supplier": "LCSC",
+      "supplier_part": "C2866134",
+      "description": "3.3 V LDO; DBV SOT-23-5; 18 V operating input",
+      "fit": true,
+      "quantity_per_board": 1,
+      "qualification_note": "20 V IN/EN absolute limit; pad 1 IN, 2 GND, 3 EN, 4 NC, 5 OUT. C1/C2 effective capacitance >=0.50 uF; no reverse blocking; startup/load and system ESD tests remain open",
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps7a24.pdf",
+      "comment": "TPS7A2433DBVR"
+    },
+    {
+      "references": [
+        "U4"
+      ],
+      "manufacturer": "STMicroelectronics",
+      "manufacturer_part_number": "ST25TN01K-AFH5",
+      "supplier": "LCSC",
+      "supplier_part": "C3303589",
+      "description": "Passive NFC tag; UFDFPN5",
+      "fit": true,
+      "quantity_per_board": 1,
+      "qualification_note": "Pins 1/2/5 NC; center pad 5 must not be grounded; RF tuning pending",
+      "datasheet": "https://www.st.com/resource/en/datasheet/st25tn01k.pdf",
+      "comment": "ST25TN01K-AFH5"
+    },
+    {
+      "references": [
+        "C11"
+      ],
+      "manufacturer": "Murata",
+      "manufacturer_part_number": "GRM188Z71C475KE21D",
+      "supplier": "LCSC",
+      "supplier_part": "C389010",
+      "description": "4.7 uF; 16 V; 0603; ceramic",
+      "fit": true,
+      "quantity_per_board": 1,
+      "qualification_note": "",
+      "datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188Z71C475KE21-01A.pdf",
+      "comment": "4.7uF 16V"
+    },
+    {
+      "references": [
+        "C1",
+        "C2",
+        "C23",
+        "C24"
+      ],
+      "manufacturer": "Samsung Electro-Mechanics",
+      "manufacturer_part_number": "CL10B105KA8NNNC",
+      "supplier": "LCSC",
+      "supplier_part": "C29936",
+      "description": "1 uF; 25 V; X7R; 0603",
+      "fit": true,
+      "quantity_per_board": 4,
+      "qualification_note": "Exact-part combined derating and regulator stability remain qualification gates",
+      "datasheet": "https://product.samsungsem.com/mlcc/CL10B105KA8NNN.do",
+      "comment": "1uF 25V X7R"
+    },
+    {
+      "references": [
+        "C10",
+        "C12",
+        "C20",
+        "C21",
+        "C22"
+      ],
+      "manufacturer": "Yageo",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "supplier": "LCSC",
+      "supplier_part": "C14663",
+      "description": "100 nF; 50 V; X7R; 0603",
+      "fit": true,
+      "quantity_per_board": 5,
+      "qualification_note": "",
+      "datasheet": "https://yageogroup.com/download/specsheet/CC0603KRX7R9BB104",
+      "comment": "100nF 50V X7R"
+    },
+    {
+      "references": [
+        "R22"
+      ],
+      "manufacturer": "UNI-ROYAL",
+      "manufacturer_part_number": "0603WAF1003T5E",
+      "supplier": "LCSC",
+      "supplier_part": "C25803",
+      "description": "100 kohm; 1%; 0603",
+      "fit": true,
+      "quantity_per_board": 1,
+      "qualification_note": "",
+      "datasheet": "https://datasheet.lcsc.com/datasheet/pdf/0a975aaa49b7c97f38a963127be4a823.pdf",
+      "comment": "100k 1%"
+    }
+  ],
+  "placements": [
+    {
+      "reference": "C1",
+      "side": "Top",
+      "component_origin_native_mm": [
+        175.0000005,
+        11.9500015
+      ],
+      "component_origin_board_mm": [
+        75.0000005,
+        11.9500015
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "C_0603_1608Metric",
+      "schematic_symbol": "CAP_1uF_35V_X7R_0603",
+      "source_schematic_symbol": "CAP_1uF_35V_X7R_0603",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "manufacturer_part_number": "CL10B105KA8NNNC",
+      "supplier_part": "C29936",
+      "description": "1 uF; 25 V; X7R; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          174.2250008,
+          11.9500015
+        ],
+        "board_mm": [
+          74.2250008,
+          11.9500015
+        ],
+        "net": "VBUS_5V",
+        "physical_side_view_mm": [
+          74.2250008,
+          11.9500015
+        ]
+      }
+    },
+    {
+      "reference": "C2",
+      "side": "Top",
+      "component_origin_native_mm": [
+        170.3999996,
+        16.1000008
+      ],
+      "component_origin_board_mm": [
+        70.3999996,
+        16.1000008
+      ],
+      "native_rotation_deg": 90.0,
+      "footprint": "C_0603_1608Metric",
+      "schematic_symbol": "CAP_1uF_35V_X7R_0603",
+      "source_schematic_symbol": "CAP_1uF_35V_X7R_0603",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "manufacturer_part_number": "CL10B105KA8NNNC",
+      "supplier_part": "C29936",
+      "description": "1 uF; 25 V; X7R; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.3999996,
+          15.3250011
+        ],
+        "board_mm": [
+          70.3999996,
+          15.3250011
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          70.3999996,
+          15.3250011
+        ]
+      }
+    },
+    {
+      "reference": "C10",
+      "side": "Bottom",
+      "component_origin_native_mm": [
+        150.9000005,
+        9.7000009
+      ],
+      "component_origin_board_mm": [
+        50.9000005,
+        9.7000009
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "C_0603_1608Metric",
+      "schematic_symbol": "CAP_100nF_50V_X7R_0603",
+      "source_schematic_symbol": "CAP_100nF_50V_X7R_0603",
+      "manufacturer": "Yageo",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "supplier_part": "C14663",
+      "description": "100 nF; 50 V; X7R; 0603",
+      "process": "Manual after Top reflow",
+      "pad_1": {
+        "native_mm": [
+          150.9000005,
+          10.4750006
+        ],
+        "board_mm": [
+          50.9000005,
+          10.4750006
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          34.6999995,
+          10.4750006
+        ]
+      }
+    },
+    {
+      "reference": "C11",
+      "side": "Top",
+      "component_origin_native_mm": [
+        149.3984007,
+        11.8407993
+      ],
+      "component_origin_board_mm": [
+        49.3984007,
+        11.8407993
+      ],
+      "native_rotation_deg": 45.0,
+      "footprint": "C_0603_1608Metric",
+      "schematic_symbol": "CAP_4p7uF_16V_0603",
+      "source_schematic_symbol": "CAP_4p7uF_16V_0603",
+      "manufacturer": "Murata",
+      "manufacturer_part_number": "GRM188Z71C475KE21D",
+      "supplier_part": "C389010",
+      "description": "4.7 uF; 16 V; 0603; ceramic",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          148.8503932,
+          11.2927917
+        ],
+        "board_mm": [
+          48.8503932,
+          11.2927917
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          48.8503932,
+          11.2927917
+        ]
+      }
+    },
+    {
+      "reference": "C12",
+      "side": "Top",
+      "component_origin_native_mm": [
+        144.5000006,
+        2.800002
+      ],
+      "component_origin_board_mm": [
+        44.5000006,
+        2.800002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "C_0603_1608Metric",
+      "schematic_symbol": "CAP_100nF_50V_X7R_0603",
+      "source_schematic_symbol": "CAP_100nF_50V_X7R_0603",
+      "manufacturer": "Yageo",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "supplier_part": "C14663",
+      "description": "100 nF; 50 V; X7R; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          143.7250008,
+          2.800002
+        ],
+        "board_mm": [
+          43.7250008,
+          2.800002
+        ],
+        "net": "NRST",
+        "physical_side_view_mm": [
+          43.7250008,
+          2.800002
+        ]
+      }
+    },
+    {
+      "reference": "C20",
+      "side": "Top",
+      "component_origin_native_mm": [
+        163.9999997,
+        14.750001
+      ],
+      "component_origin_board_mm": [
+        63.9999997,
+        14.750001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "C_0603_1608Metric",
+      "schematic_symbol": "CAP_100nF_50V_X7R_0603",
+      "source_schematic_symbol": "CAP_100nF_50V_X7R_0603",
+      "manufacturer": "Yageo",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "supplier_part": "C14663",
+      "description": "100 nF; 50 V; X7R; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          163.2249999,
+          14.750001
+        ],
+        "board_mm": [
+          63.2249999,
+          14.750001
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          63.2249999,
+          14.750001
+        ]
+      }
+    },
+    {
+      "reference": "C21",
+      "side": "Top",
+      "component_origin_native_mm": [
+        166.2000003,
+        11.1749992
+      ],
+      "component_origin_board_mm": [
+        66.2000003,
+        11.1749992
+      ],
+      "native_rotation_deg": 90.0,
+      "footprint": "C_0603_1608Metric",
+      "schematic_symbol": "CAP_100nF_50V_X7R_0603",
+      "source_schematic_symbol": "CAP_100nF_50V_X7R_0603",
+      "manufacturer": "Yageo",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "supplier_part": "C14663",
+      "description": "100 nF; 50 V; X7R; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.2000003,
+          10.3999995
+        ],
+        "board_mm": [
+          66.2000003,
+          10.3999995
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          66.2000003,
+          10.3999995
+        ]
+      }
+    },
+    {
+      "reference": "C22",
+      "side": "Top",
+      "component_origin_native_mm": [
+        164.7000008,
+        4.0000022
+      ],
+      "component_origin_board_mm": [
+        64.7000008,
+        4.0000022
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "C_0603_1608Metric",
+      "schematic_symbol": "CAP_100nF_50V_X7R_0603",
+      "source_schematic_symbol": "CAP_100nF_50V_X7R_0603",
+      "manufacturer": "Yageo",
+      "manufacturer_part_number": "CC0603KRX7R9BB104",
+      "supplier_part": "C14663",
+      "description": "100 nF; 50 V; X7R; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          164.7000008,
+          4.7750019
+        ],
+        "board_mm": [
+          64.7000008,
+          4.7750019
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          64.7000008,
+          4.7750019
+        ]
+      }
+    },
+    {
+      "reference": "C23",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.4999999,
+        4.5000012
+      ],
+      "component_origin_board_mm": [
+        71.4999999,
+        4.5000012
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "C_0603_1608Metric",
+      "schematic_symbol": "CAP_1uF_35V_X7R_0603",
+      "source_schematic_symbol": "CAP_1uF_35V_X7R_0603",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "manufacturer_part_number": "CL10B105KA8NNNC",
+      "supplier_part": "C29936",
+      "description": "1 uF; 25 V; X7R; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          171.4999999,
+          5.2750009
+        ],
+        "board_mm": [
+          71.4999999,
+          5.2750009
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          71.4999999,
+          5.2750009
+        ]
+      }
+    },
+    {
+      "reference": "C24",
+      "side": "Top",
+      "component_origin_native_mm": [
+        166.5999995,
+        16.5999998
+      ],
+      "component_origin_board_mm": [
+        66.5999995,
+        16.5999998
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "C_0603_1608Metric",
+      "schematic_symbol": "CAP_1uF_35V_X7R_0603",
+      "source_schematic_symbol": "CAP_1uF_35V_X7R_0603",
+      "manufacturer": "Samsung Electro-Mechanics",
+      "manufacturer_part_number": "CL10B105KA8NNNC",
+      "supplier_part": "C29936",
+      "description": "1 uF; 25 V; X7R; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          165.8249998,
+          16.5999998
+        ],
+        "board_mm": [
+          65.8249998,
+          16.5999998
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          65.8249998,
+          16.5999998
+        ]
+      }
+    },
+    {
+      "reference": "D1",
+      "side": "Top",
+      "component_origin_native_mm": [
+        143.000001,
+        47.0
+      ],
+      "component_origin_board_mm": [
+        43.000001,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          142.1750014,
+          47.0
+        ],
+        "board_mm": [
+          42.1750014,
+          47.0
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          42.1750014,
+          47.0
+        ]
+      }
+    },
+    {
+      "reference": "D2",
+      "side": "Top",
+      "component_origin_native_mm": [
+        146.4999991,
+        47.0
+      ],
+      "component_origin_board_mm": [
+        46.4999991,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          145.6749995,
+          47.0
+        ],
+        "board_mm": [
+          45.6749995,
+          47.0
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          45.6749995,
+          47.0
+        ]
+      }
+    },
+    {
+      "reference": "D3",
+      "side": "Top",
+      "component_origin_native_mm": [
+        149.9999997,
+        47.0
+      ],
+      "component_origin_board_mm": [
+        49.9999997,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          149.1750001,
+          47.0
+        ],
+        "board_mm": [
+          49.1750001,
+          47.0
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          49.1750001,
+          47.0
+        ]
+      }
+    },
+    {
+      "reference": "D4",
+      "side": "Top",
+      "component_origin_native_mm": [
+        153.5000003,
+        47.0
+      ],
+      "component_origin_board_mm": [
+        53.5000003,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          152.6750007,
+          47.0
+        ],
+        "board_mm": [
+          52.6750007,
+          47.0
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          52.6750007,
+          47.0
+        ]
+      }
+    },
+    {
+      "reference": "D5",
+      "side": "Top",
+      "component_origin_native_mm": [
+        157.000001,
+        47.0
+      ],
+      "component_origin_board_mm": [
+        57.000001,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          156.1750013,
+          47.0
+        ],
+        "board_mm": [
+          56.1750013,
+          47.0
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          56.1750013,
+          47.0
+        ]
+      }
+    },
+    {
+      "reference": "D6",
+      "side": "Top",
+      "component_origin_native_mm": [
+        160.499999,
+        47.0
+      ],
+      "component_origin_board_mm": [
+        60.499999,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          159.6749994,
+          47.0
+        ],
+        "board_mm": [
+          59.6749994,
+          47.0
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          59.6749994,
+          47.0
+        ]
+      }
+    },
+    {
+      "reference": "D7",
+      "side": "Top",
+      "component_origin_native_mm": [
+        163.9999997,
+        47.0
+      ],
+      "component_origin_board_mm": [
+        63.9999997,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          163.175,
+          47.0
+        ],
+        "board_mm": [
+          63.175,
+          47.0
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          63.175,
+          47.0
+        ]
+      }
+    },
+    {
+      "reference": "D8",
+      "side": "Top",
+      "component_origin_native_mm": [
+        167.5000003,
+        47.0
+      ],
+      "component_origin_board_mm": [
+        67.5000003,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.6750007,
+          47.0
+        ],
+        "board_mm": [
+          66.6750007,
+          47.0
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          66.6750007,
+          47.0
+        ]
+      }
+    },
+    {
+      "reference": "D9",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.0000009,
+        47.0
+      ],
+      "component_origin_board_mm": [
+        71.0000009,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.1750013,
+          47.0
+        ],
+        "board_mm": [
+          70.1750013,
+          47.0
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          70.1750013,
+          47.0
+        ]
+      }
+    },
+    {
+      "reference": "D10",
+      "side": "Top",
+      "component_origin_native_mm": [
+        174.499999,
+        47.0
+      ],
+      "component_origin_board_mm": [
+        74.499999,
+        47.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          173.6749994,
+          47.0
+        ],
+        "board_mm": [
+          73.6749994,
+          47.0
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          73.6749994,
+          47.0
+        ]
+      }
+    },
+    {
+      "reference": "D11",
+      "side": "Top",
+      "component_origin_native_mm": [
+        143.000001,
+        43.5000019
+      ],
+      "component_origin_board_mm": [
+        43.000001,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          142.1750014,
+          43.5000019
+        ],
+        "board_mm": [
+          42.1750014,
+          43.5000019
+        ],
+        "net": "LED_ROW2",
+        "physical_side_view_mm": [
+          42.1750014,
+          43.5000019
+        ]
+      }
+    },
+    {
+      "reference": "D12",
+      "side": "Top",
+      "component_origin_native_mm": [
+        146.4999991,
+        43.5000019
+      ],
+      "component_origin_board_mm": [
+        46.4999991,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          145.6749995,
+          43.5000019
+        ],
+        "board_mm": [
+          45.6749995,
+          43.5000019
+        ],
+        "net": "LED_ROW2",
+        "physical_side_view_mm": [
+          45.6749995,
+          43.5000019
+        ]
+      }
+    },
+    {
+      "reference": "D13",
+      "side": "Top",
+      "component_origin_native_mm": [
+        149.9999997,
+        43.5000019
+      ],
+      "component_origin_board_mm": [
+        49.9999997,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          149.1750001,
+          43.5000019
+        ],
+        "board_mm": [
+          49.1750001,
+          43.5000019
+        ],
+        "net": "LED_ROW2",
+        "physical_side_view_mm": [
+          49.1750001,
+          43.5000019
+        ]
+      }
+    },
+    {
+      "reference": "D14",
+      "side": "Top",
+      "component_origin_native_mm": [
+        153.5000003,
+        43.5000019
+      ],
+      "component_origin_board_mm": [
+        53.5000003,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          152.6750007,
+          43.5000019
+        ],
+        "board_mm": [
+          52.6750007,
+          43.5000019
+        ],
+        "net": "LED_ROW2",
+        "physical_side_view_mm": [
+          52.6750007,
+          43.5000019
+        ]
+      }
+    },
+    {
+      "reference": "D15",
+      "side": "Top",
+      "component_origin_native_mm": [
+        157.000001,
+        43.5000019
+      ],
+      "component_origin_board_mm": [
+        57.000001,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          156.1750013,
+          43.5000019
+        ],
+        "board_mm": [
+          56.1750013,
+          43.5000019
+        ],
+        "net": "LED_ROW2",
+        "physical_side_view_mm": [
+          56.1750013,
+          43.5000019
+        ]
+      }
+    },
+    {
+      "reference": "D16",
+      "side": "Top",
+      "component_origin_native_mm": [
+        160.499999,
+        43.5000019
+      ],
+      "component_origin_board_mm": [
+        60.499999,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          159.6749994,
+          43.5000019
+        ],
+        "board_mm": [
+          59.6749994,
+          43.5000019
+        ],
+        "net": "LED_ROW2",
+        "physical_side_view_mm": [
+          59.6749994,
+          43.5000019
+        ]
+      }
+    },
+    {
+      "reference": "D17",
+      "side": "Top",
+      "component_origin_native_mm": [
+        163.9999997,
+        43.5000019
+      ],
+      "component_origin_board_mm": [
+        63.9999997,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          163.175,
+          43.5000019
+        ],
+        "board_mm": [
+          63.175,
+          43.5000019
+        ],
+        "net": "LED_ROW2",
+        "physical_side_view_mm": [
+          63.175,
+          43.5000019
+        ]
+      }
+    },
+    {
+      "reference": "D18",
+      "side": "Top",
+      "component_origin_native_mm": [
+        167.5000003,
+        43.5000019
+      ],
+      "component_origin_board_mm": [
+        67.5000003,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.6750007,
+          43.5000019
+        ],
+        "board_mm": [
+          66.6750007,
+          43.5000019
+        ],
+        "net": "LED_ROW2",
+        "physical_side_view_mm": [
+          66.6750007,
+          43.5000019
+        ]
+      }
+    },
+    {
+      "reference": "D19",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.0000009,
+        43.5000019
+      ],
+      "component_origin_board_mm": [
+        71.0000009,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.1750013,
+          43.5000019
+        ],
+        "board_mm": [
+          70.1750013,
+          43.5000019
+        ],
+        "net": "LED_ROW2",
+        "physical_side_view_mm": [
+          70.1750013,
+          43.5000019
+        ]
+      }
+    },
+    {
+      "reference": "D20",
+      "side": "Top",
+      "component_origin_native_mm": [
+        174.499999,
+        43.5000019
+      ],
+      "component_origin_board_mm": [
+        74.499999,
+        43.5000019
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          173.6749994,
+          43.5000019
+        ],
+        "board_mm": [
+          73.6749994,
+          43.5000019
+        ],
+        "net": "LED_ROW2",
+        "physical_side_view_mm": [
+          73.6749994,
+          43.5000019
+        ]
+      }
+    },
+    {
+      "reference": "D21",
+      "side": "Top",
+      "component_origin_native_mm": [
+        143.000001,
+        40.0000013
+      ],
+      "component_origin_board_mm": [
+        43.000001,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          142.1750014,
+          40.0000013
+        ],
+        "board_mm": [
+          42.1750014,
+          40.0000013
+        ],
+        "net": "LED_ROW3",
+        "physical_side_view_mm": [
+          42.1750014,
+          40.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D22",
+      "side": "Top",
+      "component_origin_native_mm": [
+        146.4999991,
+        40.0000013
+      ],
+      "component_origin_board_mm": [
+        46.4999991,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          145.6749995,
+          40.0000013
+        ],
+        "board_mm": [
+          45.6749995,
+          40.0000013
+        ],
+        "net": "LED_ROW3",
+        "physical_side_view_mm": [
+          45.6749995,
+          40.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D23",
+      "side": "Top",
+      "component_origin_native_mm": [
+        149.9999997,
+        40.0000013
+      ],
+      "component_origin_board_mm": [
+        49.9999997,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          149.1750001,
+          40.0000013
+        ],
+        "board_mm": [
+          49.1750001,
+          40.0000013
+        ],
+        "net": "LED_ROW3",
+        "physical_side_view_mm": [
+          49.1750001,
+          40.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D24",
+      "side": "Top",
+      "component_origin_native_mm": [
+        153.5000003,
+        40.0000013
+      ],
+      "component_origin_board_mm": [
+        53.5000003,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          152.6750007,
+          40.0000013
+        ],
+        "board_mm": [
+          52.6750007,
+          40.0000013
+        ],
+        "net": "LED_ROW3",
+        "physical_side_view_mm": [
+          52.6750007,
+          40.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D25",
+      "side": "Top",
+      "component_origin_native_mm": [
+        157.000001,
+        40.0000013
+      ],
+      "component_origin_board_mm": [
+        57.000001,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          156.1750013,
+          40.0000013
+        ],
+        "board_mm": [
+          56.1750013,
+          40.0000013
+        ],
+        "net": "LED_ROW3",
+        "physical_side_view_mm": [
+          56.1750013,
+          40.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D26",
+      "side": "Top",
+      "component_origin_native_mm": [
+        160.499999,
+        40.0000013
+      ],
+      "component_origin_board_mm": [
+        60.499999,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          159.6749994,
+          40.0000013
+        ],
+        "board_mm": [
+          59.6749994,
+          40.0000013
+        ],
+        "net": "LED_ROW3",
+        "physical_side_view_mm": [
+          59.6749994,
+          40.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D27",
+      "side": "Top",
+      "component_origin_native_mm": [
+        163.9999997,
+        40.0000013
+      ],
+      "component_origin_board_mm": [
+        63.9999997,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          163.175,
+          40.0000013
+        ],
+        "board_mm": [
+          63.175,
+          40.0000013
+        ],
+        "net": "LED_ROW3",
+        "physical_side_view_mm": [
+          63.175,
+          40.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D28",
+      "side": "Top",
+      "component_origin_native_mm": [
+        167.5000003,
+        40.0000013
+      ],
+      "component_origin_board_mm": [
+        67.5000003,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.6750007,
+          40.0000013
+        ],
+        "board_mm": [
+          66.6750007,
+          40.0000013
+        ],
+        "net": "LED_ROW3",
+        "physical_side_view_mm": [
+          66.6750007,
+          40.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D29",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.0000009,
+        40.0000013
+      ],
+      "component_origin_board_mm": [
+        71.0000009,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.1750013,
+          40.0000013
+        ],
+        "board_mm": [
+          70.1750013,
+          40.0000013
+        ],
+        "net": "LED_ROW3",
+        "physical_side_view_mm": [
+          70.1750013,
+          40.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D30",
+      "side": "Top",
+      "component_origin_native_mm": [
+        174.499999,
+        40.0000013
+      ],
+      "component_origin_board_mm": [
+        74.499999,
+        40.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          173.6749994,
+          40.0000013
+        ],
+        "board_mm": [
+          73.6749994,
+          40.0000013
+        ],
+        "net": "LED_ROW3",
+        "physical_side_view_mm": [
+          73.6749994,
+          40.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D31",
+      "side": "Top",
+      "component_origin_native_mm": [
+        143.000001,
+        36.5000007
+      ],
+      "component_origin_board_mm": [
+        43.000001,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          142.1750014,
+          36.5000007
+        ],
+        "board_mm": [
+          42.1750014,
+          36.5000007
+        ],
+        "net": "LED_ROW4",
+        "physical_side_view_mm": [
+          42.1750014,
+          36.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D32",
+      "side": "Top",
+      "component_origin_native_mm": [
+        146.4999991,
+        36.5000007
+      ],
+      "component_origin_board_mm": [
+        46.4999991,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          145.6749995,
+          36.5000007
+        ],
+        "board_mm": [
+          45.6749995,
+          36.5000007
+        ],
+        "net": "LED_ROW4",
+        "physical_side_view_mm": [
+          45.6749995,
+          36.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D33",
+      "side": "Top",
+      "component_origin_native_mm": [
+        149.9999997,
+        36.5000007
+      ],
+      "component_origin_board_mm": [
+        49.9999997,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          149.1750001,
+          36.5000007
+        ],
+        "board_mm": [
+          49.1750001,
+          36.5000007
+        ],
+        "net": "LED_ROW4",
+        "physical_side_view_mm": [
+          49.1750001,
+          36.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D34",
+      "side": "Top",
+      "component_origin_native_mm": [
+        153.5000003,
+        36.5000007
+      ],
+      "component_origin_board_mm": [
+        53.5000003,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          152.6750007,
+          36.5000007
+        ],
+        "board_mm": [
+          52.6750007,
+          36.5000007
+        ],
+        "net": "LED_ROW4",
+        "physical_side_view_mm": [
+          52.6750007,
+          36.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D35",
+      "side": "Top",
+      "component_origin_native_mm": [
+        157.000001,
+        36.5000007
+      ],
+      "component_origin_board_mm": [
+        57.000001,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          156.1750013,
+          36.5000007
+        ],
+        "board_mm": [
+          56.1750013,
+          36.5000007
+        ],
+        "net": "LED_ROW4",
+        "physical_side_view_mm": [
+          56.1750013,
+          36.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D36",
+      "side": "Top",
+      "component_origin_native_mm": [
+        160.499999,
+        36.5000007
+      ],
+      "component_origin_board_mm": [
+        60.499999,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          159.6749994,
+          36.5000007
+        ],
+        "board_mm": [
+          59.6749994,
+          36.5000007
+        ],
+        "net": "LED_ROW4",
+        "physical_side_view_mm": [
+          59.6749994,
+          36.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D37",
+      "side": "Top",
+      "component_origin_native_mm": [
+        163.9999997,
+        36.5000007
+      ],
+      "component_origin_board_mm": [
+        63.9999997,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          163.175,
+          36.5000007
+        ],
+        "board_mm": [
+          63.175,
+          36.5000007
+        ],
+        "net": "LED_ROW4",
+        "physical_side_view_mm": [
+          63.175,
+          36.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D38",
+      "side": "Top",
+      "component_origin_native_mm": [
+        167.5000003,
+        36.5000007
+      ],
+      "component_origin_board_mm": [
+        67.5000003,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.6750007,
+          36.5000007
+        ],
+        "board_mm": [
+          66.6750007,
+          36.5000007
+        ],
+        "net": "LED_ROW4",
+        "physical_side_view_mm": [
+          66.6750007,
+          36.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D39",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.0000009,
+        36.5000007
+      ],
+      "component_origin_board_mm": [
+        71.0000009,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.1750013,
+          36.5000007
+        ],
+        "board_mm": [
+          70.1750013,
+          36.5000007
+        ],
+        "net": "LED_ROW4",
+        "physical_side_view_mm": [
+          70.1750013,
+          36.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D40",
+      "side": "Top",
+      "component_origin_native_mm": [
+        174.499999,
+        36.5000007
+      ],
+      "component_origin_board_mm": [
+        74.499999,
+        36.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          173.6749994,
+          36.5000007
+        ],
+        "board_mm": [
+          73.6749994,
+          36.5000007
+        ],
+        "net": "LED_ROW4",
+        "physical_side_view_mm": [
+          73.6749994,
+          36.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D41",
+      "side": "Top",
+      "component_origin_native_mm": [
+        143.000001,
+        33.0
+      ],
+      "component_origin_board_mm": [
+        43.000001,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          142.1750014,
+          33.0
+        ],
+        "board_mm": [
+          42.1750014,
+          33.0
+        ],
+        "net": "LED_ROW5",
+        "physical_side_view_mm": [
+          42.1750014,
+          33.0
+        ]
+      }
+    },
+    {
+      "reference": "D42",
+      "side": "Top",
+      "component_origin_native_mm": [
+        146.4999991,
+        33.0
+      ],
+      "component_origin_board_mm": [
+        46.4999991,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          145.6749995,
+          33.0
+        ],
+        "board_mm": [
+          45.6749995,
+          33.0
+        ],
+        "net": "LED_ROW5",
+        "physical_side_view_mm": [
+          45.6749995,
+          33.0
+        ]
+      }
+    },
+    {
+      "reference": "D43",
+      "side": "Top",
+      "component_origin_native_mm": [
+        149.9999997,
+        33.0
+      ],
+      "component_origin_board_mm": [
+        49.9999997,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          149.1750001,
+          33.0
+        ],
+        "board_mm": [
+          49.1750001,
+          33.0
+        ],
+        "net": "LED_ROW5",
+        "physical_side_view_mm": [
+          49.1750001,
+          33.0
+        ]
+      }
+    },
+    {
+      "reference": "D44",
+      "side": "Top",
+      "component_origin_native_mm": [
+        153.5000003,
+        33.0
+      ],
+      "component_origin_board_mm": [
+        53.5000003,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          152.6750007,
+          33.0
+        ],
+        "board_mm": [
+          52.6750007,
+          33.0
+        ],
+        "net": "LED_ROW5",
+        "physical_side_view_mm": [
+          52.6750007,
+          33.0
+        ]
+      }
+    },
+    {
+      "reference": "D45",
+      "side": "Top",
+      "component_origin_native_mm": [
+        157.000001,
+        33.0
+      ],
+      "component_origin_board_mm": [
+        57.000001,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          156.1750013,
+          33.0
+        ],
+        "board_mm": [
+          56.1750013,
+          33.0
+        ],
+        "net": "LED_ROW5",
+        "physical_side_view_mm": [
+          56.1750013,
+          33.0
+        ]
+      }
+    },
+    {
+      "reference": "D46",
+      "side": "Top",
+      "component_origin_native_mm": [
+        160.499999,
+        33.0
+      ],
+      "component_origin_board_mm": [
+        60.499999,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          159.6749994,
+          33.0
+        ],
+        "board_mm": [
+          59.6749994,
+          33.0
+        ],
+        "net": "LED_ROW5",
+        "physical_side_view_mm": [
+          59.6749994,
+          33.0
+        ]
+      }
+    },
+    {
+      "reference": "D47",
+      "side": "Top",
+      "component_origin_native_mm": [
+        163.9999997,
+        33.0
+      ],
+      "component_origin_board_mm": [
+        63.9999997,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          163.175,
+          33.0
+        ],
+        "board_mm": [
+          63.175,
+          33.0
+        ],
+        "net": "LED_ROW5",
+        "physical_side_view_mm": [
+          63.175,
+          33.0
+        ]
+      }
+    },
+    {
+      "reference": "D48",
+      "side": "Top",
+      "component_origin_native_mm": [
+        167.5000003,
+        33.0
+      ],
+      "component_origin_board_mm": [
+        67.5000003,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.6750007,
+          33.0
+        ],
+        "board_mm": [
+          66.6750007,
+          33.0
+        ],
+        "net": "LED_ROW5",
+        "physical_side_view_mm": [
+          66.6750007,
+          33.0
+        ]
+      }
+    },
+    {
+      "reference": "D49",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.0000009,
+        33.0
+      ],
+      "component_origin_board_mm": [
+        71.0000009,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.1750013,
+          33.0
+        ],
+        "board_mm": [
+          70.1750013,
+          33.0
+        ],
+        "net": "LED_ROW5",
+        "physical_side_view_mm": [
+          70.1750013,
+          33.0
+        ]
+      }
+    },
+    {
+      "reference": "D50",
+      "side": "Top",
+      "component_origin_native_mm": [
+        174.499999,
+        33.0
+      ],
+      "component_origin_board_mm": [
+        74.499999,
+        33.0
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          173.6749994,
+          33.0
+        ],
+        "board_mm": [
+          73.6749994,
+          33.0
+        ],
+        "net": "LED_ROW5",
+        "physical_side_view_mm": [
+          73.6749994,
+          33.0
+        ]
+      }
+    },
+    {
+      "reference": "D51",
+      "side": "Top",
+      "component_origin_native_mm": [
+        143.000001,
+        29.500002
+      ],
+      "component_origin_board_mm": [
+        43.000001,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          142.1750014,
+          29.500002
+        ],
+        "board_mm": [
+          42.1750014,
+          29.500002
+        ],
+        "net": "LED_ROW6",
+        "physical_side_view_mm": [
+          42.1750014,
+          29.500002
+        ]
+      }
+    },
+    {
+      "reference": "D52",
+      "side": "Top",
+      "component_origin_native_mm": [
+        146.4999991,
+        29.500002
+      ],
+      "component_origin_board_mm": [
+        46.4999991,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          145.6749995,
+          29.500002
+        ],
+        "board_mm": [
+          45.6749995,
+          29.500002
+        ],
+        "net": "LED_ROW6",
+        "physical_side_view_mm": [
+          45.6749995,
+          29.500002
+        ]
+      }
+    },
+    {
+      "reference": "D53",
+      "side": "Top",
+      "component_origin_native_mm": [
+        149.9999997,
+        29.500002
+      ],
+      "component_origin_board_mm": [
+        49.9999997,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          149.1750001,
+          29.500002
+        ],
+        "board_mm": [
+          49.1750001,
+          29.500002
+        ],
+        "net": "LED_ROW6",
+        "physical_side_view_mm": [
+          49.1750001,
+          29.500002
+        ]
+      }
+    },
+    {
+      "reference": "D54",
+      "side": "Top",
+      "component_origin_native_mm": [
+        153.5000003,
+        29.500002
+      ],
+      "component_origin_board_mm": [
+        53.5000003,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          152.6750007,
+          29.500002
+        ],
+        "board_mm": [
+          52.6750007,
+          29.500002
+        ],
+        "net": "LED_ROW6",
+        "physical_side_view_mm": [
+          52.6750007,
+          29.500002
+        ]
+      }
+    },
+    {
+      "reference": "D55",
+      "side": "Top",
+      "component_origin_native_mm": [
+        157.000001,
+        29.500002
+      ],
+      "component_origin_board_mm": [
+        57.000001,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          156.1750013,
+          29.500002
+        ],
+        "board_mm": [
+          56.1750013,
+          29.500002
+        ],
+        "net": "LED_ROW6",
+        "physical_side_view_mm": [
+          56.1750013,
+          29.500002
+        ]
+      }
+    },
+    {
+      "reference": "D56",
+      "side": "Top",
+      "component_origin_native_mm": [
+        160.499999,
+        29.500002
+      ],
+      "component_origin_board_mm": [
+        60.499999,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          159.6749994,
+          29.500002
+        ],
+        "board_mm": [
+          59.6749994,
+          29.500002
+        ],
+        "net": "LED_ROW6",
+        "physical_side_view_mm": [
+          59.6749994,
+          29.500002
+        ]
+      }
+    },
+    {
+      "reference": "D57",
+      "side": "Top",
+      "component_origin_native_mm": [
+        163.9999997,
+        29.500002
+      ],
+      "component_origin_board_mm": [
+        63.9999997,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          163.175,
+          29.500002
+        ],
+        "board_mm": [
+          63.175,
+          29.500002
+        ],
+        "net": "LED_ROW6",
+        "physical_side_view_mm": [
+          63.175,
+          29.500002
+        ]
+      }
+    },
+    {
+      "reference": "D58",
+      "side": "Top",
+      "component_origin_native_mm": [
+        167.5000003,
+        29.500002
+      ],
+      "component_origin_board_mm": [
+        67.5000003,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.6750007,
+          29.500002
+        ],
+        "board_mm": [
+          66.6750007,
+          29.500002
+        ],
+        "net": "LED_ROW6",
+        "physical_side_view_mm": [
+          66.6750007,
+          29.500002
+        ]
+      }
+    },
+    {
+      "reference": "D59",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.0000009,
+        29.500002
+      ],
+      "component_origin_board_mm": [
+        71.0000009,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.1750013,
+          29.500002
+        ],
+        "board_mm": [
+          70.1750013,
+          29.500002
+        ],
+        "net": "LED_ROW6",
+        "physical_side_view_mm": [
+          70.1750013,
+          29.500002
+        ]
+      }
+    },
+    {
+      "reference": "D60",
+      "side": "Top",
+      "component_origin_native_mm": [
+        174.499999,
+        29.500002
+      ],
+      "component_origin_board_mm": [
+        74.499999,
+        29.500002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          173.6749994,
+          29.500002
+        ],
+        "board_mm": [
+          73.6749994,
+          29.500002
+        ],
+        "net": "LED_ROW6",
+        "physical_side_view_mm": [
+          73.6749994,
+          29.500002
+        ]
+      }
+    },
+    {
+      "reference": "D61",
+      "side": "Top",
+      "component_origin_native_mm": [
+        143.000001,
+        26.0000013
+      ],
+      "component_origin_board_mm": [
+        43.000001,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          142.1750014,
+          26.0000013
+        ],
+        "board_mm": [
+          42.1750014,
+          26.0000013
+        ],
+        "net": "LED_ROW7",
+        "physical_side_view_mm": [
+          42.1750014,
+          26.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D62",
+      "side": "Top",
+      "component_origin_native_mm": [
+        146.4999991,
+        26.0000013
+      ],
+      "component_origin_board_mm": [
+        46.4999991,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          145.6749995,
+          26.0000013
+        ],
+        "board_mm": [
+          45.6749995,
+          26.0000013
+        ],
+        "net": "LED_ROW7",
+        "physical_side_view_mm": [
+          45.6749995,
+          26.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D63",
+      "side": "Top",
+      "component_origin_native_mm": [
+        149.9999997,
+        26.0000013
+      ],
+      "component_origin_board_mm": [
+        49.9999997,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          149.1750001,
+          26.0000013
+        ],
+        "board_mm": [
+          49.1750001,
+          26.0000013
+        ],
+        "net": "LED_ROW7",
+        "physical_side_view_mm": [
+          49.1750001,
+          26.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D64",
+      "side": "Top",
+      "component_origin_native_mm": [
+        153.5000003,
+        26.0000013
+      ],
+      "component_origin_board_mm": [
+        53.5000003,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          152.6750007,
+          26.0000013
+        ],
+        "board_mm": [
+          52.6750007,
+          26.0000013
+        ],
+        "net": "LED_ROW7",
+        "physical_side_view_mm": [
+          52.6750007,
+          26.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D65",
+      "side": "Top",
+      "component_origin_native_mm": [
+        157.000001,
+        26.0000013
+      ],
+      "component_origin_board_mm": [
+        57.000001,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          156.1750013,
+          26.0000013
+        ],
+        "board_mm": [
+          56.1750013,
+          26.0000013
+        ],
+        "net": "LED_ROW7",
+        "physical_side_view_mm": [
+          56.1750013,
+          26.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D66",
+      "side": "Top",
+      "component_origin_native_mm": [
+        160.499999,
+        26.0000013
+      ],
+      "component_origin_board_mm": [
+        60.499999,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          159.6749994,
+          26.0000013
+        ],
+        "board_mm": [
+          59.6749994,
+          26.0000013
+        ],
+        "net": "LED_ROW7",
+        "physical_side_view_mm": [
+          59.6749994,
+          26.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D67",
+      "side": "Top",
+      "component_origin_native_mm": [
+        163.9999997,
+        26.0000013
+      ],
+      "component_origin_board_mm": [
+        63.9999997,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          163.175,
+          26.0000013
+        ],
+        "board_mm": [
+          63.175,
+          26.0000013
+        ],
+        "net": "LED_ROW7",
+        "physical_side_view_mm": [
+          63.175,
+          26.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D68",
+      "side": "Top",
+      "component_origin_native_mm": [
+        167.5000003,
+        26.0000013
+      ],
+      "component_origin_board_mm": [
+        67.5000003,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.6750007,
+          26.0000013
+        ],
+        "board_mm": [
+          66.6750007,
+          26.0000013
+        ],
+        "net": "LED_ROW7",
+        "physical_side_view_mm": [
+          66.6750007,
+          26.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D69",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.0000009,
+        26.0000013
+      ],
+      "component_origin_board_mm": [
+        71.0000009,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.1750013,
+          26.0000013
+        ],
+        "board_mm": [
+          70.1750013,
+          26.0000013
+        ],
+        "net": "LED_ROW7",
+        "physical_side_view_mm": [
+          70.1750013,
+          26.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D70",
+      "side": "Top",
+      "component_origin_native_mm": [
+        174.499999,
+        26.0000013
+      ],
+      "component_origin_board_mm": [
+        74.499999,
+        26.0000013
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          173.6749994,
+          26.0000013
+        ],
+        "board_mm": [
+          73.6749994,
+          26.0000013
+        ],
+        "net": "LED_ROW7",
+        "physical_side_view_mm": [
+          73.6749994,
+          26.0000013
+        ]
+      }
+    },
+    {
+      "reference": "D71",
+      "side": "Top",
+      "component_origin_native_mm": [
+        143.000001,
+        22.5000007
+      ],
+      "component_origin_board_mm": [
+        43.000001,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          142.1750014,
+          22.5000007
+        ],
+        "board_mm": [
+          42.1750014,
+          22.5000007
+        ],
+        "net": "LED_ROW8",
+        "physical_side_view_mm": [
+          42.1750014,
+          22.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D72",
+      "side": "Top",
+      "component_origin_native_mm": [
+        146.4999991,
+        22.5000007
+      ],
+      "component_origin_board_mm": [
+        46.4999991,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          145.6749995,
+          22.5000007
+        ],
+        "board_mm": [
+          45.6749995,
+          22.5000007
+        ],
+        "net": "LED_ROW8",
+        "physical_side_view_mm": [
+          45.6749995,
+          22.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D73",
+      "side": "Top",
+      "component_origin_native_mm": [
+        149.9999997,
+        22.5000007
+      ],
+      "component_origin_board_mm": [
+        49.9999997,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          149.1750001,
+          22.5000007
+        ],
+        "board_mm": [
+          49.1750001,
+          22.5000007
+        ],
+        "net": "LED_ROW8",
+        "physical_side_view_mm": [
+          49.1750001,
+          22.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D74",
+      "side": "Top",
+      "component_origin_native_mm": [
+        153.5000003,
+        22.5000007
+      ],
+      "component_origin_board_mm": [
+        53.5000003,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          152.6750007,
+          22.5000007
+        ],
+        "board_mm": [
+          52.6750007,
+          22.5000007
+        ],
+        "net": "LED_ROW8",
+        "physical_side_view_mm": [
+          52.6750007,
+          22.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D75",
+      "side": "Top",
+      "component_origin_native_mm": [
+        157.000001,
+        22.5000007
+      ],
+      "component_origin_board_mm": [
+        57.000001,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          156.1750013,
+          22.5000007
+        ],
+        "board_mm": [
+          56.1750013,
+          22.5000007
+        ],
+        "net": "LED_ROW8",
+        "physical_side_view_mm": [
+          56.1750013,
+          22.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D76",
+      "side": "Top",
+      "component_origin_native_mm": [
+        160.499999,
+        22.5000007
+      ],
+      "component_origin_board_mm": [
+        60.499999,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          159.6749994,
+          22.5000007
+        ],
+        "board_mm": [
+          59.6749994,
+          22.5000007
+        ],
+        "net": "LED_ROW8",
+        "physical_side_view_mm": [
+          59.6749994,
+          22.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D77",
+      "side": "Top",
+      "component_origin_native_mm": [
+        163.9999997,
+        22.5000007
+      ],
+      "component_origin_board_mm": [
+        63.9999997,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          163.175,
+          22.5000007
+        ],
+        "board_mm": [
+          63.175,
+          22.5000007
+        ],
+        "net": "LED_ROW8",
+        "physical_side_view_mm": [
+          63.175,
+          22.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D78",
+      "side": "Top",
+      "component_origin_native_mm": [
+        167.5000003,
+        22.5000007
+      ],
+      "component_origin_board_mm": [
+        67.5000003,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.6750007,
+          22.5000007
+        ],
+        "board_mm": [
+          66.6750007,
+          22.5000007
+        ],
+        "net": "LED_ROW8",
+        "physical_side_view_mm": [
+          66.6750007,
+          22.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D79",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.0000009,
+        22.5000007
+      ],
+      "component_origin_board_mm": [
+        71.0000009,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.1750013,
+          22.5000007
+        ],
+        "board_mm": [
+          70.1750013,
+          22.5000007
+        ],
+        "net": "LED_ROW8",
+        "physical_side_view_mm": [
+          70.1750013,
+          22.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D80",
+      "side": "Top",
+      "component_origin_native_mm": [
+        174.499999,
+        22.5000007
+      ],
+      "component_origin_board_mm": [
+        74.499999,
+        22.5000007
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          173.6749994,
+          22.5000007
+        ],
+        "board_mm": [
+          73.6749994,
+          22.5000007
+        ],
+        "net": "LED_ROW8",
+        "physical_side_view_mm": [
+          73.6749994,
+          22.5000007
+        ]
+      }
+    },
+    {
+      "reference": "D81",
+      "side": "Top",
+      "component_origin_native_mm": [
+        143.000001,
+        19.0000001
+      ],
+      "component_origin_board_mm": [
+        43.000001,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          142.1750014,
+          19.0000001
+        ],
+        "board_mm": [
+          42.1750014,
+          19.0000001
+        ],
+        "net": "LED_ROW9",
+        "physical_side_view_mm": [
+          42.1750014,
+          19.0000001
+        ]
+      }
+    },
+    {
+      "reference": "D82",
+      "side": "Top",
+      "component_origin_native_mm": [
+        146.4999991,
+        19.0000001
+      ],
+      "component_origin_board_mm": [
+        46.4999991,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          145.6749995,
+          19.0000001
+        ],
+        "board_mm": [
+          45.6749995,
+          19.0000001
+        ],
+        "net": "LED_ROW9",
+        "physical_side_view_mm": [
+          45.6749995,
+          19.0000001
+        ]
+      }
+    },
+    {
+      "reference": "D83",
+      "side": "Top",
+      "component_origin_native_mm": [
+        149.9999997,
+        19.0000001
+      ],
+      "component_origin_board_mm": [
+        49.9999997,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          149.1750001,
+          19.0000001
+        ],
+        "board_mm": [
+          49.1750001,
+          19.0000001
+        ],
+        "net": "LED_ROW9",
+        "physical_side_view_mm": [
+          49.1750001,
+          19.0000001
+        ]
+      }
+    },
+    {
+      "reference": "D84",
+      "side": "Top",
+      "component_origin_native_mm": [
+        153.5000003,
+        19.0000001
+      ],
+      "component_origin_board_mm": [
+        53.5000003,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          152.6750007,
+          19.0000001
+        ],
+        "board_mm": [
+          52.6750007,
+          19.0000001
+        ],
+        "net": "LED_ROW9",
+        "physical_side_view_mm": [
+          52.6750007,
+          19.0000001
+        ]
+      }
+    },
+    {
+      "reference": "D85",
+      "side": "Top",
+      "component_origin_native_mm": [
+        157.000001,
+        19.0000001
+      ],
+      "component_origin_board_mm": [
+        57.000001,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          156.1750013,
+          19.0000001
+        ],
+        "board_mm": [
+          56.1750013,
+          19.0000001
+        ],
+        "net": "LED_ROW9",
+        "physical_side_view_mm": [
+          56.1750013,
+          19.0000001
+        ]
+      }
+    },
+    {
+      "reference": "D86",
+      "side": "Top",
+      "component_origin_native_mm": [
+        160.499999,
+        19.0000001
+      ],
+      "component_origin_board_mm": [
+        60.499999,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          159.6749994,
+          19.0000001
+        ],
+        "board_mm": [
+          59.6749994,
+          19.0000001
+        ],
+        "net": "LED_ROW9",
+        "physical_side_view_mm": [
+          59.6749994,
+          19.0000001
+        ]
+      }
+    },
+    {
+      "reference": "D87",
+      "side": "Top",
+      "component_origin_native_mm": [
+        163.9999997,
+        19.0000001
+      ],
+      "component_origin_board_mm": [
+        63.9999997,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          163.175,
+          19.0000001
+        ],
+        "board_mm": [
+          63.175,
+          19.0000001
+        ],
+        "net": "LED_ROW9",
+        "physical_side_view_mm": [
+          63.175,
+          19.0000001
+        ]
+      }
+    },
+    {
+      "reference": "D88",
+      "side": "Top",
+      "component_origin_native_mm": [
+        167.5000003,
+        19.0000001
+      ],
+      "component_origin_board_mm": [
+        67.5000003,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.6750007,
+          19.0000001
+        ],
+        "board_mm": [
+          66.6750007,
+          19.0000001
+        ],
+        "net": "LED_ROW9",
+        "physical_side_view_mm": [
+          66.6750007,
+          19.0000001
+        ]
+      }
+    },
+    {
+      "reference": "D89",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.0000009,
+        19.0000001
+      ],
+      "component_origin_board_mm": [
+        71.0000009,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.1750013,
+          19.0000001
+        ],
+        "board_mm": [
+          70.1750013,
+          19.0000001
+        ],
+        "net": "LED_ROW9",
+        "physical_side_view_mm": [
+          70.1750013,
+          19.0000001
+        ]
+      }
+    },
+    {
+      "reference": "D90",
+      "side": "Top",
+      "component_origin_native_mm": [
+        174.499999,
+        19.0000001
+      ],
+      "component_origin_board_mm": [
+        74.499999,
+        19.0000001
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "Kingbright_APT1608SURCK",
+      "schematic_symbol": "LED_RED_APT1608SURCK",
+      "source_schematic_symbol": "LED_RED_APT1608SURCK",
+      "manufacturer": "Hubei KENTO",
+      "manufacturer_part_number": "KT-0603R",
+      "supplier_part": "C2286",
+      "description": "Red 1608 LED",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          173.6749994,
+          19.0000001
+        ],
+        "board_mm": [
+          73.6749994,
+          19.0000001
+        ],
+        "net": "LED_ROW9",
+        "physical_side_view_mm": [
+          73.6749994,
+          19.0000001
+        ]
+      }
+    },
+    {
+      "reference": "D91",
+      "side": "Top",
+      "component_origin_native_mm": [
+        177.9999996,
+        16.3000004
+      ],
+      "component_origin_board_mm": [
+        77.9999996,
+        16.3000004
+      ],
+      "native_rotation_deg": 90.0,
+      "footprint": "D_SOD-523",
+      "schematic_symbol": "ESD_PESD5Z6_0_UNIDIR_SOD523",
+      "source_schematic_symbol": "ESD_TPD1E10B06_SOD523",
+      "manufacturer": "Nexperia",
+      "manufacturer_part_number": "PESD5Z6.0,115",
+      "supplier_part": "C461166",
+      "description": "6 V unidirectional TVS; SOD523",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          177.9999996,
+          15.5999993
+        ],
+        "board_mm": [
+          77.9999996,
+          15.5999993
+        ],
+        "net": "VBUS_5V",
+        "physical_side_view_mm": [
+          77.9999996,
+          15.5999993
+        ]
+      }
+    },
+    {
+      "reference": "J1",
+      "side": "Top",
+      "component_origin_native_mm": [
+        179.5999989,
+        9.5000013
+      ],
+      "component_origin_board_mm": [
+        79.5999989,
+        9.5000013
+      ],
+      "native_rotation_deg": 90.0,
+      "footprint": "CUI_UJC-HP-3-SMT-TR",
+      "schematic_symbol": "CONN_USB_C_UJC_HP_3",
+      "source_schematic_symbol": "CONN_USB_C_UJC_HP_3",
+      "manufacturer": "Same Sky",
+      "manufacturer_part_number": "UJC-HP-3-SMT-TR",
+      "supplier_part": "C3198015",
+      "description": "USB-C power-only receptacle; 0.8 mm PCB",
+      "process": "Top reflow",
+      "pad_1": null
+    },
+    {
+      "reference": "R1",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.4999999,
+        12.0000014
+      ],
+      "component_origin_board_mm": [
+        71.4999999,
+        12.0000014
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_5p1k_1PCT_0603",
+      "source_schematic_symbol": "RES_5p1k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF5101V",
+      "supplier_part": "C123727",
+      "description": "5.1 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.6750003,
+          12.0000014
+        ],
+        "board_mm": [
+          70.6750003,
+          12.0000014
+        ],
+        "net": "USB_CC1",
+        "physical_side_view_mm": [
+          70.6750003,
+          12.0000014
+        ]
+      }
+    },
+    {
+      "reference": "R2",
+      "side": "Top",
+      "component_origin_native_mm": [
+        171.4999999,
+        9.4000015
+      ],
+      "component_origin_board_mm": [
+        71.4999999,
+        9.4000015
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_5p1k_1PCT_0603",
+      "source_schematic_symbol": "RES_5p1k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF5101V",
+      "supplier_part": "C123727",
+      "description": "5.1 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          170.6750003,
+          9.4000015
+        ],
+        "board_mm": [
+          70.6750003,
+          9.4000015
+        ],
+        "net": "USB_CC2",
+        "physical_side_view_mm": [
+          70.6750003,
+          9.4000015
+        ]
+      }
+    },
+    {
+      "reference": "R10",
+      "side": "Top",
+      "component_origin_native_mm": [
+        141.0999997,
+        2.800002
+      ],
+      "component_origin_board_mm": [
+        41.0999997,
+        2.800002
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_10k_1PCT_0603",
+      "source_schematic_symbol": "RES_10k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF1002V",
+      "supplier_part": "C191124",
+      "description": "10 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          140.2750001,
+          2.800002
+        ],
+        "board_mm": [
+          40.2750001,
+          2.800002
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          40.2750001,
+          2.800002
+        ]
+      }
+    },
+    {
+      "reference": "R11",
+      "side": "Top",
+      "component_origin_native_mm": [
+        121.9999998,
+        18.1999992
+      ],
+      "component_origin_board_mm": [
+        21.9999998,
+        18.1999992
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_10k_1PCT_0603",
+      "source_schematic_symbol": "RES_10k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF1002V",
+      "supplier_part": "C191124",
+      "description": "10 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          121.9999998,
+          19.0249988
+        ],
+        "board_mm": [
+          21.9999998,
+          19.0249988
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          21.9999998,
+          19.0249988
+        ]
+      }
+    },
+    {
+      "reference": "R12",
+      "side": "Top",
+      "component_origin_native_mm": [
+        125.6000003,
+        18.1999992
+      ],
+      "component_origin_board_mm": [
+        25.6000003,
+        18.1999992
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_10k_1PCT_0603",
+      "source_schematic_symbol": "RES_10k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF1002V",
+      "supplier_part": "C191124",
+      "description": "10 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          125.6000003,
+          19.0249988
+        ],
+        "board_mm": [
+          25.6000003,
+          19.0249988
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          25.6000003,
+          19.0249988
+        ]
+      }
+    },
+    {
+      "reference": "R13",
+      "side": "Top",
+      "component_origin_native_mm": [
+        129.2000007,
+        18.1999992
+      ],
+      "component_origin_board_mm": [
+        29.2000007,
+        18.1999992
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_10k_1PCT_0603",
+      "source_schematic_symbol": "RES_10k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF1002V",
+      "supplier_part": "C191124",
+      "description": "10 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          129.2000007,
+          19.0249988
+        ],
+        "board_mm": [
+          29.2000007,
+          19.0249988
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          29.2000007,
+          19.0249988
+        ]
+      }
+    },
+    {
+      "reference": "R14",
+      "side": "Top",
+      "component_origin_native_mm": [
+        132.8000011,
+        18.1999992
+      ],
+      "component_origin_board_mm": [
+        32.8000011,
+        18.1999992
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_10k_1PCT_0603",
+      "source_schematic_symbol": "RES_10k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF1002V",
+      "supplier_part": "C191124",
+      "description": "10 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          132.8000011,
+          19.0249988
+        ],
+        "board_mm": [
+          32.8000011,
+          19.0249988
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          32.8000011,
+          19.0249988
+        ]
+      }
+    },
+    {
+      "reference": "R15",
+      "side": "Top",
+      "component_origin_native_mm": [
+        136.399999,
+        18.1999992
+      ],
+      "component_origin_board_mm": [
+        36.399999,
+        18.1999992
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_10k_1PCT_0603",
+      "source_schematic_symbol": "RES_10k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF1002V",
+      "supplier_part": "C191124",
+      "description": "10 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          136.399999,
+          19.0249988
+        ],
+        "board_mm": [
+          36.399999,
+          19.0249988
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          36.399999,
+          19.0249988
+        ]
+      }
+    },
+    {
+      "reference": "R20",
+      "side": "Top",
+      "component_origin_native_mm": [
+        130.9999996,
+        21.6999998
+      ],
+      "component_origin_board_mm": [
+        30.9999996,
+        21.6999998
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_2p2k_1PCT_0603",
+      "source_schematic_symbol": "RES_2p2k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF2201V",
+      "supplier_part": "C116387",
+      "description": "2.2 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          130.9999996,
+          22.5249994
+        ],
+        "board_mm": [
+          30.9999996,
+          22.5249994
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          30.9999996,
+          22.5249994
+        ]
+      }
+    },
+    {
+      "reference": "R21",
+      "side": "Top",
+      "component_origin_native_mm": [
+        134.6,
+        21.6999998
+      ],
+      "component_origin_board_mm": [
+        34.6,
+        21.6999998
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_2p2k_1PCT_0603",
+      "source_schematic_symbol": "RES_2p2k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF2201V",
+      "supplier_part": "C116387",
+      "description": "2.2 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          134.6,
+          22.5249994
+        ],
+        "board_mm": [
+          34.6,
+          22.5249994
+        ],
+        "net": "+3V3",
+        "physical_side_view_mm": [
+          34.6,
+          22.5249994
+        ]
+      }
+    },
+    {
+      "reference": "R22",
+      "side": "Top",
+      "component_origin_native_mm": [
+        152.2000004,
+        8.6000006
+      ],
+      "component_origin_board_mm": [
+        52.2000004,
+        8.6000006
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_100k_1PCT_0603",
+      "source_schematic_symbol": "RES_100k_1PCT_0603",
+      "manufacturer": "UNI-ROYAL",
+      "manufacturer_part_number": "0603WAF1003T5E",
+      "supplier_part": "C25803",
+      "description": "100 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          151.3750008,
+          8.6000006
+        ],
+        "board_mm": [
+          51.3750008,
+          8.6000006
+        ],
+        "net": "LED_EN",
+        "physical_side_view_mm": [
+          51.3750008,
+          8.6000006
+        ]
+      }
+    },
+    {
+      "reference": "R23",
+      "side": "Top",
+      "component_origin_native_mm": [
+        139.9999994,
+        21.6999998
+      ],
+      "component_origin_board_mm": [
+        39.9999994,
+        21.6999998
+      ],
+      "native_rotation_deg": 270.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_10k_1PCT_0603",
+      "source_schematic_symbol": "RES_10k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF1002V",
+      "supplier_part": "C191124",
+      "description": "10 kohm; 1%; 0603",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          139.9999994,
+          22.5249994
+        ],
+        "board_mm": [
+          39.9999994,
+          22.5249994
+        ],
+        "net": "LED_IICRST",
+        "physical_side_view_mm": [
+          39.9999994,
+          22.5249994
+        ]
+      }
+    },
+    {
+      "reference": "R24",
+      "side": "Top",
+      "component_origin_native_mm": [
+        167.7999997,
+        13.7999978
+      ],
+      "component_origin_board_mm": [
+        67.7999997,
+        13.7999978
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "R_0603_1608Metric",
+      "schematic_symbol": "RES_20k_1PCT_0603",
+      "source_schematic_symbol": "RES_20k_1PCT_0603",
+      "manufacturer": "Panasonic",
+      "manufacturer_part_number": "ERJ3EKF2002V",
+      "supplier_part": "C403057",
+      "description": "20 kohm; 1%; 0603; driver REXT",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          166.9750001,
+          13.7999978
+        ],
+        "board_mm": [
+          66.9750001,
+          13.7999978
+        ],
+        "net": "LED_R_EXT",
+        "physical_side_view_mm": [
+          66.9750001,
+          13.7999978
+        ]
+      }
+    },
+    {
+      "reference": "SW1",
+      "side": "Top",
+      "component_origin_native_mm": [
+        115.9999991,
+        18.5000011
+      ],
+      "component_origin_board_mm": [
+        15.9999991,
+        18.5000011
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "SW_SPST_SKQG_WithStem__HAND_SOLDER_NOPASTE",
+      "schematic_symbol": "SW_UP_SKQG",
+      "source_schematic_symbol": "SW_UP_SKQG",
+      "manufacturer": "Alps Alpine",
+      "manufacturer_part_number": "SKQGABE010",
+      "supplier_part": "C115351",
+      "description": "Tactile switch; manual solder after reflow",
+      "process": "Manual after Top reflow",
+      "pad_1": {
+        "native_mm": [
+          119.099998,
+          20.3499999
+        ],
+        "board_mm": [
+          19.099998,
+          20.3499999
+        ],
+        "net": "BTN_UP",
+        "physical_side_view_mm": [
+          19.099998,
+          20.3499999
+        ]
+      }
+    },
+    {
+      "reference": "SW2",
+      "side": "Top",
+      "component_origin_native_mm": [
+        115.9999991,
+        5.5000017
+      ],
+      "component_origin_board_mm": [
+        15.9999991,
+        5.5000017
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "SW_SPST_SKQG_WithStem__HAND_SOLDER_NOPASTE",
+      "schematic_symbol": "SW_DOWN_SKQG",
+      "source_schematic_symbol": "SW_DOWN_SKQG",
+      "manufacturer": "Alps Alpine",
+      "manufacturer_part_number": "SKQGABE010",
+      "supplier_part": "C115351",
+      "description": "Tactile switch; manual solder after reflow",
+      "process": "Manual after Top reflow",
+      "pad_1": {
+        "native_mm": [
+          112.9000003,
+          7.3500005
+        ],
+        "board_mm": [
+          12.9000003,
+          7.3500005
+        ],
+        "net": "BTN_DOWN",
+        "physical_side_view_mm": [
+          12.9000003,
+          7.3500005
+        ]
+      }
+    },
+    {
+      "reference": "SW3",
+      "side": "Top",
+      "component_origin_native_mm": [
+        108.4999989,
+        12.0000014
+      ],
+      "component_origin_board_mm": [
+        8.4999989,
+        12.0000014
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "SW_SPST_SKQG_WithStem__HAND_SOLDER_NOPASTE",
+      "schematic_symbol": "SW_LEFT_SKQG",
+      "source_schematic_symbol": "SW_LEFT_SKQG",
+      "manufacturer": "Alps Alpine",
+      "manufacturer_part_number": "SKQGABE010",
+      "supplier_part": "C115351",
+      "description": "Tactile switch; manual solder after reflow",
+      "process": "Manual after Top reflow",
+      "pad_1": {
+        "native_mm": [
+          111.5999978,
+          13.8500002
+        ],
+        "board_mm": [
+          11.5999978,
+          13.8500002
+        ],
+        "net": "BTN_LEFT",
+        "physical_side_view_mm": [
+          11.5999978,
+          13.8500002
+        ]
+      }
+    },
+    {
+      "reference": "SW4",
+      "side": "Top",
+      "component_origin_native_mm": [
+        123.4999994,
+        12.0000014
+      ],
+      "component_origin_board_mm": [
+        23.4999994,
+        12.0000014
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "SW_SPST_SKQG_WithStem__HAND_SOLDER_NOPASTE",
+      "schematic_symbol": "SW_RIGHT_SKQG",
+      "source_schematic_symbol": "SW_RIGHT_SKQG",
+      "manufacturer": "Alps Alpine",
+      "manufacturer_part_number": "SKQGABE010",
+      "supplier_part": "C115351",
+      "description": "Tactile switch; manual solder after reflow",
+      "process": "Manual after Top reflow",
+      "pad_1": {
+        "native_mm": [
+          126.5999983,
+          13.8500002
+        ],
+        "board_mm": [
+          26.5999983,
+          13.8500002
+        ],
+        "net": "BTN_RIGHT",
+        "physical_side_view_mm": [
+          26.5999983,
+          13.8500002
+        ]
+      }
+    },
+    {
+      "reference": "SW5",
+      "side": "Top",
+      "component_origin_native_mm": [
+        132.7000013,
+        12.0000014
+      ],
+      "component_origin_board_mm": [
+        32.7000013,
+        12.0000014
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "SW_SPST_SKQG_WithStem__HAND_SOLDER_NOPASTE",
+      "schematic_symbol": "SW_START_SKQG",
+      "source_schematic_symbol": "SW_START_SKQG",
+      "manufacturer": "Alps Alpine",
+      "manufacturer_part_number": "SKQGABE010",
+      "supplier_part": "C115351",
+      "description": "Tactile switch; manual solder after reflow",
+      "process": "Manual after Top reflow",
+      "pad_1": {
+        "native_mm": [
+          129.6000024,
+          13.8500002
+        ],
+        "board_mm": [
+          29.6000024,
+          13.8500002
+        ],
+        "net": "BTN_START",
+        "physical_side_view_mm": [
+          29.6000024,
+          13.8500002
+        ]
+      }
+    },
+    {
+      "reference": "U1",
+      "side": "Bottom",
+      "component_origin_native_mm": [
+        144.5000006,
+        9.5000013
+      ],
+      "component_origin_board_mm": [
+        44.5000006,
+        9.5000013
+      ],
+      "native_rotation_deg": 180.0,
+      "footprint": "LQFP-32_7x7mm_P0.8mm",
+      "schematic_symbol": "MCU_STM32G030K8T6",
+      "source_schematic_symbol": "MCU_STM32G030K8T6",
+      "manufacturer": "STMicroelectronics",
+      "manufacturer_part_number": "STM32G030K8T6",
+      "supplier_part": "C431631",
+      "description": "STM32G0 MCU; LQFP-32",
+      "process": "Manual after Top reflow",
+      "pad_1": {
+        "native_mm": [
+          148.6750011,
+          12.3000008
+        ],
+        "board_mm": [
+          48.6750011,
+          12.3000008
+        ],
+        "net": "",
+        "physical_side_view_mm": [
+          36.9249989,
+          12.3000008
+        ]
+      }
+    },
+    {
+      "reference": "U2",
+      "side": "Top",
+      "component_origin_native_mm": [
+        162.0000011,
+        9.7000009
+      ],
+      "component_origin_board_mm": [
+        62.0000011,
+        9.7000009
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "IS31FL3737_QFN40_5x5mm_P0.4mm_EP3.4mm",
+      "schematic_symbol": "LED_DRIVER_IS31FL3737_QFLS4",
+      "source_schematic_symbol": "LED_DRIVER_IS31FL3737_QFLS4",
+      "manufacturer": "Lumissil / ISSI",
+      "manufacturer_part_number": "IS31FL3737B-QFLS4-TR",
+      "supplier_part": "C2940515",
+      "description": "LED matrix driver; QFN-40 with exposed GND pad",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          159.5925002,
+          11.4999999
+        ],
+        "board_mm": [
+          59.5925002,
+          11.4999999
+        ],
+        "net": "LED_ROW1",
+        "physical_side_view_mm": [
+          59.5925002,
+          11.4999999
+        ]
+      }
+    },
+    {
+      "reference": "U3",
+      "side": "Top",
+      "component_origin_native_mm": [
+        174.8000009,
+        15.1000003
+      ],
+      "component_origin_board_mm": [
+        74.8000009,
+        15.1000003
+      ],
+      "native_rotation_deg": 90.0,
+      "footprint": "SOT-23-5",
+      "schematic_symbol": "LDO_TPS7A2433DBVR",
+      "source_schematic_symbol": "LDO_TLV75533PDBVR",
+      "manufacturer": "Texas Instruments",
+      "manufacturer_part_number": "TPS7A2433DBVR",
+      "supplier_part": "C2866134",
+      "description": "3.3 V LDO; DBV SOT-23-5; 18 V operating input",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          173.8500003,
+          13.9624994
+        ],
+        "board_mm": [
+          73.8500003,
+          13.9624994
+        ],
+        "net": "VBUS_5V",
+        "physical_side_view_mm": [
+          73.8500003,
+          13.9624994
+        ]
+      }
+    },
+    {
+      "reference": "U4",
+      "side": "Top",
+      "component_origin_native_mm": [
+        138.2500004,
+        37.0000022
+      ],
+      "component_origin_board_mm": [
+        38.2500004,
+        37.0000022
+      ],
+      "native_rotation_deg": 0.0,
+      "footprint": "ST25TN01K_UFDFPN5_1.7x1.4mm",
+      "schematic_symbol": "NFC_ST25TN01K_AFH5",
+      "source_schematic_symbol": "NFC_ST25TN01K_AFH5",
+      "manufacturer": "STMicroelectronics",
+      "manufacturer_part_number": "ST25TN01K-AFH5",
+      "supplier_part": "C3303589",
+      "description": "Passive NFC tag; UFDFPN5",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          137.7500014,
+          37.4000014
+        ],
+        "board_mm": [
+          37.7500014,
+          37.4000014
+        ],
+        "net": "",
+        "physical_side_view_mm": [
+          37.7500014,
+          37.4000014
+        ]
+      }
+    },
+    {
+      "reference": "U5",
+      "side": "Top",
+      "component_origin_native_mm": [
+        176.5000001,
+        9.5000013
+      ],
+      "component_origin_board_mm": [
+        76.5000001,
+        9.5000013
+      ],
+      "native_rotation_deg": 180.0,
+      "footprint": "SOT-323_SC-70",
+      "schematic_symbol": "ESD_TPD2E2U06DCK",
+      "source_schematic_symbol": "ESD_TPD2E2U06DCK",
+      "manufacturer": "Texas Instruments",
+      "manufacturer_part_number": "TPD2E2U06QDCKRQ1",
+      "supplier_part": "C915089",
+      "description": "Dual CC-line ESD protection; DCK SC70-3",
+      "process": "Top reflow",
+      "pad_1": {
+        "native_mm": [
+          177.3874989,
+          8.8500001
+        ],
+        "board_mm": [
+          77.3874989,
+          8.8500001
+        ],
+        "net": "USB_CC1",
+        "physical_side_view_mm": [
+          77.3874989,
+          8.8500001
+        ]
+      }
+    }
+  ],
+  "excluded": [
+    {
+      "reference": "C30",
+      "status": "DNP",
+      "reason": "NFC tuning capacitor: no value selected and no paste"
+    },
+    {
+      "reference": "L1",
+      "status": "PCB feature",
+      "reason": "Printed copper antenna; no purchased part"
+    },
+    {
+      "reference": "TP1",
+      "status": "PCB feature",
+      "reason": "Probe pad; no purchased part"
+    },
+    {
+      "reference": "TP2",
+      "status": "PCB feature",
+      "reason": "Probe pad; no purchased part"
+    },
+    {
+      "reference": "TP3",
+      "status": "PCB feature",
+      "reason": "Probe pad; no purchased part"
+    },
+    {
+      "reference": "TP4",
+      "status": "PCB feature",
+      "reason": "Probe pad; no purchased part"
+    },
+    {
+      "reference": "TP5",
+      "status": "PCB feature",
+      "reason": "Probe pad; no purchased part"
+    },
+    {
+      "reference": "TP6",
+      "status": "PCB feature",
+      "reason": "Probe pad; no purchased part"
+    },
+    {
+      "reference": "TP7",
+      "status": "PCB feature",
+      "reason": "Probe pad; no purchased part"
+    },
+    {
+      "reference": "TP8",
+      "status": "PCB feature",
+      "reason": "Probe pad; no purchased part"
+    },
+    {
+      "reference": "[QR]",
+      "status": "PCB artwork",
+      "reason": "Board-only QR artwork; no purchased part"
+    },
+    {
+      "reference": "RN01-RN04",
+      "status": "PCB feature",
+      "reason": "Free copper probe lands; no purchased part"
+    }
+  ],
+  "programming_testpoints": [
+    {
+      "reference": "TP1",
+      "net": "VBUS_5V",
+      "side": "Bottom",
+      "native_mm": [
+        180.3908,
+        2.9972
+      ],
+      "board_mm": [
+        80.3908,
+        2.9972
+      ],
+      "diameter_mm": 1.27
+    },
+    {
+      "reference": "TP2",
+      "net": "+3V3",
+      "side": "Bottom",
+      "native_mm": [
+        177.3936,
+        2.9972
+      ],
+      "board_mm": [
+        77.3936,
+        2.9972
+      ],
+      "diameter_mm": 1.27
+    },
+    {
+      "reference": "TP3",
+      "net": "GND",
+      "side": "Bottom",
+      "native_mm": [
+        174.3964,
+        2.9972
+      ],
+      "board_mm": [
+        74.3964,
+        2.9972
+      ],
+      "diameter_mm": 1.27
+    },
+    {
+      "reference": "TP4",
+      "net": "+3V3",
+      "side": "Bottom",
+      "native_mm": [
+        145.9992,
+        1.524
+      ],
+      "board_mm": [
+        45.9992,
+        1.524
+      ],
+      "diameter_mm": 1.27
+    },
+    {
+      "reference": "TP5",
+      "net": "GND",
+      "side": "Bottom",
+      "native_mm": [
+        148.9964,
+        2.9972
+      ],
+      "board_mm": [
+        48.9964,
+        2.9972
+      ],
+      "diameter_mm": 1.27
+    },
+    {
+      "reference": "TP6",
+      "net": "SWDIO",
+      "side": "Bottom",
+      "native_mm": [
+        137.9982,
+        12.2936
+      ],
+      "board_mm": [
+        37.9982,
+        12.2936
+      ],
+      "diameter_mm": 1.27
+    },
+    {
+      "reference": "TP7",
+      "net": "SWCLK",
+      "side": "Top",
+      "native_mm": [
+        142.6464,
+        9.4996
+      ],
+      "board_mm": [
+        42.6464,
+        9.4996
+      ],
+      "diameter_mm": 1.27
+    },
+    {
+      "reference": "TP8",
+      "net": "NRST",
+      "side": "Bottom",
+      "native_mm": [
+        157.988,
+        2.9972
+      ],
+      "board_mm": [
+        57.988,
+        2.9972
+      ],
+      "diameter_mm": 1.27
+    }
+  ]
+}

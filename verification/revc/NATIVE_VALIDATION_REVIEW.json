@@ -1,0 +1,26 @@
+{
+  "result": "COMPILE SUCCESSFUL / TWO REVIEWED WARNINGS",
+  "compiled_local": "2026-10-28 11:16:49",
+  "report_exported_local": "2026-10-28 11:19:43",
+  "errors": 0,
+  "warnings": [
+    {
+      "net": "LED_IICRST",
+      "message": "Net LED_IICRST has no driving source (Pin R23-1, Pin U2-39)",
+      "disposition": "R23 10 kohm pulls pin 39 to GND. IICRST is active high and must be low during normal operation. Passive bias is not an active output driver."
+    },
+    {
+      "net": "NRST",
+      "message": "Net NRST has no driving source (Pin C12-1, Pin R10-2, Pin TP8-1, Pin U1-6)",
+      "disposition": "R10 10 kohm pulls NRST to +3V3; C12 provides filtering. A passive pull-up does not satisfy the compiler active-driver check."
+    }
+  ],
+  "schematic_sha256": "e89ae0a8a44abdfa60d52b0149ef2538445f9739bfb2a0a2584648abac8499e6",
+  "schlib_sha256": "b38650103eb216bfb903f709078879ed2f240235a41dd01132069392601be80b",
+  "report_sha256": "734e56e80419246e07a65c15c519ac4869d1d66292e6cbf5f74e8a03685e070a",
+  "ui_evidence_sha256": "a8722fca28efcb442e537dc05fff228facc2810ab5fc8d726a0db4feea811b2f",
+  "no_new_noerc_suppression": true,
+  "pin_electrical_types_unchanged": true,
+  "source": "https://www.lumissil.com/assets/pdf/core/IS31FL3737B_DS.pdf; Rev D, pin table page 4 and I2C RESET page 24",
+  "limit": "Reset thresholds, startup and programming behavior require the physical qualification record; no hardware result is implied."
+}
