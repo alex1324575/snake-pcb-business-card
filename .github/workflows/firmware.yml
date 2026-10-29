@@ -38,6 +38,12 @@ jobs:
       - name: Run native tests with sanitizers
         run: python3 firmware/tools/build.py --test-host --sanitize
 
+      - name: Reproduce the gameplay demonstration
+        run: |
+          gcc -std=c11 -Wall -Wextra -Werror -Ifirmware/include firmware/src/app.c firmware/src/buttons.c firmware/src/snake.c tools/demo/record_gameplay.c -o /tmp/snake-gameplay
+          /tmp/snake-gameplay 25 > /tmp/snake-gameplay.jsonl
+          python3 tools/check_gameplay_trace.py --capture /tmp/snake-gameplay.jsonl
+
       - name: Build and verify Arm images
         run: python3 firmware/tools/build.py --build
 

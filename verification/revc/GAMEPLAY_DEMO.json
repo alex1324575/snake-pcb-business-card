@@ -1,0 +1,62 @@
+{
+  "result": "PASS",
+  "scope": "Host C firmware and rendering simulation; no physical-board or MCU execution claim",
+  "gameplay": {
+    "seed": 25,
+    "end_ms": 14960,
+    "game_over_ms": 12750,
+    "score": 4,
+    "length": 7,
+    "turns": 8,
+    "pickups": 4,
+    "wall_collision": true,
+    "valid": true
+  },
+  "capture_interval_ms": 80,
+  "captured_samples": 188,
+  "unique_native_LED_scenes": 79,
+  "firmware_source_sha256": {
+    "firmware/src/snake.c": "5980cad0675181b22fd951fa84a871f92a7bdaa59420db221ab79872fc9605e9",
+    "firmware/src/buttons.c": "f8af8d14976e90a050d92bba406d1431cf743e7994cbd1bec4307d79e8317727",
+    "firmware/src/app.c": "4a92c3782fb524a39ac1260e8cf3e5ae0dd3bd14ec22433990e7337c11aecb10",
+    "firmware/include/snake.h": "d585858d82c923e193bb6db81b9a64e234a83ffcd28d68fddceca383eb933038",
+    "firmware/include/buttons.h": "0e182ca8eb5b3384d9a153734e24341c3997be564666b86e13d4c2b42daf46c2",
+    "firmware/include/app.h": "4ce6605c0a3910eae9e0f2b928ae0b68ea94d45a6012c1592d048bd3993ee262",
+    "firmware/include/is31fl3737.h": "e02bf3f2de072857ea072a174e0f3122fc40f9746cb02bc7aa6d30dc550e5c04"
+  },
+  "recorder": {
+    "path": "tools/demo/record_gameplay.c",
+    "sha256": "db2b4e1cea8caceeb7cc6d833ba0cee57176c5b927d54275c879203eaea4b242"
+  },
+  "trace": {
+    "path": "verification/revc/GAMEPLAY_TRACE.json",
+    "sha256": "8656dc40ab4702513668d93d66f96200861f2fa503bfb2ae0448270e9b70d426"
+  },
+  "source_model_record": {
+    "path": "verification/revc/RENDER_3D.json",
+    "sha256": "76f2cdb910cdde4f5effffd6529d5301468a2a46a19a733e1aa0e3c659eef2e9"
+  },
+  "LED_mapping": "pixels[y*10+x] drives D(1+y*10+x); 10 columns, 9 rows; same data in native CAD light caps and enlarged panel",
+  "visualization": "KiCad 10.0.6 high-quality fixed Top rendering; additional emissive lens caps for nonzero PWM; brightness sqrt(PWM/255) is illustrative, not photometric calibration",
+  "artifact": {
+    "path": "docs/images/snake-gameplay.gif",
+    "sha256": "7e96b15b22ad9bd419ba7282d2b4752708135fdf4072ba0dabc3db56b48946d6",
+    "bytes": 1162827,
+    "pixels": [
+      1280,
+      800
+    ],
+    "encoded_frames": 84,
+    "duration_ms": 15040,
+    "loop": "infinite"
+  },
+  "checks": {
+    "all_decoded_pixels_match_quantized_capture": true,
+    "timing_matches_firmware_capture": true,
+    "four_food_pickups": true,
+    "length_three_to_seven": true,
+    "wall_game_over": true,
+    "actual_firmware_score_04": true,
+    "native_CAD_and_manufacturing_unchanged": true
+  }
+}

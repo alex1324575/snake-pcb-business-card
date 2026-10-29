@@ -4,13 +4,15 @@ A USB-powered PCB business card with a 10 × 9 LED matrix, five buttons and Snak
 
 [![Firmware CI](https://github.com/alex1324575/snake-pcb-business-card/actions/workflows/firmware.yml/badge.svg)](https://github.com/alex1324575/snake-pcb-business-card/actions/workflows/firmware.yml)
 
-![Rotating 3D assembly view of the populated Rev C PCB](docs/images/revc-3d-rotation.gif)
+![Snake firmware simulation on the Rev C LED matrix, with a synchronized enlarged display](docs/images/snake-gameplay.gif)
+
+**Firmware simulation.** The board and enlarged display show the same 90 PWM values from the C firmware: start, turn, collect four food pixels, hit a wall and display the score. See the [gameplay demo](docs/revc/GAMEPLAY_DEMO.md) for source, capture and reproduction details. This is a host simulation; hardware execution remains untested.
 
 | Rev C — Top | Rev C — Bottom |
 |---|---|
 | ![Populated Rev C Top 3D view](docs/images/revc-3d-top.png) | ![Populated Rev C Bottom 3D view](docs/images/revc-3d-bottom.png) |
 
-3D assembly previews use the current Rev C layout and all 125 fitted parts. The animation shows the assembly from both sides with the LEDs unlit. A [static isometric view](docs/images/revc-3d-isometric.png) and [model provenance](docs/revc/3D_VISUALIZATION.md) are also available. Public artwork uses **ALEX XU** and **https://example.com/**.
+3D assembly previews use the current Rev C layout and all 125 fitted parts. The separate [rotation preview](docs/images/revc-3d-rotation.gif) shows assembly geometry with unlit LEDs. A [static isometric view](docs/images/revc-3d-isometric.png) and [model provenance](docs/revc/3D_VISUALIZATION.md) are also available. Public artwork uses **ALEX XU** and **https://example.com/**.
 
 ## Current revision
 

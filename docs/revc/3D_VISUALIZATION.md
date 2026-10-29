@@ -21,6 +21,8 @@ The GIF uses 96 rendered views of the same populated board, with a full rotation
 
 This is an assembly turntable with unlit LEDs. It does not show firmware execution or an assembled-board test. Render settings, source hashes and output checks are recorded in the [animation record](../../verification/revc/RENDER_GIF.json).
 
+The separate [gameplay demo](GAMEPLAY_DEMO.md) shows captured host-firmware PWM output on the Rev C board and a synchronized enlarged matrix.
+
 ## Model scope
 
 | Parts | Model source and scope |
