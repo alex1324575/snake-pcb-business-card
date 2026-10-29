@@ -2,6 +2,7 @@
 # hash native KiCad sources, generated exports, and firmware artifacts.
 * -text whitespace=cr-at-eol
 *.png binary
+*.gif binary
 *.pdf binary
 *.bin binary
 *.elf binary

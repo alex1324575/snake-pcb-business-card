@@ -4,6 +4,7 @@ The README shows the current Rev C layout populated with **125 fitted parts: 123
 
 | View | Image |
 |---|---|
+| Rotation | [Looping assembly view](../images/revc-3d-rotation.gif) |
 | Isometric | [Populated board](../images/revc-3d-isometric.png) |
 | Top | [Top assembly](../images/revc-3d-top.png) |
 | Bottom | [Bottom assembly](../images/revc-3d-bottom.png) |
@@ -13,6 +14,12 @@ The README shows the current Rev C layout populated with **125 fitted parts: 123
 The published native Altium PCB was imported into a temporary KiCad 10.0.6 rendering copy. All fitted component origins, rotations and sides were compared with the [controlled placement data](assembly/assembly_variant.json). The import also retained the 85.6 x 54 mm R2 outline, 361 copper pads, nine separate U2 paste windows, 189 vias, two coil holes and four USB shell slots. The coordinate translation introduced by the importer is recorded in the [render record](../../verification/revc/RENDER_3D.json).
 
 The rendering copy uses black solder mask, white silkscreen, ENIG appearance and open via masks. The three views were ray-traced with KiCad's high-quality renderer. Native Altium sources and the verified manufacturing files were not edited. Layer-inspection views remain in the [CAM review](../../verification/revc/CAM_VISUAL_REVIEW.md).
+
+## Rotation animation
+
+The GIF uses 96 rendered views of the same populated board, with a full rotation about Y and fixed X = -22° and Z = 15°. An orthographic camera keeps the board at a consistent scale. Frames share a 256-color palette and run at 80 ms per frame; the front and back views each remain visible for 400 ms. The 8.32-second sequence loops continuously.
+
+This is an assembly turntable with unlit LEDs. It does not show firmware execution or an assembled-board test. Render settings, source hashes and output checks are recorded in the [animation record](../../verification/revc/RENDER_GIF.json).
 
 ## Model scope
 

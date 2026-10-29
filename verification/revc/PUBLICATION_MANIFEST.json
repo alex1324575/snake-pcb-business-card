@@ -87,8 +87,8 @@
     {
       "path": ".gitattributes",
       "transformation": "Current revision documentation and publication checks",
-      "sha256": "01cd1c3ae5c47c1ecd57f83ac9fdbdec81588ab281a0b3e451186309e1e3f1cc",
-      "bytes": 538
+      "sha256": "6f93515f8d904eb60f440ea9db4f62d84562664dbc13b194830b7cb507f2fb78",
+      "bytes": 551
     },
     {
       "path": ".github/workflows/firmware.yml",
@@ -105,8 +105,8 @@
     {
       "path": "README.md",
       "transformation": "Current revision documentation and publication checks",
-      "sha256": "30898068f4116cc20d574188625c2b7eacf6916d48028b50b153d72f335576b5",
-      "bytes": 5493
+      "sha256": "28c35d4d4cdc9c26a0569631422ae4e5300164f1c434ade8be70878d00b64853",
+      "bytes": 5618
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -240,6 +240,12 @@
       "bytes": 1272652
     },
     {
+      "path": "docs/images/revc-3d-rotation.gif",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "f67bbfd5ff331bca4a5f632aef535cbb438b4ffad9b100c9966ed4c4e7ba8248",
+      "bytes": 1925634
+    },
+    {
       "path": "docs/images/revc-3d-top.png",
       "transformation": "Current revision documentation and publication checks",
       "sha256": "d3f510c6f0cf990bf1924a5dfce1df8a82d8bf8172cace9f3bbf4f8e7fb0908d",
@@ -269,8 +275,8 @@
     {
       "path": "docs/revc/3D_VISUALIZATION.md",
       "transformation": "Current revision documentation and publication checks",
-      "sha256": "c09b10bb00ee41deac303e32ca21ca82b57dacd607e09a12b9ff41f595a976ef",
-      "bytes": 2503
+      "sha256": "fd2acb8c3fb5b36c9aa18267ec0c0d33567518f1897531ff6ea8687db8f20632",
+      "bytes": 3188
     },
     {
       "path": "docs/revc/FABRICATION_NOTES.md",
@@ -688,6 +694,12 @@
       "transformation": "Current revision documentation and publication checks",
       "sha256": "76f2cdb910cdde4f5effffd6529d5301468a2a46a19a733e1aa0e3c659eef2e9",
       "bytes": 45592
+    },
+    {
+      "path": "verification/revc/RENDER_GIF.json",
+      "transformation": "Current revision documentation and publication checks",
+      "sha256": "74206ecd5ecb3f6d5dbe2589b047df55b4e76beeaa1cdf3a92357578d22fbfb1",
+      "bytes": 13028
     },
     {
       "path": "verification/revc/SCHEMATIC_PDF_REVIEW.json",
